@@ -11,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="text-center">
+      <section className="hero-section">
         <h1 className="">Jade Media Pr</h1>
       </section>
     </div>
