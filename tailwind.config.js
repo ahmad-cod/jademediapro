@@ -2,11 +2,20 @@
 module.exports = {
   mode: "jit",
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        black_cus: "#242526",
+        tag_p: "#F6F6F6",
+      },
+      fontFamily: {
+        pop: ["Poppins", '"Open Sans"'],
+      },
+    },
   },
   plugins: [],
 };
