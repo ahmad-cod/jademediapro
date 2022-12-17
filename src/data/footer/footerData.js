@@ -59,6 +59,7 @@ export const hub = {
       subtitle: "Blog",
       link: "#",
     },
+
     {
       subtitle: "Collaboration",
       link: "#",
