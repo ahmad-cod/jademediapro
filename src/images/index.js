@@ -10,6 +10,8 @@ import vimeogif from "./footer/footer-icon-vimeo.gif";
 import whatsappgif from "./footer/footer-icon-whatsapp.gif";
 import youtubegif from "./footer/footer-icon-youtube.gif";
 
+import disclaimerfolder from "./disclaimer/disclaimer-folder.png";
+
 export {
   footerlogo,
   footerplaneicon,
@@ -21,4 +23,5 @@ export {
   twittergif,
   whatsappgif,
   youtubegif,
+  disclaimerfolder
 };

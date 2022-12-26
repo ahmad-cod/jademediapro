@@ -1,0 +1,56 @@
+import React from 'react'
+import { disclaimerfolder } from '../images'
+import Image from 'next/image'
+
+const disclaimer = () => {
+  return (
+    <div>
+        <div className='header'>
+            <h1>Disclaimer <br/> Policy</h1>
+            <div className='header__image'>
+
+            <Image src={disclaimerfolder} alt="" width="100%" height="200%" />
+            </div>
+        </div>
+        
+        
+        <div className="content">
+            <h4>Last Updated November 10, 2021</h4>
+            <h3>Website disclaimer</h3>
+            <p>The information provided by Jademediapro Tech Agency LTD ("we," "us", or "our") on https://<br/>
+            www.jademediapro.com (the "Site") is for general informational purposes only. All information on the Site is<br/> 
+            provided in good faith, however we make no representation or warranty of any kind, express or implied,<br/> 
+            regarding the accuracy, adequacy, validity, reliability, availability or completeness of any information on the<br/> 
+            Site. UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND<br/> 
+            INCURRED AS A RESULT OF THE USE OF THE SITE OR RELIANCE ON ANY INFORMATION PROVIDED ON THE SITE. YOUR<br/> 
+            USE OF THE SITE AND YOUR RELIANCE ON ANY INFORMATION ON THE SITE IS SOLELY AT YOUR OWN RISK. 
+            </p>
+
+            <h3>External links disclaimer</h3>
+            <p>The information provided by Jademediapro Tech Agency LTD ("we," "us", or "our") on https://<br/>
+            www.jademediapro.com (the "Site") is for general informational purposes only. All information on the Site is<br/> 
+            provided in good faith, however we make no representation or warranty of any kind, express or implied,<br/> 
+            regarding the accuracy, adequacy, validity, reliability, availability or completeness of any information on the<br/> 
+            Site. UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND<br/> 
+            INCURRED AS A RESULT OF THE USE OF THE SITE OR RELIANCE ON ANY INFORMATION PROVIDED ON THE SITE. YOUR<br/> 
+            USE OF THE SITE AND YOUR RELIANCE ON ANY INFORMATION ON THE SITE IS SOLELY AT YOUR OWN RISK. 
+            </p>
+
+            <h3>Testimonials disclaimer</h3>
+            <p>The information provided by Jademediapro Tech Agency LTD ("we," "us", or "our") on https://<br/>
+            www.jademediapro.com (the "Site") is for general informational purposes only. All information on the Site is<br/> 
+            provided in good faith, however we make no representation or warranty of any kind, express or implied,<br/> 
+            regarding the accuracy, adequacy, validity, reliability, availability or completeness of any information on the<br/> 
+            Site. UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND<br/> 
+            INCURRED AS A RESULT OF THE USE OF THE SITE OR RELIANCE ON ANY INFORMATION PROVIDED ON THE SITE. YOUR<br/> 
+            USE OF THE SITE AND YOUR RELIANCE ON ANY INFORMATION ON THE SITE IS SOLELY AT YOUR OWN RISK. 
+            </p>
+
+            <p>This disclaimer was created using <a href='#'>Termly's Disclaimer Generator.</a></p>
+        </div>
+
+    </div>
+  )
+}
+
+export default disclaimer
