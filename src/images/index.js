@@ -11,7 +11,9 @@ import whatsappgif from "./footer/footer-icon-whatsapp.gif";
 import youtubegif from "./footer/footer-icon-youtube.gif";
 
 import disclaimerfolder from "./disclaimer/disclaimer-folder.png";
-
+import mostviewedthumbnail1 from "./most-viewed/most-viewed-thumbnail1.png"
+import mostviewedthumbnail2 from "./most-viewed/most-viewed-thumbnail2.png"
+import mostviewedthumbnail3 from "./most-viewed/most-viewed-thumbnail3.png"
 export {
   footerlogo,
   footerplaneicon,
@@ -23,5 +25,8 @@ export {
   twittergif,
   whatsappgif,
   youtubegif,
-  disclaimerfolder
+  disclaimerfolder,
+  mostviewedthumbnail1,
+  mostviewedthumbnail2,
+  mostviewedthumbnail3
 };
