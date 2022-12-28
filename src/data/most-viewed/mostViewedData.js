@@ -1,4 +1,4 @@
-import { mostviewedthumbnail1, mostviewedthumbnail2, mostviewedthumbnail3 } from "../../images";
+import { mostviewedthumbnail1, mostviewedthumbnail2, mostviewedthumbnail3, female, male, sixty } from "../../images";
 
 
 
@@ -24,5 +24,8 @@ export const mostViewedData = [
          numbrOfViews:"456k Views" ,
         uploadTime:"Uploaded 7 days ago" ,
         description:"We start by defining a clear image of exactly who you serve and precisely how they think. Why? Because you can’t help people unless you know them – their hopes, their fears, their problems, and their pitfalls..."
-    }
+    },
+
+    
 ]
+

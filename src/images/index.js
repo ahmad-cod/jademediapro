@@ -14,6 +14,11 @@ import disclaimerfolder from "./disclaimer/disclaimer-folder.png";
 import mostviewedthumbnail1 from "./most-viewed/most-viewed-thumbnail1.png"
 import mostviewedthumbnail2 from "./most-viewed/most-viewed-thumbnail2.png"
 import mostviewedthumbnail3 from "./most-viewed/most-viewed-thumbnail3.png"
+import handphone from "./interview/handphone.png"
+import female from "./interview/female.png"
+import male from "./interview/male.png"
+import sixty from "./interview/sixty.png"
+
 export {
   footerlogo,
   footerplaneicon,
@@ -28,5 +33,9 @@ export {
   disclaimerfolder,
   mostviewedthumbnail1,
   mostviewedthumbnail2,
-  mostviewedthumbnail3
+  mostviewedthumbnail3,
+  handphone,
+  female,
+  male,
+  sixty
 };
