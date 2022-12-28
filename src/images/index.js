@@ -18,6 +18,13 @@ import handphone from "./interview/handphone.png"
 import female from "./interview/female.png"
 import male from "./interview/male.png"
 import sixty from "./interview/sixty.png"
+import productImage1 from "./product/productImage1.png"
+import productImage2 from "./product/productImage2.png"
+import productImage3 from "./product/productImage3.png"
+import productImage4 from "./product/productImage4.png"
+
+
+
 
 export {
   footerlogo,
@@ -37,5 +44,9 @@ export {
   handphone,
   female,
   male,
-  sixty
+  sixty,
+  productImage1,
+  productImage2,
+  productImage3,
+  productImage4,
 };
