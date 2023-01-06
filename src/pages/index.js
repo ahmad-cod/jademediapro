@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -11,9 +12,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="text-center">
+      <section className="hero-section">
         <h1 className="">Jade Media Pr</h1>
       </section>
+
+      <Link href="/404">
+        <button>Go to Error Page</button>
+      </Link>
+      <Link href="/Ts&Cs">
+        <button>Go to Terms and Condition</button>
+      </Link>
     </div>
   );
 }
