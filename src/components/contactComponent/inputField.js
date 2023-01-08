@@ -3,10 +3,27 @@ import { contactGif } from "../../images";
 import { RxText } from "react-icons/rx";
 import { FiSend } from "react-icons/fi";
 import styles from "../../styles/Contact.module.css";
-import { use, useState } from "react";
+import { useState } from "react";
 
 const InputField = () => {
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState({
+    firstNameActive: false,
+    lastNameActive: false,
+    emailActive: false,
+    messageActive: false,
+    serviceActive: false,
+    scheduleActive: false,
+    telActive: false,
+  });
+  const [focus, setFocus] = useState({
+    firstNameFocus: false,
+    lastNameFocus: false,
+    emailFocus: false,
+    messageFocus: false,
+    scheduleFocus: false,
+    serviceFocus: false,
+    telFocus: false,
+  });
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
   const [lastName, setLastName] = useState("");
@@ -15,37 +32,55 @@ const InputField = () => {
   const [check, setCheck] = useState("");
   const [service, setService] = useState();
   const [schedule, setSchedule] = useState();
-  const [activeInput, setActiveInput] = useState();
-  const handleActiveInput = (value) => {
-    setActiveInput(value);
-  };
+
   const handleChangeLastName = (e) => {
     setLastName(e.target.value);
-    setActive(true);
+    setActive({
+      ...active,
+      lastNameActive: true,
+    });
   };
   const handleChangeFirstName = (e) => {
     setFirstName(e.target.value);
-    setActive(true);
+    setActive({
+      ...active,
+      firstNameActive: true,
+    });
   };
   const handleChangeEmail = (e) => {
     setEmail(e.target.value);
-    setActive(true);
+    setActive({
+      ...active,
+      emailActive: true,
+    });
   };
   const handleChangeSchedule = (e) => {
     setSchedule(e.target.value);
-    setActive(true);
+    setActive({
+      ...active,
+      scheduleActive: true,
+    });
   };
   const handleChangeService = (e) => {
     setService(e.target.value);
-    setActive(true);
+    setActive({
+      ...active,
+      serviceActive: true,
+    });
   };
   const handleChangeMessage = (e) => {
     setMessage(e.target.value);
-    setActive(true);
+    setActive({
+      ...active,
+      messageActive: true,
+    });
   };
   const handleChangeTel = (e) => {
     setTel(e.target.value);
-    setActive(true);
+    setActive({
+      ...active,
+      telActive: true,
+    });
   };
 
   const handleSubmit = (e) => {
@@ -59,7 +94,9 @@ const InputField = () => {
             <div className={styles.form_input_container}>
               <label
                 className={
-                  active || activeInput === firstName ? styles.label_active : ""
+                  active.firstNameActive || focus.firstNameFocus
+                    ? styles.label_active
+                    : ""
                 }
               >
                 Last name
@@ -67,9 +104,19 @@ const InputField = () => {
               <div className={styles.form_input}>
                 <input
                   type="text"
-                  placeholder={activeInput === firstName ? "example: John" : ""}
-                  onFocus={() => handleActiveInput(firstName)}
-                  onBlur={() => handleActiveInput()}
+                  placeholder={focus.firstNameFocus ? "example: John" : ""}
+                  onFocus={() =>
+                    setFocus({
+                      ...focus,
+                      firstNameFocus: true,
+                    })
+                  }
+                  onBlur={() =>
+                    setFocus({
+                      ...focus,
+                      firstNameFocus: false,
+                    })
+                  }
                   value={firstName}
                   onChange={handleChangeFirstName}
                 />
@@ -81,7 +128,9 @@ const InputField = () => {
             <div className={styles.form_input_container}>
               <label
                 className={
-                  active || activeInput === lastName ? styles.label_active : ""
+                  active.lastNameActive || focus.lastNameFocus
+                    ? styles.label_active
+                    : ""
                 }
               >
                 Last name
@@ -89,9 +138,19 @@ const InputField = () => {
               <div className={styles.form_input}>
                 <input
                   type="text"
-                  placeholder={activeInput === lastName ? "example: Doe" : ""}
-                  onFocus={() => handleActiveInput(lastName)}
-                  onBlur={() => handleActiveInput()}
+                  placeholder={focus.lastNameFocus ? "example: Doe" : ""}
+                  onFocus={() =>
+                    setFocus({
+                      ...focus,
+                      lastNameFocus: true,
+                    })
+                  }
+                  onBlur={() =>
+                    setFocus({
+                      ...focus,
+                      lastNameFocus: false,
+                    })
+                  }
                   value={lastName}
                   onChange={handleChangeLastName}
                 />
@@ -100,10 +159,13 @@ const InputField = () => {
                 </span>
               </div>
             </div>
+
             <div className={styles.form_input_container}>
               <label
                 className={
-                  active || activeInput === email ? styles.label_active : ""
+                  active.emailActive || focus.emailFocus
+                    ? styles.label_active
+                    : ""
                 }
               >
                 Email
@@ -112,10 +174,20 @@ const InputField = () => {
                 <input
                   type="text"
                   placeholder={
-                    activeInput === email ? "example: johnDoe@example.com" : ""
+                    focus.emailFocus ? "example: johnDoe@example.com" : ""
                   }
-                  onFocus={() => handleActiveInput(email)}
-                  onBlur={() => handleActiveInput()}
+                  onFocus={() =>
+                    setFocus({
+                      ...focus,
+                      emailFocus: true,
+                    })
+                  }
+                  onBlur={() =>
+                    setFocus({
+                      ...focus,
+                      emailFocus: false,
+                    })
+                  }
                   value={email}
                   onChange={handleChangeEmail}
                 />
@@ -128,7 +200,7 @@ const InputField = () => {
             <div className={styles.form_input_container}>
               <label
                 className={
-                  active  || activeInput === tel ? styles.label_active : ""
+                  active.telActive || focus.telFocus ? styles.label_active : ""
                 }
               >
                 Mobile
@@ -136,9 +208,19 @@ const InputField = () => {
               <div className={styles.form_input}>
                 <input
                   type="text"
-                  placeholder={activeInput === tel ? "example: Doe" : ""}
-                  onFocus={() => handleActiveInput(tel)}
-                  onBlur={() => handleActiveInput()}
+                  placeholder={focus.telFocus ? "example: Doe" : ""}
+                  onFocus={() =>
+                    setFocus({
+                      ...focus,
+                      telFocus: true,
+                    })
+                  }
+                  onBlur={() =>
+                    setFocus({
+                      ...focus,
+                      telFocus: false,
+                    })
+                  }
                   value={tel}
                   onChange={handleChangeTel}
                 />
@@ -150,7 +232,9 @@ const InputField = () => {
             <div className={styles.form_input_container}>
               <label
                 className={
-                  active || activeInput === schedule ? styles.label_active : ""
+                  active.scheduleActive || focus.scheduleFocus
+                    ? styles.label_active
+                    : ""
                 }
               >
                 Select Avaliablity
@@ -158,9 +242,19 @@ const InputField = () => {
               <div className={styles.form_input}>
                 <input
                   type="text"
-                  placeholder={activeInput === schedule ? "example: Doe" : ""}
-                  onFocus={() => handleActiveInput(schedule)}
-                  onBlur={() => handleActiveInput()}
+                  placeholder={focus.scheduleFocus ? "example: Doe" : ""}
+                  onFocus={() =>
+                    setFocus({
+                      ...focus,
+                      scheduleFocus: true,
+                    })
+                  }
+                  onBlur={() =>
+                    setFocus({
+                      ...focus,
+                      scheduleFocus: false,
+                    })
+                  }
                   value={schedule}
                   onChange={handleChangeSchedule}
                 />
@@ -172,7 +266,9 @@ const InputField = () => {
             <div className={styles.form_input_container}>
               <label
                 className={
-                 active || activeInput === service ? styles.label_active : ""
+                  active.serviceActive || focus.serviceFocus
+                    ? styles.label_active
+                    : ""
                 }
               >
                 Select Service of Interest
@@ -180,9 +276,18 @@ const InputField = () => {
               <div className={styles.form_input}>
                 <input
                   type="text"
-                  placeholder={activeInput === service ? "example: Doe" : ""}
-                  onFocus={() => handleActiveInput(service)}
-                  onBlur={() => handleActiveInput()}
+                  placeholder={focus.serviceFocus ? "example: Doe" : ""}
+                  onFocus={() =>
+                    setFocus({
+                      ...focus,
+                      serviceFocus: true,
+                    })
+                  }
+                  onBlur={() =>
+                    setFocus({
+                      serviceFocus: false,
+                    })
+                  }
                   value={service}
                   onChange={handleChangeService}
                 />
@@ -195,17 +300,31 @@ const InputField = () => {
           <div className={styles.form_input_container}>
             <label
               className={
-                message || activeInput === message ? styles.label_active : ""
+                active.messageActive || focus.messageFocus
+                  ? styles.label_active
+                  : ""
               }
             >
-              {message || activeInput === message ? "What is your issue" : ""}
+              {active.messageActive || focus.messageFocus
+                ? "What is your issue"
+                : ""}
             </label>
             <div className={styles.form_input_text_area}>
               <textarea
                 type="text"
                 placeholder="Message"
-                onFocus={() => handleActiveInput(message)}
-                onBlur={() => handleActiveInput()}
+                onFocus={() =>
+                  setFocus({
+                    ...focus,
+                    messageFocus: true,
+                  })
+                }
+                onBlur={() =>
+                  setFocus({
+                    ...focus,
+                    messageFocus: false,
+                  })
+                }
                 value={message}
                 onChange={handleChangeMessage}
               />
