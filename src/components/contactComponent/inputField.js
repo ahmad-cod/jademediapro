@@ -3,9 +3,15 @@ import { contactGif } from "../../images";
 import { RxText } from "react-icons/rx";
 import { FiSend } from "react-icons/fi";
 import styles from "../../styles/Contact.module.css";
-import { useState } from "react";
+
+import { useState, useEffect } from "react";
+import { HiOutlinePhone } from "react-icons/hi";
+
+import { inputData } from "../../data/contactData";
 
 const InputField = () => {
+  const [countries, setCountries] = useState([]);
+
   const [active, setActive] = useState({
     firstNameActive: false,
     lastNameActive: false,
@@ -27,12 +33,21 @@ const InputField = () => {
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
   const [lastName, setLastName] = useState("");
-  const [tel, setTel] = useState("");
+
+  const [tel, setTel] = useState({
+    telNumber: "",
+    telCode: "",
+    telCountry: "",
+  });
+
   const [message, setMessage] = useState("");
-  const [check, setCheck] = useState("");
+  const [check, setCheck] = useState(true);
   const [service, setService] = useState();
   const [schedule, setSchedule] = useState();
 
+  const handleCheck = () => {
+    setCheck(false);
+  };
   const handleChangeLastName = (e) => {
     setLastName(e.target.value);
     setActive({
@@ -76,12 +91,39 @@ const InputField = () => {
     });
   };
   const handleChangeTel = (e) => {
-    setTel(e.target.value);
+    setTel({
+      ...tel,
+      [e.target.name]: e.target.value,
+    });
+
     setActive({
       ...active,
       telActive: true,
     });
   };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        //  fetch data
+        const dataUrl = `https://restcountries.com/v3.1/all`;
+        const response = await fetch(dataUrl);
+        const data = await response.json();
+        setCountries(data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const searchSelectedCountry = countries?.find((obj) => {
+    if (obj.cca2 === tel.telCountry) {
+      return true;
+    }
+    return false;
+  });
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -99,7 +141,7 @@ const InputField = () => {
                     : ""
                 }
               >
-                Last name
+                First name
               </label>
               <div className={styles.form_input}>
                 <input
@@ -173,9 +215,7 @@ const InputField = () => {
               <div className={styles.form_input}>
                 <input
                   type="text"
-                  placeholder={
-                    focus.emailFocus ? "example: johnDoe@example.com" : ""
-                  }
+                  placeholder={focus.emailFocus ? "johnDoe@example.com" : ""}
                   onFocus={() =>
                     setFocus({
                       ...focus,
@@ -203,12 +243,46 @@ const InputField = () => {
                   active.telActive || focus.telFocus ? styles.label_active : ""
                 }
               >
-                Mobile
+                {active.telActive || focus.telFocus ? "Mobile" : ""}
               </label>
+
               <div className={styles.form_input}>
+                <select
+                  value={tel.telCountry}
+                  name="telCountry"
+                  onChange={handleChangeTel}
+                  className={styles.tel_number}
+                >
+                  <option className={styles.tel_number}>US</option>
+                  {countries?.map((item, i) => {
+                    return (
+                      <option
+                        key={i}
+                        value={item.cca2}
+                        className={styles.tel_number}
+                      >
+                        {item.cca2}
+                      </option>
+                    );
+                  })}
+                </select>
+                <span>
+                  <p>
+                    {active.telActive
+                      ? searchSelectedCountry && searchSelectedCountry.idd.root
+                      : "+1"}
+                    (
+                    {active.telActive
+                      ? searchSelectedCountry &&
+                        searchSelectedCountry.idd.suffixes
+                      : "500"}
+                    )
+                  </p>
+                </span>
                 <input
                   type="text"
-                  placeholder={focus.telFocus ? "example: Doe" : ""}
+                  placeholder="000-0000"
+                  name="telNumber"
                   onFocus={() =>
                     setFocus({
                       ...focus,
@@ -221,11 +295,12 @@ const InputField = () => {
                       telFocus: false,
                     })
                   }
-                  value={tel}
+                  value={tel.telNumber}
                   onChange={handleChangeTel}
                 />
+
                 <span>
-                  <RxText />
+                  <HiOutlinePhone />
                 </span>
               </div>
             </div>
@@ -241,8 +316,7 @@ const InputField = () => {
               </label>
               <div className={styles.form_input}>
                 <input
-                  type="text"
-                  placeholder={focus.scheduleFocus ? "example: Doe" : ""}
+                  type={focus.scheduleFocus ? "datetime-local" : ""}
                   onFocus={() =>
                     setFocus({
                       ...focus,
@@ -257,10 +331,8 @@ const InputField = () => {
                   }
                   value={schedule}
                   onChange={handleChangeSchedule}
+                  className={styles.schedule_input}
                 />
-                <span>
-                  <RxText />
-                </span>
               </div>
             </div>
             <div className={styles.form_input_container}>
@@ -274,9 +346,7 @@ const InputField = () => {
                 Select Service of Interest
               </label>
               <div className={styles.form_input}>
-                <input
-                  type="text"
-                  placeholder={focus.serviceFocus ? "example: Doe" : ""}
+                <select
                   onFocus={() =>
                     setFocus({
                       ...focus,
@@ -290,10 +360,15 @@ const InputField = () => {
                   }
                   value={service}
                   onChange={handleChangeService}
-                />
-                <span>
-                  <RxText />
-                </span>
+                  className={styles.select_input}
+                >
+                  <option></option>
+                  {inputData.map((option, i) => (
+                    <option value={option} key={i}>
+                      {option}
+                    </option>
+                  ))}
+                </select>
               </div>
             </div>
           </div>
@@ -334,7 +409,12 @@ const InputField = () => {
             </div>
           </div>
           <div className={styles.radio_button}>
-            <input type="checkbox" value={check} />
+            <input
+              type="checkbox"
+              value={check}
+              onChange={handleCheck}
+              checked={check === true}
+            />
             <p>
               I agree to the Jademediapros Terms of Service and Privacy Policy.
             </p>

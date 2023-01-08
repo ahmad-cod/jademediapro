@@ -245,3 +245,20 @@ export const FAQData = [
     ],
   },
 ];
+
+
+
+export const inputData=[
+  "Art/Photograpgy",
+  "Business Strategy",
+  "Branding & Design",
+  "Career Development",
+  "Digital Marketing",
+  "Interview & Webinar",
+  "Motion Design",
+  "Project Management",
+  "Report & General Inquest",
+  "Web/App Development",
+  "Volunteering",
+];
+

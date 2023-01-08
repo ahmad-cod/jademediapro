@@ -116,7 +116,7 @@
   color: #2f7f77;
   padding: 8px;
 }
-.form_inputs_container{
+.form_inputs_container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -139,7 +139,7 @@
 /* .lolo {
   position: relative;
 } */
-.form_container{
+.form_container {
   margin-bottom: 160px;
 }
 .form_input_container {
@@ -150,7 +150,8 @@
   /* margin: 48px 0; */
   border: 1px solid #3a3b40;
 }
-.form_input_container input {
+.form_input_container input,
+.select_input {
   padding: 5px;
   border: none;
   width: 95%;
@@ -158,18 +159,26 @@
   outline: none;
   z-index: 10000;
   background-color: transparent;
+  color: #74767f;
+}
+.select_input,
+.schedule_input {
+  width: 100% !important;
+}
+.form_input_container select {
+  border: none;
+  outline: none;
 }
 .form_input span {
   font-size: 18px;
   padding: 5px;
-  color: #74767F
+  color: #74767f;
 }
 .form_input {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
- 
 }
 .form_input_container label {
   position: absolute;
@@ -178,11 +187,12 @@
   left: 10px;
   transition: top 400ms;
   background-color: #fff;
+  color: #74767f;
 }
 .label_active {
   top: -13px !important;
   font-size: 14px;
-  color: #77459b;
+  color: #77459b !important;
 }
 
 .form_input_container {
@@ -190,41 +200,43 @@
   flex-direction: column;
   position: relative;
 }
-
-.form_image{
+.tel_number {
+  color: #77459b !important;
+}
+.form_image {
   width: 56%;
   position: absolute;
   right: -160px;
   bottom: 320px;
 }
-.form_image img{
+.form_image img {
   width: 100%;
   object-fit: cover;
   z-index: 10000;
   height: 400px;
 }
-.form_input_text_area textarea{
+.form_input_text_area textarea {
   width: 100%;
   border: none;
   outline: none;
   height: 170px;
 }
-.form_input_text_area{
+.form_input_text_area {
   display: flex;
   justify-content: space-between;
 }
-.form_input_text_area span{
+.form_input_text_area span {
   padding: 5px;
   font-size: 18px;
   padding: 5px;
-  color: #74767F
+  color: #74767f;
 }
-.radio_button{
+.radio_button {
   display: flex;
   gap: 16px;
   margin: 48px 0;
 }
-.form_button button{
+.form_button button {
   width: 100%;
   display: flex;
   align-items: center;
