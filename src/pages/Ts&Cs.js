@@ -5,10 +5,11 @@ import image from "next/image";
 export default function Terms() {
   return (
     <div>
-      <div className=" bg-[#1A1A1A]  pt-12 pr-[104px] pb-[70px] pl-[104px] mb-32 ">
+      <div className=" bg-[#1A1A1A] px-[20px] py-[31px] md:pt-12 md:pr-[104px] md:pb-[70px] md:pl-[104px] mb-32 ">
         <div className="flex justify-between items-center mb-[59px]">
           <img src="/logo.png" />
-          <div className="flex gap-[42px] text-white">
+          <img src="/hamburger.png" className="md:hidden cursor-pointer" />
+          <div className="hidden md:flex gap-[42px] text-white">
             <img src="/moon.png" />
             <p className="cursor-pointer">Services</p>
             <p className="cursor-pointer">Projects</p>
@@ -18,23 +19,23 @@ export default function Terms() {
             <p className="cursor-pointer">Contact</p>
           </div>
         </div>
-        <div className="flex items-center text-8xl font-semibold text-white gap-[234px]">
+        <div className="flex flex-col md:flex-row items-center text-5xl md:text-8xl font-semibold text-white gap-8 md:gap-[234px]">
           <h1>
             Terms and <br /> conditions
           </h1>
           <img src="/Ts&Cs.png" />
         </div>
       </div>
-      <div className="pl-[104px] pr-[235px]">
+      <div className="px-[20px] md:pl-[104px] md:pr-[235px] w-full">
         <h3 className="text-2xl font-bold mb-4 text-black">
           GENERAL TERMS AND CONDITIONS FOR SERVICES
         </h3>
         <p className="text-lg font-normal">Last updated November 10, 2021</p>
-        <div className="flex gap-[54px] mt-10 mb-8">
-          <div className="text-[#77459B] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row md:gap-[54px] mt-10 mb-8">
+          <div className="text-[#77459B] text-xl font-medium md:w-[30%]">
             TABLE OF CONTENTS
           </div>
-          <ol className="text-base font-bold text-[#3A3B40] underline w-[695px] ">
+          <ol className="text-base font-bold text-[#3A3B40] underline md:w-[70%] ">
             <li className="cursor-pointer">1. Agreement to terms</li>
             <li className="cursor-pointer">2. Intellectual property rights</li>
             <li className="cursor-pointer">3. User representations</li>
@@ -72,11 +73,11 @@ export default function Terms() {
             <li className="cursor-pointer">27. Contact us</li>
           </ol>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             Agreement to Terms
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               These Terms of Use constitute a legally binding agreement made
               between you, whether personally or on behalf of an entity (“you")
@@ -137,11 +138,11 @@ export default function Terms() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             Intellectual Property Rights
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               Unless otherwise indicated, the Site is our proprietary property
               and all source code, databases, functionality, software, website
@@ -170,11 +171,11 @@ export default function Terms() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             User Representations
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               By using the Site, you represent and warrant that: (1) all
               registration information you submit will be true, accurate,
@@ -197,11 +198,11 @@ export default function Terms() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             User Registration
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               You may be required to register with the Site. You agree to keep
               your password confidential and will be responsible for all use of
@@ -212,11 +213,11 @@ export default function Terms() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             Prohibited Activities
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-6">
               You may not access or use the Site for any purpose other than that
               for which we make the Site available. The Site may not be used in
@@ -224,7 +225,7 @@ export default function Terms() {
               specifically endorsed or approved by us.
             </p>
             <p>As a user of the Site, you agree not to:</p>
-            <ul className="list-disc">
+            <ul className="list-disc ml-6">
               <li>
                 Systematically retrieve data or other content from the Site to
                 create or compile, directly or indirectly, a collection,
@@ -338,11 +339,11 @@ export default function Terms() {
             </ul>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             User Generated Contributions
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-6">
               The Site may invite you to chat, contribute to, or participate in
               blogs, message boards, online forums, and other functionality, and
@@ -358,7 +359,7 @@ export default function Terms() {
               Contributions, you thereby represent and warrant that:
             </p>
 
-            <ul className="list-disc">
+            <ul className="list-disc ml-6">
               <li>
                 The creation, distribution, transmission, public display, or
                 performance, and the accessing, downloading, or copying of your
@@ -434,11 +435,11 @@ export default function Terms() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             Contribution License
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               By posting your Contributions to any part of the Site, you
               automatically grant, and you represent and warrant that you have
@@ -485,11 +486,11 @@ export default function Terms() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             Guidelines for Reviews
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               We may provide you areas on the Site to leave reviews or ratings.
               When posting a review, you must comply with the following
@@ -522,11 +523,11 @@ export default function Terms() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             Submissions
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               You acknowledge and agree that any questions, comments,
               suggestions, ideas, feedback, or other information regarding the
@@ -544,11 +545,11 @@ export default function Terms() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             Third-party Website and Content
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               The Site may contain (or you may be sent via the Site) links to
               other websites ("Third-Party Websites") as well as articles,
@@ -586,11 +587,11 @@ export default function Terms() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             Advertisers
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               We allow advertisers to display their advertisements and other
               information in certain areas of the Site, such as sidebar
@@ -607,11 +608,11 @@ export default function Terms() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             Site Management
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               We reserve the right, but not the obligation, to: (1) monitor the
               Site for violations of these Terms of Use; (2) take appropriate
@@ -630,11 +631,11 @@ export default function Terms() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             Privacy Policy
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               We care about data privacy and security. Please review our Privacy
               Policy:
@@ -653,11 +654,11 @@ export default function Terms() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             Copyright Infringement
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               We respect the intellectual property rights of others. If you
               believe that any material available on or through the Site
@@ -673,11 +674,11 @@ export default function Terms() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             Term and Termination
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               These Terms of Use shall remain in full force and effect while you
               use the Site. WITHOUT LIMITING ANY OTHER PROVISION OF THESE TERMS
@@ -702,11 +703,11 @@ export default function Terms() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             Modifications and Interruptions
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               We reserve the right to change, modify, or remove the contents of
               the Site at any time or for any reason at our sole discretion
@@ -732,11 +733,11 @@ export default function Terms() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             Governing Law
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               These Terms shall be governed by and defined following the laws of
               Nigeria. Jademediapro Tech Agency LTD and yourself irrevocably
@@ -746,11 +747,11 @@ export default function Terms() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             Dispute Resolution
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <span className="text-[#77459B] text-lg font-medium mb-2">
               Informal Negotiations
             </span>
@@ -814,11 +815,11 @@ export default function Terms() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             Corrections
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               There may be information on the Site that contains typographical
               errors, inaccuracies, or omissions, including descriptions,
@@ -829,11 +830,11 @@ export default function Terms() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             Disclaimer
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               THE SITE IS PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU AGREE
               THAT YOUR USE OF THE SITE AND OUR SERVICES WILL BE AT YOUR SOLE
@@ -868,11 +869,11 @@ export default function Terms() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             Limitations of Liability
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE
               LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT,
@@ -891,11 +892,11 @@ export default function Terms() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             Indemnification
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               You agree to defend, indemnify, and hold us harmless, including
               our subsidiaries, affiliates, and all of our respective officers,
@@ -918,11 +919,11 @@ export default function Terms() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             User Data
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               We will maintain certain data that you transmit to the Site for
               the purpose of managing the performance of the Site, as well as
@@ -936,11 +937,11 @@ export default function Terms() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             Electronic Communications, Transactions, and Signatures
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               Visiting the Site, sending us emails, and completing online forms
               constitute electronic communications. You consent to receive
@@ -959,11 +960,11 @@ export default function Terms() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             California Users and Residents
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               If any complaint with us is not satisfactorily resolved, you can
               contact the Complaint Assistance Unit of the Division of Consumer
@@ -977,11 +978,11 @@ export default function Terms() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             Miscellaneous
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               These Terms of Use and any policies or operating rules posted by
               us on the Site or in respect to the Site constitute the entire
@@ -1007,11 +1008,11 @@ export default function Terms() {
             </p>
           </div>
         </div>
-        <div className="flex gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium w-[278px]">
+        <div className="flex flex-col md:flex-row gap-[54px] mb-8">
+          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
             Contact Us
           </div>
-          <div className="text-base font-medium text-[#3A3B40] w-[695px]">
+          <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               In order to resolve a complaint regarding the Site or to receive
               further information regarding use of the Site, please contact us
