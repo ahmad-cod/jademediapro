@@ -19,8 +19,13 @@ export default function Home() {
       <Link href="/404">
         <button>Go to Error Page</button>
       </Link>
+      <br />
       <Link href="/Ts&Cs">
         <button>Go to Terms and Condition</button>
+      </Link>
+      <br />
+      <Link href="/cookies">
+        <button>Go to Cookies</button>
       </Link>
     </div>
   );
