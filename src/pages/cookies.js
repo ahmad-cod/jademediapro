@@ -165,7 +165,7 @@ export default function Cookies() {
             <div className="w-[30%]">Type:</div>
             <div className="w-[70%]">http_cookie</div>
           </div>
-          <div className="flex gap-[46px] text-base font-normal border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+          <div className="flex gap-[46px] text-base font-normal">
             <div className="w-[30%]">Expires in:</div>
             <div className="w-[70%]">1 year</div>
           </div>
@@ -244,7 +244,7 @@ export default function Cookies() {
             <div className="w-[30%]">Type:</div>
             <div className="w-[70%]">server_cookie</div>
           </div>
-          <div className="flex gap-[46px] text-base font-normal border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+          <div className="flex gap-[46px] text-base font-normal ">
             <div className="w-[30%]">Expires in:</div>
             <div className="w-[70%]">6 months</div>
           </div>
