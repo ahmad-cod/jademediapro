@@ -19,11 +19,11 @@ export default function Privacy() {
             <p className="cursor-pointer">Contact</p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row items-center text-5xl md:text-8xl font-semibold text-white gap-8 md:gap-[400px]">
+        <div className="flex flex-col md:flex-row items-center text-5xl md:text-8xl font-semibold text-white gap-8 md:gap-[500px]">
           <h1>
             Privacy <br /> Policy
           </h1>
-          <img src="/Ts&Cs.png" />
+          <img src="/privacy.png" />
         </div>
       </div>
       <div className="px-[20px] md:pl-[104px] md:pr-[235px] w-full">
