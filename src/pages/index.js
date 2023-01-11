@@ -27,6 +27,10 @@ export default function Home() {
       <Link href="/cookies">
         <button>Go to Cookies</button>
       </Link>
+      <br />
+      <Link href="/privacy">
+        <button>Go to Privacy Policy</button>
+      </Link>
     </div>
   );
 }
