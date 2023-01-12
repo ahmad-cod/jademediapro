@@ -5,7 +5,7 @@ import image from "next/image";
 export default function Cookies() {
   return (
     <div>
-      <div className=" bg-[#1A1A1A] px-[20px] py-[31px] md:pt-12 md:pr-[104px] md:pb-[70px] md:pl-[104px] mb-32 ">
+      <div className=" bg-[#1A1A1A] px-[20px] pb-[29px] pt-[30px] md:pt-12 md:pr-[104px] md:pb-[70px] md:pl-[104px] mb-32 ">
         <div className="flex justify-between items-center mb-[59px]">
           <img src="/logo.png" />
           <img src="/hamburger.png" className="md:hidden cursor-pointer" />
@@ -19,7 +19,7 @@ export default function Cookies() {
             <p className="cursor-pointer">Contact</p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row items-center text-5xl md:text-8xl font-semibold text-white gap-8 md:gap-[400px]">
+        <div className="flex flex-col md:flex-row md:items-center text-5xl md:text-8xl font-bold md:font-semibold text-white gap-8 md:gap-[400px]">
           <h1>
             Cookies <br /> Policy
           </h1>
@@ -138,7 +138,7 @@ export default function Cookies() {
             </p>
           </div>
         </div>
-        <div className="mb-8 border border-[#242526] p-4 rounded w-[595px]">
+        <div className="mb-8 border border-[#242526] p-4 rounded w-full md:w-[595px]">
           <div className="flex gap-[46px] text-base font-bold pb-4 border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8 w-full">
             <div className="w-[30%] underline ">Name</div>
             <div className="w-[70%] underline">__tlbcpv</div>
@@ -183,7 +183,7 @@ export default function Cookies() {
             </p>
           </div>
         </div>
-        <div className="mb-8 border border-[#242526] p-4 rounded w-[665px]">
+        <div className="mb-8 border border-[#242526] p-4 rounded w-full md:w-[665px]">
           <div className="flex gap-[46px] text-base font-bold pb-4 border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8 w-full">
             <div className="w-[30%] underline">Name</div>
             <div className="w-[70%] underline">1P_JAR</div>

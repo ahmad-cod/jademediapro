@@ -19,7 +19,7 @@ export default function Terms() {
             <p className="cursor-pointer">Contact</p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row items-center text-5xl md:text-8xl font-semibold text-white gap-8 md:gap-[234px]">
+        <div className="flex flex-col md:flex-row md:items-center text-5xl md:text-8xl font-bold md:font-semibold text-white gap-8 md:gap-[234px]">
           <h1>
             Terms and <br /> conditions
           </h1>
