@@ -921,8 +921,8 @@ export default function Privacy() {
             <div className="mb-8 border border-[#242526] p-4 rounded w-full">
               <div className="flex gap-[42px] md:gap-[46px] text-base font-bold pb-4 border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8 w-full">
                 <div className="w-[25%] underline">Category</div>
-                <div className="w-[60%] underline">Examples</div>
-                <div className="w-[15%] underline">Collected</div>
+                <div className=" w-[55%] md:w-[60%] underline">Examples</div>
+                <div className="w-[20%] md:w-[15%] underline">Collected</div>
               </div>
               <div className="flex gap-[42px] md:gap-[46px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
                 <div className="w-[25%]">A. Identifiers</div>
