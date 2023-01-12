@@ -77,7 +77,7 @@ export default function Privacy() {
               in this privacy notice that you do not agree with, please
               discontinue use of our Services immediately.
             </p>
-            <p className="mb-12 font-bold border-b border-[#3A3B40]">
+            <p className="mb-12 font-bold border-b border-[#3A3B40] pb-4">
               Please read this privacy notice carefully, as it will help you
               understand what we do with the information that we collect.
             </p>
@@ -93,57 +93,88 @@ export default function Privacy() {
             TABLE OF CONTENTS
           </div>
           <ol className="text-base font-bold text-[#3A3B40] underline md:w-[70%] ">
-            <li className="cursor-pointer">
-              1. What information do we collect?
-            </li>
-            <li className="cursor-pointer">
-              2. How do we use your information?
-            </li>
-            <li className="cursor-pointer">
-              3. Will your information be shared with anyone?
-            </li>
-            <li className="cursor-pointer">
-              4. Who will your information be shared with?
-            </li>
-            <li className="cursor-pointer">
-              5. Do we use cookies and other tracking technologies?
-            </li>
-            <li className="cursor-pointer">
-              6. How do we handle your social logins?
-            </li>
-            <li className="cursor-pointer">
-              7. What is our stance on third-party websites?
-            </li>
-            <li className="cursor-pointer">
-              8. How long do we keep your information?
-            </li>
-            <li className="cursor-pointer">
-              9. How do we keep your information safe?
-            </li>
-            <li className="cursor-pointer">
-              10. What are your privacy rights?
-            </li>
-            <li className="cursor-pointer">
-              11. Controls for do-not-track features
-            </li>
-            <li className="cursor-pointer">
-              12. Do California residents have specific privacy rights?
-            </li>
-            <li className="cursor-pointer">
-              13. Do we make updates to this notice?
-            </li>
-            <li className="cursor-pointer">
-              14. How can you contact us about this notice?
-            </li>
-            <li className="cursor-pointer">
-              15. How can you review, update or delete the data we collect from
-              you?
-            </li>
+            <a href="#1">
+              <li className="cursor-pointer">
+                1. What information do we collect?
+              </li>
+            </a>
+            <a href="#2">
+              <li className="cursor-pointer">
+                2. How do we use your information?
+              </li>
+            </a>
+            <a href="#3">
+              <li className="cursor-pointer">
+                3. Will your information be shared with anyone?
+              </li>
+            </a>
+            <a href="#4">
+              <li className="cursor-pointer">
+                4. Who will your information be shared with?
+              </li>
+            </a>
+            <a href="#5">
+              {" "}
+              <li className="cursor-pointer">
+                5. Do we use cookies and other tracking technologies?
+              </li>
+            </a>
+            <a href="#6">
+              <li className="cursor-pointer">
+                6. How do we handle your social logins?
+              </li>
+            </a>
+            <a href="#7">
+              <li className="cursor-pointer">
+                7. What is our stance on third-party websites?
+              </li>
+            </a>
+            <a href="#8">
+              <li className="cursor-pointer">
+                8. How long do we keep your information?
+              </li>
+            </a>
+            <a href="#9">
+              <li className="cursor-pointer">
+                9. How do we keep your information safe?
+              </li>
+            </a>
+            <a href="#10">
+              <li className="cursor-pointer">
+                10. What are your privacy rights?
+              </li>
+            </a>
+            <a href="#11">
+              <li className="cursor-pointer">
+                11. Controls for do-not-track features
+              </li>
+            </a>
+            <a href="#12">
+              <li className="cursor-pointer">
+                12. Do California residents have specific privacy rights?
+              </li>
+            </a>
+            <a href="#13">
+              <li className="cursor-pointer">
+                13. Do we make updates to this notice?
+              </li>
+            </a>
+            <a href="#14">
+              <li className="cursor-pointer">
+                14. How can you contact us about this notice?
+              </li>
+            </a>
+            <a href="#15">
+              <li className="cursor-pointer">
+                15. How can you review, update or delete the data we collect
+                from you?
+              </li>
+            </a>
           </ol>
         </div>
 
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div id="1" className="text-[#242526] text-xl font-medium md:w-[30%]">
             1. What information do we collect?
           </div>
           <div className="text-base font-normal text-[#3A3B40] md:w-[70%]">
@@ -281,7 +312,7 @@ export default function Privacy() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div id="2" className="text-[#242526] text-xl font-medium md:w-[30%]">
             2. How do we use your information?
           </div>
           <div className="text-base font-normal text-[#3A3B40] md:w-[70%]">
@@ -414,7 +445,7 @@ export default function Privacy() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div id="3" className="text-[#242526] text-xl font-medium md:w-[30%]">
             3. Will your information be shared with anyone?
           </div>
           <div className="text-base font-normal text-[#3A3B40] md:w-[70%]">
@@ -531,7 +562,7 @@ export default function Privacy() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div id="4" className="text-[#242526] text-xl font-medium md:w-[30%]">
             4. Who will your information be shared with?
           </div>
           <div className="text-base font-normal text-[#3A3B40] md:w-[70%]">
@@ -557,7 +588,7 @@ export default function Privacy() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div id="5" className="text-[#242526] text-xl font-medium md:w-[30%]">
             5. Do we use cookies and other tracking technologies?
           </div>
           <div className="text-base font-normal text-[#3A3B40] md:w-[70%]">
@@ -577,7 +608,7 @@ export default function Privacy() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div id="6" className="text-[#242526] text-xl font-medium md:w-[30%]">
             6. How do we handle your social logins?
           </div>
           <div className="text-base font-normal text-[#3A3B40] md:w-[70%]">
@@ -610,7 +641,7 @@ export default function Privacy() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div id="7" className="text-[#242526] text-xl font-medium md:w-[30%]">
             7. What is our stance on third-party websites?
           </div>
           <div className="text-base font-normal text-[#3A3B40] md:w-[70%]">
@@ -635,7 +666,7 @@ export default function Privacy() {
         </div>
 
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div id="8" className="text-[#242526] text-xl font-medium md:w-[30%]">
             8. How long do we keep your information?
           </div>
           <div className="text-base font-normal text-[#3A3B40] md:w-[70%]">
@@ -664,7 +695,7 @@ export default function Privacy() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div id="9" className="text-[#242526] text-xl font-medium md:w-[30%]">
             9. How do we keep your information safe?
           </div>
           <div className="text-base font-normal text-[#3A3B40] md:w-[70%]">
@@ -689,7 +720,10 @@ export default function Privacy() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div
+            id="10"
+            className="text-[#242526] text-xl font-medium md:w-[30%]"
+          >
             10. What are your privacy rights?
           </div>
           <div className="text-base font-normal text-[#3A3B40] md:w-[70%]">
@@ -795,7 +829,10 @@ export default function Privacy() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div
+            id="11"
+            className="text-[#242526] text-xl font-medium md:w-[30%]"
+          >
             11. Controls for do-not-track features
           </div>
           <div className="text-base font-normal text-[#3A3B40] md:w-[70%]">
@@ -815,7 +852,10 @@ export default function Privacy() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div
+            id="12"
+            className="text-[#242526] text-xl font-medium md:w-[30%]"
+          >
             12. Do California residents have specific privacy rights?
           </div>
           <div className="text-base font-normal text-[#3A3B40] md:w-[70%]">
@@ -878,24 +918,24 @@ export default function Privacy() {
               We have collected the following categories of personal information
               in the past twelve (12) months:
             </p>
-            <div className="mb-8 border border-[#242526] p-4 rounded w-[693px]">
-              <div className="flex gap-[46px] text-base font-bold border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8 w-full">
-                <div className="w-[20%]">Category</div>
-                <div className="w-[60%]">Examples</div>
-                <div className="w-[20%]">Collected</div>
+            <div className="mb-8 border border-[#242526] p-4 rounded w-full">
+              <div className="flex gap-[46px] text-base font-bold pb-4 border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8 w-full">
+                <div className="w-[25%] underline">Category</div>
+                <div className="w-[60%] underline">Examples</div>
+                <div className="w-[15%] underline">Collected</div>
               </div>
-              <div className="flex gap-[46px] text-base font-normal border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
-                <div className="w-[20%]">A. Identifiers</div>
+              <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+                <div className="w-[25%]">A. Identifiers</div>
                 <div className="w-[60%]">
                   Contact details, such as real name, alias, postal address,
                   telephone or mobile contact number, unique personal
                   identifier, online identifier, Internet Protocol address,
                   email address and account name
                 </div>
-                <div className="w-[20%]">YES</div>
+                <div className="w-[15%]">YES</div>
               </div>
-              <div className="flex gap-[46px] text-base font-normal border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
-                <div className="w-[20%]">
+              <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+                <div className="w-[25%]">
                   B. Personal information categories listed in the California
                   Customer Records statute
                 </div>
@@ -905,31 +945,31 @@ export default function Privacy() {
                   identifier, online identifier, Internet Protocol address,
                   email address and account name
                 </div>
-                <div className="w-[20%]">YES</div>
+                <div className="w-[15%]">YES</div>
               </div>
-              <div className="flex gap-[46px] text-base font-normal border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
-                <div className="w-[20%]">
+              <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+                <div className="w-[25%]">
                   C. Protected classification characteristics under California
                   or federal law
                 </div>
                 <div className="w-[60%]">Gender and date of birth</div>
-                <div className="w-[20%]">YES</div>
+                <div className="w-[15%]">YES</div>
               </div>
-              <div className="flex gap-[46px] text-base font-normal border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
-                <div className="w-[20%]">D. Commercial information</div>
+              <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+                <div className="w-[25%]">D. Commercial information</div>
                 <div className="w-[60%]">
                   Transaction information, purchase history, financial details
                   and payment information
                 </div>
-                <div className="w-[20%]">YES</div>
+                <div className="w-[15%]">YES</div>
               </div>
-              <div className="flex gap-[46px] text-base font-normal border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
-                <div className="w-[20%]">E. Biometric information</div>
+              <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+                <div className="w-[25%]">E. Biometric information</div>
                 <div className="w-[60%]">Fingerprints and voiceprints</div>
-                <div className="w-[20%]">YES</div>
+                <div className="w-[15%]">YES</div>
               </div>
-              <div className="flex gap-[46px] text-base font-normal border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
-                <div className="w-[20%]">
+              <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+                <div className="w-[25%]">
                   F. Internet or other similar network activity
                 </div>
                 <div className="w-[60%]">
@@ -937,15 +977,15 @@ export default function Privacy() {
                   data, and interactions with our and other websites,
                   applications, systems and advertisements
                 </div>
-                <div className="w-[20%]">YES</div>
+                <div className="w-[15%]">YES</div>
               </div>
-              <div className="flex gap-[46px] text-base font-normal border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
-                <div className="w-[20%]">G. Geolocation data</div>
+              <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+                <div className="w-[25%]">G. Geolocation data</div>
                 <div className="w-[60%]">Device location</div>
-                <div className="w-[20%]">YES</div>
+                <div className="w-[15%]">YES</div>
               </div>
-              <div className="flex gap-[46px] text-base font-normal border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
-                <div className="w-[20%]">
+              <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+                <div className="w-[25%]">
                   H. Audio, electronic, visual, thermal, olfactory, or similar
                   information
                 </div>
@@ -953,10 +993,10 @@ export default function Privacy() {
                   Images and audio, video or call recordings created in
                   connection with our business activities
                 </div>
-                <div className="w-[20%]">YES</div>
+                <div className="w-[15%]">YES</div>
               </div>
-              <div className="flex gap-[46px] text-base font-normal border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
-                <div className="w-[20%]">
+              <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+                <div className="w-[25%]">
                   I. Professional or employment-related information
                 </div>
                 <div className="w-[60%]">
@@ -964,25 +1004,25 @@ export default function Privacy() {
                   at a business level, job title as well as work history and
                   professional qualifications if you apply for a job with us
                 </div>
-                <div className="w-[20%]">YES</div>
+                <div className="w-[15%]">YES</div>
               </div>
-              <div className="flex gap-[46px] text-base font-normal border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
-                <div className="w-[20%]">J. Education Information</div>
+              <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+                <div className="w-[25%]">J. Education Information</div>
                 <div className="w-[60%]">
                   Student records and directory information
                 </div>
-                <div className="w-[20%]">YES</div>
+                <div className="w-[15%]">YES</div>
               </div>
               <div className="flex gap-[46px] text-base font-normal">
-                <div className="w-[20%]">
+                <div className="w-[25%]">
                   K. Inferences drawn from other personal information
                 </div>
                 <div className="w-[60%]">
                   Inferences drawn from any of the collected personal
                   information listed above to create a profile or summary about,
-                  for example, an individual’s preferences and characteristics
+                  for example, an individual's preferences and characteristics
                 </div>
-                <div className="w-[20%]">YES</div>
+                <div className="w-[15%]">YES</div>
               </div>
             </div>
             <p className="mt-8">
@@ -1183,7 +1223,7 @@ export default function Privacy() {
                 submission.
               </li>
             </ul>
-            <p className="mb4">
+            <p className="mb-4">
               To exercise these rights, you can contact us by email at
               <span className="text-[#77459B] cursor-pointer ml-2">
                 solutions@jademediapro.com
@@ -1199,7 +1239,10 @@ export default function Privacy() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div
+            id="13"
+            className="text-[#242526] text-xl font-medium md:w-[30%]"
+          >
             13. Do we make updates to this notice?
           </div>
           <div className="text-base font-normal text-[#3A3B40] md:w-[70%]">
@@ -1220,7 +1263,10 @@ export default function Privacy() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div
+            id="14"
+            className="text-[#242526] text-xl font-medium md:w-[30%]"
+          >
             14. How can you contact us about this notice?
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -1241,7 +1287,10 @@ export default function Privacy() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div
+            id="15"
+            className="text-[#242526] text-xl font-medium md:w-[30%]"
+          >
             15. How can you review, update, or delete the data we collect from
             you?
           </div>

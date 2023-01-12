@@ -139,29 +139,29 @@ export default function Cookies() {
           </div>
         </div>
         <div className="mb-8 border border-[#242526] p-4 rounded w-[595px]">
-          <div className="flex gap-[46px] text-base font-bold border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8 w-full">
-            <div className="w-[30%]">Name</div>
-            <div className="w-[70%]">__tlbcpv</div>
+          <div className="flex gap-[46px] text-base font-bold pb-4 border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8 w-full">
+            <div className="w-[30%] underline ">Name</div>
+            <div className="w-[70%] underline">__tlbcpv</div>
           </div>
-          <div className="flex gap-[46px] text-base font-normal border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+          <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
             <div className="w-[30%]">Purpose:</div>
             <div className="w-[70%]">
               Used to record unique visitor views of the consent banner.
             </div>
           </div>
-          <div className="flex gap-[46px] text-base font-normal border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+          <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
             <div className="w-[30%]">Provider:</div>
             <div className="w-[70%]">.termly.io</div>
           </div>
-          <div className="flex gap-[46px] text-base font-normal border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+          <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
             <div className="w-[30%]">Service:</div>
             <div className="w-[70%]">Termly View Service Privacy Policy</div>
           </div>
-          <div className="flex gap-[46px] text-base font-normal border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+          <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
             <div className="w-[30%]">Country:</div>
             <div className="w-[70%]">United States</div>
           </div>
-          <div className="flex gap-[46px] text-base font-normal border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+          <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
             <div className="w-[30%]">Type:</div>
             <div className="w-[70%]">http_cookie</div>
           </div>
@@ -184,63 +184,63 @@ export default function Cookies() {
           </div>
         </div>
         <div className="mb-8 border border-[#242526] p-4 rounded w-[665px]">
-          <div className="flex gap-[46px] text-base font-bold border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8 w-full">
-            <div className="w-[30%]">Name</div>
-            <div className="w-[70%]">1P_JAR</div>
+          <div className="flex gap-[46px] text-base font-bold pb-4 border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8 w-full">
+            <div className="w-[30%] underline">Name</div>
+            <div className="w-[70%] underline">1P_JAR</div>
           </div>
-          <div className="flex gap-[46px] text-base font-normal border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+          <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
             <div className="w-[30%]">Purpose:</div>
             <div className="w-[70%]">
               Set by Google to collect website statistics and track conversion
               rates.
             </div>
           </div>
-          <div className="flex gap-[46px] text-base font-normal border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+          <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
             <div className="w-[30%]">Provider:</div>
             <div className="w-[70%]">.google.com</div>
           </div>
-          <div className="flex gap-[46px] text-base font-normal border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+          <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
             <div className="w-[30%]">Service:</div>
             <div className="w-[70%]">
               Google Analytics View Service Privacy Policy{" "}
             </div>
           </div>
-          <div className="flex gap-[46px] text-base font-normal border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+          <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
             <div className="w-[30%]">Country:</div>
             <div className="w-[70%]">United States</div>
           </div>
-          <div className="flex gap-[46px] text-base font-normal border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+          <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
             <div className="w-[30%]">Type:</div>
             <div className="w-[70%]">server_cookie</div>
           </div>
-          <div className="flex gap-[46px] text-base font-normal border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+          <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
             <div className="w-[30%]">Expires in:</div>
             <div className="w-[70%]">30 days</div>
           </div>
-          <div className="flex gap-[46px] text-base font-bold border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8 w-full">
-            <div className="w-[30%]">Name</div>
-            <div className="w-[70%]">NID</div>
+          <div className="flex gap-[46px] text-base font-bold pb-4 border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8 w-full">
+            <div className="w-[30%] underline">Name</div>
+            <div className="w-[70%] underline">NID</div>
           </div>
-          <div className="flex gap-[46px] text-base font-normal border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+          <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
             <div className="w-[30%]">Purpose:</div>
             <div className="w-[70%]">
               set by Google to set a unique user ID to remember user
               preferences. Persistent cookie that stays for 182 days
             </div>
           </div>
-          <div className="flex gap-[46px] text-base font-normal border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+          <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
             <div className="w-[30%]">Provider:</div>
             <div className="w-[70%]">.google.com</div>
           </div>
-          <div className="flex gap-[46px] text-base font-normal border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+          <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
             <div className="w-[30%]">Service:</div>
             <div className="w-[70%]">Google View Service Privacy Policy </div>
           </div>
-          <div className="flex gap-[46px] text-base font-normal border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+          <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
             <div className="w-[30%]">Country:</div>
             <div className="w-[70%]">United States</div>
           </div>
-          <div className="flex gap-[46px] text-base font-normal border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+          <div className="flex gap-[46px] text-base font-normal pb-4 border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
             <div className="w-[30%]">Type:</div>
             <div className="w-[70%]">server_cookie</div>
           </div>

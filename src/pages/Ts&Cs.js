@@ -36,45 +36,103 @@ export default function Terms() {
             TABLE OF CONTENTS
           </div>
           <ol className="text-base font-bold text-[#3A3B40] underline md:w-[70%] ">
-            <li className="cursor-pointer">1. Agreement to terms</li>
-            <li className="cursor-pointer">2. Intellectual property rights</li>
-            <li className="cursor-pointer">3. User representations</li>
-            <li className="cursor-pointer">4. User registration</li>
-            <li className="cursor-pointer">5. Prohibited activities</li>
-            <li className="cursor-pointer">6. User generated contributions</li>
-            <li className="cursor-pointer">7. Contribution license</li>
-            <li className="cursor-pointer">8. Guidelines for reviews</li>
-            <li className="cursor-pointer">9. Submissions</li>
-            <li className="cursor-pointer">
-              10. Third-party website and content
-            </li>
-            <li className="cursor-pointer">11. Advertisers</li>
-            <li className="cursor-pointer">12. Site management</li>
-            <li className="cursor-pointer">13. Privacy policy</li>
-            <li className="cursor-pointer">14. Copyright infringements</li>
-            <li className="cursor-pointer">15. Term and termination</li>
-            <li className="cursor-pointer">
-              16. Modifications and interruptions
-            </li>
-            <li className="cursor-pointer">17. Governing law</li>
-            <li className="cursor-pointer">18. Dispute resolution</li>
-            <li className="cursor-pointer">19. Corrections</li>
-            <li className="cursor-pointer">20. Disclaimer</li>
-            <li className="cursor-pointer">21. Limitations of liability</li>
-            <li className="cursor-pointer">22. Indemnification</li>
-            <li className="cursor-pointer">23. User data</li>
-            <li className="cursor-pointer">
-              24. Electronic communications transactions and signatures
-            </li>
-            <li className="cursor-pointer">
-              25. California users and residents
-            </li>
-            <li className="cursor-pointer">26. Miscellaneous</li>
-            <li className="cursor-pointer">27. Contact us</li>
+            <a href="#1">
+              <li className="cursor-pointer">1. Agreement to terms</li>
+            </a>
+            <a href="#2">
+              <li className="cursor-pointer">
+                2. Intellectual property rights
+              </li>
+            </a>
+            <a href="#3">
+              <li className="cursor-pointer">3. User representations</li>
+            </a>
+            <a href="#4">
+              <li className="cursor-pointer">4. User registration</li>
+            </a>
+            <a href="#5">
+              <li className="cursor-pointer">5. Prohibited activities</li>
+            </a>
+            <a href="#6">
+              <li className="cursor-pointer">
+                6. User generated contributions
+              </li>
+            </a>
+            <a href="#7">
+              <li className="cursor-pointer">7. Contribution license</li>
+            </a>
+            <a href="#8">
+              <li className="cursor-pointer">8. Guidelines for reviews</li>
+            </a>
+            <a href="#9">
+              <li className="cursor-pointer">9. Submissions</li>
+            </a>
+            <a href="#10">
+              <li className="cursor-pointer">
+                10. Third-party website and content
+              </li>
+            </a>
+            <a href="#11">
+              <li className="cursor-pointer">11. Advertisers</li>
+            </a>
+            <a href="#12">
+              <li className="cursor-pointer">12. Site management</li>
+            </a>
+            <a href="#13">
+              <li className="cursor-pointer">13. Privacy policy</li>
+            </a>
+            <a href="#14">
+              <li className="cursor-pointer">14. Copyright infringements</li>
+            </a>
+            <a href="#15">
+              <li className="cursor-pointer">15. Term and termination</li>
+            </a>
+            <a href="#16">
+              <li className="cursor-pointer">
+                16. Modifications and interruptions
+              </li>
+            </a>
+            <a href="#17">
+              <li className="cursor-pointer">17. Governing law</li>
+            </a>
+            <a href="#18">
+              <li className="cursor-pointer">18. Dispute resolution</li>
+            </a>
+            <a href="#19">
+              <li className="cursor-pointer">19. Corrections</li>
+            </a>
+            <a href="#20">
+              <li className="cursor-pointer">20. Disclaimer</li>
+            </a>
+            <a href="#21">
+              <li className="cursor-pointer">21. Limitations of liability</li>
+            </a>
+            <a href="#22">
+              <li className="cursor-pointer">22. Indemnification</li>
+            </a>
+            <a href="#23">
+              <li className="cursor-pointer">23. User data</li>
+            </a>
+            <a href="#24">
+              <li className="cursor-pointer">
+                24. Electronic communications transactions and signatures
+              </li>
+            </a>
+            <a href="#25">
+              <li className="cursor-pointer">
+                25. California users and residents
+              </li>
+            </a>
+            <a href="#26">
+              <li className="cursor-pointer">26. Miscellaneous</li>
+            </a>
+            <a href="#27">
+              <li className="cursor-pointer">27. Contact us</li>
+            </a>
           </ol>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div id="1" className="text-[#242526] text-xl font-medium md:w-[30%]">
             Agreement to Terms
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -139,7 +197,7 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div id="2" className="text-[#242526] text-xl font-medium md:w-[30%]">
             Intellectual Property Rights
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -172,7 +230,7 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div id="3" className="text-[#242526] text-xl font-medium md:w-[30%]">
             User Representations
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -199,7 +257,7 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div id="4" className="text-[#242526] text-xl font-medium md:w-[30%]">
             User Registration
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -214,7 +272,7 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div id="5" className="text-[#242526] text-xl font-medium md:w-[30%]">
             Prohibited Activities
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -340,7 +398,7 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div id="6" className="text-[#242526] text-xl font-medium md:w-[30%]">
             User Generated Contributions
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -436,7 +494,7 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div id="7" className="text-[#242526] text-xl font-medium md:w-[30%]">
             Contribution License
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -487,7 +545,7 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div id="8" className="text-[#242526] text-xl font-medium md:w-[30%]">
             Guidelines for Reviews
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -524,7 +582,7 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div id="9" className="text-[#242526] text-xl font-medium md:w-[30%]">
             Submissions
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -546,7 +604,10 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div
+            id="10"
+            className="text-[#242526] text-xl font-medium md:w-[30%]"
+          >
             Third-party Website and Content
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -588,7 +649,10 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div
+            id="11"
+            className="text-[#242526] text-xl font-medium md:w-[30%]"
+          >
             Advertisers
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -609,7 +673,10 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div
+            id="12"
+            className="text-[#242526] text-xl font-medium md:w-[30%]"
+          >
             Site Management
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -632,7 +699,10 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div
+            id="13"
+            className="text-[#242526] text-xl font-medium md:w-[30%]"
+          >
             Privacy Policy
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -655,7 +725,10 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div
+            id="14"
+            className="text-[#242526] text-xl font-medium md:w-[30%]"
+          >
             Copyright Infringement
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -675,7 +748,10 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div
+            id="15"
+            className="text-[#242526] text-xl font-medium md:w-[30%]"
+          >
             Term and Termination
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -704,7 +780,10 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div
+            id="16"
+            className="text-[#242526] text-xl font-medium md:w-[30%]"
+          >
             Modifications and Interruptions
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -734,7 +813,10 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div
+            id="17"
+            className="text-[#242526] text-xl font-medium md:w-[30%]"
+          >
             Governing Law
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -748,7 +830,10 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div
+            id="18"
+            className="text-[#242526] text-xl font-medium md:w-[30%]"
+          >
             Dispute Resolution
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -816,7 +901,10 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div
+            id="19"
+            className="text-[#242526] text-xl font-medium md:w-[30%]"
+          >
             Corrections
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -831,7 +919,10 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div
+            id="20"
+            className="text-[#242526] text-xl font-medium md:w-[30%]"
+          >
             Disclaimer
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -870,7 +961,10 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div
+            id="21"
+            className="text-[#242526] text-xl font-medium md:w-[30%]"
+          >
             Limitations of Liability
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -893,7 +987,10 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div
+            id="22"
+            className="text-[#242526] text-xl font-medium md:w-[30%]"
+          >
             Indemnification
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -920,7 +1017,10 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div
+            id="23"
+            className="text-[#242526] text-xl font-medium md:w-[30%]"
+          >
             User Data
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -938,7 +1038,10 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div
+            id="24"
+            className="text-[#242526] text-xl font-medium md:w-[30%]"
+          >
             Electronic Communications, Transactions, and Signatures
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -961,7 +1064,10 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div
+            id="25"
+            className="text-[#242526] text-xl font-medium md:w-[30%]"
+          >
             California Users and Residents
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -979,7 +1085,10 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div
+            id="26"
+            className="text-[#242526] text-xl font-medium md:w-[30%]"
+          >
             Miscellaneous
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
@@ -1009,7 +1118,10 @@ export default function Terms() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-[54px] mb-8">
-          <div className="text-[#242526] text-xl font-medium md:w-[30%]">
+          <div
+            id="27"
+            className="text-[#242526] text-xl font-medium md:w-[30%]"
+          >
             Contact Us
           </div>
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
