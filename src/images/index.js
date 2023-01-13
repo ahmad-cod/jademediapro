@@ -22,6 +22,12 @@ import productImage1 from "./product/productImage1.png"
 import productImage2 from "./product/productImage2.png"
 import productImage3 from "./product/productImage3.png"
 import productImage4 from "./product/productImage4.png"
+import storefront from "./shopping-cart/storefront.png"
+import pdf from "./freebies/pdf.png"
+import freebiesHeader from "./freebies/freebiesHeader.png"
+import mp4 from "./freebies/mp4.png"
+import ps from "./freebies/ps.png"
+import docs from "./freebies/docs.png"
 
 
 
@@ -49,4 +55,10 @@ export {
   productImage2,
   productImage3,
   productImage4,
+  storefront,
+  pdf,
+  freebiesHeader,
+  mp4,
+  ps,
+  docs
 };

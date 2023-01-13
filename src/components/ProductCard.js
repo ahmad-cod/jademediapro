@@ -22,9 +22,9 @@ const ProductCard = ({isNewProduct, discount,  productImage, name, subtitle, pri
             </div>)
         }
         <Image src={productImage} width="100%" height="100%" alt="product" />
-       <div className='p-4'>
-       <h3 className='font-bold text-6 mb-[9px] '>{name}</h3>
-        <p className='text-[#57585F] mb-[8px]'>{subtitle}</p>
+       <div className='px-4 bg-[#F6F6F6] h-[159px]'>
+       <h3 className='font-bold text-6  '>{name}</h3>
+        <p className='text-[#57585F]'>{subtitle}</p>
         <p className='text-[#77459B] text-[21px]'>{price}</p>
         {
             cancelledPrice && (<p className='text-[#AEB1BF] line-through '>{cancelledPrice}</p>)
