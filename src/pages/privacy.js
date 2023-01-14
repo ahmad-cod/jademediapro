@@ -921,10 +921,10 @@ export default function Privacy() {
             <div className="mb-8 border border-[#242526] p-4 rounded w-full">
               <div className="flex gap-[42px] md:gap-[46px] text-base font-bold pb-4 border-b-[100%] border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8 w-full">
                 <div className="w-[25%] underline">Category</div>
-                <div className=" w-[55%] md:w-[60%] underline">Examples</div>
+                <div className=" w-[50%] md:w-[60%] underline">Examples</div>
                 <div className="w-[20%] md:w-[15%] underline">Collected</div>
               </div>
-              <div className="flex gap-[42px] md:gap-[46px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+              <div className="flex gap-[32px] md:gap-[46px] text-[13px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
                 <div className="w-[25%]">A. Identifiers</div>
                 <div className="w-[60%]">
                   Contact details, such as real name, alias, postal address,
@@ -934,7 +934,7 @@ export default function Privacy() {
                 </div>
                 <div className="w-[15%]">YES</div>
               </div>
-              <div className="flex gap-[42px] md:gap-[46px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+              <div className="flex gap-[32px] md:gap-[46px] text-[13px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
                 <div className="w-[25%]">
                   B. Personal information categories listed in the California
                   Customer Records statute
@@ -947,7 +947,7 @@ export default function Privacy() {
                 </div>
                 <div className="w-[15%]">YES</div>
               </div>
-              <div className="flex gap-[42px] md:gap-[46px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+              <div className="flex gap-[32px] md:gap-[46px] text-[13px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
                 <div className="w-[25%]">
                   C. Protected classification characteristics under California
                   or federal law
@@ -955,7 +955,7 @@ export default function Privacy() {
                 <div className="w-[60%]">Gender and date of birth</div>
                 <div className="w-[15%]">YES</div>
               </div>
-              <div className="flex gap-[42px] md:gap-[46px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+              <div className="flex gap-[32px] md:gap-[46px] text-[13px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
                 <div className="w-[25%]">D. Commercial information</div>
                 <div className="w-[60%]">
                   Transaction information, purchase history, financial details
@@ -963,12 +963,12 @@ export default function Privacy() {
                 </div>
                 <div className="w-[15%]">YES</div>
               </div>
-              <div className="flex gap-[42px] md:gap-[46px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+              <div className="flex gap-[32px] md:gap-[46px] text-[13px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
                 <div className="w-[25%]">E. Biometric information</div>
                 <div className="w-[60%]">Fingerprints and voiceprints</div>
                 <div className="w-[15%]">YES</div>
               </div>
-              <div className="flex gap-[42px] md:gap-[46px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+              <div className="flex gap-[32px] md:gap-[46px] text-[13px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
                 <div className="w-[25%]">
                   F. Internet or other similar network activity
                 </div>
@@ -979,12 +979,12 @@ export default function Privacy() {
                 </div>
                 <div className="w-[15%]">YES</div>
               </div>
-              <div className="flex gap-[42px] md:gap-[46px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+              <div className="flex gap-[32px] md:gap-[46px] text-[13px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
                 <div className="w-[25%]">G. Geolocation data</div>
                 <div className="w-[60%]">Device location</div>
                 <div className="w-[15%]">YES</div>
               </div>
-              <div className="flex gap-[42px] md:gap-[46px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+              <div className="flex gap-[32px] md:gap-[46px] text-[13px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
                 <div className="w-[25%]">
                   H. Audio, electronic, visual, thermal, olfactory, or similar
                   information
@@ -995,7 +995,7 @@ export default function Privacy() {
                 </div>
                 <div className="w-[15%]">YES</div>
               </div>
-              <div className="flex gap-[42px] md:gap-[46px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+              <div className="flex gap-[32px] md:gap-[46px] text-[13px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
                 <div className="w-[25%]">
                   I. Professional or employment-related information
                 </div>
@@ -1006,14 +1006,14 @@ export default function Privacy() {
                 </div>
                 <div className="w-[15%]">YES</div>
               </div>
-              <div className="flex gap-[42px] md:gap-[46px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
+              <div className="flex gap-[32px] md:gap-[46px] text-[13px] text-base font-normal pb-4 border-b-[0.5px] border-b-[#3A3B40] border-[#242526] mb-8">
                 <div className="w-[25%]">J. Education Information</div>
                 <div className="w-[60%]">
                   Student records and directory information
                 </div>
                 <div className="w-[15%]">YES</div>
               </div>
-              <div className="flex gap-[42px] md:gap-[46px] text-base font-normal">
+              <div className="flex gap-[32px] md:gap-[46px] text-[13px] text-base font-normal">
                 <div className="w-[25%]">
                   K. Inferences drawn from other personal information
                 </div>
