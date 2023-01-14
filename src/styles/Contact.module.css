@@ -66,9 +66,6 @@
   line-height: 34px;
 }
 
-/* .faq_content{
-    padding: 10px 40px;
-} */
 .faq_content {
   width: 100%;
   display: flex;
@@ -140,9 +137,6 @@
   margin: 48px 0;
 }
 
-/* .lolo {
-  position: relative;
-} */
 .form_container {
   margin-bottom: 160px;
 }
@@ -257,17 +251,7 @@
 .form_dropdown button:active {
   background-color: #bba2cd;
 }
-/* .spanChange span {
-  float: right;
-  color: red;
-} */
 
-.service_options {
-  font-size: 18px !important;
-  margin: 16px 0 !important;
-  padding: 16px 0 16px 16px !important;
-  transition: all 300ms ease;
-}
 .form_input_container input[type="datetime-local"] {
   color: #3a3b40;
 }
@@ -295,7 +279,6 @@
 }
 .form_input_container label {
   position: absolute;
-  /* top: 0px; */
   top: 20px;
   left: 10px;
   transition: top 400ms;
@@ -467,7 +450,5 @@
   }
   .form_container {
     margin-bottom: 64px;
-  }
-  .faq_button button {
   }
 }
