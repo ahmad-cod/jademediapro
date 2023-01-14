@@ -1,6 +1,6 @@
-import React, { useState } from "react";
 import { MdEast, MdWest } from "react-icons/md";
 import styles from "../styles/Pagination.module.css";
+import PropTypes from "prop-types";
 
 const Pagination = ({
   cardsPerPage,
@@ -25,6 +25,8 @@ const Pagination = ({
     if (currentPage === pageNumbers.length) return;
     setCurrentPage((currentPage) => currentPage + 1);
   };
+
+  //this is the method that changes the current page
   const paginate = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
@@ -56,3 +58,8 @@ const Pagination = ({
 };
 
 export default Pagination;
+
+Pagination.propTypes = {
+  totalCards: PropTypes.number.isRequired,
+  setCurrentPage: PropTypes.func.isRequired,
+};

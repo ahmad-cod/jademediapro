@@ -10,7 +10,7 @@ const ServicesComponent = ({
   serviceTitle,
   id,
 }) => {
-  const [activeCategory, setActiveCategory] = useState(false);
+  const [activeCategory, setActiveCategory] = useState(categories[0]);
   const [content, setContent] = useState(data);
 
   return (

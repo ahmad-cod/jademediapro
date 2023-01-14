@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
 import styles from "../styles/CategoryFilter.module.css";
+import PropType from "prop-types";
 
 const CategoryFilter = ({ setCategory, categories, filterContent }) => {
   const [activeDropdown, setActiveDropdown] = useState(false);
@@ -40,11 +41,9 @@ const CategoryFilter = ({ setCategory, categories, filterContent }) => {
               </button>
               <button
                 onClick={handleAll}
-                className={
-                  styles.category_button + !filteredCategory
-                    ? styles.active
-                    : ""
-                }
+                className={`${styles.category_button}  ${
+                  !filteredCategory ? styles.active : ""
+                }`}
               >
                 All
               </button>
@@ -70,7 +69,7 @@ const CategoryFilter = ({ setCategory, categories, filterContent }) => {
           <div className={styles.category_buttons}>
             <button
               onClick={handleAll}
-              className={`category_button ${
+              className={`${styles.category_button} ${
                 !filteredCategory ? styles.active : ""
               }`}
             >
@@ -80,7 +79,7 @@ const CategoryFilter = ({ setCategory, categories, filterContent }) => {
               <button
                 key={i}
                 onClick={() => filterByCategory(category)}
-                className={`category_button ${
+                className={`${styles.category_button} ${
                   filteredCategory == category ? styles.active : ""
                 }`}
               >
@@ -95,3 +94,9 @@ const CategoryFilter = ({ setCategory, categories, filterContent }) => {
 };
 
 export default CategoryFilter;
+
+CategoryFilter.propType = {
+  setCategory: PropType.func.isRequired,
+  categories: PropType.array.isRequired,
+  filterContent: PropType.array.isRequired,
+};

@@ -18,3 +18,34 @@ const ContactHeader = () => {
 };
 
 export default ContactHeader;
+{/* <select
+                  value={tel.telCountry}
+                  name="telCountry"
+                  onChange={handleChangeTel}
+                  className={styles.tel_number}
+                  onFocus={() =>
+                    setFocus({
+                      ...focus,
+                      telFocus: true,
+                    })
+                  }
+                  onBlur={() =>
+                    setFocus({
+                      ...focus,
+                      telFocus: false,
+                    })
+                  }
+                >
+                  <option className={styles.tel_number}>US</option>
+                  {countries?.sort().map((item, i) => {
+                    return (
+                      <option
+                        key={i}
+                        value={item.cca2}
+                        className={styles.tel_number}
+                      >
+                        {item.cca2}
+                      </option>
+                    );
+                  })}
+                </select> */}

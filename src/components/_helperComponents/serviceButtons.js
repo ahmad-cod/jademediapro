@@ -10,7 +10,7 @@ const ServiceButtons = ({
   categories,
   filterContent,
 }) => {
-  // const [activeCategory, setActiveCategory] = useState();
+
   const filterByCategory = (category) => {
     const result = filterContent?.filter((service) => {
       return service.category === category;

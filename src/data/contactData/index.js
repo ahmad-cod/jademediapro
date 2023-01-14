@@ -246,19 +246,16 @@ export const FAQData = [
   },
 ];
 
-
-
-export const inputData=[
+export const servicesData = [
   "Art/Photograpgy",
   "Business Strategy",
-  "Branding & Design",
+  "Branding and Design",
   "Career Development",
   "Digital Marketing",
-  "Interview & Webinar",
+  "Interview and Webinar",
   "Motion Design",
   "Project Management",
-  "Report & General Inquest",
+  "Report and General Inquest",
   "Web/App Development",
   "Volunteering",
 ];
-

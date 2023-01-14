@@ -50,7 +50,7 @@
 .active::after {
   content: "";
   width: 100% !important;
-  /* position: absolute; */
+  position: absolute;
   top: 40px;
   left: 0;
   height: 3px;

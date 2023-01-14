@@ -5,7 +5,7 @@ import Pagination from "../../components/Pagination";
 import BlogHeader from "../../components/blogComponent/blogHeader";
 import InterviewCards from "../../components/blogComponent/interviewCards";
 import CategoryFilter from "../../components/CategoryFilter";
-import styles from "../../styles/Blog.module.css"
+import styles from "../../styles/Blog.module.css";
 
 const Blogs = () => {
   const [blog, setBlog] = useState(blogData);
