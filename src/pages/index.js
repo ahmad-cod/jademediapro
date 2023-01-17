@@ -31,6 +31,10 @@ export default function Home() {
       <Link href="/privacy">
         <button>Go to Privacy Policy</button>
       </Link>
+      <br />
+      <Link href="/job">
+        <button>Go to Job/Internship</button>
+      </Link>
     </div>
   );
 }
