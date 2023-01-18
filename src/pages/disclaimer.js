@@ -17,8 +17,8 @@ const disclaimer = () => {
         <div className="content">
             <h4>Last Updated November 10, 2021</h4>
             <h3>Website disclaimer</h3>
-            <p>The information provided by Jademediapro Tech Agency LTD ("we," "us", or "our") on https://<br/>
-            www.jademediapro.com (the "Site") is for general informational purposes only. All information on the Site is<br/> 
+            <p>The information provided by Jademediapro Tech Agency LTD ("we," "us", or "our") on <a> https://<br/>
+            www.jademediapro.com</a> (the "Site") is for general informational purposes only. All information on the Site is<br/> 
             provided in good faith, however we make no representation or warranty of any kind, express or implied,<br/> 
             regarding the accuracy, adequacy, validity, reliability, availability or completeness of any information on the<br/> 
             Site. UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND<br/> 

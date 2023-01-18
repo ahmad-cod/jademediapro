@@ -9,7 +9,7 @@ const shoppingCart = () => {
     <div className='main-container'>
       <div className='heading-container'>
         <h1>Shopping Cart</h1>
-        <h2>Total: 0 items</h2>
+        <p>Total: 0 items</p>
 
         <div className='image-frame'>
           <Image src={storefront} alt="" width="100%" height="100%"/>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { female, handphone } from '../images'
+import { female, handphone, interviewHeader } from '../images'
 import Image from 'next/image'
 import { ImageWithHeader, InterviewData } from '../components'
 import { interviewData } from '../data/interview-data/interviewData'
@@ -9,9 +9,9 @@ const interview = () => {
   return (
     <div>
       <ImageWithHeader title="Engaging One-on-One discussing with big guns"
-      subtitle="We have awesome chat with industry leading professionals from<br/> 
+      subtitle="We have awesome chat with industry leading professionals from<br/> wn
       various fields discussing exverything about their experience, 
-      business oreintation, and actionable insights  on how to grow" headerImage={handphone} />
+      business oreintation, and actionable insights  on how to grow" headerImage={interviewHeader} />
         {/* <div className='header2'>
             <div>
                 <h1 className='text-[35px] text-[#fff]'></h1>

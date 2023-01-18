@@ -1,11 +1,15 @@
 import Image from 'next/image'
 import React from 'react'
+import { playbutton } from '../images'
 
 const MostViewedCard = ({thumbnail, uploadTime, numbrOfViews, title, description}) => {
   return (
     <div className='flex lg:gap-20  flex-col lg:flex-row items-center lg:items-start mb-24'>
     <div className='max-w-[813px] flex-1'>
-        <Image alt="mostviewedthumbnail" width="100%" height="100%" src={thumbnail} />
+        
+        <Image className='thumbnail-1' alt="mostviewedthumbnail" width="100%" height="100%" src={thumbnail} />
+        <Image className='play-button' alt="playbutton" width="100%" height="100%" src={playbutton} />
+        
     </div>
     <div className='flex-1 max-w-[813px]'>
         <div className='text-[15px]  flex items-center  gap-6'>

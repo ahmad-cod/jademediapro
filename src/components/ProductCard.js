@@ -21,8 +21,8 @@ const ProductCard = ({isNewProduct, discount,  productImage, name, subtitle, pri
                </div>
             </div>)
         }
-        <Image src={productImage} width="100%" height="100%" alt="product" />
-       <div className='px-4 bg-[#F6F6F6] h-[159px]'>
+        <Image className='top-picks' src={productImage} width="100%" height="100%" alt="product" />
+       <div className=' px-4 bg-[#F6F6F6] h-[159px]'>
        <h3 className='font-bold text-6  '>{name}</h3>
         <p className='text-[#57585F]'>{subtitle}</p>
         <p className='text-[#77459B] text-[21px]'>{price}</p>
