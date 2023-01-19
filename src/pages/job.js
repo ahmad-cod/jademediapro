@@ -1,31 +1,19 @@
 import react from "react";
 import Link from "next/link";
 import image from "next/image";
+import { jobheroimg } from "../images";
 
 export default function Terms() {
   return (
     <div>
       <div className=" bg-[#F6F6F6] px-[20px] py-[31px] md:pt-12 md:pr-[104px] md:pb-[132px] md:pl-[104px] mb-32 ">
-        <div className="flex justify-between items-center mb-[59px]">
-          <img src="/logos.png" />
-          <img src="/hamburger.png" className="md:hidden cursor-pointer" />
-          <div className="hidden md:flex gap-[42px] text-[#242526]">
-            <img src="/moons.png" />
-            <p className="cursor-pointer">Services</p>
-            <p className="cursor-pointer">Projects</p>
-            <p className="cursor-pointer">Hub</p>
-            <p className="cursor-pointer">Resources</p>
-            <p className="cursor-pointer">About</p>
-            <p className="cursor-pointer">Contact</p>
-          </div>
-        </div>
         <div className="flex flex-col md:flex-row  md:items-center  md:text-[50px] font-bold md:font-bold text-[#242526] gap-8 md:gap-[123px] w-full">
           <h1 className="w-[80%]">
             Discover your next career <br /> move with our efficiently <br />
             managed job searches
           </h1>
           <div className="w-[20%]">
-            <img src="/job-hero-img.png" className="w-full" />
+            <img src={jobheroimg} className="w-full" />
           </div>
         </div>
       </div>
@@ -37,9 +25,9 @@ export default function Terms() {
                 GRAPHIC <br /> DESIGNER
               </h2>
             </div>
-            <div className="flex gap-28 hover:translate-x-2 hover:transition-all">
+            <div className="flex gap-28 hover:translate-x-2 hover:duration-0 hover:transition hover:md:duration-700">
               <img src="/border-line.png" />
-              <div className="flex gap-60 items-center font-normal text-[15px]">
+              <div className="flex gap-52 items-center font-normal text-[15px]">
                 <div>
                   <p>New Jersey</p>
                   <p>Contract</p>
@@ -57,9 +45,9 @@ export default function Terms() {
                 GRAPHIC <br /> DESIGNER
               </h2>
             </div>
-            <div className="flex gap-28 hover:translate-x-2 hover:transition-all">
+            <div className="flex gap-28 hover:translate-x-2 hover:duration-0 hover:transition hover:md:duration-700">
               <img src="/border-line.png" />
-              <div className="flex gap-60 items-center font-normal text-[15px]">
+              <div className="flex gap-52 items-center font-normal text-[15px]">
                 <div>
                   <p>New Jersey</p>
                   <p>Contract</p>
@@ -77,9 +65,9 @@ export default function Terms() {
                 GRAPHIC <br /> DESIGNER
               </h2>
             </div>
-            <div className="flex gap-28 hover:translate-x-2 hover:transition-all">
+            <div className="flex gap-28 hover:translate-x-2 hover:duration-0 hover:transition hover:md:duration-700">
               <img src="/border-line.png" />
-              <div className="flex gap-60 items-center font-normal text-[15px]">
+              <div className="flex gap-52 items-center font-normal text-[15px]">
                 <div>
                   <p>New Jersey</p>
                   <p>Contract</p>
@@ -97,9 +85,9 @@ export default function Terms() {
                 GRAPHIC <br /> DESIGNER
               </h2>
             </div>
-            <div className="flex gap-28 hover:translate-x-2 hover:transition-all">
+            <div className="flex gap-28 hover:translate-x-2 hover:duration-0 hover:transition hover:md:duration-700">
               <img src="/border-line.png" />
-              <div className="flex gap-60 items-center font-normal text-[15px]">
+              <div className="flex gap-52 items-center font-normal text-[15px]">
                 <div>
                   <p>New Jersey</p>
                   <p>Contract</p>
@@ -117,9 +105,9 @@ export default function Terms() {
                 GRAPHIC <br /> DESIGNER
               </h2>
             </div>
-            <div className="flex gap-28 hover:translate-x-2 hover:transition-all">
+            <div className="flex gap-28 hover:translate-x-2 hover:duration-0 hover:transition hover:md:duration-700">
               <img src="/border-line.png" />
-              <div className="flex gap-60 items-center font-normal text-[15px]">
+              <div className="flex gap-52 items-center font-normal text-[15px]">
                 <div>
                   <p>New Jersey</p>
                   <p>Contract</p>
@@ -137,9 +125,9 @@ export default function Terms() {
                 GRAPHIC <br /> DESIGNER
               </h2>
             </div>
-            <div className="flex gap-28 hover:translate-x-2 hover:transition-all">
+            <div className="flex gap-28 hover:translate-x-2 hover:duration-0 hover:transition hover:md:duration-700">
               <img src="/border-line.png" />
-              <div className="flex gap-60 items-center font-normal text-[15px]">
+              <div className="flex gap-52 items-center font-normal text-[15px]">
                 <div>
                   <p>New Jersey</p>
                   <p>Contract</p>
@@ -157,9 +145,9 @@ export default function Terms() {
                 GRAPHIC <br /> DESIGNER
               </h2>
             </div>
-            <div className="flex gap-28 hover:translate-x-2 hover:transition-all">
+            <div className="flex gap-28 hover:translate-x-2 hover:duration-0 hover:transition hover:md:duration-700">
               <img src="/border-line.png" />
-              <div className="flex gap-60 items-center font-normal text-[15px]">
+              <div className="flex gap-52 items-center font-normal text-[15px]">
                 <div>
                   <p>New Jersey</p>
                   <p>Contract</p>
@@ -177,29 +165,9 @@ export default function Terms() {
                 GRAPHIC <br /> DESIGNER
               </h2>
             </div>
-            <div className="flex gap-28 hover:translate-x-2 hover:transition-all">
+            <div className="flex gap-28 hover:translate-x-2 hover:duration-0 hover:transition hover:md:duration-700">
               <img src="/border-line.png" />
-              <div className="flex gap-60 items-center font-normal text-[15px]">
-                <div>
-                  <p>New Jersey</p>
-                  <p>Contract</p>
-                  <p>Crane Inc.</p>
-                </div>
-                <div>
-                  <img src="/white-arrow.png" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex bg-[#3A9F94] rounded px-6 pt-2 pb-4 items-center gap-28 text-[#f6f6f6] cursor-pointer mb-10 hover:bg-[#156e64] ">
-            <div>
-              <h2 className="font-normal text-4xl ">
-                GRAPHIC <br /> DESIGNER
-              </h2>
-            </div>
-            <div className="flex gap-28 hover:translate-x-2 hover:transition-all">
-              <img src="/border-line.png" />
-              <div className="flex gap-60 items-center font-normal text-[15px]">
+              <div className="flex gap-52 items-center font-normal text-[15px]">
                 <div>
                   <p>New Jersey</p>
                   <p>Contract</p>

@@ -1,30 +1,18 @@
 import react from "react";
 import Link from "next/link";
 import image from "next/image";
+import { cookiesimg } from "../images";
 
 export default function Cookies() {
   return (
     <div>
       <div className=" bg-[#1A1A1A] px-[20px] pb-[29px] pt-[30px] md:pt-12 md:pr-[104px] md:pb-[70px] md:pl-[104px] mb-32 ">
-        <div className="flex justify-between items-center mb-[59px]">
-          <img src="/logo.png" />
-          <img src="/hamburger.png" className="md:hidden cursor-pointer" />
-          <div className="hidden md:flex gap-[42px] text-white">
-            <img src="/moon.png" />
-            <p className="cursor-pointer">Services</p>
-            <p className="cursor-pointer">Projects</p>
-            <p className="cursor-pointer">Hub</p>
-            <p className="cursor-pointer">Resources</p>
-            <p className="cursor-pointer">About</p>
-            <p className="cursor-pointer">Contact</p>
-          </div>
-        </div>
         <div className="flex flex-col md:flex-row md:items-center text-5xl md:text-8xl font-bold md:font-semibold text-white gap-8 md:gap-[400px]">
           <h1>
             Cookies <br /> Policy
           </h1>
           <div className="w-[353px] h-[353px]">
-            <img src="/cookies.png" className="w-full" />
+            <img src={cookiesimg} className="w-full" />
           </div>
         </div>
       </div>
