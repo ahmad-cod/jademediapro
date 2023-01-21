@@ -5,7 +5,7 @@ import { FiSend } from "react-icons/fi";
 import { AiOutlineMail } from "react-icons/ai";
 import { HiOutlinePhone } from "react-icons/hi";
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
-// import DateNTime from "../_helperComponents/DateNTime";
+import DateNTime from "../_helperComponents/DateNTime";
 import { servicesData } from "../../data/contactData";
 import styles from "../../styles/Contact.module.css";
 import { useState, useEffect, useRef } from "react";
@@ -88,8 +88,15 @@ const InputField = () => {
       emailError: false,
     });
   };
+  // const onChange = (value, dateString) => {
+  //   console.log("Selected Time: ", value);
+  //   console.log("Formatted Selected Time: ", dateString);
+  // };
   const handleChangeSchedule = (e) => {
-    setSchedule(e.target.value);
+    const num = e.target.valueAsNumber;
+    console.log(num);
+
+    setSchedule(num);
     setActive({
       ...active,
       scheduleActive: true,
@@ -520,14 +527,6 @@ const InputField = () => {
                   onChange={handleChangeSchedule}
                   className={styles.schedule_input}
                 />
-                {/* <DateNTime
-                  schedule={schedule}
-                  handleChangeSchedule={handleChangeSchedule}
-                  handleScheduleBlur={handleScheduleBlur}
-                  focus={focus}
-                  schedulefocus={focus.scheduleFocus}
-                  setFocus={setFocus}
-                /> */}
               </div>
               <div
                 className={`${styles.error} ${
@@ -538,7 +537,7 @@ const InputField = () => {
                     : ""
                 }`}
               >
-                <p>Required Field </p>
+                s<p>Required Field </p>
               </div>
             </div>
 
@@ -637,7 +636,7 @@ const InputField = () => {
               </div>
             </div>
           </div>
-          <div className={styles.radio_button}>
+          <div className={styles.check_button}>
             <input
               type="checkbox"
               value={check}

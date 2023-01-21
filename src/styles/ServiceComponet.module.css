@@ -43,6 +43,12 @@
   text-align: left;
   min-width: 320px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.service_buttons button svg {
+  color: #77459b;
 }
 .service_buttons button:hover {
   color: #77459b;

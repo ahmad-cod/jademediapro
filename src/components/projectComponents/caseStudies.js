@@ -32,7 +32,7 @@ const CaseStudies = () => {
                 <Image src={casestudy.image} alt="" />
               </div>
               <div className={styles.casestudy_link}>
-                <Link href={"#"}>
+                <Link href={`/projects/casestudy/${casestudy.id}`}>
                   View casestudy <MdEast />
                 </Link>
               </div>

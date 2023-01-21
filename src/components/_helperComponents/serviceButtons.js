@@ -10,7 +10,6 @@ const ServiceButtons = ({
   categories,
   filterContent,
 }) => {
-
   const filterByCategory = (category) => {
     const result = filterContent?.filter((service) => {
       return service.category === category;
@@ -32,7 +31,7 @@ const ServiceButtons = ({
                   activeCategory === category ? styles.button_active : ""
                 }
               >
-                {category}
+                {category} <MdEast />
               </button>
             </div>
           </>

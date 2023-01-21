@@ -7,6 +7,7 @@ import ServicesComponent from "../../components/Services";
 import Navigation from "../../components/servicesComponent/serviceNavigation";
 import Work from "../../components/servicesComponent/work";
 import styles from "../../styles/Project.module.css";
+import style from "../../styles/Services.module.css";
 
 const Services = () => {
   return (
@@ -27,7 +28,12 @@ const Services = () => {
               key={i}
             />
           ))}
-          <Work />
+          <div className={style.work_container}>
+            <div className={style.work_heading}>
+              <h2>Our Work</h2>
+            </div>
+            <Work />
+          </div>
           <ReadyToWork />
         </div>
       </div>

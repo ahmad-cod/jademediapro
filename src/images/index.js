@@ -107,37 +107,34 @@ import softwareDevelopment from "./serviceImages/Web&AppProject-SoftwareDevelopm
 import uiux from "./serviceImages/Web&AppProject-UI-UX.gif";
 import websiteDev from "./serviceImages/Web&AppProject-WebsiteDevelopment.gif";
 import serviceHeaderImage from "./serviceImages/serviceHeader.svg";
-import contactHeaderImage from "./contactImage/Contact-header.png"
+import contactHeaderImage from "./contactImage/Contact-header.png";
 import contactGif from "./contactImage/Contact.gif";
 
+import AriwaHeader from "./projectImages/casestudyImages/AriwaHeader.png";
+import CoinplayHeader from "./projectImages/casestudyImages/CoinplayHeader.jpg";
+import TozomeHeader from "./projectImages/casestudyImages/TozomeHeader.jpg";
+import artboard1 from "./projectImages/casestudyImages/artboard1.jpg";
+import artboard2 from "./projectImages/casestudyImages/artboard2.jpg";
+import artboard3 from "./projectImages/casestudyImages/artboard3.jpg";
+import coinplay2 from "./projectImages/casestudyImages/coinplay.jpg";
+import developful2 from "./projectImages/casestudyImages/developful.jpg";
+import underChallenge1 from "./projectImages/casestudyImages/UnderChallenge&Analysis-1.jpg";
+import underChallenge2 from "./projectImages/casestudyImages/UnderChallenge&Analysis-2.jpg";
+import underCollateral1 from "./projectImages/casestudyImages/UnderCollateral-01.png";
+import underCollateral2 from "./projectImages/casestudyImages/UnderCollateral-02.png";
+import underCollateral3 from "./projectImages/casestudyImages/UnderCollateral-03.png";
 
+import underDesign1 from "./projectImages/casestudyImages/UnderDesign-01.jpg";
+import underDesign2 from "./projectImages/casestudyImages/UnderDesign-02.png";
+import underDevelopment1 from "./projectImages/casestudyImages/UnderDevelopment-01.gif";
+import underDevelopment2 from "./projectImages/casestudyImages/UnderDevelopment-02.jpg";
+import underDevelopment3 from "./projectImages/casestudyImages/UnderDevelopment-03.png";
+import underEditing from "./projectImages/casestudyImages/UnderEditing.jpg";
+import underProduction1 from "./projectImages/casestudyImages/UnderProduction-1.jpg";
+import underStrategy1 from "./projectImages/casestudyImages/UnderStrategy-1.jpg";
+import underStrategy from "./projectImages/casestudyImages/UnderStrategy.jpg";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// import tozomeVideo from "./projectImages/casestudyImages/Tozome-showreel.mp4";
 
 import footerlogo from "./footer/footerlogo.png";
 import footerplaneicon from "./footer/footerplaneicon.png";
@@ -276,7 +273,28 @@ export {
   designButton,
   businessButton,
 };
+export { contactHeaderImage, contactGif };
 export {
-  contactHeaderImage,
-  contactGif
-}
+  AriwaHeader,
+  CoinplayHeader,
+  TozomeHeader,
+  underChallenge1,
+  underChallenge2,
+  underCollateral1,
+  underCollateral2,
+  underCollateral3,
+  artboard1,
+  artboard2,
+  artboard3,
+  coinplay2,
+  developful2,
+  underDesign1,
+  underDesign2,
+  underDevelopment1,
+  underDevelopment2,
+  underDevelopment3,
+  underEditing,
+  underProduction1,
+  underStrategy,
+  underStrategy1,
+};

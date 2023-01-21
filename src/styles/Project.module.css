@@ -305,9 +305,13 @@
 }
 
 @media only screen and (min-width: 350px) and (max-width: 900px) {
+  .project_container,
+  .service_container {
+    width: 95%;
+  }
   .project_header {
     justify-content: center;
-    /* width: clamp(100%, 100%, 800px) !important; */
+    width: 95%;
   }
   .header_text {
     width: clamp(350px, 100%, 800px) !important;

@@ -371,6 +371,72 @@ const Blogdetails = () => {
               </>
             );
           })}
+        <div className={styles.mobile_social_network}>
+          <h3>Share this post</h3>
+          <div className={styles.social_network}>
+            <Link href={"#"} id="mobile-link">
+              <Tooltip
+                anchorId="mobile-link"
+                content="Copy Link"
+                className={styles.social_link}
+                place="bottom"
+                noArrow
+              />
+              <FaRegClone />
+            </Link>
+
+            <Link href={"#"} data-info="Email" id="mobile-email">
+              <Tooltip
+                anchorId="mobile-email"
+                content="Email"
+                place="bottom"
+                className={styles.social_link}
+                noArrow
+              />
+              <MdOutlineEmail />
+            </Link>
+            <Link href={"#"} id="mobile-twitter">
+              <Tooltip
+                anchorId="mobile-twitter"
+                content="Tweet "
+                place="bottom"
+                className={styles.social_link}
+                noArrow
+              />
+              <FiTwitter />
+            </Link>
+            <Link href={"#"} id="mobile-facebook">
+              <Tooltip
+                anchorId="mobile-facebook"
+                content="Share on Facebook"
+                place="bottom"
+                className={styles.social_link}
+                noArrow
+              />
+              <FiFacebook />
+            </Link>
+            <Link href={"#"} id="mobile-whatsapp">
+              <Tooltip
+                anchorId="mobile-whatsapp"
+                content="Share on Whatsapp"
+                place="bottom"
+                className={styles.social_link}
+                noArrow
+              />
+              <FaWhatsapp />
+            </Link>
+            <Link href={"#"} id="mobile-linkedin">
+              <Tooltip
+                anchorId="mobile-linkedin"
+                content="Share on LinkedIn"
+                place="bottom"
+                className={styles.social_link}
+                noArrow
+              />
+              <FiLinkedin />
+            </Link>
+          </div>
+        </div>
         <RecommendationPost blogId={blogId} />
       </div>
     </>
