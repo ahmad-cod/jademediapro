@@ -6,6 +6,7 @@ import BlogHeader from "../../components/blogComponent/blogHeader";
 import InterviewCards from "../../components/blogComponent/interviewCards";
 import CategoryFilter from "../../components/CategoryFilter";
 import styles from "../../styles/Blog.module.css";
+import SelectField from "../../components/_helperComponents/mobileSelect";
 
 const Blogs = () => {
   const [blog, setBlog] = useState(blogData);
@@ -35,6 +36,7 @@ const Blogs = () => {
           categories={blogCategoriesData}
           filterContent={blogData}
         />
+
         <BlogCards blog={currentBlog} />
         {/* Pagination needs four props-the number of cards you need per page, 
         the total number of cards you have, the current page number and the 

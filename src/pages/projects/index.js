@@ -18,9 +18,7 @@ const Projects = () => {
         {processData.map((data) => (
           <>
             <ServicesComponent
-              data={data.services.filter(
-                (category) => category.category === "Animation"
-              )}
+              data={data.services}
               filterContent={data.services}
               categories={data.categories}
               serviceTitle={data.serviceTitle}

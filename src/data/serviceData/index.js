@@ -95,7 +95,7 @@ export const serviceData = [
         ],
       },
       {
-        id: 1,
+        id: 4,
         category: "Growth & Expansion System",
         serviceContent: [
           {
@@ -109,7 +109,7 @@ export const serviceData = [
         ],
       },
       {
-        id: 1,
+        id: 5,
         category: "Project Management",
         serviceContent: [
           {
@@ -153,7 +153,7 @@ export const serviceData = [
         ],
       },
       {
-        id: 1,
+        id: 2,
         category: "Logo and Brand identity",
         serviceContent: [
           {
@@ -167,7 +167,7 @@ export const serviceData = [
         ],
       },
       {
-        id: 1,
+        id: 3,
         category: "Products branding and packaging",
         serviceContent: [
           {
@@ -181,7 +181,7 @@ export const serviceData = [
         ],
       },
       {
-        id: 1,
+        id: 4,
         category: "Brand collateral/stationery design",
         serviceContent: [
           {
@@ -195,7 +195,7 @@ export const serviceData = [
         ],
       },
       {
-        id: 1,
+        id: 5,
         category: "Company Profile & Editorial design",
         serviceContent: [
           {
@@ -209,7 +209,7 @@ export const serviceData = [
         ],
       },
       {
-        id: 1,
+        id: 6,
         category: "Environmental & Retail Graphics",
         serviceContent: [
           {
@@ -223,7 +223,7 @@ export const serviceData = [
         ],
       },
       {
-        id: 1,
+        id: 7,
         category: "Infographic and Illustration Graphics",
         serviceContent: [
           {
@@ -265,7 +265,7 @@ export const serviceData = [
         ],
       },
       {
-        id: 1,
+        id: 2,
         category: "Social media management/marketing",
         serviceContent: [
           {
@@ -279,7 +279,7 @@ export const serviceData = [
         ],
       },
       {
-        id: 1,
+        id: 3,
         category: "Search engine optimization",
         serviceContent: [
           {
@@ -293,7 +293,7 @@ export const serviceData = [
         ],
       },
       {
-        id: 1,
+        id: 4,
         category: "Advertising campaigns",
         serviceContent: [
           {
@@ -307,7 +307,7 @@ export const serviceData = [
         ],
       },
       {
-        id: 1,
+        id: 5,
         category: "Lead generation",
         serviceContent: [
           {
@@ -321,7 +321,7 @@ export const serviceData = [
         ],
       },
       {
-        id: 1,
+        id: 6,
         category: "Data Analytics",
         serviceContent: [
           {
@@ -362,7 +362,7 @@ export const serviceData = [
         ],
       },
       {
-        id: 1,
+        id: 2,
         category: "Corporate Promotional Video",
         serviceContent: [
           {
@@ -376,7 +376,7 @@ export const serviceData = [
         ],
       },
       {
-        id: 1,
+        id: 3,
         category: "2D/3D Animation Video",
         serviceContent: [
           {
@@ -390,7 +390,7 @@ export const serviceData = [
         ],
       },
       {
-        id: 1,
+        id: 4,
         category: "Production/Filming",
         serviceContent: [
           {
@@ -404,7 +404,7 @@ export const serviceData = [
         ],
       },
       {
-        id: 1,
+        id: 5,
         category: "Post-production",
         serviceContent: [
           {
@@ -439,7 +439,7 @@ export const serviceData = [
         ],
       },
       {
-        id: 1,
+        id: 2,
         category: "Digital art",
         serviceContent: [
           {
@@ -453,7 +453,7 @@ export const serviceData = [
         ],
       },
       {
-        id: 1,
+        id: 3,
         category: "Photography",
         serviceContent: [
           {
@@ -476,7 +476,6 @@ export const serviceData = [
       "Website development",
       "Mobile application development",
       "Software development",
-  
     ],
     services: [
       {
@@ -494,7 +493,7 @@ export const serviceData = [
         ],
       },
       {
-        id: 1,
+        id: 2,
         category: "Website development",
         serviceContent: [
           {
@@ -508,7 +507,7 @@ export const serviceData = [
         ],
       },
       {
-        id: 1,
+        id: 3,
         category: "Mobile application development",
         serviceContent: [
           {
@@ -522,7 +521,7 @@ export const serviceData = [
         ],
       },
       {
-        id: 1,
+        id: 4,
         category: "Software development",
         serviceContent: [
           {
@@ -536,7 +535,7 @@ export const serviceData = [
         ],
       },
       {
-        id: 1,
+        id: 5,
         category: "E-commerce management",
         serviceContent: [
           {
@@ -596,7 +595,7 @@ export const workData = [
     category: "Branding & Design",
     title: "Ariwa Fashion",
     location: "Lagos, Nigeria",
-    image: ariwaFashion ,
+    image: ariwaFashion,
   },
   {
     id: 1,
@@ -604,5 +603,5 @@ export const workData = [
     title: "Coinplay.ca",
     location: "Vancouver, Canada",
     image: coinplay,
-  }
-]
+  },
+];

@@ -11,7 +11,10 @@ const ServicesComponent = ({
   id,
 }) => {
   const [activeCategory, setActiveCategory] = useState(categories[0]);
-  const [content, setContent] = useState(data);
+  const [content, setContent] = useState(
+    data.filter((content) => content.id === 1)
+  );
+  console.log(content);
 
   return (
     <div className={styles.service_content}>

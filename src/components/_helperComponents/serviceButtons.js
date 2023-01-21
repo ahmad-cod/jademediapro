@@ -2,6 +2,7 @@ import React from "react";
 
 import { MdEast } from "react-icons/md";
 import styles from "../../styles/ServiceComponet.module.css";
+import SelectField from "./mobileSelect";
 
 const ServiceButtons = ({
   activeCategory,
@@ -42,6 +43,7 @@ const ServiceButtons = ({
           Let’s Work Together <MdEast />
         </button>
       </div>
+      <SelectField data={categories} filter={filterByCategory} />
     </>
   );
 };

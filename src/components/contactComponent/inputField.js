@@ -537,7 +537,7 @@ const InputField = () => {
                     : ""
                 }`}
               >
-                s<p>Required Field </p>
+                <p>Required Field </p>
               </div>
             </div>
 

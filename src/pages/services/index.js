@@ -19,9 +19,7 @@ const Services = () => {
           {serviceData?.map((service, i) => (
             <ServicesComponent
               id={service.id}
-              data={service.services.filter((category) => {
-                return category.category[0];
-              })}
+              data={service.services}
               categories={service.categories}
               serviceTitle={service.serviceTitle}
               filterContent={service.services}
