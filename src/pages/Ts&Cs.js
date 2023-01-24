@@ -129,9 +129,9 @@ export default function Terms() {
               between you, whether personally or on behalf of an entity (“you")
               and Jademediapro Tech Agency LTD ("Company," "we," "us," or
               "our"). concerning your access to and use of the
-              <span className="text-[#77459B] cursor-pointer">
+              <a href="#" className="text-[#77459B] ml-1">
                 https://www.jademediapro.com
-              </span>
+              </a>
               website as well as any other media form, media channel, mobile
               website or mobile application related, linked. or otherwise
               connected thereto (collectively, the °Site). We are registered in
@@ -697,9 +697,9 @@ export default function Terms() {
             <p className="mb-4">
               We care about data privacy and security. Please review our Privacy
               Policy:
-              <span className="text-[#77459B] cursor-pointer">
+              <a href="#" className="text-[#77459B] ml-1">
                 http://wwwjademediapro.com/privacy-policy.
-              </span>
+              </a>
               By using the Site, you agree to be bound by our Privacy Policy,
               which is incorporated into these Terms of Use. Please be advised
               the Site is hosted in the United States. If you access the Site
@@ -1124,15 +1124,15 @@ export default function Terms() {
               Lagos, LA 100261 <br />
               Nigeria <br />
               Phone: +234 902 771 0233 <br />
-              solutions@jademediapro.com
+              <a href="#"> solutions@jademediapro.com</a>
             </p>
           </div>
         </div>
         <p className="font-small text-[#3A3B40] text-base mb-40">
           These terms of use were created using Termly's
-          <span className=" font-bold text-[#77459B] underline ml-1 cursor-pointer">
+          <a href="#" className=" font-bold text-[#77459B] underline ml-1 ">
             Terms and Conditions generator.
-          </span>
+          </a>
         </p>
       </div>
     </div>

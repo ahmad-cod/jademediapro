@@ -17,8 +17,8 @@ export default function Custom404() {
           name changed, or temporarily inaccessible.
         </p>
 
-        <div className="flex  bg-[#77459B] gap-7 p-5 w-72 rounded-md text-white justify-center cursor-pointer ">
-          <h5>Return to Homepage</h5>
+        <div className="flex  bg-[#77459B] gap-7 p-5 w-72 rounded-md text-white justify-center  ">
+          <a href="#">Return to Homepage</a>
           <img src={maskimg} />
         </div>
       </div>

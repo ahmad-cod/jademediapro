@@ -37,9 +37,9 @@ export default function Privacy() {
             <ul className="list-disc ml-6 mb-4">
               <li>
                 Visit our website at
-                <span className="text-[#77459B] cursor-pointer ml-2">
+                <a href="#" className="text-[#77459B] ml-2">
                   https://www.jademediapro.com
-                </span>
+                </a>
               </li>
               <li>
                 Engage with us in other related ways ― including any sales,
@@ -192,9 +192,9 @@ export default function Privacy() {
               and the security code associated with your payment instrument. All
               payment data is stored by Shopify. You may find their privacy
               notice link(s) here:
-              <span className="text-[#77459B] cursor-pointer ml-2">
+              <a href="#" className="text-[#77459B] ml-2">
                 https://www.shopify.com.ng/legal/privacy.
-              </span>
+              </a>
             </p>
             <p className="mb-4">
               <span className="font-medium">Social Media Login Data.</span> We
@@ -229,9 +229,9 @@ export default function Privacy() {
               <br /> Like many businesses, we also collect information through
               cookies and similar technologies. You can find out more about this
               in our Cookie Notice:
-              <span className="text-[#77459B] cursor-pointer ml-2">
+              <a href="#" className="text-[#77459B] ml-2">
                 http://www.jademediapro.com/cookies.
-              </span>
+              </a>
             </p>
             <p className="mt-4">The information we collect includes:</p>
             <ul className="list-disc ml-6 mb-8">
@@ -337,9 +337,9 @@ export default function Privacy() {
                 testimonial, we will obtain your consent to use your name and
                 the content of the testimonial. If you wish to update, or delete
                 your testimonial, please contact us at
-                <span className="text-[#77459B] cursor-pointer ml-2">
+                <a href="#" className="text-[#77459B] ml-2">
                   solutions@jademediapro.com
-                </span>
+                </a>
                 and be sure to include your name, testimonial location, and
                 contact information.
               </li>
@@ -415,9 +415,9 @@ export default function Privacy() {
                 work with third parties who do so) tailored to your interests
                 and/or location and to measure its effectiveness. For more
                 information see our Cookie Notice:
-                <span className="text-[#77459B] cursor-pointer ml-2">
+                <a href="#" className="text-[#77459B] ml-2">
                   http://www.jademediapro.com/cookies.
-                </span>
+                </a>
               </li>
               <li>
                 For other business purposes. We may use your information for
@@ -529,9 +529,9 @@ export default function Privacy() {
                 and other tracking technologies in order to provide
                 advertisements about goods and services of interest to you. See
                 our Cookie Notice:
-                <span className="text-[#77459B] cursor-pointer ml-2">
+                <a href="#" className="text-[#77459B] ml-2">
                   http://www.jademediapro.com/cookies
-                </span>
+                </a>
                 for further information.
               </li>
               <li>
@@ -589,9 +589,9 @@ export default function Privacy() {
               beacons and pixels) to access or store information. Specific
               information about how we use such technologies and how you can
               refuse certain cookies is set out in our Cookie Notice:
-              <span className="text-[#77459B] cursor-pointer ml-2">
+              <a href="#" className="text-[#77459B] ml-2">
                 http://www.jademediapro.com/cookies.
-              </span>
+              </a>
             </p>
           </div>
         </div>
@@ -746,23 +746,23 @@ export default function Privacy() {
               unlawfully processing your personal information, you also have the
               right to complain to your local data protection supervisory
               authority. You can find their contact details here:
-              <span className="text-[#77459B] cursor-pointer ml-2">
+              <a href="#" className="text-[#77459B] ml-2">
                 https://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.html.
-              </span>
+              </a>
             </p>
             <p className="mb-4">
               If you are a resident in Switzerland, the contact details for the
               data protection authorities are available here:
-              <span className="text-[#77459B] cursor-pointer md:ml-2">
+              <a href="#" className="text-[#77459B] md:ml-2">
                 https://www.edoeb.admin.ch/edoeb/en/home.html.
-              </span>
+              </a>
             </p>
             <p className="mb-4">
               If you have questions or comments about your privacy rights, you
               may email us at
-              <span className="text-[#77459B] cursor-pointer ml-2">
+              <a href="#" className="text-[#77459B] ml-2">
                 solutions@jademediapro.com.
-              </span>
+              </a>
             </p>
             <span className="text-[#77459B] text-lg font-medium mb-2">
               Account Information
@@ -792,13 +792,13 @@ export default function Privacy() {
               you choose to remove cookies or reject cookies, this could affect
               certain features or services of our Website. To opt-out of
               interest-based advertising by advertisers on our Website visit
-              <span className="text-[#77459B] cursor-pointer ml-2">
+              <a href="#" className="text-[#77459B] ml-2">
                 http://www.aboutads.info/choices/.
-              </span>
+              </a>
               For further information, please see our Cookie Notice:
-              <span className="text-[#77459B] cursor-pointer ml-2">
+              <a href="#" className="text-[#77459B] ml-2">
                 http://www.jademediapro.com/cookies.
-              </span>
+              </a>
             </p>
             <p className="mt-4">
               Opting out of email marketing: You can unsubscribe from our
@@ -1042,16 +1042,16 @@ export default function Privacy() {
             <p className="mb-4">
               More information about our data collection and sharing practices
               can be found in this privacy notice and our Cookie Notice:
-              <span className="text-[#77459B] cursor-pointer ml-2">
+              <a href="#" className="text-[#77459B] ml-2">
                 http://www.jademediapro.com/cookies.
-              </span>
+              </a>
             </p>
             <p className="mb-4">
               You may contact us by email at solutions@jademediapro.com, by
               visiting
-              <span className="text-[#77459B] cursor-pointer ml-2">
+              <a href="#" className="text-[#77459B] ml-2">
                 http://www.jademediapro.com/contact
-              </span>
+              </a>
               , or by referring to the contact details at the bottom of this
               document.
             </p>
@@ -1213,13 +1213,13 @@ export default function Privacy() {
             </ul>
             <p className="mb-4">
               To exercise these rights, you can contact us by email at
-              <span className="text-[#77459B] cursor-pointer ml-2">
+              <a href="#" className="text-[#77459B] ml-2">
                 solutions@jademediapro.com
-              </span>
+              </a>
               , by visiting
-              <span className="text-[#77459B] cursor-pointer ml-2">
+              <a href="#" className="text-[#77459B] ml-2">
                 http://www.jademediapro.com/contact
-              </span>
+              </a>
               , or by referring to the contact details at the bottom of this
               document. If you have a complaint about how we handle your data,
               we would like to hear from you.
@@ -1261,9 +1261,9 @@ export default function Privacy() {
             <p className="mb-4">
               If you have questions or comments about this notice, you may email
               us at
-              <span className="text-[#77459B] cursor-pointer ml-2">
+              <a href="#" className="text-[#77459B] ml-2">
                 solutions@jademediapro.com
-              </span>
+              </a>
               or by post to:
             </p>
             <p className="mb-4 font-normal">
@@ -1295,9 +1295,9 @@ export default function Privacy() {
         </div>
         <p className="font-small text-[#3A3B40] text-base mb-40">
           These Privacy Policy was created using Termly's
-          <span className=" font-bold text-[#77459B] underline ml-1 cursor-pointer">
+          <a href="#" className=" font-bold text-[#77459B] underline ml-1">
             Privacy Policy Generator.
-          </span>
+          </a>
         </p>
       </div>
     </div>

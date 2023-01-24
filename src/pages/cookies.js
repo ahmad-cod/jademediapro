@@ -27,9 +27,12 @@ export default function Cookies() {
               This Cookie Policy explains how Jademediapro Tech Agency LTD
               ("Company," "we," "us," or "our") uses cookies and similar
               technologies to recognize you when you visit our websites at
-              <span className=" font-medium text-[#77459B] underline ml-1 cursor-pointer">
+              <a
+                href="#"
+                className=" font-medium text-[#77459B] underline ml-1 "
+              >
                 https://www.jademediapro.com,
-              </span>
+              </a>
               ("Websites"). It explains what these technologies are and why we
               use them, as well as your rights to control our use of them. In
               some cases, we may use cookies to collect personal information, or
@@ -103,9 +106,11 @@ export default function Cookies() {
               more information. In addition, most advertising networks offer you
               a way to opt out of targeted advertising. If you would like to
               find out more information, please visit
-              <span className=" font-medium text-[#77459B] underline ml-1 cursor-pointer">
-                http://www.aboutads.info/choices/ or
-                http://www.youronlinechoices.com.
+              <span className=" font-medium text-[#77459B] underline ml-1">
+                <a href="#"> http://www.aboutads.info/choices/</a> or
+                <a href="#" className="ml-1">
+                  http://www.youronlinechoices.com.
+                </a>
               </span>
               The specific types of first- and third-party cookies served
               through our Websites and the purposes they perform are described
@@ -334,9 +339,12 @@ export default function Cookies() {
             <p className="mb-4">
               If you have any questions about our use of cookies or other
               technologies, please email us at
-              <span className=" font-medium text-[#77459B] underline ml-1 cursor-pointer">
+              <a
+                href="#"
+                className=" font-medium text-[#77459B] underline ml-1"
+              >
                 solutions@jademediapro.com or by post to:
-              </span>
+              </a>
             </p>
             <p className="mb-4 font-medium text-[#77459B]">
               Jademediapro Tech Agency LTD <br />
@@ -350,9 +358,9 @@ export default function Cookies() {
 
         <p className="font-small text-[#3A3B40] text-base mb-40">
           These terms of use were created using Termly's
-          <span className=" font-bold text-[#77459B] underline ml-1 cursor-pointer">
+          <a href="#" className=" font-bold text-[#77459B] underline ml-1">
             Cookie Consent Manager.
-          </span>
+          </a>
         </p>
       </div>
     </div>
