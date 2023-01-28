@@ -226,19 +226,13 @@
   height: 100%;
   object-fit: cover;
 }
-
-.preview_thumbnail {
+.product_preview {
   display: flex;
-  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-.preview_thumbnail a img {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-}
-.animate {
-  transform: translate(-100%);
-}
+
 .product_text_container {
   flex-basis: 40%;
   flex-grow: 1;

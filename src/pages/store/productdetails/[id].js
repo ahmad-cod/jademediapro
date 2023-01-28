@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { products } from "../../../data/storeData";
-import { MdEast, MdWest } from "react-icons/md";
+import { MdWest } from "react-icons/md";
 import styles from "../../../styles/Store.module.css";
 import { useState } from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { BiWorld } from "react-icons/bi";
 import { BsTruck, BsCart2 } from "react-icons/bs";
@@ -43,12 +43,11 @@ const ProductDetails = () => {
                         src={thumbnail.src}
                         alt={thumbnail.alt}
                         key={thumbnail.src}
-                        width={40}
-                        height={40}
+                        width={60}
+                        height={60}
                       />
                     ))
                   }
-                  style={{ margin: "auto", textAlign: "center" }}
                 >
                   {product.previewImages.map((image, i) => (
                     <div
@@ -60,18 +59,6 @@ const ProductDetails = () => {
                     </div>
                   ))}
                 </Carousel>
-                {/* <div className={styles.preview_thumbnail}>
-                  {product.previewImages.map((image) => (
-                    <>
-                      <a
-                        href={`#${image}`}
-                        onClick={() => setAnimate((curr) => curr + 100)}
-                      >
-                        <Image src={image} alt="product" />
-                      </a>
-                    </>
-                  ))}
-                </div> */}
               </div>
               <div className={styles.product_text_container}>
                 <div className={styles.product_heading}>
