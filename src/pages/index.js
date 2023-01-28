@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -14,6 +15,7 @@ export default function Home() {
       <section className="hero-section">
         <h1 className="">Jade Media Pr</h1>
       </section>
+
     </div>
   );
 }
