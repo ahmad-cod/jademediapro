@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Link from "next/link";
+
 
 export default function Home() {
   return (
@@ -16,25 +16,6 @@ export default function Home() {
         <h1 className="">Jade Media Pr</h1>
       </section>
 
-      <Link href="/404">
-        <button>Go to Error Page</button>
-      </Link>
-      <br />
-      <Link href="/Ts&Cs">
-        <button>Go to Terms and Condition</button>
-      </Link>
-      <br />
-      <Link href="/cookies">
-        <button>Go to Cookies</button>
-      </Link>
-      <br />
-      <Link href="/privacy">
-        <button>Go to Privacy Policy</button>
-      </Link>
-      <br />
-      <Link href="/job">
-        <button>Go to Job/Internship</button>
-      </Link>
     </div>
   );
 }
