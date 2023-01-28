@@ -25,7 +25,9 @@ const Store = () => {
   };
   useEffect(() => {
     getProductsPerPage();
-  }, []);
+    window.addEventListener("resize", getProductsPerPage);
+    return () => window.removeEventListener("resize", getProductsPerPage);
+  });
 
   return (
     <>

@@ -19,6 +19,7 @@ const Blogs = () => {
     width <= "800" ? setBlogPerPage(3) : setBlogPerPage(5);
   };
   useEffect(() => {
+    getBlogPerPage();
     window.addEventListener("resize", getBlogPerPage);
     return () => window.removeEventListener("resize", getBlogPerPage);
   });
