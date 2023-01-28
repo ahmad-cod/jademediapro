@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 import StoreHeader from "../../components/storeComponents/storeHeader";
 import { productCategories, products } from "../../data/storeData";
 import CategoryFilter from "../../components/CategoryFilter";

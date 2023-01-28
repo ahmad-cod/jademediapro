@@ -6,11 +6,9 @@ import BlogHeader from "../../components/blogComponent/blogHeader";
 import InterviewCards from "../../components/blogComponent/interviewCards";
 import CategoryFilter from "../../components/CategoryFilter";
 import styles from "../../styles/Blog.module.css";
-import SelectField from "../../components/_helperComponents/mobileSelect";
 
 const Blogs = () => {
   const [blog, setBlog] = useState(blogData);
-
   const [currentPage, setCurrentPage] = useState(1);
   const [blogPerPage, setBlogPerPage] = useState();
   const indexOfLastBlog = currentPage * blogPerPage;
@@ -19,10 +17,10 @@ const Blogs = () => {
   const getBlogPerPage = () => {
     const width = window.innerWidth;
     width <= "800" ? setBlogPerPage(3) : setBlogPerPage(5);
-    console.log(width);
   };
   useEffect(() => {
-    getBlogPerPage();
+    window.addEventListener("resize", getBlogPerPage);
+    return () => window.removeEventListener("resize", getBlogPerPage);
   });
 
   return (

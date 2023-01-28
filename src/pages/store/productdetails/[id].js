@@ -10,13 +10,8 @@ import { BiWorld } from "react-icons/bi";
 import { BsTruck, BsCart2 } from "react-icons/bs";
 
 const ProductDetails = () => {
-  const [animate, setAnimate] = useState(0);
   const router = useRouter();
   const productId = router.query.id;
-  const handleClick = (e) => {
-    setAnimate(e.target.value);
-  };
-  const handleSubmit = (w) => {};
 
   return (
     <div className={styles.product_description}>
