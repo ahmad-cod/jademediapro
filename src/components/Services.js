@@ -14,7 +14,6 @@ const ServicesComponent = ({
   const [content, setContent] = useState(
     data.filter((content) => content.id === 1)
   );
-  console.log(content);
 
   return (
     <div className={styles.service_content}>

@@ -135,6 +135,24 @@ import underStrategy1 from "./projectImages/casestudyImages/UnderStrategy-1.jpg"
 import underStrategy from "./projectImages/casestudyImages/UnderStrategy.jpg";
 
 // import tozomeVideo from "./projectImages/casestudyImages/Tozome-showreel.mp4";
+import slider1 from "./storeImages/Store-slider01.jpg";
+import slider2 from "./storeImages/Store-slider02.png";
+import slider3 from "./storeImages/Store-slider03.png";
+import slider4 from "./storeImages/Store-slider04.png";
+
+import product1 from "./storeImages/product1.svg";
+import product2 from "./storeImages/product2.svg";
+import product3 from "./storeImages/product3.svg";
+import product4 from "./storeImages/product4.svg";
+import product5 from "./storeImages/product5.svg";
+import storeFreeShipping from "./storeImages/Store-Free-Shipping.gif";
+import storeHighQuality from "./storeImages/Store-High-Quality.gif";
+import storeSupport from "./storeImages/Store-Support.gif";
+import product4Preview1 from "./storeImages/product-preview01.png";
+import product4Preview2 from "./storeImages/product-preview02.png";
+import product4Preview3 from "./storeImages/product-preview03.png";
+
+import storeWorldwideShipping from "./storeImages/Store-Worldwide-Shipping.gif";
 
 import footerlogo from "./footer/footerlogo.png";
 import footerplaneicon from "./footer/footerplaneicon.png";
@@ -297,4 +315,23 @@ export {
   underProduction1,
   underStrategy,
   underStrategy1,
+};
+
+export {
+  slider1,
+  slider2,
+  slider3,
+  slider4,
+  product1,
+  product2,
+  product3,
+  product4,
+  product5,
+  product4Preview1,
+  product4Preview2,
+  product4Preview3,
+  storeFreeShipping,
+  storeHighQuality,
+  storeSupport,
+  storeWorldwideShipping,
 };
