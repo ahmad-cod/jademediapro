@@ -130,12 +130,12 @@ export const serviceData = [
     serviceTitle: "Branding & Design",
     categories: [
       "Brand strategy",
-      "Logo and Brand identity",
-      "Products branding and packaging",
+      "Logo & Brand identity",
+      "Products branding & packaging",
       "Brand collateral/stationery design",
       "Company Profile & Editorial design",
       "Environmental & Retail Graphics",
-      "Infographic and Illustration Graphics",
+      "Infographic & Illustration Graphics",
     ],
     services: [
       {
@@ -154,7 +154,7 @@ export const serviceData = [
       },
       {
         id: 2,
-        category: "Logo and Brand identity",
+        category: "Logo & Brand identity",
         serviceContent: [
           {
             listTitle: "",
@@ -168,7 +168,7 @@ export const serviceData = [
       },
       {
         id: 3,
-        category: "Products branding and packaging",
+        category: "Products branding & packaging",
         serviceContent: [
           {
             listTitle: "",
@@ -224,7 +224,7 @@ export const serviceData = [
       },
       {
         id: 7,
-        category: "Infographic and Illustration Graphics",
+        category: "Infographic & Illustration Graphics",
         serviceContent: [
           {
             listTitle: "",
@@ -243,7 +243,7 @@ export const serviceData = [
     serviceTitle: "Digital Marketing",
     categories: [
       "Multicultural content marketing",
-      "Social media management/marketing",
+      "Social media marketing",
       "Search engine optimization",
       "Advertising campaigns",
       "Lead generation",
@@ -266,7 +266,7 @@ export const serviceData = [
       },
       {
         id: 2,
-        category: "Social media management/marketing",
+        category: "Social media marketing",
         serviceContent: [
           {
             listTitle: "",

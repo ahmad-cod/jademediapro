@@ -7,7 +7,7 @@ const SelectField = ({ data, filter }) => {
   const [showFields, setShowFields] = useState(false);
   const selectRef = useRef([]);
   const selectField = (value) => {
-    setFields(selectRef.current[value].innerHTML);
+    setFields(selectRef.current[value].textContent);
     setShowFields();
     filter(value);
   };

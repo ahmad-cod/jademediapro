@@ -25,18 +25,19 @@
   flex-direction: column;
   text-align: left;
   position: absolute;
-  width: 150px;
+  width: 200px;
   top: 40px;
   left: 50px;
   background-color: white;
   padding: 10px;
+
   border-radius: 4px;
   z-index: 1000000000;
 }
 .display_filter button {
   padding: 5px;
   text-align: left;
-  font-size: 12px;
+  font-size: 15px;
   color: #3a3b40;
 }
 .offscreen {

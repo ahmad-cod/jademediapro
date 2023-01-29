@@ -33,7 +33,7 @@ const ProductDetails = () => {
                   showStatus={false}
                   showIndicators={false}
                   renderThumbs={() =>
-                    product.previewImages.map((thumbnail) => (
+                    product.previewImages?.map((thumbnail) => (
                       <Image
                         src={thumbnail.src}
                         alt={thumbnail.alt}
@@ -44,7 +44,7 @@ const ProductDetails = () => {
                     ))
                   }
                 >
-                  {product.previewImages.map((image, i) => (
+                  {product.previewImages?.map((image, i) => (
                     <div
                       className={styles.product_preview_image}
                       key={i}
