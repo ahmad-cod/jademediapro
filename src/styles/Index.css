@@ -1,3 +1,5 @@
-.hero-section{
-    @apply bg-slate-300 h-screen w-full text-center;
+
+.hero-section {
+  @apply bg-slate-300 h-screen w-full text-center;
 }
+
