@@ -1,0 +1,30 @@
+.pageActive {
+  border: 1px solid #77459b;
+}
+.paginationContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+.pageNext button {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #4f2e67;
+}
+.pageNumber {
+  display: flex;
+  gap: 20px;
+}
+.pageNumber button {
+  height: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}

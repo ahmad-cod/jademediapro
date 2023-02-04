@@ -73,12 +73,17 @@ const Footer = () => {
               togleFooterContent[0].isOpen ? "flex" : "hidden"
             }  sm:flex flex-col gap-4`}
           >
+
             {jadeMedia.children.map((child, i) => (
               <Link
                 className="text-tag_p text-[15px]"
                 href={child.link}
                 key={i}
               >
+
+            {jadeMedia.children.map((child) => (
+              <Link className="text-tag_p text-[15px]" href={child.link}>
+
                 {child.subtitle}
               </Link>
             ))}
@@ -102,12 +107,17 @@ const Footer = () => {
               togleFooterContent[1].isOpen ? "flex" : "hidden"
             }  sm:flex flex-col gap-4`}
           >
+
             {projects.children.map((child, i) => (
               <Link
                 className="text-tag_p text-[15px]"
                 href={child.link}
                 key={i}
               >
+
+            {projects.children.map((child) => (
+              <Link className="text-tag_p text-[15px]" href={child.link}>
+
                 {child.subtitle}
               </Link>
             ))}
@@ -137,6 +147,8 @@ const Footer = () => {
                 href={child.link}
                 key={i}
               >
+            {hub.children.map((child) => (
+              <Link className="text-tag_p text-[15px]" href={child.link}>
                 {child.subtitle}
               </Link>
             ))}
@@ -167,6 +179,8 @@ const Footer = () => {
                 href={child.link}
                 key={i}
               >
+            {resources.children.map((child) => (
+              <Link className="text-tag_p text-[15px]" href={child.link}>
                 {child.subtitle}
               </Link>
             ))}
@@ -196,6 +210,8 @@ const Footer = () => {
                 href={child.link}
                 key={i}
               >
+            {company.children.map((child) => (
+              <Link className="text-tag_p text-[15px]" href={child.link}>
                 {child.subtitle}
               </Link>
             ))}
@@ -208,6 +224,7 @@ const Footer = () => {
           <p>Join our newsletter</p>
           <button className="border-[#46BFB2] border-[1px] rounded-md py-2 flex items-center justify-center gap-3">
             <Image alt="" width="100%" height="100%" src={footerplaneicon} />
+            <Image width="100%" height="100%" src={footerplaneicon} />{" "}
             <p>Sign Up</p>
           </button>
         </div>
@@ -241,6 +258,28 @@ const Footer = () => {
           </div>
           <div className="w-10">
             <Image alt="" width="100%" height="100%" src={pinterestgif} />
+            <Image width="100%" height="100%" src={facebookgif} />
+          </div>
+          <div className="w-10">
+            <Image width="100%" height="100%" src={twittergif} />
+          </div>
+          <div className="w-10">
+            <Image width="100%" height="100%" src={linkedingif} />
+          </div>
+          <div className="w-10">
+            <Image width="100%" height="100%" src={instagramgif} />
+          </div>
+          <div className="w-10">
+            <Image width="100%" height="100%" src={whatsappgif} />
+          </div>
+          <div className="w-10">
+            <Image width="100%" height="100%" src={youtubegif} />
+          </div>
+          <div className="w-10">
+            <Image width="100%" height="100%" src={vimeogif} />
+          </div>
+          <div className="w-10">
+            <Image width="100%" height="100%" src={pinterestgif} />
           </div>
         </div>
       </div>

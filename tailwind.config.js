@@ -7,7 +7,15 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        black_cus: "#242526",
+        tag_p: "#F6F6F6",
+      },
+      fontFamily: {
+        pop: ["Poppins", '"Open Sans"'],
+      },
+    },
   },
   plugins: [],
 };
