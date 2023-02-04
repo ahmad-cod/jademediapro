@@ -22,6 +22,7 @@ export {
   purplearrow,
   sendarrow,
   whitearrow,
+};
 
 import blog1image from "./blogImages/blog1image.jpg";
 import blog2image from "./blogImages/blog2image.jpg";
@@ -334,6 +335,8 @@ export {
   storeHighQuality,
   storeSupport,
   storeWorldwideShipping,
+};
+
 import footerlogo from "./footer/footerlogo.png";
 import footerplaneicon from "./footer/footerplaneicon.png";
 import facebookgif from "./footer/footer-icon-facebook.gif";
@@ -347,26 +350,23 @@ import whatsappgif from "./footer/footer-icon-whatsapp.gif";
 import youtubegif from "./footer/footer-icon-youtube.gif";
 
 import disclaimerfolder from "./disclaimer/disclaimer-folder.png";
-import mostviewedthumbnail1 from "./most-viewed/most-viewed-thumbnail1.png"
-import mostviewedthumbnail2 from "./most-viewed/most-viewed-thumbnail2.png"
-import mostviewedthumbnail3 from "./most-viewed/most-viewed-thumbnail3.png"
-import handphone from "./interview/handphone.png"
-import female from "./interview/female.png"
-import male from "./interview/male.png"
-import sixty from "./interview/sixty.png"
-import productImage1 from "./product/productImage1.png"
-import productImage2 from "./product/productImage2.png"
-import productImage3 from "./product/productImage3.png"
-import productImage4 from "./product/productImage4.png"
-import storefront from "./shopping-cart/storefront.png"
-import pdf from "./freebies/pdf.png"
-import freebiesHeader from "./freebies/freebiesHeader.png"
-import mp4 from "./freebies/mp4.png"
-import ps from "./freebies/ps.png"
-import docs from "./freebies/docs.png"
-
-
-
+import mostviewedthumbnail1 from "./most-viewed/most-viewed-thumbnail1.png";
+import mostviewedthumbnail2 from "./most-viewed/most-viewed-thumbnail2.png";
+import mostviewedthumbnail3 from "./most-viewed/most-viewed-thumbnail3.png";
+import handphone from "./interview/handphone.png";
+import female from "./interview/female.png";
+import male from "./interview/male.png";
+import sixty from "./interview/sixty.png";
+import productImage1 from "./product/productImage1.png";
+import productImage2 from "./product/productImage2.png";
+import productImage3 from "./product/productImage3.png";
+import productImage4 from "./product/productImage4.png";
+import storefront from "./shopping-cart/storefront.png";
+import pdf from "./freebies/pdf.png";
+import freebiesHeader from "./freebies/freebiesHeader.png";
+import mp4 from "./freebies/mp4.png";
+import ps from "./freebies/ps.png";
+import docs from "./freebies/docs.png";
 
 export {
   footerlogo,
@@ -379,7 +379,6 @@ export {
   twittergif,
   whatsappgif,
   youtubegif,
-
   disclaimerfolder,
   mostviewedthumbnail1,
   mostviewedthumbnail2,
@@ -397,6 +396,5 @@ export {
   freebiesHeader,
   mp4,
   ps,
-  docs
-
+  docs,
 };
