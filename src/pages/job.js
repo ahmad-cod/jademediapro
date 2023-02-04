@@ -1,7 +1,8 @@
 import react from "react";
 import Link from "next/link";
-import image from "next/image";
+
 import { jobheroimg } from "../images";
+import Image from "next/image";
 
 export default function Terms() {
   return (
@@ -13,7 +14,7 @@ export default function Terms() {
             managed job searches
           </h1>
           <div className="w-[20%]">
-            <img src={jobheroimg} className="w-full" />
+            <Image src={jobheroimg} className="w-full" alt="" />
           </div>
         </div>
       </div>
