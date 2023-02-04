@@ -1,6 +1,6 @@
 import React from "react";
 import { FiSend } from "react-icons/fi";
-import styles from "../styles/Project.module.css"
+import styles from "../styles/Project.module.css";
 
 const ReadyToWork = () => {
   return (
