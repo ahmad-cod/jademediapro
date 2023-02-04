@@ -1,0 +1,152 @@
+.service_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 160px;
+}
+.service_content .service_navigation {
+  width: 50%;
+}
+.project_heading {
+  padding-right: 20px;
+}
+.project_heading h1 {
+  font-size: 96px;
+  font-weight: 600;
+  line-height: 115px;
+  width: 571px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 100px;
+}
+.service_content .service_container {
+  width: 50%;
+  height: 750px;
+  overflow-y: scroll;
+}
+.service_content .service_container::-webkit-scrollbar {
+  display: none;
+}
+.service_content::-webkit-scrollbar {
+  display: none;
+}
+.service_buttons_container {
+  margin: 48px 0;
+}
+.service_buttons {
+  margin-bottom: 32px;
+}
+.service_buttons button {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  min-width: 320px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.service_buttons button svg {
+  color: #77459b;
+}
+.service_buttons button:hover {
+  color: #77459b;
+  font-weight: 600;
+}
+.cta_button button {
+  padding: 12px 32px;
+  border: 1px solid #4f2e67;
+
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  color: #4f2e67;
+  font-size: 16px;
+  border-radius: 4px;
+  justify-content: center;
+  transition: all 500ms ease-in-out;
+}
+
+.cta_button button:hover {
+  background-color: #4f2e67;
+  color: white !important;
+}
+
+.service_list .list_title h3 {
+  margin: 16px 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+.service_container .list_content p {
+  margin-bottom: 16px;
+}
+.service_summary p {
+  font-size: 18px;
+}
+.service_list .list_content p {
+  font-size: 18px;
+}
+.button_active {
+  color: #4f2e67;
+  font-weight: 600 !important;
+}
+@media only screen and (min-width: 900px) and (max-width: 1150px) {
+  .project_heading h1 {
+    font-size: clamp(70px, 100%, 80px);
+    line-height: 65px;
+  }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 900px) {
+  .service_content {
+    justify-content: center;
+    position: relative;
+    margin-bottom: 96px;
+  }
+  .project_heading h1 {
+    font-size: clamp(40px, 50px, 55px) !important;
+    line-height: 60px;
+    width: 350px;
+  }
+  .service_list .list_title h3 {
+    font-size: 16px;
+  }
+  .service_list .list_content p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .service_summary p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .service_navigation {
+    width: clamp(350px, 100%, 800px) !important;
+    min-height: 150px;
+  }
+  .service_buttons_container {
+    display: none;
+  }
+
+  .service_buttons button {
+    font-size: 16px;
+  }
+  .cta_button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 0 !important;
+  }
+  .cta_button button {
+    margin-left: 0 !important;
+  }
+  .service_container {
+    width: clamp(350px, 100%, 800px) !important;
+    height: 620px !important;
+    margin-bottom: 70px;
+    text-align: justify;
+  }
+}
