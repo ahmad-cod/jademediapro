@@ -3,6 +3,7 @@ import styles from "../styles/Home.module.css";
 import { Footer } from "../components";
 
 
+
 export default function Home() {
   return (
     <div>
@@ -16,6 +17,7 @@ export default function Home() {
       <section className="hero-section">
         <h1 className="">Jade Media Pr</h1>
       </section>
+
       <Footer />
     </div>
   );
