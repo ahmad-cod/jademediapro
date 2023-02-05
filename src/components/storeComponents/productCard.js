@@ -11,14 +11,13 @@ const ProductCard = ({ products }) => {
           <div className={styles.product_content}>
             <div className={styles.product_image}>
               <Image src={product.image} alt={product.title} />
+
               <button
                 className={
                   product.feature === "-30%" ? styles.red_background : ""
                 }
               >
-                {product.feature === "-30%" || product.feature === "New"
-                  ? product.feature
-                  : undefined}
+                {product.feature && product.feature}
               </button>
             </div>
             <div className={styles.product_text}>

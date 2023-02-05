@@ -7,28 +7,10 @@ import ProductCard from "../../components/storeComponents/productCard";
 import Pagination from "../../components/Pagination";
 import styles from "../../styles/Store.module.css";
 import StoreServices from "../../components/storeComponents/storeServices";
+import useWidth from "../../hooks/UseWidth";
 const Store = () => {
-  const [product, setProduct] = useState(products);
-  const [categories, setCategories] = useState(productCategories);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [productsPerPage, setProductsPerPage] = useState();
-  const indexOfLastProduct = currentPage * productsPerPage;
-  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
-  const currentProducts = product.slice(
-    indexOfFirstProduct,
-    indexOfLastProduct
-  );
-
-  const getProductsPerPage = () => {
-    const width = window.innerWidth;
-    width <= "800" ? setProductsPerPage(4) : setProductsPerPage(12);
-  };
-  useEffect(() => {
-    getProductsPerPage();
-    window.addEventListener("resize", getProductsPerPage);
-    return () => window.removeEventListener("resize", getProductsPerPage);
-  });
-
+  const [currentData, currentPage, setCurrentPage, dataPerPage, data, setData] =
+    useWidth(products, 4, 12);
   return (
     <>
       <header>
@@ -37,14 +19,14 @@ const Store = () => {
       <main className={styles.main}>
         <StoreServices />
         <CategoryFilter
-          categories={categories}
-          setCategory={setProduct}
+          categories={productCategories}
+          setCategory={setData}
           filterContent={products}
         />
-        <ProductCard products={currentProducts} />
+        <ProductCard products={currentData} />
         <Pagination
-          cardsPerPage={productsPerPage}
-          totalCards={product.length}
+          cardsPerPage={dataPerPage}
+          totalCards={data.length}
           currentPage={currentPage}
           setCurrentPage={setCurrentPage}
         />
