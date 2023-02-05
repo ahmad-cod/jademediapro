@@ -336,9 +336,6 @@ export {
   storeSupport,
   storeWorldwideShipping,
 };
-
-
-
 import footerlogo from "./footer/footerlogo.png";
 import footerplaneicon from "./footer/footerplaneicon.png";
 import facebookgif from "./footer/footer-icon-facebook.gif";
