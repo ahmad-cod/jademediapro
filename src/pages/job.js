@@ -1,12 +1,20 @@
-import react from "react";
+import react, { useState } from "react";
 import Link from "next/link";
 
-import { jobheroimg } from "../images";
+import {
+  borderlineimg,
+  jobheroimg,
+  lemonarrow,
+  sendarrow,
+  whitearrow,
+} from "../images";
 import Image from "next/image";
 
-import { jobdata } from "../data/jobData";
+import { jobData, titlejobs } from "../data/jobData/index";
 
 export default function Terms() {
+  const [activeborder, setactiveborder] = useState("All");
+
   return (
     <div>
       <div className=" bg-[#F6F6F6] px-[20px] py-[31px] md:pt-12 md:pr-[104px] md:pb-[132px] md:pl-[104px] mb-32 ">
@@ -20,177 +28,28 @@ export default function Terms() {
           </div>
         </div>
       </div>
+      <div className="flex gap-2 border-b-[1px] px-[104px] w-[90%] ">
+        {titlejobs.map((item, i) => {
+          return (
+            <Jobtitle
+              title={item}
+              activeborder={activeborder}
+              setactiveborder={setactiveborder}
+            />
+          );
+        })}
+      </div>
       <div className=" flex gap-[163px] px-[20px] py-[31px] md:pt-12 md:pr-[104px] md:pb-[132px] md:pl-[105px] w-full">
-        {/* <div>
-          <div className="flex bg-[#3A9F94] rounded px-6 pt-2 pb-4 items-center gap-28 text-[#f6f6f6] cursor-pointer mb-10 hover:bg-[#156e64] ">
-            <div>
-              <h2 className="font-normal text-4xl ">
-                GRAPHIC <br /> DESIGNER
-              </h2>
-            </div>
-            <div className="flex gap-28 hover:translate-x-2 hover:duration-0 hover:transition hover:md:duration-700">
-              <img src="/border-line.png" />
-              <div className="flex gap-52 items-center font-normal text-[15px]">
-                <div>
-                  <p>New Jersey</p>
-                  <p>Contract</p>
-                  <p>Crane Inc.</p>
-                </div>
-                <div>
-                  <img src="/white-arrow.png" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex bg-[#3A9F94] rounded px-6 pt-2 pb-4 items-center gap-28 text-[#f6f6f6] cursor-pointer mb-10 hover:bg-[#156e64] ">
-            <div>
-              <h2 className="font-normal text-4xl ">
-                GRAPHIC <br /> DESIGNER
-              </h2>
-            </div>
-            <div className="flex gap-28 hover:translate-x-2 hover:duration-0 hover:transition hover:md:duration-700">
-              <img src="/border-line.png" />
-              <div className="flex gap-52 items-center font-normal text-[15px]">
-                <div>
-                  <p>New Jersey</p>
-                  <p>Contract</p>
-                  <p>Crane Inc.</p>
-                </div>
-                <div>
-                  <img src="/white-arrow.png" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex bg-[#3A9F94] rounded px-6 pt-2 pb-4 items-center gap-28 text-[#f6f6f6] cursor-pointer mb-10 hover:bg-[#156e64] ">
-            <div>
-              <h2 className="font-normal text-4xl ">
-                GRAPHIC <br /> DESIGNER
-              </h2>
-            </div>
-            <div className="flex gap-28 hover:translate-x-2 hover:duration-0 hover:transition hover:md:duration-700">
-              <img src="/border-line.png" />
-              <div className="flex gap-52 items-center font-normal text-[15px]">
-                <div>
-                  <p>New Jersey</p>
-                  <p>Contract</p>
-                  <p>Crane Inc.</p>
-                </div>
-                <div>
-                  <img src="/white-arrow.png" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex bg-[#3A9F94] rounded px-6 pt-2 pb-4 items-center gap-28 text-[#f6f6f6] cursor-pointer mb-10 hover:bg-[#156e64] ">
-            <div>
-              <h2 className="font-normal text-4xl ">
-                GRAPHIC <br /> DESIGNER
-              </h2>
-            </div>
-            <div className="flex gap-28 hover:translate-x-2 hover:duration-0 hover:transition hover:md:duration-700">
-              <img src="/border-line.png" />
-              <div className="flex gap-52 items-center font-normal text-[15px]">
-                <div>
-                  <p>New Jersey</p>
-                  <p>Contract</p>
-                  <p>Crane Inc.</p>
-                </div>
-                <div>
-                  <img src="/white-arrow.png" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex bg-[#3A9F94] rounded px-6 pt-2 pb-4 items-center gap-28 text-[#f6f6f6] cursor-pointer mb-10 hover:bg-[#156e64] ">
-            <div>
-              <h2 className="font-normal text-4xl ">
-                GRAPHIC <br /> DESIGNER
-              </h2>
-            </div>
-            <div className="flex gap-28 hover:translate-x-2 hover:duration-0 hover:transition hover:md:duration-700">
-              <img src="/border-line.png" />
-              <div className="flex gap-52 items-center font-normal text-[15px]">
-                <div>
-                  <p>New Jersey</p>
-                  <p>Contract</p>
-                  <p>Crane Inc.</p>
-                </div>
-                <div>
-                  <img src="/white-arrow.png" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex bg-[#3A9F94] rounded px-6 pt-2 pb-4 items-center gap-28 text-[#f6f6f6] cursor-pointer mb-10 hover:bg-[#156e64] ">
-            <div>
-              <h2 className="font-normal text-4xl ">
-                GRAPHIC <br /> DESIGNER
-              </h2>
-            </div>
-            <div className="flex gap-28 hover:translate-x-2 hover:duration-0 hover:transition hover:md:duration-700">
-              <img src="/border-line.png" />
-              <div className="flex gap-52 items-center font-normal text-[15px]">
-                <div>
-                  <p>New Jersey</p>
-                  <p>Contract</p>
-                  <p>Crane Inc.</p>
-                </div>
-                <div>
-                  <img src="/white-arrow.png" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex bg-[#3A9F94] rounded px-6 pt-2 pb-4 items-center gap-28 text-[#f6f6f6] cursor-pointer mb-10 hover:bg-[#156e64] ">
-            <div>
-              <h2 className="font-normal text-4xl ">
-                GRAPHIC <br /> DESIGNER
-              </h2>
-            </div>
-            <div className="flex gap-28 hover:translate-x-2 hover:duration-0 hover:transition hover:md:duration-700">
-              <img src="/border-line.png" />
-              <div className="flex gap-52 items-center font-normal text-[15px]">
-                <div>
-                  <p>New Jersey</p>
-                  <p>Contract</p>
-                  <p>Crane Inc.</p>
-                </div>
-                <div>
-                  <img src="/white-arrow.png" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex bg-[#3A9F94] rounded px-6 pt-2 pb-4 items-center gap-28 text-[#f6f6f6] cursor-pointer mb-10 hover:bg-[#156e64] ">
-            <div>
-              <h2 className="font-normal text-4xl ">
-                GRAPHIC <br /> DESIGNER
-              </h2>
-            </div>
-            <div className="flex gap-28 hover:translate-x-2 hover:duration-0 hover:transition hover:md:duration-700">
-              <img src="/border-line.png" />
-              <div className="flex gap-52 items-center font-normal text-[15px]">
-                <div>
-                  <p>New Jersey</p>
-                  <p>Contract</p>
-                  <p>Crane Inc.</p>
-                </div>
-                <div>
-                  <img src="/white-arrow.png" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
         <div>
-          {jobdata.map((item, i) => {
-            <JobCard
-              title={item.title}
-              location={item.location}
-              work_type={item.work_type}
-              industry={item.industry}
-            />;
+          {jobData.map((item, i) => {
+            return (
+              <JobCard
+                title={item.title}
+                location={item.location}
+                work_type={item.work_type}
+                industry={item.industry}
+              />
+            );
           })}
         </div>
         <div>
@@ -222,7 +81,7 @@ export default function Terms() {
             </select>
           </div>
           <div className="bg-[#4f2e67] p-[54px] rounded">
-            <img src="/send-arrow.png" />
+            <Image src={sendarrow} />
 
             <div className="text-[#f6f6f6]">
               <h2 className="font-semibold text-4xl mt-6">
@@ -235,7 +94,7 @@ export default function Terms() {
             </div>
             <div className="flex m-auto items-center mt-6 gap-4 text-[#46BFB2] font-semibold text-base border border-[#46BFB2] rounded py-3 px-8 w-[169px] hover:bg-[#46BFB2] hover:text-white">
               <button>Sign up</button>
-              <img src="/lemon-arrow.png" className="w-4 h-[14px]" />
+              <Image src={lemonarrow} className="w-4 h-[14px]" />
             </div>
           </div>
         </div>
@@ -244,6 +103,7 @@ export default function Terms() {
   );
 }
 
+//Component for the job data
 function JobCard(props) {
   let titlesplit = props.title.split(" ");
 
@@ -251,12 +111,11 @@ function JobCard(props) {
     <div className="flex bg-[#3A9F94] rounded px-6 pt-2 pb-4 items-center gap-28 text-[#f6f6f6] cursor-pointer mb-10 hover:bg-[#156e64] ">
       <div>
         <h2 className="font-normal text-4xl ">
-          GRAPHIC <br /> DESIGNER
           {titlesplit[0]} <br /> {titlesplit[1]}
         </h2>
       </div>
       <div className="flex gap-28 hover:translate-x-2 hover:duration-0 hover:transition hover:md:duration-700">
-        <img src="/border-line.png" />
+        <Image src={borderlineimg} />
         <div className="flex gap-52 items-center font-normal text-[15px]">
           <div>
             <p>{props.location}</p>
@@ -264,10 +123,32 @@ function JobCard(props) {
             <p>{props.industry}</p>
           </div>
           <div>
-            <img src="/white-arrow.png" />
+            <Image src={whitearrow} alt="white arrow" />
           </div>
         </div>
       </div>
+    </div>
+  );
+}
+
+//Component for jobtitles
+function Jobtitle(props) {
+  //const [activeborder, setactiveborder] = useState(false);
+
+  const makeactive = () => {
+    props.setactiveborder(props.title);
+  };
+
+  return (
+    <div
+      onClick={makeactive}
+      className={`${
+        props.activeborder == props.title
+          ? "border-b-[1px] border-[#4F2E67]"
+          : "border-b-[0px]"
+      } cursor-pointer `}
+    >
+      <p>{props.title}</p>
     </div>
   );
 }
