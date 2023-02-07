@@ -3,11 +3,14 @@ import React from 'react'
 import { MostViewedCard } from '../components'
 import { mostViewedData } from '../data/most-viewed/mostViewedData'
 import { mostviewedthumbnail } from '../images'
+import styles from '../styles/most_viewed.module.css'
 const mostViewed = () => {
   return (
-    <div className='px-10 md:px-20'>
-        <div>
-            <h3 className='most-recent-header'>Most Recent</h3>
+    <div className={styles.mostviewed_maincontainer}>
+      <div className={styles.mostviewed_contentbox}>
+
+      <div>
+            <h3 className={styles.mostrecent_header}>Most Recent</h3>
         </div>
 
 {
@@ -18,6 +21,9 @@ const mostViewed = () => {
     ))
 }
 
+
+      </div>
+        
         
        
     </div>

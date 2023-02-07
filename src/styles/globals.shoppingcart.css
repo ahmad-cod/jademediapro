@@ -1,16 +1,21 @@
-.main-container{
-    padding: 0 104px;
-}
-
-.heading-container{
+.shoppingcart-container{
+    /* padding: 0 104px; */
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
+    align-items: center;
 }
 
-h1{
+.shoppingcart-heading{
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+    width: 90%;
+    padding: 0px;
+    /* gap: 16px; */
+    /* border: 2px solid yellow; */
+}
+
+.shoppingcart-heading h1{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -18,27 +23,31 @@ h1{
     line-height: 120%;
 }
 
-p{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 40px;
+.shoppingcart-headertext{
+    /* margin:0 80px; */
+    margin-top: 72px;
+
 }
 
-.image-frame{
-    padding: 32px 15px;
+
+.shoppingcart-imageframe{
+    /* padding: 32px 15px; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin-top: 40px;
+    padding: 40px;
     width: 100%;
-    gap: 24px;
+    /* gap: 24px; */
     border: 1px solid green;
 }
 
-.empty__cart-button{
+.yourcart{
+    margin: 40px 0;
+}
+
+.shoppingcart-empty__cart-button{
     background: #4F2E67;
     border-radius: 4px;
     width: 188px;
@@ -46,8 +55,57 @@ p{
     color: #f6f6f6;
 }
 
-@media only screen and (max-width: 700px) {
-    .main-container{
-        padding: 0 30px;
+.shoppingcart-displaybox{
+    /* border: 1px solid red; */
+    width: 90%;
+}
+
+    @media only screen and (max-width: 700px) {
+
+        .shoppingcart-heading{
+            display: flex;
+            flex-direction: column;
+            margin-top: 73px;
+            /* border: 2px solid purple; */
+        }
+
+    .shoppingcart-headertext{
+        margin: 0 20px;
     }
+
+    .shoppingcart-container{
+        /* padding: 0 30px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+        align-items: center;
+        /* border: 3px solid grey; */
+
+    }
+
+    .shoppingcart-card{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* border: 2px solid red ; */
+        margin: auto;
+        margin-top: 50px
+    }
+
+    .top-picks{
+        text-align: center;
+    }
+
+
+    
+    
+
+    .shoppingcart-imageframe{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    
 }

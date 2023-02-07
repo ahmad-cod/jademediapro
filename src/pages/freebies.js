@@ -5,6 +5,7 @@ import { freebiesHeader } from '../images'
 import { ImageWithHeader } from '../components'
 import FreebiesCard from '../components/FreebiesCard'
 import { freebiesData } from '../data/freebies-card/freebies-data'
+import styles from '../styles/freebies.module.css'
 
 const freebies = () => {
   return (
@@ -15,7 +16,7 @@ const freebies = () => {
 
         
 
-<div className='main-container'>
+<div className={styles.main_container}>
       {/* <div className=''>
           <ul className='flex'>
               <li>All</li>
@@ -29,7 +30,7 @@ const freebies = () => {
       </div> */}
     <hr />
 
-    <div className='flex mt-16 justify-between flex-wrap gap-20'>
+    <div className={styles.freebies_container}>
     {
               freebiesData.map(data => (
 
