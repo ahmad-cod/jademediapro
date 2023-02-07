@@ -1,4 +1,5 @@
 import { jobIndustry, jobLocations, jobtype } from "../../data/jobData";
+import FilterDropdown from "../_helperComponents/filterDropdown";
 
 function JobFilters(props) {
   return (
@@ -33,28 +34,13 @@ function JobFilters(props) {
         </div>
       </div>
       <div className="mb-8 w-[277px]">
-        <select className="border pl-4 py-[19px] pr-8 w-full text-lg font-normal text-[#74767F] rounded">
-          <option> LOCATION</option>
-          {jobLocations.map((item, i) => {
-            return <option> {item}</option>;
-          })}
-        </select>
+        <FilterDropdown data={jobLocations} label="LOCATION" />
       </div>
       <div className="mb-8 w-[277px]">
-        <select className="border pl-4 py-[19px] pr-8 w-full text-lg font-normal text-[#74767F] rounded">
-          <option> TYPE OF WORK</option>
-          {jobtype.map((item, i) => {
-            return <option> {item}</option>;
-          })}
-        </select>
+        <FilterDropdown data={jobtype} label="JOB TYPE" />
       </div>
       <div className="mb-8 w-[277px]">
-        <select className="border pl-4 py-[19px] pr-8 w-full text-lg font-normal text-[#74767F] rounded">
-          <option> INDUSTRY</option>
-          {jobIndustry.map((item, i) => {
-            return <option> {item}</option>;
-          })}
-        </select>
+        <FilterDropdown data={jobIndustry} label="INDUSTRY" />
       </div>
       <label className="relative inline-flex items-center cursor-pointer mb-24">
         <input

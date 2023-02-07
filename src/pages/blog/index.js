@@ -5,11 +5,11 @@ import BlogHeader from "../../components/blogComponent/blogHeader";
 import InterviewCards from "../../components/blogComponent/interviewCards";
 import CategoryFilter from "../../components/CategoryFilter";
 import styles from "../../styles/Blog.module.css";
-import useWidth from "../../hooks/useWidth";
+import usePagination from "../../hooks/usePagination";
 
 const Blogs = () => {
   const [currentData, currentPage, setCurrentPage, dataPerPage, data, setData] =
-    useWidth(blogData, 3, 5);
+    usePagination(blogData, 3, 5);
 
   return (
     <>

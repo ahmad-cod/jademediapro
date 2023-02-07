@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const useWidth = (content, mobileWidth, desktopWidth) => {
+const usePagination = (content, mobileWidth, desktopWidth) => {
   const [data, setData] = useState(content);
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -20,4 +20,4 @@ const useWidth = (content, mobileWidth, desktopWidth) => {
   });
   return [currentData, currentPage, setCurrentPage, dataPerPage, data, setData];
 };
-export default useWidth;
+export default usePagination;

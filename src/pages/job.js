@@ -1,8 +1,11 @@
-import react, { useState } from "react";
 import Link from "next/link";
-import { jobData, titlejobs } from "../data/jobData/index";
+import { jobData, categoryjobs } from "../data/jobData";
+import CategoryFilter from "../components/CategoryFilter";
 import JobCard from "../components/jobComponents/jobCard";
 import Image from "next/image";
+import usePagination from "../hooks/usePagination";
+import Pagination from "../components/Pagination";
+import JobFilters from "../components/jobComponents/jobFilters";
 import {
   borderlineimg,
   jobheroimg,
@@ -10,9 +13,10 @@ import {
   sendarrow,
   whitearrow,
 } from "../images";
-import JobFilters from "../components/jobComponents/jobFilters";
 
 export default function Terms() {
+  const [currentData, currentPage, setCurrentPage, dataPerPage, data, setData] =
+    usePagination(jobData, 4, 8);
   return (
     <div>
       <div className=" bg-[#F6F6F6] px-[20px] py-[31px] md:pt-12 md:pr-[104px] md:pb-[132px] md:pl-[104px] mb-32 ">
@@ -29,25 +33,18 @@ export default function Terms() {
 
       <div className="flex gap-6 font-normal text-[15px] text-[#57585F] hover:text-[#77459B]  px-[104px] "></div>
 
-      <div className="flex gap-2 border-b-[1px] px-[104px] w-[90%] ">
-        {titlejobs.map((item, i) => {
-          return (
-            <Jobtitle
-              title={item}
-              activeborder={activeborder}
-              setactiveborder={setactiveborder}
-              key={i}
-            />
-          );
-        })}
-      </div>
+      <CategoryFilter
+        setCategory={setData}
+        filterContent={jobData}
+        categories={categoryjobs}
+      />
 
       <div className=" flex gap-[163px] px-[20px] py-[31px] md:pt-12 md:pr-[104px] md:pb-[132px] md:pl-[105px] w-full">
         <div>
-          {jobData.map((item, i) => {
+          {currentData.map((item, i) => {
             return (
               <JobCard
-                title={item.title}
+                category={item.category}
                 location={item.location}
                 work_type={item.work_type}
                 industry={item.industry}
@@ -77,6 +74,12 @@ export default function Terms() {
           </div>
         </div>
       </div>
+      <Pagination
+        cardsPerPage={dataPerPage}
+        currentPage={currentPage}
+        totalCards={data.length}
+        setCurrentPage={setCurrentPage}
+      />
     </div>
   );
 }
