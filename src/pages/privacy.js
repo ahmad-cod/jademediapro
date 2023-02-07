@@ -1,6 +1,6 @@
 import react from "react";
 import Link from "next/link";
-import image from "next/image";
+import Image from "next/image";
 import { privacyimg } from "../images";
 
 export default function Privacy() {
@@ -11,7 +11,7 @@ export default function Privacy() {
           <h1>
             Privacy <br /> Policy
           </h1>
-          <img src={privacyimg} />
+          <Image src={privacyimg} alt="privacy image" />
         </div>
       </div>
       <div className="px-[20px] md:pl-[104px] md:pr-[235px] w-full">

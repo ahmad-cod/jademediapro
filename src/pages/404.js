@@ -1,6 +1,6 @@
 import react from "react";
 import Link from "next/link";
-import image from "next/image";
+import Image from "next/image";
 import { errorimg, maskimg } from "../images";
 
 export default function Custom404() {
@@ -19,10 +19,10 @@ export default function Custom404() {
 
         <div className="flex  bg-[#77459B] gap-7 p-5 w-72 rounded-md text-white justify-center  ">
           <a href="#">Return to Homepage</a>
-          <img src={maskimg} />
+          <Image src={maskimg} alt="error" />
         </div>
       </div>
-      <img src={errorimg} />
+      <Image src={errorimg} alt="404 image" />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import react from "react";
 import Link from "next/link";
-import image from "next/image";
+import Image from "next/image";
 import { termsimg } from "../images";
 
 export default function Terms() {
@@ -11,7 +11,7 @@ export default function Terms() {
           <h1>
             Terms and <br /> conditions
           </h1>
-          <img src={termsimg} />
+          <Image src={termsimg} alt="Ts & Cs image" />
         </div>
       </div>
       <div className="px-[20px] md:pl-[104px] md:pr-[235px] w-full">
