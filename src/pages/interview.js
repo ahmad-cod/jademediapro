@@ -1,24 +1,21 @@
-import React from "react";
-import { female, handphone } from "../images";
-import Image from "next/image";
-import { ImageWithHeader, InterviewData } from "../components";
-import { interviewData } from "../data/interview-data/interviewData";
-import { Pagination } from "../components";
-import useWidth from "../hooks/useWidth";
+import React from 'react'
+import { female, handphone, interviewHeader } from '../images'
+import Image from 'next/image'
+import { ImageWithHeader, InterviewData } from '../components'
+import { interviewData } from '../data/interview-data/interviewData'
+import styles from '../styles/interview.module.css'
+
 
 const Interview = () => {
   const [currentData, currentPage, setCurrentPage, dataPerPage, data] =
     useWidth(interviewData, 4, 9);
   return (
     <div>
-      <ImageWithHeader
-        title="Engaging One-on-One discussing with big guns"
-        subtitle="We have awesome chat with industry leading professionals from<br/> 
+      <ImageWithHeader title="Engaging One-on-One discussing with big guns"
+      subtitle="We have awesome chat with industry leading professionals from
       various fields discussing exverything about their experience, 
-      business oreintation, and actionable insights  on how to grow"
-        headerImage={handphone}
-      />
-      {/* <div className='header2'>
+      business oreintation, and actionable insights  on how to grow." headerImage={interviewHeader} />
+        {/* <div className='header2'>
             <div>
                 <h1 className='text-[35px] text-[#fff]'></h1>
                 <p className='text-[#fff]'></p>
@@ -29,18 +26,19 @@ const Interview = () => {
             </div>
            
         </div> */}
+        
+        <div className={styles.card_section}>
+          <div className={styles.min}>
+            <h2 className={styles.minutes}>60 Minutes:</h2>
+          </div>
+          <div className={styles.interview_section}>
+            {
+              interviewData.map(data => (
 
-      <div className="card-section">
-        <div className="min">
-          <h2>60 Minutes</h2>
-        </div>
-        <div className="interview-section">
-          {currentData.map((data) => (
-            <InterviewData
-              cardImage={data.cardImage}
-              cardDescription={data.description}
-            />
-          ))}
+                <InterviewData cardImage={data.cardImage} cardDescription={data.description}/>
+              ))
+            }
+          </div>
         </div>
       </div>
       <Pagination
