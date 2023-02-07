@@ -28,6 +28,20 @@ export default function Terms() {
       </div>
 
       <div className="flex gap-6 font-normal text-[15px] text-[#57585F] hover:text-[#77459B]  px-[104px] "></div>
+
+      <div className="flex gap-2 border-b-[1px] px-[104px] w-[90%] ">
+        {titlejobs.map((item, i) => {
+          return (
+            <Jobtitle
+              title={item}
+              activeborder={activeborder}
+              setactiveborder={setactiveborder}
+              key={i}
+            />
+          );
+        })}
+      </div>
+
       <div className=" flex gap-[163px] px-[20px] py-[31px] md:pt-12 md:pr-[104px] md:pb-[132px] md:pl-[105px] w-full">
         <div>
           {jobData.map((item, i) => {
@@ -37,6 +51,7 @@ export default function Terms() {
                 location={item.location}
                 work_type={item.work_type}
                 industry={item.industry}
+                key={i}
               />
             );
           })}
@@ -44,7 +59,7 @@ export default function Terms() {
         <div>
           <JobFilters />
           <div className="bg-[#4f2e67] p-[54px] rounded">
-            <Image src={sendarrow} />
+            <Image src={sendarrow} alt="" />
 
             <div className="text-[#f6f6f6]">
               <h2 className="font-semibold text-4xl mt-6">
@@ -57,7 +72,7 @@ export default function Terms() {
             </div>
             <div className="flex m-auto items-center mt-6 gap-4 text-[#46BFB2] font-semibold text-base border border-[#46BFB2] rounded py-3 px-8 w-[169px] hover:bg-[#46BFB2] hover:text-white">
               <button>Sign up</button>
-              <Image src={lemonarrow} className="w-4 h-[14px]" />
+              <Image src={lemonarrow} className="w-4 h-[14px]" alt="" />
             </div>
           </div>
         </div>
