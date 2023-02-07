@@ -6,8 +6,9 @@ import { interviewData } from '../data/interview-data/interviewData'
 import styles from '../styles/interview.module.css'
 
 
-
-const interview = () => {
+const Interview = () => {
+  const [currentData, currentPage, setCurrentPage, dataPerPage, data] =
+    useWidth(interviewData, 4, 9);
   return (
     <div>
       <ImageWithHeader title="Engaging One-on-One discussing with big guns"
@@ -39,8 +40,15 @@ const interview = () => {
             }
           </div>
         </div>
+      </div>
+      <Pagination
+        cardsPerPage={dataPerPage}
+        totalCards={data.length}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+      />
     </div>
-  )
-}
+  );
+};
 
-export default interview
+export default Interview;
