@@ -8,6 +8,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { BiWorld } from "react-icons/bi";
 import { BsTruck, BsCart2 } from "react-icons/bs";
+import Link from "next/link";
 
 const ProductDetails = () => {
   const router = useRouter();
@@ -21,14 +22,15 @@ const ProductDetails = () => {
           <>
             <div className={styles.navigation}>
               <div></div>
-              <a>
+              <Link href="/store">
                 <MdWest /> Continue Shopping
-              </a>
+              </Link>
             </div>
             <div className={styles.product_detail}>
               <div className={styles.product_images_container}>
                 <Carousel
                   className={styles.product_preview}
+                  axis="horizontal"
                   showArrows={false}
                   showStatus={false}
                   showIndicators={false}
@@ -90,9 +92,6 @@ const ProductDetails = () => {
                   <p>Taxes and shipping fees will apply upon checkout</p>
                 </div>
               </div>
-              <section>
-                <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
-              </section>
             </div>
           </>
         ))}

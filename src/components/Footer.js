@@ -73,8 +73,17 @@ const Footer = () => {
               togleFooterContent[0].isOpen ? "flex" : "hidden"
             }  sm:flex flex-col gap-4`}
           >
+
+            {jadeMedia.children.map((child, i) => (
+              <Link
+                className="text-tag_p text-[15px]"
+                href={child.link}
+                key={i}
+              >
+
             {jadeMedia.children.map((child) => (
               <Link className="text-tag_p text-[15px]" href={child.link}>
+
                 {child.subtitle}
               </Link>
             ))}
@@ -98,8 +107,17 @@ const Footer = () => {
               togleFooterContent[1].isOpen ? "flex" : "hidden"
             }  sm:flex flex-col gap-4`}
           >
+
+            {projects.children.map((child, i) => (
+              <Link
+                className="text-tag_p text-[15px]"
+                href={child.link}
+                key={i}
+              >
+
             {projects.children.map((child) => (
               <Link className="text-tag_p text-[15px]" href={child.link}>
+
                 {child.subtitle}
               </Link>
             ))}
@@ -123,6 +141,12 @@ const Footer = () => {
               togleFooterContent[2].isOpen ? "flex" : "hidden"
             }  sm:flex flex-col gap-4`}
           >
+            {hub.children.map((child, i) => (
+              <Link
+                className="text-tag_p text-[15px]"
+                href={child.link}
+                key={i}
+              >
             {hub.children.map((child) => (
               <Link className="text-tag_p text-[15px]" href={child.link}>
                 {child.subtitle}
@@ -149,6 +173,12 @@ const Footer = () => {
               togleFooterContent[3].isOpen ? "flex" : "hidden"
             }  sm:flex flex-col gap-4`}
           >
+            {resources.children.map((child, i) => (
+              <Link
+                className="text-tag_p text-[15px]"
+                href={child.link}
+                key={i}
+              >
             {resources.children.map((child) => (
               <Link className="text-tag_p text-[15px]" href={child.link}>
                 {child.subtitle}
@@ -174,6 +204,12 @@ const Footer = () => {
               togleFooterContent[4].isOpen ? "flex" : "hidden"
             }  sm:flex flex-col gap-4`}
           >
+            {company.children.map((child, i) => (
+              <Link
+                className="text-tag_p text-[15px]"
+                href={child.link}
+                key={i}
+              >
             {company.children.map((child) => (
               <Link className="text-tag_p text-[15px]" href={child.link}>
                 {child.subtitle}
@@ -187,6 +223,7 @@ const Footer = () => {
           </h3>
           <p>Join our newsletter</p>
           <button className="border-[#46BFB2] border-[1px] rounded-md py-2 flex items-center justify-center gap-3">
+            <Image alt="" width="100%" height="100%" src={footerplaneicon} />
             <Image width="100%" height="100%" src={footerplaneicon} />{" "}
             <p>Sign Up</p>
           </button>
@@ -199,6 +236,28 @@ const Footer = () => {
         </div>
         <div className="flex justify-between w-full max-w-[600px]">
           <div className="w-10 h-10">
+            <Image alt="" width="100%" height="100%" src={facebookgif} />
+          </div>
+          <div className="w-10">
+            <Image alt="" width="100%" height="100%" src={twittergif} />
+          </div>
+          <div className="w-10">
+            <Image alt="" width="100%" height="100%" src={linkedingif} />
+          </div>
+          <div className="w-10">
+            <Image alt="" width="100%" height="100%" src={instagramgif} />
+          </div>
+          <div className="w-10">
+            <Image alt="" width="100%" height="100%" src={whatsappgif} />
+          </div>
+          <div className="w-10">
+            <Image alt="" width="100%" height="100%" src={youtubegif} />
+          </div>
+          <div className="w-10">
+            <Image alt="" width="100%" height="100%" src={vimeogif} />
+          </div>
+          <div className="w-10">
+            <Image alt="" width="100%" height="100%" src={pinterestgif} />
             <Image width="100%" height="100%" src={facebookgif} />
           </div>
           <div className="w-10">
