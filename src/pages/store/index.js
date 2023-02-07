@@ -7,10 +7,10 @@ import ProductCard from "../../components/storeComponents/productCard";
 import Pagination from "../../components/Pagination";
 import styles from "../../styles/Store.module.css";
 import StoreServices from "../../components/storeComponents/storeServices";
-import useWidth from "../../hooks/useWidth";
+import usePagination from "../../hooks/usePagination";
 const Store = () => {
   const [currentData, currentPage, setCurrentPage, dataPerPage, data, setData] =
-    useWidth(products, 4, 12);
+    usePagination(products, 4, 12);
   return (
     <>
       <header>
