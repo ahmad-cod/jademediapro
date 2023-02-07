@@ -35,6 +35,7 @@ export default function Terms() {
               title={item}
               activeborder={activeborder}
               setactiveborder={setactiveborder}
+              key={i}
             />
           );
         })}
@@ -48,6 +49,7 @@ export default function Terms() {
                 location={item.location}
                 work_type={item.work_type}
                 industry={item.industry}
+                key={i}
               />
             );
           })}
@@ -81,7 +83,7 @@ export default function Terms() {
             </select>
           </div>
           <div className="bg-[#4f2e67] p-[54px] rounded">
-            <Image src={sendarrow} />
+            <Image src={sendarrow} alt="" />
 
             <div className="text-[#f6f6f6]">
               <h2 className="font-semibold text-4xl mt-6">
@@ -94,7 +96,7 @@ export default function Terms() {
             </div>
             <div className="flex m-auto items-center mt-6 gap-4 text-[#46BFB2] font-semibold text-base border border-[#46BFB2] rounded py-3 px-8 w-[169px] hover:bg-[#46BFB2] hover:text-white">
               <button>Sign up</button>
-              <Image src={lemonarrow} className="w-4 h-[14px]" />
+              <Image src={lemonarrow} className="w-4 h-[14px]" alt="" />
             </div>
           </div>
         </div>

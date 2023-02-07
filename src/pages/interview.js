@@ -4,7 +4,7 @@ import Image from "next/image";
 import { ImageWithHeader, InterviewData } from "../components";
 import { interviewData } from "../data/interview-data/interviewData";
 import { Pagination } from "../components";
-import useWidth from "../hooks/UseWidth";
+import useWidth from "../hooks/useWidth";
 
 const Interview = () => {
   const [currentData, currentPage, setCurrentPage, dataPerPage, data] =

@@ -4,7 +4,7 @@ import { cartData } from "../data/products/cartData";
 import { productData } from "../data/products/productData";
 import { productImage1 } from "../images";
 import { Pagination } from "../components";
-import useWidth from "../hooks/UseWidth";
+import useWidth from "../hooks/useWidth";
 
 const SaveItems = () => {
   const [currentData, currentPage, setCurrentPage, dataPerPage, data] =

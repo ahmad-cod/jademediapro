@@ -7,7 +7,7 @@ import ProductCard from "../../components/storeComponents/productCard";
 import Pagination from "../../components/Pagination";
 import styles from "../../styles/Store.module.css";
 import StoreServices from "../../components/storeComponents/storeServices";
-import useWidth from "../../hooks/UseWidth";
+import useWidth from "../../hooks/useWidth";
 const Store = () => {
   const [currentData, currentPage, setCurrentPage, dataPerPage, data, setData] =
     useWidth(products, 4, 12);
