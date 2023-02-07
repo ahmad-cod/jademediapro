@@ -1,6 +1,6 @@
 import react from "react";
 import Link from "next/link";
-import image from "next/image";
+import Image from "next/image";
 import { cookiesimg } from "../images";
 
 export default function Cookies() {
@@ -12,7 +12,7 @@ export default function Cookies() {
             Cookies <br /> Policy
           </h1>
           <div className="w-[353px] h-[353px]">
-            <img src={cookiesimg} className="w-full" />
+            <Image src={cookiesimg} className="w-full" alt="cookies image" />
           </div>
         </div>
       </div>
