@@ -19,13 +19,19 @@ export default function Terms() {
     usePagination(jobData, 4, 8);
   return (
     <div>
-      <div className=" bg-[#F6F6F6] px-[20px] py-[31px] md:pt-12 md:pr-[104px] md:pb-[132px] md:pl-[104px] mb-32 ">
-        <div className="flex flex-col md:flex-row  md:items-center  md:text-[50px] font-bold md:font-bold text-[#242526] gap-8 md:gap-[123px] w-full">
-          <h1 className="w-[60%]">
+      <div className=" bg-[#F6F6F6] px-[20px] py-[31px] lg:pt-12 lg:pr-[104px] lg:pb-[132px] lg:pl-[104px] mb-32 ">
+        <div className="flex flex-col md:flex-row lg:flex-row  lg:items-center text-[30px] lg:text-[50px] font-bold text-[#242526] gap-8 lg:gap-[123px] w-full">
+          <h1 className="hidden lg:block lg:w-[60%]">
             Discover your next career <br /> move with our efficiently <br />
             managed job searches
           </h1>
-          <div className="w-[40%]">
+          <h1 className=" block lg:hidden lg:w-[60%]">
+            Discover your next <br />
+            career move with our
+            <br /> efficiently managed <br />
+            job searches
+          </h1>
+          <div className="lg:w-[40%]">
             <Image src={jobheroimg} className="" alt="jobs image" />
           </div>
         </div>
@@ -39,7 +45,7 @@ export default function Terms() {
         categories={categoryjobs}
       />
 
-      <div className=" flex gap-[163px] px-[20px] py-[31px] md:pt-12 md:pr-[104px] md:pb-[132px] md:pl-[105px] w-full">
+      <div className=" flex flex-col-reverse lg:flex-row lg:gap-[163px] px-[20px] py-[31px] lg:pt-12 lg:pr-[104px] lg:pb-[132px] lg:pl-[105px] w-full">
         <div>
           {currentData.map((item, i) => {
             return (
@@ -55,7 +61,7 @@ export default function Terms() {
         </div>
         <div>
           <JobFilters />
-          <div className="bg-[#4f2e67] p-[54px] rounded">
+          <div className="hidden lg:block bg-[#4f2e67] p-[54px] rounded">
             <Image src={sendarrow} alt="" />
 
             <div className="text-[#f6f6f6]">
@@ -80,6 +86,23 @@ export default function Terms() {
         totalCards={data.length}
         setCurrentPage={setCurrentPage}
       />
+      <div className="block m-auto my-16 lg:hidden bg-[#4f2e67] p-6 lg:p-[54px] rounded w-[90%]">
+        <Image src={sendarrow} alt="" />
+
+        <div className="text-[#f6f6f6]">
+          <h2 className="font-semibold text-4xl mt-6">
+            Want to keep up <br /> with the latest?
+          </h2>
+          <p className="text-[15px] font-normal mt-4">
+            Be the first to know about new career <br />
+            opportunities.
+          </p>
+        </div>
+        <div className="flex items-center mt-6 gap-4 text-[#46BFB2] font-semibold text-base border border-[#46BFB2] rounded py-3 px-8 w-[169px] hover:bg-[#46BFB2] hover:text-white">
+          <button>Sign up</button>
+          <Image src={lemonarrow} className="w-4 h-[14px]" alt="" />
+        </div>
+      </div>
     </div>
   );
 }
