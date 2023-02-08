@@ -3,12 +3,12 @@ import { CartCard, ProductCard } from "../components";
 import { cartData } from "../data/products/cartData";
 import { productData } from "../data/products/productData";
 import { productImage1 } from "../images";
-import { Pagination } from "../components";
-import useWidth from "../hooks/useWidth";
+import Pagination from "../components/Pagination";
+import usePagination from "../hooks/usePagination";
 
 const SaveItems = () => {
   const [currentData, currentPage, setCurrentPage, dataPerPage, data] =
-    useWidth(cartData, 3, 5);
+    usePagination(cartData, 3, 5);
   return (
     <div className="px-6 md:px-16">
       <div>
@@ -25,6 +25,12 @@ const SaveItems = () => {
             subtitle2={data.subtitle2}
           />
         ))}
+        <Pagination
+          cardsPerPage={dataPerPage}
+          totalCards={data.length}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+        />
       </div>
       <div className="my-12">
         <hr />
@@ -46,12 +52,6 @@ const SaveItems = () => {
         </div>
         {/* <ProductCard products={productData} /> */}
       </div>
-      <Pagination
-        cardsPerPage={dataPerPage}
-        totalCards={data.length}
-        currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
-      />
     </div>
   );
 };

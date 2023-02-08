@@ -1,13 +1,24 @@
 import React from "react";
-import Image from "next/image";
-import { pdf } from "../images";
+import CategoryFilter from "../components/CategoryFilter";
+import Pagination from "../components/Pagination";
+import usePagination from "../hooks/usePagination";
 import { freebiesHeader } from "../images";
 import { ImageWithHeader } from "../components";
 import FreebiesCard from "../components/FreebiesCard";
 import { freebiesData } from "../data/freebies-card/freebies-data";
 import styles from "../styles/freebies.module.css";
 
-const freebies = () => {
+const Freebies = () => {
+  const [currentData, currentPage, setCurrentPage, dataPerPage, data, setData] =
+    usePagination(freebiesData, 4, 12);
+  const freebiesCategories = [
+    "Illustrations",
+    "Books",
+    "Mockup",
+    "Templates",
+    "Software",
+    "Tutorials",
+  ];
   return (
     <div>
       <ImageWithHeader
@@ -17,27 +28,26 @@ const freebies = () => {
       />
 
       <div className={styles.main_container}>
-        <div className="">
-          <ul className="flex">
-            <li>All</li>
-            <li>Illustration</li>
-            <li>Books</li>
-            <li>Mockup</li>
-            <li>Templates</li>
-            <li>Software</li>
-            <li>Tutorial</li>
-          </ul>
-        </div>
-        <hr />
+        <CategoryFilter
+          categories={freebiesCategories}
+          filterContent={freebiesData}
+          setCategory={setData}
+        />
 
         <div className={styles.freebies_container}>
-          {freebiesData.map((data) => (
+          {currentData.map((data) => (
             <FreebiesCard format={data.format} title={data.title} />
           ))}
         </div>
+        <Pagination
+          cardsPerPage={dataPerPage}
+          totalCards={data.length}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+        />
       </div>
     </div>
   );
 };
 
-export default freebies;
+export default Freebies;
