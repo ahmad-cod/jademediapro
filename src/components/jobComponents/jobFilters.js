@@ -4,10 +4,10 @@ import FilterDropdown from "../_helperComponents/filterDropdown";
 function JobFilters(props) {
   return (
     <div>
-      <div>
+      <div className="hidden lg:block">
         <h3 className="text-[#242526] font-medium text-lg mb-4">Filters</h3>
       </div>
-      <div>
+      <div className="hidden lg:block">
         <div className="flex gap-2 text-[#3A3B40] font-normal text-[15px] items-center mb-4">
           <input
             id="checkbox"
@@ -42,7 +42,7 @@ function JobFilters(props) {
       <div className="mb-8 w-[277px]">
         <FilterDropdown data={jobIndustry} label="INDUSTRY" />
       </div>
-      <label className="relative inline-flex items-center cursor-pointer mb-24">
+      <label className="relative inline-flex items-center cursor-pointer mb-10 lg:mb-24">
         <input
           type="checkbox"
           value=""
