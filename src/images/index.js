@@ -350,32 +350,26 @@ import youtubegif from "./footer/footer-icon-youtube.gif";
 
 import disclaimerfolder from "./disclaimer/disclaimer-folder.png";
 
-import mostviewedthumbnail1 from "./most-viewed/most-viewed-thumbnail1.png"
-import mostviewedthumbnail2 from "./most-viewed/most-viewed-thumbnail2.png"
-import mostviewedthumbnail3 from "./most-viewed/most-viewed-thumbnail3.png"
-import playbutton from "./most-viewed/playbutton.png"
-import handphone from "./interview/handphone.png"
-import female from "./interview/female.png"
-import male from "./interview/male.png"
-import sixty from "./interview/sixty.png"
-import interviewHeader from "./interview/interviewHeader.png"
-import productImage1 from "./product/productImage1.png"
-import productImage2 from "./product/productImage2.png"
-import productImage3 from "./product/productImage3.png"
-import productImage4 from "./product/productImage4.png"
-import paint from "./product/paint.png"
-import storefront from "./shopping-cart/storefront.png"
-import pdf from "./freebies/pdf.png"
-import freebiesHeader from "./freebies/freebiesHeader.png"
-import mp4 from "./freebies/mp4.png"
-import ps from "./freebies/ps.png"
-import docs from "./freebies/docs.png"
-
-
-
-
-
-
+import mostviewedthumbnail1 from "./most-viewed/most-viewed-thumbnail1.png";
+import mostviewedthumbnail2 from "./most-viewed/most-viewed-thumbnail2.png";
+import mostviewedthumbnail3 from "./most-viewed/most-viewed-thumbnail3.png";
+import playbutton from "./most-viewed/playbutton.png";
+import handphone from "./interview/handphone.png";
+import female from "./interview/female.png";
+import male from "./interview/male.png";
+import sixty from "./interview/sixty.png";
+import interviewHeader from "./interview/interviewHeader.png";
+import productImage1 from "./product/productImage1.png";
+import productImage2 from "./product/productImage2.png";
+import productImage3 from "./product/productImage3.png";
+import productImage4 from "./product/productImage4.png";
+import paint from "./product/paint.png";
+import storefront from "./shopping-cart/storefront.png";
+import pdf from "./freebies/pdf.png";
+import freebiesHeader from "./freebies/freebiesHeader.png";
+import mp4 from "./freebies/mp4.png";
+import ps from "./freebies/ps.png";
+import docs from "./freebies/docs.png";
 
 export {
   footerlogo,
@@ -408,6 +402,72 @@ export {
   docs,
   playbutton,
   paint,
-  interviewHeader
-
+  interviewHeader,
 };
+
+import jadelogo from "./jade-logo.svg";
+import moonsvg from "./misc/moon.svg";
+import leftarrow from "./misc/leftarrow.svg";
+import topleftarrow from "./misc/topleftarrow.svg";
+
+export { jadelogo, moonsvg, leftarrow, topleftarrow };
+
+import tunnelLightImg from "./landingPageImages/tunnelLight.png";
+import ariwabagsImg from "./landingPageImages/ariwabags.png";
+import brandIdentityImg from "./landingPageImages/brandIdentity.svg";
+import webDevelopmentImg from "./landingPageImages/webdevelopment.svg";
+import laptopMockImg from "./landingPageImages/webdev.png";
+import videoBlondeWoman from "./landingPageImages/videoBlondeWoman.png";
+import videMarketingImg from "./landingPageImages/videoMarketing.svg";
+import productsImg from "./landingPageImages/products.png";
+import productPackagingImg from "./landingPageImages/productPackaging.svg";
+
+export {
+  tunnelLightImg,
+  ariwabagsImg,
+  brandIdentityImg,
+  webDevelopmentImg,
+  laptopMockImg,
+  videMarketingImg as videoMarketingImg,
+  videoBlondeWoman,
+  productsImg,
+  productPackagingImg,
+};
+
+import explorion from "./misc/explorion.png";
+import _7rio from "./misc/7rio.png";
+import iamholthy from "./misc/iamholthy.png";
+import landhotel from "./misc/landhotel.png";
+import nummix from "./misc/nummix.png";
+import tozome from "./misc/tozome.png";
+
+/**
+ * @typedef {{name: string, src: string}} ClientLogo
+ * @type {ClientLogo[]}
+ */
+export const clientLogos = [
+  {
+    name: "Explorion",
+    src: explorion,
+  },
+  {
+    name: "IamHolthy",
+    src: iamholthy,
+  },
+  {
+    name: "Nummix",
+    src: nummix,
+  },
+  {
+    name: "Tozome",
+    src: tozome,
+  },
+  {
+    name: "7rio",
+    src: _7rio,
+  },
+  {
+    name: "Landhotel",
+    src: landhotel,
+  },
+];

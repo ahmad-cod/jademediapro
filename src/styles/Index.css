@@ -1,5 +1,5 @@
-
-.hero-section {
-  @apply bg-slate-300 h-screen w-full text-center;
+:root {
+  --header-height: 120px;
+  --side-padding: 6vw;
+  --grid-margin: 3.5vw;
 }
-
