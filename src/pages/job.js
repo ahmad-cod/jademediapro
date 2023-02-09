@@ -60,7 +60,7 @@ export default function Terms() {
           })}
         </div>
         <div>
-          <JobFilters />
+          <JobFilters setData={setData} data={data} />
           <div className="hidden lg:block bg-[#4f2e67] p-[54px] rounded">
             <Image src={sendarrow} alt="" />
 

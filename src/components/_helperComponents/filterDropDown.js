@@ -9,9 +9,10 @@ const FilterDropdown = ({ data, label, filter }) => {
   const [focus, setFocus] = useState(false);
   const [active, setActive] = useState(false);
   const selectService = (value) => {
-    setSelectedValue(valueRef.current[value].innerHTML);
+    setSelectedValue(valueRef.current[value].textContent);
     setShowService();
     filter(value);
+    console.log(value);
   };
   const handleServiceChange = () => {
     setFocus(true);
