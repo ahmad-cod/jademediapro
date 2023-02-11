@@ -1,3 +1,6 @@
+/**
+ * @type {Job[]}
+ */
 export const jobData = [
   {
     id: "1",
@@ -85,6 +88,9 @@ export const jobData = [
   },
 ];
 
+/**
+ * @type {Job[]}
+ */
 const jobstodo = [
   {
     id: "1",
@@ -160,8 +166,8 @@ export const categoryjobs = [
   "Frontend Developer",
 ];
 
-export const jobLocations = ["Lagos", "New jersey", "Texas"];
+export const jobLocations = ["Lagos", "New Jersey", "Texas"];
 
-export const jobtype = ["contract", "full-time", "part-time"];
+export const jobtype = ["Contract", "Full-time", "Part-time"];
 
 export const jobIndustry = ["food co", "crane inc", "drone ltd"];

@@ -1,4 +1,4 @@
-import { leftarrow } from "@/images";
+import { BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -24,11 +24,13 @@ export const ServiceCard = (props) => {
         props.vertical
           ? {
               minWidth: "30%",
+              maxHeight: "calc(700px + var(--grid-margin))",
               flexDirection: "column",
               paddingInline: "30px",
+              justifyContent: "center",
             }
           : {
-              maxHeight: "400px",
+              maxHeight: "350px",
               height: "40vh",
               minHeight: "max-content",
               justifyContent: "space-between",
@@ -69,7 +71,7 @@ export const ServiceCard = (props) => {
       </div>
       <div
         className={`py-[32px] ${
-          props.vertical ? "flex justify-center w-full" : "h-full"
+          props.vertical ? "flex justify-center w-full" : "h-full max-h-[200px]"
         }`}
       >
         <Image
@@ -102,16 +104,10 @@ const CaseStudyLink = ({ href, className }) => {
   return (
     <Link
       href={href}
-      className={`flex justify-center [font-weight:500] hover:[--shift:50%] gap-[3%] ${className}`}
+      className={`flex justify-center [font-weight:500] hover:[--shift:50%] gap-[5%] ${className}`}
     >
       <span className="whitespace-nowrap">View CaseStudy</span>
-      <Image
-        src={leftarrow}
-        alt=">"
-        className="translate-x-[var(--shift)] duration-300"
-        width="auto"
-        height="auto"
-      />
+      <BsArrowRight />
     </Link>
   );
 };

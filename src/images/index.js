@@ -348,6 +348,44 @@ import vimeogif from "./footer/footer-icon-vimeo.gif";
 import whatsappgif from "./footer/footer-icon-whatsapp.gif";
 import youtubegif from "./footer/footer-icon-youtube.gif";
 
+/**
+ * @type {FooterSocialLink[]}
+ */
+export const footerSocials = [
+  {
+    name: "Facebook",
+    image: facebookgif,
+  },
+  {
+    name: "Instagram",
+    image: instagramgif,
+  },
+  {
+    name: "LinkedIn",
+    image: linkedingif,
+  },
+  {
+    name: "Pinterest",
+    image: pinterestgif,
+  },
+  {
+    name: "Twitter",
+    image: twittergif,
+  },
+  {
+    name: "vimeogif",
+    image: vimeogif,
+  },
+  {
+    name: "Whatsapp",
+    image: whatsappgif,
+  },
+  {
+    name: "YouTube",
+    image: youtubegif,
+  },
+];
+
 import disclaimerfolder from "./disclaimer/disclaimer-folder.png";
 
 import mostviewedthumbnail1 from "./most-viewed/most-viewed-thumbnail1.png";
@@ -407,10 +445,9 @@ export {
 
 import jadelogo from "./jade-logo.svg";
 import moonsvg from "./misc/moon.svg";
-import leftarrow from "./misc/leftarrow.svg";
 import topleftarrow from "./misc/topleftarrow.svg";
 
-export { jadelogo, moonsvg, leftarrow, topleftarrow };
+export { jadelogo, moonsvg, topleftarrow };
 
 import tunnelLightImg from "./landingPageImages/tunnelLight.png";
 import ariwabagsImg from "./landingPageImages/ariwabags.png";
@@ -422,6 +459,13 @@ import videMarketingImg from "./landingPageImages/videoMarketing.svg";
 import productsImg from "./landingPageImages/products.png";
 import productPackagingImg from "./landingPageImages/productPackaging.svg";
 
+import videoImg from "./landingPageImages/video.svg";
+import targetImg from "./landingPageImages/target.svg";
+import pencilImg from "./landingPageImages/pencil.svg";
+import pairImg from "./landingPageImages/pair.svg";
+
+import adachukThumbnail from "./landingPageImages/thumbnail.png";
+
 export {
   tunnelLightImg,
   ariwabagsImg,
@@ -432,6 +476,11 @@ export {
   videoBlondeWoman,
   productsImg,
   productPackagingImg,
+  videoImg,
+  targetImg,
+  pencilImg,
+  pairImg,
+  adachukThumbnail,
 };
 
 import explorion from "./misc/explorion.png";

@@ -3,3 +3,30 @@
   --side-padding: 6vw;
   --grid-margin: 3.5vw;
 }
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.home-heading {
+  line-height: 120%;
+  font-weight: 700;
+  color: inherit;
+  font-size: 45pt;
+}
+
+.clamp {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.clamp-text-6 {
+  -webkit-line-clamp: 6;
+}
+
+.clamp-text-5 {
+  -webkit-line-clamp: 5;
+}

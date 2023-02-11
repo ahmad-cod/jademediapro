@@ -1,10 +1,12 @@
 import Head from "next/head";
 import { DefaultHeader } from "../headers";
+import { Footer } from "../Footer";
 
 /**
  * @typedef {{
  *    backgroundColor: import("csstype").Property.BackgroundColor,
  *    children: React.ReactNode,
+ *    headerType: 1 | 2 | 3,
  *    "paint-header-on-scroll"?: boolean,
  *    title?: string
  * }} MainWrapperProps
@@ -27,12 +29,16 @@ export const MainWrapper = (props) => {
         <link rel="icon" href="/favicon.ico" />
         <style>{`body {background-color: ${props.backgroundColor}}`}</style>
       </Head>
-      <DefaultHeader
-        backgroundColor={props.backgroundColor}
-        paintOnScroll={props["paint-header-on-scroll"]}
-      />
+      {props.headerType === 1 ? (
+        <DefaultHeader
+          backgroundColor={props.backgroundColor}
+          paintOnScroll={props["paint-header-on-scroll"]}
+        />
+      ) : (
+        <></>
+      )}
       {props.children}
-      {/* <Footer/> */}
+      <Footer />
     </>
   );
 };

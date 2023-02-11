@@ -58,7 +58,6 @@ export const DefaultHeader = ({ backgroundColor, paintOnScroll }) => {
   ];
 
   useEffect(() => {
-    console.log(paintOnScroll);
     if (paintOnScroll) {
       addEventListener("scroll", switchHeaderColor);
     }
@@ -75,12 +74,8 @@ export const DefaultHeader = ({ backgroundColor, paintOnScroll }) => {
       }}
       className="flex items-center fixed top-0 w-full z-[99] duration-300 justify-between px-[var(--side-padding)] h-[var(--header-height)]"
     >
-      <Head>
-        <style>{`body {background-color: ${backgroundColor}}`}</style>
-      </Head>
-      <div className="flex justify-center items-center h-[90%]">
+      <div className="flex items-center h-[90%]">
         <Image
-          className="scale-[1.2]"
           src={jadelogo}
           alt="Jade Media Pro"
           width="fit-content"
