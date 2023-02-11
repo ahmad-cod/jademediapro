@@ -47,10 +47,10 @@ interface Job {
 
 interface FooterLink {
   title: string;
-  children: FooterChild[];
+  children: Sublink[];
 }
 
-interface FooterChild {
+interface Sublink {
   subtitle: string;
   link: string;
 }
