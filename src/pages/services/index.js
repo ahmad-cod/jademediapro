@@ -8,13 +8,15 @@ import Navigation from "../../components/servicesComponent/serviceNavigation";
 import Work from "../../components/servicesComponent/work";
 import styles from "../../styles/Project.module.css";
 import style from "../../styles/Services.module.css";
+import { navigationData } from "../../data/serviceData";
 
 const Services = () => {
+  const navigation = navigationData.slice(0);
   return (
     <>
       <div className={styles.services}>
         <ServiceHeader />
-        <Navigation />
+        <Navigation navigation={navigation} />
         <div className={styles.service_container}>
           {serviceData?.map((service, i) => (
             <ServicesComponent

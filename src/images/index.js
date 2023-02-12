@@ -9,6 +9,7 @@ import lemonarrow from "./jobsImage/lemon-arrow.png";
 import purplearrow from "./jobsImage/purple-arrow.png";
 import sendarrow from "./jobsImage/send-arrow.png";
 import whitearrow from "./jobsImage/white-arrow.png";
+import aboutHeaderImage from "./aboutImages/aboutHeaderImage.svg";
 
 export {
   cookiesimg,
@@ -350,32 +351,79 @@ import youtubegif from "./footer/footer-icon-youtube.gif";
 
 import disclaimerfolder from "./disclaimer/disclaimer-folder.png";
 
-import mostviewedthumbnail1 from "./most-viewed/most-viewed-thumbnail1.png"
-import mostviewedthumbnail2 from "./most-viewed/most-viewed-thumbnail2.png"
-import mostviewedthumbnail3 from "./most-viewed/most-viewed-thumbnail3.png"
-import playbutton from "./most-viewed/playbutton.png"
-import handphone from "./interview/handphone.png"
-import female from "./interview/female.png"
-import male from "./interview/male.png"
-import sixty from "./interview/sixty.png"
-import interviewHeader from "./interview/interviewHeader.png"
-import productImage1 from "./product/productImage1.png"
-import productImage2 from "./product/productImage2.png"
-import productImage3 from "./product/productImage3.png"
-import productImage4 from "./product/productImage4.png"
-import paint from "./product/paint.png"
-import storefront from "./shopping-cart/storefront.png"
-import pdf from "./freebies/pdf.png"
-import freebiesHeader from "./freebies/freebiesHeader.png"
-import mp4 from "./freebies/mp4.png"
-import ps from "./freebies/ps.png"
-import docs from "./freebies/docs.png"
+import mostviewedthumbnail1 from "./most-viewed/most-viewed-thumbnail1.png";
+import mostviewedthumbnail2 from "./most-viewed/most-viewed-thumbnail2.png";
+import mostviewedthumbnail3 from "./most-viewed/most-viewed-thumbnail3.png";
+import playbutton from "./most-viewed/playbutton.png";
+import handphone from "./interview/handphone.png";
+import female from "./interview/female.png";
+import male from "./interview/male.png";
+import sixty from "./interview/sixty.png";
+import interviewHeader from "./interview/interviewHeader.png";
+import productImage1 from "./product/productImage1.png";
+import productImage2 from "./product/productImage2.png";
+import productImage3 from "./product/productImage3.png";
+import productImage4 from "./product/productImage4.png";
+import paint from "./product/paint.png";
+import storefront from "./shopping-cart/storefront.png";
+import pdf from "./freebies/pdf.png";
+import freebiesHeader from "./freebies/freebiesHeader.png";
+import mp4 from "./freebies/mp4.png";
+import ps from "./freebies/ps.png";
+import docs from "./freebies/docs.png";
+import aboutFlexImage from "./aboutImages/aboutFlexImage.svg";
+import john from "./aboutImages/John Ademiluyi.jpg";
+import laurel from "./aboutImages/laurel.svg";
+import ayinde from "./aboutImages/Ayinde Aminat.png";
+import musabi from "./aboutImages/Mubashir Asiyanbi.jpg";
+import chigo from "./aboutImages/Chigozirim Amadi.png";
+import oluwatobi from "./aboutImages/Oluwatobi Fabusuyi.jpg";
+import martina from "./aboutImages/Martina.png";
+import niraj from "./aboutImages/Niraj.png";
+import simeon from "./aboutImages/Simeon.png";
+import ryter from "./aboutImages/Michael.png";
+import olatundun from "./aboutImages/Olatundun.png";
+import unity from "./aboutImages/unity-69.svg";
+import wix from "./aboutImages/wix-com-website-logo-1.svg";
+import wordpress from "./aboutImages/wordpress-blue.svg";
+import word from "./aboutImages/word-1.svg";
+import react from "./aboutImages/react-2.svg";
+import python from "./aboutImages/python-5.svg";
+import microsoft from "./aboutImages/microsoft-office-powerpoint-2018-present--1.svg";
+import mailchimp from "./aboutImages/mailchimp-freddie-icon-wink.svg";
 
-
-
-
-
-
+import microsoftProject from "./aboutImages/microsoft-project-2019-present-.svg";
+import javascript from "./aboutImages/javascript-1.svg";
+import java from "./aboutImages/java.svg";
+import hubspot from "./aboutImages/hubspot-1.svg";
+import googleWeb from "./aboutImages/google-web-designer.svg";
+import googleMarket from "./aboutImages/google-marketing-platform.svg";
+import hootsuite from "./aboutImages/hootsuite.svg";
+import googleAdwords from "./aboutImages/google-adwords-1.svg";
+import googleAnalytics from "./aboutImages/google-analytics-3.svg";
+import googleDevelopers from "./aboutImages/google-developers.svg";
+import figma from "./aboutImages/figma-1.svg";
+import excel from "./aboutImages/excel-4.svg";
+import css from "./aboutImages/css-3.svg";
+import coreldraw from "./aboutImages/coreldraw-gs2019-2.svg";
+import cinema from "./aboutImages/cinema-4d.svg";
+import blender from "./aboutImages/blender-2.svg";
+import angular from "./aboutImages/angular-icon-1.svg";
+import adobeXd from "./aboutImages/adobe-xd-2.svg";
+import adobeCreative from "./aboutImages/adobe-creative-cloud-cc.svg";
+import adobeIllustrator from "./aboutImages/adobe-illustrator-logo.svg";
+import adobeIndesign from "./aboutImages/adobe-indesign.svg";
+import adobeLightroom from "./aboutImages/adobe-lightroom.svg";
+import adobeMedia from "./aboutImages/adobe-media-encoder.svg";
+import adobePremier from "./aboutImages/adobe-premiere-pro-logo.svg";
+import adobePhotoshop from "./aboutImages/adobe-photoshop-2.svg";
+import adobeAudition from "./aboutImages/ADOBE-AUDITION.svg";
+import adobeAcrobat from "./aboutImages/adobe-acrobat-reader-logo.svg";
+import adobeAfter from "./aboutImages/adobe-after-effects-logo.svg";
+import careerDevelopement from "./aboutImages/About-CareerDevelopment-image.jpeg";
+import aboutBuild from "./aboutImages/About-Build Quality Rel.gif";
+import aboutExpand from "./aboutImages/About-Expand Your Reach.gif";
+import aboutGoals from "./aboutImages/About-Set Goals _ Track.gif";
 
 export {
   footerlogo,
@@ -408,6 +456,60 @@ export {
   docs,
   playbutton,
   paint,
-  interviewHeader
-
+  interviewHeader,
+};
+export {
+  aboutHeaderImage,
+  aboutFlexImage,
+  john,
+  laurel,
+  ayinde,
+  musabi,
+  chigo,
+  oluwatobi,
+  martina,
+  niraj,
+  olatundun,
+  simeon,
+  ryter,
+  unity,
+  wix,
+  wordpress,
+  word,
+  react,
+  python,
+  microsoft,
+  mailchimp,
+  microsoftProject,
+  javascript,
+  java,
+  hubspot,
+  googleWeb,
+  googleMarket,
+  hootsuite,
+  googleAdwords,
+  googleAnalytics,
+  googleDevelopers,
+  figma,
+  excel,
+  css,
+  coreldraw,
+  cinema,
+  blender,
+  angular,
+  adobeXd,
+  adobeCreative,
+  adobeIllustrator,
+  adobeIndesign,
+  adobeLightroom,
+  adobeMedia,
+  adobePremier,
+  adobePhotoshop,
+  adobeAudition,
+  adobeAcrobat,
+  adobeAfter,
+  careerDevelopement,
+  aboutBuild,
+  aboutExpand,
+  aboutGoals,
 };
