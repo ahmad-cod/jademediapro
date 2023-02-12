@@ -58,11 +58,11 @@ export default function Home({ jobs }) {
         {/* Hero Section */}
         <PageSection
           style={{ padding: 0 }}
-          className="text-white max-[912px]:h-[900px] max-[700px]:h-screen"
+          className="text-white max-[912px]:h-[900px] max-[700px]:h-screen max-[700px]:max-h-[830px]"
         >
           <TunnelManOverlay />
           <div className="relative min-h-[570px] w-full h-full pt-[5%] flex flex-col justify-center max-[700px]:justify-end">
-            <h1 className="relative font-pop text-[75pt] max-[1400px]:text-[58pt] max-[1152px]:text-[46pt] max-[1024px]:text-[43pt] max-[912px]:text-[46pt] max-[700px]:text-[36pt] py-[16px] max-[1400px]:py-0 w-[50%] max-[820px]:w-[70%] max-[700px]:w-auto max-[700px]:px-[var(--side-padding)] ml-[var(--side-padding)] max-[700px]:ml-0 [font-weight:800] [line-height:120%]">
+            <h1 className="relative font-pop text-[75pt] max-[1400px]:text-[58pt] max-[1152px]:text-[46pt] max-[1024px]:text-[43pt] max-[912px]:text-[46pt] max-[700px]:text-[32pt] py-[16px] max-[1400px]:py-0 w-[50%] max-[820px]:w-[70%] max-[700px]:w-auto max-[700px]:px-[var(--side-padding)] ml-[var(--side-padding)] max-[700px]:ml-0 [font-weight:800] [line-height:120%]">
               The passion of idea, business and creativity:
             </h1>
             <p className="w-[54%] text-[17pt] max-[1400px]:text-[13.5pt] max-[1024px]:text-[12pt] max-[700px]:hidden max-[1024px]:w-[49%] max-[912px]:w-[60%] [line-height:140%] max-[820px]:mb-[30px] py-[16px] ml-[var(--side-padding)] text-start">
@@ -72,7 +72,8 @@ export default function Home({ jobs }) {
               sustainable design systems and marketing strategies to help them
               stand out in a crowded marketplace and make a profit. YES! WE CAN.
             </p>
-            <p className="hidden max-[700px]:block py-[16px] px-[var(--side-padding)] text-start">
+            {/* Mobile Text */}
+            <p className="hidden max-[700px]:block py-[16px] px-[var(--side-padding)] text-start text-[11pt] pb-[6vh]">
               JadeMediaPro is a digital tech agency that focused in strategic
               solutions for business marketing, communication, and brand
               development. JadeMediaPro specialises in UI/UX design,
@@ -209,7 +210,7 @@ export default function Home({ jobs }) {
         {/* Our five... */}
         <PageSection
           height="120vh"
-          className="bg-[#4F2E67] max-2xl:max-h-[1350px] max-[1280px]:py-[5vh] max-[1280px]:h-fit text-[#f6f6f6] grid grid-cols-2 max-[1024px]:[grid:auto/34%_auto] max-[700px]:[grid:auto/0%_auto] place-content-center"
+          className="bg-[#4F2E67] max-2xl:max-h-[1350px] max-2xl:py-[50px] max-2xl:h-fit text-[#f6f6f6] grid grid-cols-2 max-[1024px]:[grid:auto/34%_auto] max-[700px]:[grid:auto/0%_auto] place-content-center"
         >
           <div className="overflow-hidden"></div>
           <div>
@@ -263,7 +264,7 @@ export default function Home({ jobs }) {
           <div className="grid [grid:auto/70%_auto] max-[1024px]:[grid:auto/65%_auto] max-[768px]:[grid:auto/56%_auto] max-[700px]:grid-cols-1 gap-[var(--grid-margin)]">
             <div
               style={{ backgroundImage: `url(${adachukThumbnail.src})` }}
-              className="relative [background-size:120%] bg-no-repeat bg-center max-[768px]:[background-position-y:0] overflow-hidden [filter:drop-shadow(0px_13px_37px_rgba(187,162,205,0.6))] rounded-[4px] h-full"
+              className="relative [background-size:120%] bg-no-repeat bg-center max-[768px]:[background-position-y:0] overflow-hidden [filter:drop-shadow(0px_13px_37px_rgba(187,162,205,0.6))] rounded-[4px] h-full max-[700px]:w-full max-[700px]:aspect-video"
             ></div>
             <div>
               <h3 className="text-[30pt] max-[1400px]:text-[23pt] max-[1024px]:text-[18pt] max-[768px]:text-[16pt] mb-[24px] max-[1400px]:mb-[17px] max-[700px]:h-[56px] text-[#2F7F77]">
@@ -288,7 +289,7 @@ export default function Home({ jobs }) {
         </PageSection>
 
         {/* Blogs */}
-        <PageSection className="bg-white max-2xl:max-h-[1000px] max-[1280px]:pt-[65px] max-[1280px]:h-fit flex flex-col justify-center max-[1280px]:justify-start">
+        <PageSection className="bg-white max-2xl:max-h-[1000px] max-[700px]:max-h-max max-[1280px]:pt-[65px] max-[1280px]:h-fit flex flex-col justify-center max-[1280px]:justify-start">
           <h2 className="mb-[56px] max-[1024px]:mb-[35px] home-heading">
             Discover popular and profitable <u>editorials.</u>
           </h2>
@@ -296,14 +297,14 @@ export default function Home({ jobs }) {
         </PageSection>
 
         {/* Products */}
-        <PageSection className="bg-white max-2xl:max-h-[1000px] max-[1280px]:h-fit max-[1280px]:pb-[65px] max-[1024px]:pt-[90px] flex flex-col justify-center max-[1280px]:justify-start">
-          <div className="flex justify-between items-center w-full">
+        <PageSection className="bg-white max-2xl:max-h-[1000px] max-[700px]:max-h-max max-[1280px]:h-fit max-[1280px]:pb-[65px] max-[1024px]:pt-[90px] max-[700px]:pt-0 flex flex-col justify-center max-[1280px]:justify-start">
+          <div className="flex justify-between items-center w-full max-[700px]:flex-col max-[700px]:justify-start max-[700px]:gap-[30px]">
             {productData.slice(0, 4).map((product, index) => (
               <ProductCard key={index} {...product} />
             ))}
           </div>
-          <h1 className="flex mt-[55px]">
-            <span className="home-heading mr-[var(--side-padding)]">
+          <h1 className="flex mt-[55px] max-[700px]:block">
+            <span className="home-heading mr-[var(--side-padding)] max-[700px]:block max-[700px]:mb-[30px]">
               Explore our full catalogue
             </span>
             <HomeButton href="/catalogue">
@@ -318,24 +319,24 @@ export default function Home({ jobs }) {
         {/* Events & Jobs */}
         <PageSection
           style={{ height: "max-content" }}
-          className="bg-white grid grid-cols-2 py-[5vh] max-[700px]:hidden"
+          className="bg-white grid grid-cols-2 py-[5vh] max-[700px]:grid-cols-1"
         >
-          <div className="h-full border-r-2 max-[1024px]:border-r-[1px] border-[#454648bc] flex flex-col pr-[calc(var(--grid-margin)/2)]">
-            <h2 className="home-heading h-[200px] max-[1024px]:h-[130px] mb-[40px]">
+          <div className="h-full border-r-2 max-[1024px]:border-r-[1px] border-[#454648bc] max-[700px]:border-r-0 flex flex-col pr-[calc(var(--grid-margin)/2)]">
+            <h2 className="home-heading h-[200px] max-[1024px]:h-[130px] mb-[40px] max-[700px]:mb-[20px]">
               Don&apos;t miss the next live meeting to experience growth
             </h2>
-            <div className="grid grid-cols-2 gap-[calc(var(--grid-margin)/1.2)] h-[50vh] max-[912px]:h-[300px] max-h-[582px] mb-[30px]">
+            <div className="grid grid-cols-2 gap-[calc(var(--grid-margin)/1.2)] max-[700px]:grid-cols-1 h-[50vh] max-[912px]:h-[300px] max-[700px]:h-fit max-h-[582px] max-[700px]:max-h-max mb-[30px]">
               {upcomingEvents.slice(0, 2).map((event, index) => (
                 <EventCard {...event} key={index} />
               ))}
             </div>
             <LinkLike href="/events">Upcoming Events</LinkLike>
           </div>
-          <div className="h-full flex flex-col pl-[calc(var(--grid-margin)/2)]">
-            <h2 className="home-heading h-[200px] max-[1024px]:h-[130px] mb-[40px]">
+          <div className="h-full flex flex-col max-[700px]:mt-[34px] pl-[calc(var(--grid-margin)/2)]">
+            <h2 className="home-heading h-[200px] max-[1024px]:h-[130px] mb-[40px] max-[700px]:mb-[20px]">
               Find the right job to boost your brilliant career
             </h2>
-            <ul className="grid grid-rows-3 gap-[calc(var(--grid-margin)/3)] h-[50vh] max-[912px]:h-[300px] max-h-[582px] mb-[30px]">
+            <ul className="grid grid-rows-3 gap-[calc(var(--grid-margin)/3)] h-[50vh] max-[912px]:h-[300px] max-h-[582px] max-[700px]:max-h-max max-[700px]:h-fit mb-[30px]">
               {jobs.map((job, index) => (
                 <JobCard key={index} {...job} />
               ))}

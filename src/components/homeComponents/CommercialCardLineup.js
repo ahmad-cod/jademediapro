@@ -50,7 +50,7 @@ const Card = ({ text, icon, href, note }) => {
       <span className="relative  text-[19pt] max-[1024px]:text-[14pt]">
         {text}
       </span>
-      <p className="hidden max-[700px]:block text-[10pt] clamp clamp-text-6">
+      <p className="clamp clamp-text-6 hidden max-[700px]:[display:-webkit-box] text-[10pt]">
         {note}
       </p>
       <div className="relative w-[80px] max-[1024px]:mt-[10px] max-[1024px]:w-[60px] ml-auto ">

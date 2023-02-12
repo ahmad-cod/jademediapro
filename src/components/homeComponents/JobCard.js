@@ -9,7 +9,7 @@ export const JobCard = (props) => {
   return (
     <Link
       href="/job"
-      className="bg-[#3A9F94] hover:bg-[#2d867b] [--category-width:40%] hover:[--category-width:50%] duration-300 flex p-[8px_24px] text-[#f6f6f6] h-full rounded-[4px]"
+      className="bg-[#3A9F94] hover:bg-[#2d867b] [--category-width:40%] hover:[--category-width:50%] duration-300 flex p-[8px_24px] max-[700px]:py-[15px] text-[#f6f6f6] h-full rounded-[4px]"
     >
       <h3 className="flex items-center border-r-2 text-[28pt] max-[1400px]:text-[24pt] max-[1024px]:text-[18pt] max-[912px]:text-[16pt] duration-300 w-[var(--category-width)] border-[#F6F6F6]">
         <div className="w-[70%]">{props.category}</div>
