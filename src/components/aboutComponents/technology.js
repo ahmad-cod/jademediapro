@@ -3,8 +3,8 @@ import { logos } from "../../data/aboutData";
 import styles from "../../styles/About.module.css";
 
 const TechnologyLogos = () => {
-  const firstLogos = logos.slice(0, 10);
-  const lastLogos = logos.slice(10);
+  const firstLogos = logos.slice(0, 8);
+  const lastLogos = logos.slice(8);
   return (
     <div className={styles.logos_container}>
       <div className={styles.client_heading}>

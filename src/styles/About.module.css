@@ -349,7 +349,7 @@
   object-fit: contain;
 }
 .last_logos {
-  animation: slider 4s linear infinite;
+  animation: slider 8s linear infinite;
   transform: translateX(-0%);
 }
 @keyframes slider {
@@ -357,7 +357,7 @@
     transform: translateX(-0%);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-300%);
   }
 }
 .team_container {
