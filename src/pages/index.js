@@ -58,19 +58,28 @@ export default function Home({ jobs }) {
         {/* Hero Section */}
         <PageSection
           style={{ padding: 0 }}
-          className="text-white max-[912px]:h-[800px]"
+          className="text-white max-[912px]:h-[900px] max-[700px]:h-screen"
         >
           <TunnelManOverlay />
-          <div className="relative min-h-[570px] w-full h-full pt-[5%] flex flex-col justify-center">
-            <h1 className="relative font-pop text-[75pt] max-[1400px]:text-[58pt] max-[1152px]:text-[46pt] max-[1024px]:text-[43pt] max-[912px]:text-[46pt] py-[16px] max-[1400px]:py-0 w-[50%] max-[820px]:w-[70%] ml-[var(--side-padding)] [font-weight:800] [line-height:120%]">
+          <div className="relative min-h-[570px] w-full h-full pt-[5%] flex flex-col justify-center max-[700px]:justify-end">
+            <h1 className="relative font-pop text-[75pt] max-[1400px]:text-[58pt] max-[1152px]:text-[46pt] max-[1024px]:text-[43pt] max-[912px]:text-[46pt] max-[700px]:text-[36pt] py-[16px] max-[1400px]:py-0 w-[50%] max-[820px]:w-[70%] max-[700px]:w-auto max-[700px]:px-[var(--side-padding)] ml-[var(--side-padding)] max-[700px]:ml-0 [font-weight:800] [line-height:120%]">
               The passion of idea, business and creativity:
             </h1>
-            <p className="w-[54%] text-[17pt] max-[1400px]:text-[13.5pt] max-[1024px]:text-[12pt] max-[1024px]:w-[49%] max-[912px]:w-[60%] [line-height:140%] max-[820px]:mb-[30px] py-[16px] ml-[var(--side-padding)] text-start">
+            <p className="w-[54%] text-[17pt] max-[1400px]:text-[13.5pt] max-[1024px]:text-[12pt] max-[700px]:hidden max-[1024px]:w-[49%] max-[912px]:w-[60%] [line-height:140%] max-[820px]:mb-[30px] py-[16px] ml-[var(--side-padding)] text-start">
               We help small and medium-sized businesses grow and achieve their
               dreams, earn income, and increase their impact in this
               post-pandemic world by developing innovative as well as
               sustainable design systems and marketing strategies to help them
               stand out in a crowded marketplace and make a profit. YES! WE CAN.
+            </p>
+            <p className="hidden max-[700px]:block py-[16px] px-[var(--side-padding)] text-start">
+              JadeMediaPro is a digital tech agency that focused in strategic
+              solutions for business marketing, communication, and brand
+              development. JadeMediaPro specialises in UI/UX design,
+              advertising, digital media management, video animations, website
+              design, and application development. In this post-pandemic world,
+              our service helps brands achieve their goals, make a profit, and
+              increase their impact.
             </p>
             <LogoLineup />
           </div>
@@ -79,7 +88,7 @@ export default function Home({ jobs }) {
         {/* Services */}
         <PageSection
           style={{ height: "fit-content" }}
-          className="max-[700px]:hidden bg-white max-2xl:max-h-[1500px] max-2xl:py-[14vh] py-[20vh] max-[1024px]:py-[10vh] max-[820px]:py-[5vh] grid [grid:auto_auto/auto_auto] max-[820px]:[grid:auto/42%_auto] gap-[var(--grid-margin)]"
+          className="bg-white max-2xl:max-h-[1500px] max-[700px]:max-h-max max-2xl:py-[14vh] py-[20vh] max-[1024px]:py-[10vh] max-[820px]:py-[5vh] grid [grid:auto_auto/auto_auto] max-[820px]:[grid:auto/42%_auto] max-[700px]:[grid:auto/auto] gap-[var(--grid-margin)]"
         >
           <ServiceCard
             title="Brand Identity"
@@ -113,7 +122,7 @@ export default function Home({ jobs }) {
               channels.
             </ServiceCard>
           </div>
-          <StartProjectCard />
+          <StartProjectCard className="max-[700px]:hidden" />
           <ServiceCard
             title="Product Packaging"
             linkImage={productPackagingImg}
@@ -124,14 +133,31 @@ export default function Home({ jobs }) {
             Innovative designs to make a strong first impression and impact
             sales.
           </ServiceCard>
+          <StartProjectCard className="hidden max-[700px]:flex" />
         </PageSection>
 
         {/* Unlock Your... */}
         <PageSection
           style={{ height: "fit-content" }}
-          className="bg-white grid grid-cols-2 max-[1024px]:[grid:auto/34%_auto] py-[5vh] place-content-center max-[1024px]:place-content-start"
+          className="bg-white grid grid-cols-2 max-[1024px]:[grid:auto/34%_auto] max-[700px]:flex max-[700px]:flex-col-reverse py-[5vh] max-[700px]:py-0 place-content-center max-[1024px]:place-content-start"
         >
-          <div className="flex items-center justify-center max-[1024px]:items-start">
+          <p className="hidden max-[700px]:block text-[10pt] mb-[20px]">
+            On the other hand, Digital marketing is the practice of creating
+            content to attract more customers and build relationships. It is
+            more than just advertising; it is an essential component for any
+            company to grow its business. Through digital marketing, businesses
+            are able to harness the collective power of people, data, and modern
+            software practices to reimagine their customer experience. The
+            strategies that are most effective in digital marketing with
+            reference to data-driven attribution models, mobile optimization,
+            search engine optimization (SEO), email marketing, social media
+            advertising, and conversion rates. With these strategies in mind and
+            the help of Jademediapro, you can expand your business and look
+            ahead to the success of your business more than it is right now in
+            the coming times whether you are starting a new business or you
+            already have an existing business.
+          </p>
+          <div className="flex items-center justify-center max-[1024px]:items-start max-[700px]:py-[35px]">
             <Image
               src={unlockYourFutureGif}
               alt="Unlock Your Future"
@@ -161,7 +187,7 @@ export default function Home({ jobs }) {
               personality type. These are known as archetypes in the branding
               field.
             </p>
-            <p className="[line-height:140%] text-[16pt] max-[1400px]:text-[13pt] max-[1024px]:text-[11pt] max-[768px]:text-[10pt] mb-[20px]">
+            <p className="[line-height:140%] text-[16pt] max-[1400px]:text-[13pt] max-[1024px]:text-[11pt] max-[768px]:text-[10pt] max-[700px]:hidden mb-[20px]">
               On the other hand, Digital marketing is the practice of creating
               content to attract more customers and build relationships. It is
               more than just advertising; it is an essential component for any
@@ -183,9 +209,9 @@ export default function Home({ jobs }) {
         {/* Our five... */}
         <PageSection
           height="120vh"
-          className="bg-[#4F2E67] max-2xl:max-h-[1350px] max-[1280px]:py-[5vh] max-[1280px]:h-fit text-[#f6f6f6] grid grid-cols-2 max-[1024px]:[grid:auto/34%_auto] place-content-center"
+          className="bg-[#4F2E67] max-2xl:max-h-[1350px] max-[1280px]:py-[5vh] max-[1280px]:h-fit text-[#f6f6f6] grid grid-cols-2 max-[1024px]:[grid:auto/34%_auto] max-[700px]:[grid:auto/0%_auto] place-content-center"
         >
-          <div className=""></div>
+          <div className="overflow-hidden"></div>
           <div>
             <h2 className="home-heading text-[34pt] max-[1400px]:text-[32pt] max-[1024px]:text-[26pt] max-[768px]:text-[23pt] mb-[24px]">
               Our five foundational processes to create your strategic
@@ -234,13 +260,13 @@ export default function Home({ jobs }) {
           <h2 className="mb-[56px] max-[1400px]:mb-[35px] home-heading">
             Exclusive interviews with industry leading professionals.
           </h2>
-          <div className="grid [grid:auto/70%_auto] max-[1024px]:[grid:auto/65%_auto] max-[768px]:[grid:auto/56%_auto] gap-[var(--grid-margin)]">
+          <div className="grid [grid:auto/70%_auto] max-[1024px]:[grid:auto/65%_auto] max-[768px]:[grid:auto/56%_auto] max-[700px]:grid-cols-1 gap-[var(--grid-margin)]">
             <div
               style={{ backgroundImage: `url(${adachukThumbnail.src})` }}
               className="relative [background-size:120%] bg-no-repeat bg-center max-[768px]:[background-position-y:0] overflow-hidden [filter:drop-shadow(0px_13px_37px_rgba(187,162,205,0.6))] rounded-[4px] h-full"
             ></div>
             <div>
-              <h3 className="text-[30pt] max-[1400px]:text-[23pt] max-[1024px]:text-[18pt] max-[768px]:text-[16pt] mb-[24px] max-[1400px]:mb-[17px] text-[#2F7F77]">
+              <h3 className="text-[30pt] max-[1400px]:text-[23pt] max-[1024px]:text-[18pt] max-[768px]:text-[16pt] mb-[24px] max-[1400px]:mb-[17px] max-[700px]:h-[56px] text-[#2F7F77]">
                 60 minutes with Adachukwu of Jademediapro
               </h3>
               <p className="[line-height:140%] text-[16pt] max-[1400px]:text-[13pt] max-[1024px]:text-[11pt] max-[768px]:text-[10pt] mb-[46px] max-[1400px]:mb-[30px] max-[1024px]:mb-[15px]">

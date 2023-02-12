@@ -16,6 +16,7 @@ export const CommercialCardsLineup = () => {
             key={service.id}
             text={service.serviceTitle}
             icon={service.icon}
+            note={service.services[0].serviceContent[0].listContent}
           />
         ))}
       </div>
@@ -27,6 +28,7 @@ export const CommercialCardsLineup = () => {
  * @typedef {{
  *    text: string,
  *    icon: string,
+ *    note: string,
  *    href: string
  * }} CardProps
 
@@ -34,20 +36,23 @@ export const CommercialCardsLineup = () => {
  * Service Card on home page. 
  * @type {React.FC<CardProps>}
  */
-const Card = ({ text, icon, href }) => {
+const Card = ({ text, icon, href, note }) => {
   return (
     <Link
       href={href ?? "/services"}
-      className="bg-[#1A1A1A] hover:scale-105 duration-300 relative flex justify-end flex-col h-full p-[24px_22px] aspect-[0.8] rounded-[4px]"
+      className="bg-[#1A1A1A] text-[#f6f6f6] hover:scale-105 duration-300 relative flex justify-end flex-col h-full p-[24px_22px] aspect-[0.8] rounded-[4px]"
     >
       <Image
         src={icon}
         alt={text}
         className="absolute top-[24px] w-[97px] max-[1024px]:w-[70px]"
       />
-      <span className="relative text-[#f6f6f6] text-[19pt] max-[1024px]:text-[14pt]">
+      <span className="relative  text-[19pt] max-[1024px]:text-[14pt]">
         {text}
       </span>
+      <p className="hidden max-[700px]:block text-[10pt] clamp clamp-text-6">
+        {note}
+      </p>
       <div className="relative w-[80px] max-[1024px]:mt-[10px] max-[1024px]:w-[60px] ml-auto ">
         <Image src={topleftarrow} alt="->" style={{ width: "100%" }} />
       </div>

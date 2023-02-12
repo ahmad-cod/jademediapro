@@ -450,6 +450,7 @@ import topleftarrow from "./misc/topleftarrow.svg";
 export { jadelogo, jadelogo2, moonsvg, topleftarrow };
 
 import tunnelLightImg from "./landingPageImages/tunnelLight.png";
+import tunnelLightImgV2 from "./landingPageImages/tunnelLightv2.png";
 import ariwabagsImg from "./landingPageImages/ariwabags.png";
 import brandIdentityImg from "./landingPageImages/brandIdentity.svg";
 import webDevelopmentImg from "./landingPageImages/webdevelopment.svg";
@@ -472,6 +473,7 @@ import adachukThumbnail from "./landingPageImages/thumbnail.png";
 
 export {
   tunnelLightImg,
+  tunnelLightImgV2,
   ariwabagsImg,
   brandIdentityImg,
   webDevelopmentImg,

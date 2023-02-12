@@ -1,4 +1,6 @@
 {
-    "files.autoSave": "onFocusChange",
-    "editor.formatOnSave": true
+  // "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "prettier.tabWidth": 2
+  // "git.enabled": false
 }

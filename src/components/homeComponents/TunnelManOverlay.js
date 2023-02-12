@@ -1,4 +1,4 @@
-import { tunnelLightImg } from "@/images";
+import { tunnelLightImg, tunnelLightImgV2 } from "@/images";
 import Image from "next/image";
 
 /**
@@ -11,11 +11,17 @@ export const TunnelManOverlay = () => {
       <Image
         src={tunnelLightImg}
         alt="Man walking out of tunnel"
+        className="w-[1099px] max-[700px]:hidden"
         style={{
           objectFit: "cover",
         }}
-        width="1099"
       />
+      <div
+        className="hidden max-[700px]:block w-full h-full bg-no-repeat [background-position-x:center] [background-position-y:-10vh] bg-cover"
+        style={{ backgroundImage: `url(${tunnelLightImgV2.src})` }}
+      >
+        <div className="w-full h-full [background-image:linear-gradient(0deg,#000,#000,#000,transparent)]"></div>
+      </div>
     </div>
   );
 };
