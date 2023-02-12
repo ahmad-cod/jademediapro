@@ -5,6 +5,7 @@ import { BsPlusLg } from "react-icons/bs";
 import { TbMinus } from "react-icons/tb";
 import { footerLinks } from "@/data";
 import { footerplaneicon, footerSocials } from "@/images";
+import { JadeLogo2 } from "./logos/JadeLogo2";
 
 /**
  * Default footer for all pages.
@@ -61,13 +62,7 @@ export const Footer = () => {
       <div className="relative flex gap-10 md:justify-between flex-col sm:flex-row flex-wrap lg:flex-nowrap flex-1">
         <div className="flex flex-col">
           <div className="mb-5 flex items-center justify-between max-w-[280px]">
-            <Image
-              width="100%"
-              height="100%"
-              alt="footer logo"
-              src={footerLinks.jadeMedia.title}
-              className="text-white text-lg "
-            />
+            <JadeLogo2 color="#f6f6f6" />
             {togleFooterContent[0].isOpen ? (
               <TbMinus className="block sm:hidden" color="white" />
             ) : (
@@ -224,8 +219,15 @@ export const Footer = () => {
       </div>
       <div className="relative my-[75px] flex justify-between items-center gap-5 text-tag_p flex-wrap flex-col lg:flex-row">
         <div className="flex gap-10">
-          <p className="text-sm underline">(+234) 902 771 0233</p>
-          <p className="text-sm underline">solutions@jademediapro.com</p>
+          <a href="tel:+2349027710233" className="text-sm block underline">
+            (+234) 902 771 0233
+          </a>
+          <a
+            href="mailto:solution@jademediapro.com"
+            className="text-sm block underline"
+          >
+            solutions@jademediapro.com
+          </a>
         </div>
         <div className="flex justify-between w-full max-w-[600px]">
           {footerSocials.map((social, i) => (

@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { jadelogo, moonsvg } from "@/images";
-import { footerLinks } from "@/data";
+import { cancelIcon, moonsvg, sidebarToggle } from "@/images";
+import { mainHeaderLinks } from "@/data";
 import Image from "next/image";
+import { Sidebar } from "../Sidebar";
+import { JadeLogo2 } from "../logos/JadeLogo2";
 
 /**
  * @typedef {{
@@ -12,77 +14,18 @@ import Image from "next/image";
  */
 
 /**
- *  An item in a 'tab' menu of a header link.
- * @typedef {{
- *  name: string;
- *  href?: string;
- *  links?: Sublink[];
- * }} HeaderDropDownList
- */
-
-/**
  * Main header for the entire site.
  * @type {React.FC<MainHeaderProps>}
  */
 export const DefaultHeader = ({ backgroundColor, paintOnScroll }) => {
   const [headerIsFilled, setHeaderIsFilled] = useState(false);
+  const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
   function switchHeaderColor() {
     setHeaderIsFilled(scrollY > innerHeight / 1.5);
   }
-
-  /**@type {HeaderDropDownList[]} */
-  const mainHeaderLinks = [
-    {
-      name: "Services",
-      links: [
-        {
-          subtitle: "Business Strategy",
-          link: "/services",
-        },
-        {
-          subtitle: "Branding",
-          link: "/services",
-        },
-        {
-          subtitle: "Graphic Design",
-          link: "/services",
-        },
-        {
-          subtitle: "Digital Marketing",
-          link: "/services",
-        },
-        {
-          subtitle: "Motion Design",
-          link: "/services",
-        },
-        {
-          subtitle: "Art/Photography",
-          link: "/services",
-        },
-        {
-          subtitle: "Web and App dev.",
-          link: "/services",
-        },
-      ],
-    },
-    {
-      name: "Projects",
-      links: footerLinks.projects.children,
-    },
-    {
-      name: "Hub",
-      links: footerLinks.hub.children,
-    },
-    {
-      name: "Resources",
-      links: footerLinks.resources.children,
-    },
-    {
-      name: "Contact",
-      href: "/contacts",
-      links: undefined,
-    },
-  ];
+  function openSidebar() {
+    setSidebarIsOpen(!sidebarIsOpen);
+  }
 
   useEffect(() => {
     if (paintOnScroll) {
@@ -94,40 +37,58 @@ export const DefaultHeader = ({ backgroundColor, paintOnScroll }) => {
   }, [paintOnScroll]);
 
   return (
-    <header
-      style={{
-        backgroundImage: `linear-gradient(0deg, transparent, ${backgroundColor})`,
-        backgroundColor: headerIsFilled ? backgroundColor : undefined,
-      }}
-      className="flex items-center max-[1024px]:text-[11pt] fixed top-0 w-full z-[99] duration-300 justify-between px-[var(--side-padding)] h-[var(--header-height)]"
-    >
-      <Link href="/" className="flex items-center h-[90%]">
-        <Image
-          src={jadelogo}
-          alt="Jade Media Pro"
-          width="fit-content"
-          height="100%"
-        />
-      </Link>
-      <div className="flex items-center justify-center">
-        <button title="Change Theme">
-          <Image
-            src={moonsvg}
-            alt="Dark Mode Toggle"
+    <>
+      <header
+        style={{
+          backgroundImage: sidebarIsOpen
+            ? undefined
+            : `linear-gradient(0deg, transparent, ${backgroundColor})`,
+          backgroundColor: sidebarIsOpen
+            ? "white"
+            : headerIsFilled
+            ? backgroundColor
+            : undefined,
+        }}
+        className="flex items-center max-[1024px]:text-[11pt] fixed top-0 w-full z-[99] duration-300 justify-between px-[var(--side-padding)] h-[var(--header-height)]"
+      >
+        <Link href="/" className="flex items-center h-[90%]">
+          <JadeLogo2 color={sidebarIsOpen ? "#303030" : "#f6f6f6"} />
+        </Link>
+        <div className="flex items-center justify-center">
+          <button title="Change Theme" className="max-[700px]:hidden">
+            <Image
+              src={moonsvg}
+              alt="Dark Mode Toggle"
+              style={{
+                marginRight: "2vw",
+              }}
+              width={25}
+              height={25}
+            ></Image>
+          </button>
+          {/* Navigations */}
+          <nav className="flex max-[700px]:hidden gap-[42px] max-[768px]:gap-[30px]">
+            {mainHeaderLinks.map((item, index) => (
+              <HeaderNavItem key={index} {...item} />
+            ))}
+          </nav>
+          {/* Sidebar Toggle */}
+          <button
+            onClick={openSidebar}
+            className="duration-500 hidden max-[700px]:flex items-center"
             style={{
-              marginRight: "2vw",
+              transform: sidebarIsOpen ? "rotate(-180deg) scale(0.95)" : "none",
             }}
-            width={25}
-            height={25}
-          ></Image>
-        </button>
-        <nav className="flex gap-[42px] max-[768px]:gap-[30px]">
-          {mainHeaderLinks.map((item, index) => (
-            <HeaderNavItem key={index} {...item} />
-          ))}
-        </nav>
-      </div>
-    </header>
+          >
+            <Image
+              src={sidebarIsOpen ? cancelIcon : sidebarToggle}
+              alt="Open Sidebar"
+            />
+          </button>
+        </div>
+      </header>
+      {sidebarIsOpen ? <Sidebar /> : <></>}
+    </>
   );
 };
 

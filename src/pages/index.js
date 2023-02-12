@@ -79,7 +79,7 @@ export default function Home({ jobs }) {
         {/* Services */}
         <PageSection
           style={{ height: "fit-content" }}
-          className="bg-white max-2xl:max-h-[1500px] max-2xl:py-[14vh] py-[20vh] max-[1024px]:py-[10vh] max-[820px]:py-[5vh] grid [grid:auto_auto/auto_auto] max-[820px]:[grid:auto/42%_auto] gap-[var(--grid-margin)]"
+          className="max-[700px]:hidden bg-white max-2xl:max-h-[1500px] max-2xl:py-[14vh] py-[20vh] max-[1024px]:py-[10vh] max-[820px]:py-[5vh] grid [grid:auto_auto/auto_auto] max-[820px]:[grid:auto/42%_auto] gap-[var(--grid-margin)]"
         >
           <ServiceCard
             title="Brand Identity"
@@ -292,7 +292,7 @@ export default function Home({ jobs }) {
         {/* Events & Jobs */}
         <PageSection
           style={{ height: "max-content" }}
-          className="bg-white grid grid-cols-2 py-[5vh]"
+          className="bg-white grid grid-cols-2 py-[5vh] max-[700px]:hidden"
         >
           <div className="h-full border-r-2 max-[1024px]:border-r-[1px] border-[#454648bc] flex flex-col pr-[calc(var(--grid-margin)/2)]">
             <h2 className="home-heading h-[200px] max-[1024px]:h-[130px] mb-[40px]">

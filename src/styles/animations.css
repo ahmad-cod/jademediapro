@@ -3,3 +3,10 @@
     opacity: 0;
   }
 }
+
+@keyframes sidebar-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}

@@ -336,7 +336,7 @@ export {
   storeSupport,
   storeWorldwideShipping,
 };
-import footerlogo from "./footer/footerlogo.png";
+
 import footerplaneicon from "./footer/footerplaneicon.png";
 import facebookgif from "./footer/footer-icon-facebook.gif";
 import instagramgif from "./footer/footer-icon-instagram.gif";
@@ -410,7 +410,6 @@ import ps from "./freebies/ps.png";
 import docs from "./freebies/docs.png";
 
 export {
-  footerlogo,
   footerplaneicon,
   facebookgif,
   instagramgif,
@@ -444,10 +443,11 @@ export {
 };
 
 import jadelogo from "./jade-logo.svg";
+import jadelogo2 from "./jade-logo-2.svg";
 import moonsvg from "./misc/moon.svg";
 import topleftarrow from "./misc/topleftarrow.svg";
 
-export { jadelogo, moonsvg, topleftarrow };
+export { jadelogo, jadelogo2, moonsvg, topleftarrow };
 
 import tunnelLightImg from "./landingPageImages/tunnelLight.png";
 import ariwabagsImg from "./landingPageImages/ariwabags.png";
@@ -489,6 +489,11 @@ export {
   adachukThumbnail,
   unlockYourFutureGif,
 };
+
+import sidebarToggle from "./misc/sidebar-toggle.svg";
+import cancelIcon from "./misc/cancel.svg";
+
+export { sidebarToggle, cancelIcon };
 
 import explorion from "./misc/explorion.png";
 import _7rio from "./misc/7rio.png";

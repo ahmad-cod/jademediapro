@@ -1,4 +1,4 @@
-import { footerlogo } from "../../images";
+import { jadelogo2 } from "@/images";
 
 /**
  * @type {{[key in FooterHeadings]: FooterLink}}
@@ -106,7 +106,7 @@ export const footerLinks = {
     ],
   },
   jadeMedia: {
-    title: footerlogo,
+    title: jadelogo2,
     children: [
       {
         subtitle: "Business",
@@ -139,3 +139,66 @@ export const footerLinks = {
     ],
   },
 };
+
+/**
+ *  An item in a 'tab' menu of a header link.
+ * @typedef {{
+ *  name: string;
+ *  href?: string;
+ *  links?: Sublink[];
+ * }} HeaderDropDownList
+ */
+
+/**@type {HeaderDropDownList[]} */
+export const mainHeaderLinks = [
+  {
+    name: "Services",
+    links: [
+      {
+        subtitle: "Business Strategy",
+        link: "/services",
+      },
+      {
+        subtitle: "Branding",
+        link: "/services",
+      },
+      {
+        subtitle: "Graphic Design",
+        link: "/services",
+      },
+      {
+        subtitle: "Digital Marketing",
+        link: "/services",
+      },
+      {
+        subtitle: "Motion Design",
+        link: "/services",
+      },
+      {
+        subtitle: "Art/Photography",
+        link: "/services",
+      },
+      {
+        subtitle: "Web and App dev.",
+        link: "/services",
+      },
+    ],
+  },
+  {
+    name: "Projects",
+    links: footerLinks.projects.children,
+  },
+  {
+    name: "Hub",
+    links: footerLinks.hub.children,
+  },
+  {
+    name: "Resources",
+    links: footerLinks.resources.children,
+  },
+  {
+    name: "Contact",
+    href: "/contacts",
+    links: undefined,
+  },
+];
