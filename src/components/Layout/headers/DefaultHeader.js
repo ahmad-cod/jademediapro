@@ -3,8 +3,6 @@ import Link from "next/link";
 import { jadelogo, moonsvg } from "@/images";
 import { footerLinks } from "@/data";
 import Image from "next/image";
-import Head from "next/head";
-import { useRouter } from "next/router";
 
 /**
  * @typedef {{
@@ -101,7 +99,7 @@ export const DefaultHeader = ({ backgroundColor, paintOnScroll }) => {
         backgroundImage: `linear-gradient(0deg, transparent, ${backgroundColor})`,
         backgroundColor: headerIsFilled ? backgroundColor : undefined,
       }}
-      className="flex items-center fixed top-0 w-full z-[99] duration-300 justify-between px-[var(--side-padding)] h-[var(--header-height)]"
+      className="flex items-center max-[1024px]:text-[11pt] fixed top-0 w-full z-[99] duration-300 justify-between px-[var(--side-padding)] h-[var(--header-height)]"
     >
       <Link href="/" className="flex items-center h-[90%]">
         <Image
@@ -123,7 +121,7 @@ export const DefaultHeader = ({ backgroundColor, paintOnScroll }) => {
             height={25}
           ></Image>
         </button>
-        <nav className="flex gap-[42px]">
+        <nav className="flex gap-[42px] max-[768px]:gap-[30px]">
           {mainHeaderLinks.map((item, index) => (
             <HeaderNavItem key={index} {...item} />
           ))}
@@ -144,7 +142,7 @@ export const HeaderNavItem = ({ name, links }) => {
       <menu className="absolute animate-[fade-in_300ms] rounded-[4px] bg-[#f6f6f6e6] text-[#262626] [font-weight:500] [display:var(--nav-display-toggle)]">
         {links?.map((item, index) => (
           <li
-            className="p-[10px_25px] min-w-[180px] duration-300 hover:bg-[#4F2E67] hover:text-white"
+            className="p-[10px_25px] min-w-[180px] max-[1400px]:text-[11.5pt] duration-300 hover:bg-[#4F2E67] hover:text-white"
             key={index}
           >
             <Link href={item.link}>{item.subtitle}</Link>

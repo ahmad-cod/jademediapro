@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 interface Product {
   name: string;
   subtitle: string;
@@ -43,6 +45,22 @@ interface Job {
   location: string;
   work_type: string;
   industry: string;
+}
+
+interface ProvidedService {
+  id: string;
+  serviceTitle: string;
+  categories: string[];
+  icon: string;
+  services: Array<{
+    id: number;
+    category: string;
+    serviceContent: Array<{
+      listTitle: string;
+      listContent: string;
+      image: StaticImageData | string;
+    }>;
+  }>;
 }
 
 interface FooterLink {

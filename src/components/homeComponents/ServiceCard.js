@@ -19,30 +19,39 @@ import Link from "next/link";
 export const ServiceCard = (props) => {
   return (
     <div
-      className="bg-white flex [box-shadow:3px_3px_16px_rgba(0,0,0,0.1)] py-[30px] rounded-[4px]"
+      className={
+        "bg-white flex [box-shadow:3px_3px_16px_rgba(0,0,0,0.1)] py-[30px] rounded-[4px] " +
+        (props.vertical
+          ? "max-h-[calc(700px + var(--grid-margin))] max-[912px]:max-h-[calc(500px + var(--grid-margin))]"
+          : "h-[40vh] max-[912px]:h-[250px]")
+      }
       style={
         props.vertical
           ? {
               minWidth: "30%",
-              maxHeight: "calc(700px + var(--grid-margin))",
               flexDirection: "column",
               paddingInline: "30px",
               justifyContent: "center",
             }
           : {
               maxHeight: "350px",
-              height: "40vh",
               minHeight: "max-content",
               justifyContent: "space-between",
               alignItems: "center",
             }
       }
     >
-      <div className={props.horizontal ? "w-[50%] pl-[30px]" : ""}>
-        <div className="flex items-center pb-[20px]">
+      <div
+        className={
+          props.horizontal ? "w-[50%] max-[820px]:w-[70%] pl-[30px]" : ""
+        }
+      >
+        <div className="flex items-center pb-[20px] max-[1024px]:pb-[10px]">
           <h3
-            className={`[line-height:48pt] [font-weight:600] text-[#242526] ${
-              props.vertical ? "text-[39pt] " : "text-[40pt]"
+            className={`[line-height:117%] [font-weight:600] text-[#242526] ${
+              props.vertical
+                ? "text-[39pt] max-[1400px]:text-[34pt] max-[1024px]:text-[26pt] "
+                : "text-[40pt] max-[1400px]:text-[30pt] max-[1024px]:text-[23pt]"
             }`}
           >
             {props.title}
@@ -56,13 +65,15 @@ export const ServiceCard = (props) => {
             />
           )}
         </div>
-        <p>{props.children}</p>
+        <p className="max-[1024px]:text-[10.5pt] max-[912px]:text-[9.5pt]">
+          {props.children}
+        </p>
         {props.horizontal && (
           <div className="flex items-center justify-between">
             <Image
               src={props.linkImage}
               alt={props.title}
-              height={120}
+              className="h-[120px] max-[1024px]:h-[60px]"
               width="auto"
             />
             <CaseStudyLink href={props.caseStudyHref} />
@@ -71,7 +82,9 @@ export const ServiceCard = (props) => {
       </div>
       <div
         className={`py-[32px] ${
-          props.vertical ? "flex justify-center w-full" : "h-full max-h-[200px]"
+          props.vertical
+            ? "flex justify-center w-full"
+            : "h-full max-h-[400px] max-[820px]:h-[150px]"
         }`}
       >
         <Image
@@ -104,7 +117,7 @@ const CaseStudyLink = ({ href, className }) => {
   return (
     <Link
       href={href}
-      className={`flex justify-center [font-weight:500] hover:[--shift:50%] gap-[5%] ${className}`}
+      className={`flex justify-center items-center [font-weight:500] max-[1024px]:text-[10pt] hover:[--shift:50%] gap-[5%] ${className}`}
     >
       <span className="whitespace-nowrap">View CaseStudy</span>
       <BsArrowRight />

@@ -459,10 +459,14 @@ import videMarketingImg from "./landingPageImages/videoMarketing.svg";
 import productsImg from "./landingPageImages/products.png";
 import productPackagingImg from "./landingPageImages/productPackaging.svg";
 
-import videoImg from "./landingPageImages/video.svg";
-import targetImg from "./landingPageImages/target.svg";
-import pencilImg from "./landingPageImages/pencil.svg";
-import pairImg from "./landingPageImages/pair.svg";
+import unlockYourFutureGif from "./landingPageImages/Unlock-Your-Future.gif";
+
+import motionDesignGif from "./landingPageImages/Motion-Design.gif";
+import businessStrategyGif from "./landingPageImages/business-strategy.gif";
+import branding_designGif from "./landingPageImages/Branding.gif";
+import digitalMarketingGif from "./landingPageImages/Digital-marketing.gif";
+import art_photgraphyGif from "./landingPageImages/Art-Photography.gif";
+import web_appProjectGif from "./landingPageImages/Web-App-Project.gif";
 
 import adachukThumbnail from "./landingPageImages/thumbnail.png";
 
@@ -476,11 +480,14 @@ export {
   videoBlondeWoman,
   productsImg,
   productPackagingImg,
-  videoImg,
-  targetImg,
-  pencilImg,
-  pairImg,
+  motionDesignGif,
+  businessStrategyGif,
+  branding_designGif,
+  digitalMarketingGif,
+  web_appProjectGif,
+  art_photgraphyGif,
   adachukThumbnail,
+  unlockYourFutureGif,
 };
 
 import explorion from "./misc/explorion.png";

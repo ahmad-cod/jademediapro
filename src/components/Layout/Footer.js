@@ -36,13 +36,14 @@ export const Footer = () => {
 
   const goBackToTop = useCallback(() => scrollTo({ top: 0 }), []);
   return (
-    <footer className="relative bg-black px-5 lg:px-[104px] font-pop pb-16 pt-16">
+    <footer className="relative bg-black px-[var(--side-padding)] font-pop py-16">
       <button
         onClick={goBackToTop}
         title="Back to Top"
-        className="absolute duration-300 hover:[box-shadow:0_0_0_8px_#262626] hover:scale-110 text-[#f6f6f6] right-[var(--side-padding)] top-0 translate-y-[-50%] rounded-[50%] h-[80px] aspect-square flex items-center justify-center bg-[#46BFB2]"
+        className="absolute duration-300 hover:[box-shadow:0_0_0_8px_#262626] hover:scale-110 text-[#f6f6f6] right-[var(--side-padding)] top-0 translate-y-[-50%] rounded-[50%] h-[80px] max-[1024px]:h-[50px] aspect-square flex items-center justify-center bg-[#46BFB2]"
       >
         <svg
+          className="max-[1024px]:scale-50"
           width="36"
           height="41"
           viewBox="0 0 36 41"
@@ -258,5 +259,9 @@ export const Footer = () => {
  * @type {React.FC<{children: React.ReactNode}>}
  */
 const FooterHead = ({ children }) => {
-  return <h4 className="text-white text-[23pt] ">{children}</h4>;
+  return (
+    <h4 className="text-white text-[20pt] max-[1024px]:text-[14pt]">
+      {children}
+    </h4>
+  );
 };
