@@ -80,6 +80,9 @@
   margin: 32px 0;
   border-radius: 4px;
 }
+.goal_button button:hover {
+  background-color: #2f7f77;
+}
 .what_title h2 {
   font-weight: 600;
   color: #f6f6f6;
@@ -191,6 +194,10 @@
   padding: 12px 0;
   font-weight: 500;
   color: #f6f6f6;
+  transition: all 250ms ease-in-out;
+}
+.donate button:hover {
+  opacity: 0.9;
 }
 .share button {
   display: flex;
@@ -202,6 +209,11 @@
   color: #4f2e67;
   padding: 12px 0;
   width: 190px;
+  transition: all 250ms ease-in-out;
+}
+.share button:hover {
+  background-color: #4f2e67;
+  color: #fff;
 }
 .career_container {
   width: 85%;
@@ -256,7 +268,7 @@
 }
 .testimonial_content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -299,8 +311,8 @@
   /* position: absolute;
   /* right: 0;
   top: 0; */
-  width: 236px;
-  height: 256px;
+  width: 250px;
+  height: 250px;
 }
 .testimonial_image img {
   width: 100%;

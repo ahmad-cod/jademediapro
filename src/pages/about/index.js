@@ -13,7 +13,7 @@ import styles from "../../styles/Project.module.css";
 
 const About = () => {
   return (
-    <div className={styles.about}>
+    <section className={styles.about}>
       <AboutHeader />
       <Identity />
       <W3 />
@@ -25,7 +25,7 @@ const About = () => {
       <TechnologyLogos />
       <AboutServices />
       <ReadyToWork />
-    </div>
+    </section>
   );
 };
 
