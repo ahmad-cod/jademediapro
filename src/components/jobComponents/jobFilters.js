@@ -1,7 +1,36 @@
 import { jobIndustry, jobLocations, jobtype } from "../../data/jobData";
 import FilterDropdown from "../_helperComponents/filterDropdown";
+import { jobData } from "../../data/jobData";
 
-function JobFilters(props) {
+import { useState } from "react";
+
+function JobFilters({ setData, data }) {
+  const [check, setCheck] = useState();
+  const filterByLocation = (category) => {
+    const result = jobData?.filter((content) => {
+      return content.location === category;
+    });
+    setData(result);
+  };
+  const filterByIndustry = (category) => {
+    const result = jobData?.filter((content) => {
+      return content.industry === category;
+    });
+    setData(result);
+  };
+  const filterByWorkType = (category) => {
+    const result = jobData?.filter((content) => {
+      return content.work_type === category;
+    });
+    setData(result);
+  };
+  const filterByFeature = (category) => {
+    const result = jobData?.filter((content) => {
+      return content.feature === category;
+    });
+    setData(result);
+  };
+
   return (
     <div>
       <div className="hidden lg:block">
@@ -10,37 +39,67 @@ function JobFilters(props) {
       <div className="hidden lg:block">
         <div className="flex gap-2 text-[#3A3B40] font-normal text-[15px] items-center mb-4">
           <input
-            id="checkbox"
+            id="most relevant"
             type="checkbox"
             className=" w-4 h-4 rounded text-[#4F2E67] bg-gray-100 border-gray-300 focus:ring-purple-500 dark:focus:ring-purple-600 dark:ring-offset-gray-800 focus:ring-1 dark:bg-gray-700 dark:border-gray-600 cursor-pointer"
           />
-          <label for="checkbox">Most Relevant</label>
+          <label
+            htmlFor="most relevant"
+            onClick={() => filterByFeature("Most Relevant")}
+          >
+            Most Relevant
+          </label>
         </div>
         <div className="flex gap-2 text-[#3A3B40] font-normal text-[15px] items-center mb-4">
           <input
-            id="checkbox"
+            id="recommended"
+            value={check}
+            checked={check === "Recommended"}
             type="checkbox"
             className=" w-4 h-4 rounded text-[#4F2E67] bg-gray-100 border-gray-300 focus:ring-purple-500 dark:focus:ring-purple-600 dark:ring-offset-gray-800 focus:ring-1 dark:bg-gray-700 dark:border-gray-600 cursor-pointer"
           />
-          <label for="checkbox">Recommended</label>
+          <label
+            htmlFor="recommended"
+            onClick={() => filterByFeature("Recommended")}
+          >
+            Recommended
+          </label>
         </div>
         <div className="flex gap-2 text-[#3A3B40] font-normal text-[15px] items-center mb-4">
           <input
-            id="checkbox"
+            id="most-recent"
             type="checkbox"
+            checked={check === "Recent"}
             className=" w-4 h-4 rounded text-[#4F2E67] bg-gray-100 border-gray-300 focus:ring-purple-500 dark:focus:ring-purple-600 dark:ring-offset-gray-800 focus:ring-1 dark:bg-gray-700 dark:border-gray-600 cursor-pointer"
           />
-          <label for="checkbox">Most Recent</label>
+          <label
+            htmlFor="most-recent"
+            onClick={() => filterByFeature("Most Recent")}
+          >
+            Most Recent
+          </label>
         </div>
       </div>
       <div className="mb-8 w-[277px]">
-        <FilterDropdown data={jobLocations} label="LOCATION" />
+        <FilterDropdown
+          data={jobLocations}
+          label="LOCATION"
+          filter={filterByLocation}
+        />
       </div>
       <div className="mb-8 w-[277px]">
-        <FilterDropdown data={jobtype} label="JOB TYPE" />
+        <FilterDropdown
+          data={jobtype}
+          label="JOB TYPE"
+          filter={filterByWorkType}
+        />
       </div>
       <div className="mb-8 w-[277px]">
-        <FilterDropdown data={jobIndustry} label="INDUSTRY" />
+        <FilterDropdown
+          data={jobIndustry}
+          label="INDUSTRY"
+          filter={filterByIndustry}
+        />
       </div>
       <label className="relative inline-flex items-center cursor-pointer mb-10 lg:mb-24">
         <input
