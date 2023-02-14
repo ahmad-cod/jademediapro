@@ -5,12 +5,18 @@ import { ImageWithHeader, InterviewData } from "../components";
 import { interviewData } from "../data/interview-data/interviewData";
 import styles from "../styles/interview.module.css";
 import usePagination from "../hooks/usePagination";
+import { MainWrapper } from "@/components/layout";
 
 const Interview = () => {
   const [currentData, currentPage, setCurrentPage, dataPerPage, data] =
     usePagination(interviewData, 4, 9);
   return (
-    <div>
+    <MainWrapper
+      title="Interview - Jade Media Pro"
+      headerType={1}
+      backgroundColor="#633981"
+      paint-header-on-scroll
+    >
       <ImageWithHeader
         title="Engaging One-on-One discussing with big guns"
         subtitle="We have awesome chat with industry leading professionals from
@@ -39,7 +45,7 @@ const Interview = () => {
           setCurrentPage={setCurrentPage}
         />
       </div>
-    </div>
+    </MainWrapper>
   );
 };
 

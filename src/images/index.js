@@ -9,7 +9,6 @@ import lemonarrow from "./jobsImage/lemon-arrow.png";
 import purplearrow from "./jobsImage/purple-arrow.png";
 import sendarrow from "./jobsImage/send-arrow.png";
 import whitearrow from "./jobsImage/white-arrow.png";
-import aboutHeaderImage from "./aboutImages/aboutHeaderImage.svg";
 
 export {
   cookiesimg,
@@ -337,7 +336,7 @@ export {
   storeSupport,
   storeWorldwideShipping,
 };
-import footerlogo from "./footer/footerlogo.png";
+
 import footerplaneicon from "./footer/footerplaneicon.png";
 import facebookgif from "./footer/footer-icon-facebook.gif";
 import instagramgif from "./footer/footer-icon-instagram.gif";
@@ -348,6 +347,44 @@ import twittergif from "./footer/footer-icon-twitter.gif";
 import vimeogif from "./footer/footer-icon-vimeo.gif";
 import whatsappgif from "./footer/footer-icon-whatsapp.gif";
 import youtubegif from "./footer/footer-icon-youtube.gif";
+
+/**
+ * @type {FooterSocialLink[]}
+ */
+export const footerSocials = [
+  {
+    name: "Facebook",
+    image: facebookgif,
+  },
+  {
+    name: "Instagram",
+    image: instagramgif,
+  },
+  {
+    name: "LinkedIn",
+    image: linkedingif,
+  },
+  {
+    name: "Pinterest",
+    image: pinterestgif,
+  },
+  {
+    name: "Twitter",
+    image: twittergif,
+  },
+  {
+    name: "vimeogif",
+    image: vimeogif,
+  },
+  {
+    name: "Whatsapp",
+    image: whatsappgif,
+  },
+  {
+    name: "YouTube",
+    image: youtubegif,
+  },
+];
 
 import disclaimerfolder from "./disclaimer/disclaimer-folder.png";
 
@@ -371,62 +408,8 @@ import freebiesHeader from "./freebies/freebiesHeader.png";
 import mp4 from "./freebies/mp4.png";
 import ps from "./freebies/ps.png";
 import docs from "./freebies/docs.png";
-import aboutFlexImage from "./aboutImages/aboutFlexImage.svg";
-import john from "./aboutImages/John Ademiluyi.jpg";
-import laurel from "./aboutImages/laurel.svg";
-import ayinde from "./aboutImages/Ayinde Aminat.png";
-import musabi from "./aboutImages/Mubashir Asiyanbi.jpg";
-import chigo from "./aboutImages/Chigozirim Amadi.png";
-import oluwatobi from "./aboutImages/Oluwatobi Fabusuyi.jpg";
-import martina from "./aboutImages/Martina.png";
-import niraj from "./aboutImages/Niraj.png";
-import simeon from "./aboutImages/Simeon.png";
-import ryter from "./aboutImages/Michael.png";
-import olatundun from "./aboutImages/Olatundun.png";
-import unity from "./aboutImages/unity-69.svg";
-import wix from "./aboutImages/wix-com-website-logo-1.svg";
-import wordpress from "./aboutImages/wordpress-blue.svg";
-import word from "./aboutImages/word-1.svg";
-import react from "./aboutImages/react-2.svg";
-import python from "./aboutImages/python-5.svg";
-import microsoft from "./aboutImages/microsoft-office-powerpoint-2018-present--1.svg";
-import mailchimp from "./aboutImages/mailchimp-freddie-icon-wink.svg";
-
-import microsoftProject from "./aboutImages/microsoft-project-2019-present-.svg";
-import javascript from "./aboutImages/javascript-1.svg";
-import java from "./aboutImages/java.svg";
-import hubspot from "./aboutImages/hubspot-1.svg";
-import googleWeb from "./aboutImages/google-web-designer.svg";
-import googleMarket from "./aboutImages/google-marketing-platform.svg";
-import hootsuite from "./aboutImages/hootsuite.svg";
-import googleAdwords from "./aboutImages/google-adwords-1.svg";
-import googleAnalytics from "./aboutImages/google-analytics-3.svg";
-import googleDevelopers from "./aboutImages/google-developers.svg";
-import figma from "./aboutImages/figma-1.svg";
-import excel from "./aboutImages/excel-4.svg";
-import css from "./aboutImages/css-3.svg";
-import coreldraw from "./aboutImages/coreldraw-gs2019-2.svg";
-import cinema from "./aboutImages/cinema-4d.svg";
-import blender from "./aboutImages/blender-2.svg";
-import angular from "./aboutImages/angular-icon-1.svg";
-import adobeXd from "./aboutImages/adobe-xd-2.svg";
-import adobeCreative from "./aboutImages/adobe-creative-cloud-cc.svg";
-import adobeIllustrator from "./aboutImages/adobe-illustrator-logo.svg";
-import adobeIndesign from "./aboutImages/adobe-indesign.svg";
-import adobeLightroom from "./aboutImages/adobe-lightroom.svg";
-import adobeMedia from "./aboutImages/adobe-media-encoder.svg";
-import adobePremier from "./aboutImages/adobe-premiere-pro-logo.svg";
-import adobePhotoshop from "./aboutImages/adobe-photoshop-2.svg";
-import adobeAudition from "./aboutImages/ADOBE-AUDITION.svg";
-import adobeAcrobat from "./aboutImages/adobe-acrobat-reader-logo.svg";
-import adobeAfter from "./aboutImages/adobe-after-effects-logo.svg";
-import careerDevelopement from "./aboutImages/About-CareerDevelopment-image.jpeg";
-import aboutBuild from "./aboutImages/About-Build Quality Rel.gif";
-import aboutExpand from "./aboutImages/About-Expand Your Reach.gif";
-import aboutGoals from "./aboutImages/About-Set Goals _ Track.gif";
 
 export {
-  footerlogo,
   footerplaneicon,
   facebookgif,
   instagramgif,
@@ -458,58 +441,96 @@ export {
   paint,
   interviewHeader,
 };
+
+import jadelogo from "./jade-logo.svg";
+import jadelogo2 from "./jade-logo-2.svg";
+import moonsvg from "./misc/moon.svg";
+import topleftarrow from "./misc/topleftarrow.svg";
+
+export { jadelogo, jadelogo2, moonsvg, topleftarrow };
+
+import tunnelLightImg from "./landingPageImages/tunnelLight.png";
+import tunnelLightImgV2 from "./landingPageImages/tunnelLightv2.png";
+import ariwabagsImg from "./landingPageImages/ariwabags.png";
+import brandIdentityImg from "./landingPageImages/brandIdentity.svg";
+import webDevelopmentImg from "./landingPageImages/webdevelopment.svg";
+import laptopMockImg from "./landingPageImages/webdev.png";
+import videoBlondeWoman from "./landingPageImages/videoBlondeWoman.png";
+import videMarketingImg from "./landingPageImages/videoMarketing.svg";
+import productsImg from "./landingPageImages/products.png";
+import productPackagingImg from "./landingPageImages/productPackaging.svg";
+
+import unlockYourFutureGif from "./landingPageImages/Unlock-Your-Future.gif";
+
+import motionDesignGif from "./landingPageImages/Motion-Design.gif";
+import businessStrategyGif from "./landingPageImages/business-strategy.gif";
+import branding_designGif from "./landingPageImages/Branding.gif";
+import digitalMarketingGif from "./landingPageImages/Digital-marketing.gif";
+import art_photgraphyGif from "./landingPageImages/Art-Photography.gif";
+import web_appProjectGif from "./landingPageImages/Web-App-Project.gif";
+
+import adachukThumbnail from "./landingPageImages/thumbnail.png";
+
 export {
-  aboutHeaderImage,
-  aboutFlexImage,
-  john,
-  laurel,
-  ayinde,
-  musabi,
-  chigo,
-  oluwatobi,
-  martina,
-  niraj,
-  olatundun,
-  simeon,
-  ryter,
-  unity,
-  wix,
-  wordpress,
-  word,
-  react,
-  python,
-  microsoft,
-  mailchimp,
-  microsoftProject,
-  javascript,
-  java,
-  hubspot,
-  googleWeb,
-  googleMarket,
-  hootsuite,
-  googleAdwords,
-  googleAnalytics,
-  googleDevelopers,
-  figma,
-  excel,
-  css,
-  coreldraw,
-  cinema,
-  blender,
-  angular,
-  adobeXd,
-  adobeCreative,
-  adobeIllustrator,
-  adobeIndesign,
-  adobeLightroom,
-  adobeMedia,
-  adobePremier,
-  adobePhotoshop,
-  adobeAudition,
-  adobeAcrobat,
-  adobeAfter,
-  careerDevelopement,
-  aboutBuild,
-  aboutExpand,
-  aboutGoals,
+  tunnelLightImg,
+  tunnelLightImgV2,
+  ariwabagsImg,
+  brandIdentityImg,
+  webDevelopmentImg,
+  laptopMockImg,
+  videMarketingImg as videoMarketingImg,
+  videoBlondeWoman,
+  productsImg,
+  productPackagingImg,
+  motionDesignGif,
+  businessStrategyGif,
+  branding_designGif,
+  digitalMarketingGif,
+  web_appProjectGif,
+  art_photgraphyGif,
+  adachukThumbnail,
+  unlockYourFutureGif,
 };
+
+import sidebarToggle from "./misc/sidebar-toggle.svg";
+import cancelIcon from "./misc/cancel.svg";
+
+export { sidebarToggle, cancelIcon };
+
+import explorion from "./misc/explorion.png";
+import _7rio from "./misc/7rio.png";
+import iamholthy from "./misc/iamholthy.png";
+import landhotel from "./misc/landhotel.png";
+import nummix from "./misc/nummix.png";
+import tozome from "./misc/tozome.png";
+
+/**
+ * @typedef {{name: string, src: string}} ClientLogo
+ * @type {ClientLogo[]}
+ */
+export const clientLogos = [
+  {
+    name: "Explorion",
+    src: explorion,
+  },
+  {
+    name: "IamHolthy",
+    src: iamholthy,
+  },
+  {
+    name: "Nummix",
+    src: nummix,
+  },
+  {
+    name: "Tozome",
+    src: tozome,
+  },
+  {
+    name: "7rio",
+    src: _7rio,
+  },
+  {
+    name: "Landhotel",
+    src: landhotel,
+  },
+];

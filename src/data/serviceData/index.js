@@ -38,8 +38,17 @@ import {
   websiteDev,
   ariwaFashion,
   coinplay,
-} from "../../images";
+  businessStrategyGif,
+  branding_designGif,
+  digitalMarketingGif,
+  motionDesignGif,
+  art_photgraphyGif,
+  web_appProjectGif,
+} from "@/images";
 
+/**
+ * @type {import("@/types").ProvidedService[]}
+ */
 export const serviceData = [
   {
     id: "Business",
@@ -51,6 +60,7 @@ export const serviceData = [
       "Growth & Expansion System",
       "Project Management",
     ],
+    icon: businessStrategyGif,
     services: [
       {
         id: 1,
@@ -124,7 +134,6 @@ export const serviceData = [
       },
     ],
   },
-
   {
     id: "Design",
     serviceTitle: "Branding & Design",
@@ -137,6 +146,7 @@ export const serviceData = [
       "Environmental & Retail Graphics",
       "Infographic & Illustration Graphics",
     ],
+    icon: branding_designGif,
     services: [
       {
         id: 1,
@@ -249,6 +259,7 @@ export const serviceData = [
       "Lead generation",
       "Data Analytics",
     ],
+    icon: digitalMarketingGif,
     services: [
       {
         id: 1,
@@ -346,6 +357,7 @@ export const serviceData = [
       "Production/Filming",
       "Post-production",
     ],
+    icon: motionDesignGif,
     services: [
       {
         id: 1,
@@ -421,8 +433,9 @@ export const serviceData = [
   },
   {
     id: "Art",
-    serviceTitle: "Art & Photogra phy",
+    serviceTitle: "Art & Photography",
     categories: ["Painting", "Digital art", "Photography"],
+    icon: art_photgraphyGif,
     services: [
       {
         id: 1,
@@ -477,6 +490,7 @@ export const serviceData = [
       "Mobile application development",
       "Software development",
     ],
+    icon: web_appProjectGif,
     services: [
       {
         id: 1,

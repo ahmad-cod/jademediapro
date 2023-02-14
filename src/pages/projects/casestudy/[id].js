@@ -1,15 +1,36 @@
 import { useRouter } from "next/router";
 import Work from "../../../components/servicesComponent/work";
-
 import { caseStudyData } from "../../../data/projectData/caseStudyData";
 import style from "../../../styles/Services.module.css";
 import styles from "../../../styles/Casestudy.module.css";
 import Image from "next/image";
-const CaseStudyPage = () => {
+import { MainWrapper } from "@/components/layout";
+
+/**
+ *
+ * @param {import("next").GetServerSidePropsContext} context
+ * @returns {import("next").GetServerSidePropsResult<CaseStudy>}
+ */
+export async function getServerSideProps(context) {
+  const caseStudyId = context.params.id;
+  return {
+    props: {
+      caseStudy: caseStudyData.find(
+        (caseStudy) => caseStudy.id === caseStudyId
+      ),
+    },
+  };
+}
+
+const CaseStudyPage = ({ props }) => {
   const router = useRouter();
   const caseStudyId = router.query.id;
   return (
-    <>
+    <MainWrapper
+      headerType={1}
+      paint-header-on-scroll
+      backgroundColor="#242526"
+    >
       {caseStudyData
         ?.filter((cases) => cases.id === caseStudyId)
         .map((cases) => (
@@ -197,7 +218,7 @@ const CaseStudyPage = () => {
             </div>
           </>
         ))}
-    </>
+    </MainWrapper>
   );
 };
 
