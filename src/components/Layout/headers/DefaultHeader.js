@@ -5,10 +5,12 @@ import { mainHeaderLinks } from "@/data";
 import Image from "next/image";
 import { Sidebar } from "../Sidebar";
 import { JadeLogo2 } from "../logos/JadeLogo2";
+import { MoonIcon } from "../logos/MoonIcon";
 
 /**
  * @typedef {{
  *  backgroundColor: import("csstype").Property.BackgroundColor,
+ *  color: import("csstype").Property.Color,
  *  paintOnScroll?: boolean
  * }} MainHeaderProps
  */
@@ -17,7 +19,8 @@ import { JadeLogo2 } from "../logos/JadeLogo2";
  * Main header for the entire site.
  * @type {React.FC<MainHeaderProps>}
  */
-export const DefaultHeader = ({ backgroundColor, paintOnScroll }) => {
+export const DefaultHeader = ({ backgroundColor, paintOnScroll, color }) => {
+  if (!color) color = "white";
   const [headerIsFilled, setHeaderIsFilled] = useState(false);
   const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
   function switchHeaderColor() {
@@ -48,6 +51,7 @@ export const DefaultHeader = ({ backgroundColor, paintOnScroll }) => {
             : headerIsFilled
             ? backgroundColor
             : undefined,
+          color: sidebarIsOpen ? "#242526" : color,
         }}
         className="flex items-center max-[1024px]:text-[11pt] fixed top-0 w-full z-[99] duration-300 justify-between px-[var(--side-padding)] h-[var(--header-height)]"
       >
@@ -55,16 +59,11 @@ export const DefaultHeader = ({ backgroundColor, paintOnScroll }) => {
           <JadeLogo2 color={sidebarIsOpen ? "#303030" : "#f6f6f6"} />
         </Link>
         <div className="flex items-center justify-center">
-          <button title="Change Theme" className="max-[700px]:hidden">
-            <Image
-              src={moonsvg}
-              alt="Dark Mode Toggle"
-              style={{
-                marginRight: "2vw",
-              }}
-              width={25}
-              height={25}
-            ></Image>
+          <button
+            title="Change Theme"
+            className="max-[700px]:hidden mr-[42px] max-[768px]:mr-[30px]"
+          >
+            <MoonIcon color={color} />
           </button>
           {/* Navigations */}
           <nav className="flex max-[700px]:hidden gap-[42px] max-[768px]:gap-[30px]">
@@ -96,12 +95,12 @@ export const DefaultHeader = ({ backgroundColor, paintOnScroll }) => {
  * Header Navigation drop down menu.
  * @type {React.FC<HeaderDropDownList>}
  */
-export const HeaderNavItem = ({ name, links }) => {
-  return (
-    <li className="relative list-none [--nav-display-toggle:none] hover:[--nav-display-toggle:block] text-white">
-      <h1 className="relative cursor-pointer hover:text-gray-200">{name}</h1>
+export const HeaderNavItem = ({ name, links, href }) => {
+  return links ? (
+    <li className="relative list-none [--nav-display-toggle:none] hover:[--nav-display-toggle:block]">
+      <h1 className="relative cursor-pointer hover:opacity-[0.7]">{name}</h1>
       <menu className="absolute animate-[fade-in_300ms] rounded-[4px] bg-[#f6f6f6e6] text-[#262626] [font-weight:500] [display:var(--nav-display-toggle)]">
-        {links?.map((item, index) => (
+        {links.map((item, index) => (
           <li
             className="p-[10px_25px] min-w-[180px] max-[1400px]:text-[11.5pt] duration-300 hover:bg-[#4F2E67] hover:text-white"
             key={index}
@@ -111,5 +110,7 @@ export const HeaderNavItem = ({ name, links }) => {
         ))}
       </menu>
     </li>
+  ) : (
+    <Link href={href}>{name}</Link>
   );
 };

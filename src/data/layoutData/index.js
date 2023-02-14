@@ -59,7 +59,7 @@ export const footerLinks = {
     children: [
       {
         subtitle: "Blog",
-        link: "#",
+        link: "/blog",
       },
 
       {
@@ -72,15 +72,15 @@ export const footerLinks = {
       },
       {
         subtitle: "Event",
-        link: "#",
+        link: "/event",
       },
       {
         subtitle: "Interview",
-        link: "#",
+        link: "/interview",
       },
       {
         subtitle: "Job/Internship",
-        link: "#",
+        link: "/job",
       },
     ],
   },
@@ -89,11 +89,11 @@ export const footerLinks = {
     children: [
       {
         subtitle: "Case Study",
-        link: "#",
+        link: "/projects",
       },
       {
         subtitle: "Process",
-        link: "#",
+        link: "/process",
       },
       {
         subtitle: "Showreel",

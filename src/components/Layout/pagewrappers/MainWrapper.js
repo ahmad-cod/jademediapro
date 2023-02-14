@@ -5,6 +5,7 @@ import { Footer } from "../Footer";
 /**
  * @typedef {{
  *    backgroundColor: import("csstype").Property.BackgroundColor,
+ *    color: import("csstype").Property.Color,
  *    children: React.ReactNode,
  *    headerType: 1 | 2 | 3,
  *    "paint-header-on-scroll"?: boolean,
@@ -32,12 +33,13 @@ export const MainWrapper = (props) => {
       {props.headerType === 1 ? (
         <DefaultHeader
           backgroundColor={props.backgroundColor}
+          color={props.color}
           paintOnScroll={props["paint-header-on-scroll"]}
         />
       ) : (
         <></>
       )}
-      {props.children}
+      <div className="bg-white">{props.children}</div>
       <Footer />
     </>
   );

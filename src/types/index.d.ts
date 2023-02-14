@@ -83,3 +83,16 @@ interface FooterSocialLink {
   name: string;
   image: string;
 }
+
+interface CaseStudy {
+  id: string;
+  title: string;
+  color: string;
+  header: string | StaticImageData;
+  contents: Array<{
+    [keyof: string]: Array<{
+      [keyof: string]: string;
+      image: Array<string | StaticImageData>;
+    }>;
+  }>;
+}

@@ -212,7 +212,11 @@ export default function Home({ jobs }) {
           height="120vh"
           className="bg-[#4F2E67] max-2xl:max-h-[1350px] max-2xl:py-[50px] max-2xl:h-fit text-[#f6f6f6] grid grid-cols-2 max-[1024px]:[grid:auto/34%_auto] max-[700px]:[grid:auto/0%_auto] place-content-center"
         >
-          <div className="overflow-hidden"></div>
+          <ul>
+            <li>Research</li>
+            <li>Ideate</li>
+            <li>Design</li>
+          </ul>
           <div>
             <h2 className="home-heading text-[34pt] max-[1400px]:text-[32pt] max-[1024px]:text-[26pt] max-[768px]:text-[23pt] mb-[24px]">
               Our five foundational processes to create your strategic
