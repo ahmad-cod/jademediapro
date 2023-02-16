@@ -4,8 +4,8 @@ import { Footer } from "../Footer";
 
 /**
  * @typedef {{
- *    backgroundColor: import("csstype").Property.BackgroundColor,
- *    color: import("csstype").Property.Color,
+ *    backgroundColor: BackgroundColor,
+ *    color: Color,
  *    children: React.ReactNode,
  *    headerType: 1 | 2 | 3,
  *    "paint-header-on-scroll"?: boolean,
@@ -14,7 +14,7 @@ import { Footer } from "../Footer";
  */
 
 /**
- * Main Layout wrapper for pages, with the default header and footer.
+ * Main Layout wrapper for pages, with the default header (navbar) and footer.
  * @type {React.FC<MainWrapperProps>}
  */
 export const MainWrapper = (props) => {

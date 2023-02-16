@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 /**
  * A redesigned product card.
  * @type {React.FC<Product>}

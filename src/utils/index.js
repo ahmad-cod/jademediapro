@@ -18,7 +18,7 @@ const months = [
  * ```js
  *  getMonthAbbr(1) // Returns Jan.
  * ```
- * @param {NumericRange<Enumerate<1>, 12>} num
+ * @param {1|2|3|4|5|6|7|8|9|10|11|12} num
  */
 export function getMonthAbbr(num) {
   return `${months[num - 1].slice(0, 3)}.`;
