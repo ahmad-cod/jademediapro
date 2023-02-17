@@ -1,4 +1,4 @@
-import { MainWrapper } from "@/components/layout";
+import { MainWrapper } from "../../components/Layout";
 import ContactForm from "../../components/contactComponent/contactForm";
 import ContactHeader from "../../components/contactComponent/contactHeader";
 import FAQ from "../../components/contactComponent/faq";

@@ -8,7 +8,7 @@ import ServicesComponent from "../../components/Services";
 import Work from "../../components/servicesComponent/work";
 import styles from "../../styles/Project.module.css";
 import style from "../../styles/Services.module.css";
-import { MainWrapper } from "@/components/layout";
+import { MainWrapper } from "../../components/Layout";
 
 const Services = () => {
   return (

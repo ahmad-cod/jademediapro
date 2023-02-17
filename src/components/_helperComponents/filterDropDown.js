@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import styles from "../../styles/contact.module.css";
+import styles from "../../styles/Contact.module.css";
 
 const FilterDropdown = ({ data, label, filter }) => {
   const [selectedValue, setSelectedValue] = useState();
