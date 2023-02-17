@@ -516,7 +516,9 @@ export {
 import sidebarToggle from "./misc/sidebar-toggle.svg";
 import cancelIcon from "./misc/cancel.svg";
 
-export { sidebarToggle, cancelIcon };
+import playTriangleImg from "./misc/playtriangle.svg";
+
+export { sidebarToggle, cancelIcon, playTriangleImg };
 
 import explorion from "./misc/explorion.png";
 import _7rio from "./misc/7rio.png";

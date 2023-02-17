@@ -25,6 +25,8 @@ import {
   productPackagingImg,
   adachukThumbnail,
   unlockYourFutureGif,
+  playTriangleImg,
+  interview1image,
 } from "@/images";
 import { productData } from "@/data/products/productData";
 import { jobData, upcomingEvents } from "@/data";
@@ -228,12 +230,24 @@ export default function Home({ jobs }) {
             Exclusive interviews with industry leading professionals.
           </h2>
           <div className="grid [grid:auto/70%_auto] max-[1024px]:[grid:auto/65%_auto] max-[768px]:[grid:auto/56%_auto] max-[700px]:grid-cols-1 gap-[var(--grid-margin)]">
-            {/* <div
-              style={{ backgroundImage: `url(${adachukThumbnail.src})` }}
-              className="relative [background-size:120%] bg-no-repeat bg-center max-[768px]:[background-position-y:0] overflow-hidden [filter:drop-shadow(0px_13px_37px_rgba(187,162,205,0.6))] rounded-[4px] h-full max-[700px]:w-full max-[700px]:aspect-video"
-            ></div> */}
+            <div
+              style={{
+                backgroundImage: `url('${adachukThumbnail.src}')`,
+                backgroundSize: "110%",
+              }}
+              className="h-full max-[700px]:w-full max-[700px]:aspect-[2] max-[700px]:h-fit flex items-center bg-no-repeat bg-center overflow-hidden justify-center rounded-[4px]"
+            >
+              <div className="rounded-[50%] cursor-pointer hover:rotate-180 duration-300 bg-[#BBBECA] flex items-center justify-center h-[90px] max-[700px]:h-[60px] aspect-square">
+                <Image
+                  style={{ width: "40%" }}
+                  className="translate-x-[15%]"
+                  src={playTriangleImg}
+                  alt="play"
+                />
+              </div>
+            </div>
             <div>
-              <h3 className="text-[30pt] max-[1400px]:text-[23pt] max-[1024px]:text-[18pt] max-[768px]:text-[16pt] mb-[24px] max-[1400px]:mb-[17px] max-[700px]:h-[56px] text-[#2F7F77]">
+              <h3 className="text-[30pt] max-[1400px]:text-[23pt] max-[1024px]:text-[18pt] max-[768px]:text-[16pt] mb-[24px] max-[1400px]:mb-[17px] max-[700px]:h-fit max-[700px]:mb-2 text-[#2F7F77]">
                 60 minutes with Adachukwu of Jademediapro
               </h3>
               <p className="[line-height:140%] text-[16pt] max-[1400px]:text-[13pt] max-[1024px]:text-[11pt] max-[768px]:text-[10pt] mb-[46px] max-[1400px]:mb-[30px] max-[1024px]:mb-[15px]">
@@ -244,9 +258,12 @@ export default function Home({ jobs }) {
                 into a die-hard fan of your brand? A constant pull of value and
                 inspiration.{" "}
               </p>
-              <HomeButton href="/">
+              <HomeButton
+                className="hover:opacity-90 [--ml:10px] hover:[--ml:20px] duration-300"
+                href="/"
+              >
                 Watch More
-                <div className="scale-[1.5]">
+                <div className="ml-[var(--ml)] duration-300 scale-[1.5]">
                   <BsArrowRight />
                 </div>
               </HomeButton>

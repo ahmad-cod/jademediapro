@@ -1,5 +1,4 @@
 import { methodologyData } from "@/data";
-import { ResearchChart, ResearchImage } from "@/images";
 import { useEffect, useRef, useState } from "react";
 import { PageSection } from "./PageSection";
 
@@ -47,7 +46,7 @@ export const PurpleSection = () => {
         Our five foundational processes to create your strategic brand&apos;s
         success
       </h2>
-      <ul className="flex flex-col max-[700px]:flex-row max-[700px]:w-full max-[700px]:overflow-x-scroll justify-center max-[700px]:justify-start max-[700px]:gap-[5vw]">
+      <ul className="flex flex-col max-[700px]:h-[120px] max-[700px]:flex-row max-[700px]:w-full max-[700px]:overflow-x-scroll justify-center max-[700px]:justify-start max-[700px]:gap-[5vw]">
         {methodologyData.map((methodology, index) => {
           const isopen = index === openMethodology;
           return (
