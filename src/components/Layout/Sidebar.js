@@ -6,6 +6,11 @@ import { IoIosArrowUp } from "react-icons/io";
 import { MoonIcon } from "./logos/MoonIcon";
 
 /**
+ * @typedef SidebarProps
+ * @type {object}
+ */
+
+/**
  * @type {React.FC<SidebarProps>}
  */
 export const Sidebar = () => {

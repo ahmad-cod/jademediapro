@@ -1,3 +1,4 @@
+import { PaperPlane } from "../layout";
 import { HomeButton } from "./HomeButton";
 
 /**
@@ -18,7 +19,13 @@ export const StartProjectCard = (props) => {
       <p className="mb-[32px] max-[1024px]:mb-[10px] max-[1024px]:text-[10.5pt]">
         Let&apos;s have a chat about your amazing ideas.
       </p>
-      <HomeButton href="/call">Book a Free Call</HomeButton>
+      <HomeButton
+        href="/call"
+        className="hover:gap-3 duration-200 hover:opacity-50"
+      >
+        <PaperPlane />
+        Book a Free Call
+      </HomeButton>
     </div>
   );
 };

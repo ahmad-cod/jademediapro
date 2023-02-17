@@ -1,4 +1,3 @@
-import react from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { errorimg, maskimg } from "../images";

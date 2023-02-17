@@ -3,16 +3,18 @@ import Image from "next/image";
 import Link from "next/link";
 
 /**
- * @typedef {{
- *    title: string,
- *    children: React.ReactNode,
- *    vertical?: boolean,
- *    horizontal?: boolean,
- *    caseStudyHref?: string,
- *    mainImage: string,
- *    linkImage: string
- * }} ServiceCardProps
- *
+ * @typedef ServiceCardProps
+ * @type {object}
+ * @property {string} title The heading of the Service Card.
+ * @property {React.ReactNode} children Inner text in the service card.
+ * @property {boolean=} vertical Whether the service card should go from top to bottom.
+ * @property {boolean=} horizontal Whether the service card should stretch from left to right.
+ * @property {string=} caseStudyHref Link to example case study.
+ * @property {string} mainImage
+ * @property {string} linkImage
+ */
+
+/**
  * A card on the home page with info on services provided.
  * @type {React.FC<ServiceCardProps>}
  */
@@ -116,6 +118,9 @@ export const ServiceCard = (props) => {
  *    href: string,
  *    className: string,
  * }} CaseStudyLinkProps
+ */
+
+/**
  * @type {React.FC<CaseStudyLinkProps>}
  */
 const CaseStudyLink = ({ href, className }) => {

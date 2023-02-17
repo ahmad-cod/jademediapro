@@ -6,6 +6,7 @@ import { TbMinus } from "react-icons/tb";
 import { footerLinks } from "@/data";
 import { footerplaneicon, footerSocials } from "@/images";
 import { JadeLogo2 } from "./logos/JadeLogo2";
+import { PaperPlane } from "./logos";
 
 /**
  * Default footer for all pages.
@@ -211,8 +212,8 @@ export const Footer = () => {
             Stay <br /> connected to infinite support
           </h3>
           <p>Join our newsletter</p>
-          <button className="border-[#46BFB2] border-[1px] rounded-md py-2 flex items-center justify-center gap-3">
-            <Image width="100%" height="100%" src={footerplaneicon} alt="->" />{" "}
+          <button className="border-[#46BFB2] [--plane:#46BFB2] duration-300 hover:bg-[#46BFB2] hover:text-[#f6f6f6] hover:[--plane:#f6f6f6] border-[1px] rounded-md py-2 flex items-center justify-center gap-3">
+            <PaperPlane className="[color:var(--plane)] duration-300" />
             <p>Sign Up</p>
           </button>
         </div>

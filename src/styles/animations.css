@@ -10,3 +10,21 @@
     transform: translateY(-100%);
   }
 }
+
+@keyframes line {
+  from {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes logo-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-80%);
+  }
+  98% {
+    transform: translateX(0);
+  }
+}

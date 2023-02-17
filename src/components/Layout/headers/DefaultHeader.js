@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { cancelIcon, moonsvg, sidebarToggle } from "@/images";
+import { cancelIcon, sidebarToggle } from "@/images";
 import { mainHeaderLinks } from "@/data";
 import Image from "next/image";
 import { Sidebar } from "../Sidebar";
@@ -8,11 +8,10 @@ import { JadeLogo2 } from "../logos/JadeLogo2";
 import { MoonIcon } from "../logos/MoonIcon";
 
 /**
- * @typedef {{
- *  backgroundColor: import("csstype").Property.BackgroundColor,
- *  color: import("csstype").Property.Color,
- *  paintOnScroll?: boolean
- * }} MainHeaderProps
+ * @typedef MainHeaderProps
+ * @property {BackgroundColor} backgroundColor
+ * @property {Color} color
+ * @property {boolean=} paintOnScroll Whether or not the navbar should fill color when the first banner is scrolled past.
  */
 
 /**
