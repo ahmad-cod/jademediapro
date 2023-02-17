@@ -13,7 +13,7 @@ import {
   sendarrow,
   whitearrow,
 } from "../images";
-import { MainWrapper } from "@/components/layout";
+import { MainWrapper } from "../components/Layout";
 
 export default function Terms() {
   const [currentData, currentPage, setCurrentPage, dataPerPage, data, setData] =

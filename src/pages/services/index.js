@@ -8,7 +8,7 @@ import Navigation from "../../components/servicesComponent/serviceNavigation";
 import Work from "../../components/servicesComponent/work";
 import styles from "../../styles/Project.module.css";
 import style from "../../styles/Services.module.css";
-import { MainWrapper } from "@/components/layout";
+import { MainWrapper } from "../../components/Layout";
 
 const Services = () => {
   return (
@@ -20,7 +20,7 @@ const Services = () => {
     >
       <div className={styles.services}>
         <ServiceHeader />
-        <Navigation />
+        {/* <Navigation /> */}
         <div className={styles.service_container}>
           {serviceData?.map((service, i) => (
             <ServicesComponent

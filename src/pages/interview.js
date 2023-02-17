@@ -5,7 +5,7 @@ import { ImageWithHeader, InterviewData } from "../components";
 import { interviewData } from "../data/interview-data/interviewData";
 import styles from "../styles/interview.module.css";
 import usePagination from "../hooks/usePagination";
-import { MainWrapper } from "@/components/layout";
+import { MainWrapper } from "../components/Layout";
 
 const Interview = () => {
   const [currentData, currentPage, setCurrentPage, dataPerPage, data] =

@@ -6,7 +6,7 @@ import InterviewCards from "../../components/blogComponent/interviewCards";
 import CategoryFilter from "../../components/CategoryFilter";
 import styles from "../../styles/Blog.module.css";
 import usePagination from "../../hooks/usePagination";
-import { MainWrapper } from "@/components/layout";
+import { MainWrapper } from "../../components/Layout";
 
 const Blogs = () => {
   const [currentData, currentPage, setCurrentPage, dataPerPage, data, setData] =

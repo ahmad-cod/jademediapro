@@ -1,5 +1,5 @@
 import { jobIndustry, jobLocations, jobtype } from "../../data/jobData";
-import FilterDropdown from "../_helperComponents/filterDropdown";
+import FilterDropdown from "../_helperComponents/filterDropDown";
 import { jobData } from "../../data/jobData";
 
 import { useState } from "react";

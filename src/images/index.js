@@ -10,20 +10,6 @@ import purplearrow from "./jobsImage/purple-arrow.png";
 import sendarrow from "./jobsImage/send-arrow.png";
 import whitearrow from "./jobsImage/white-arrow.png";
 
-export {
-  cookiesimg,
-  errorimg,
-  maskimg,
-  privacyimg,
-  termsimg,
-  borderlineimg,
-  jobheroimg,
-  lemonarrow,
-  purplearrow,
-  sendarrow,
-  whitearrow,
-};
-
 import blog1image from "./blogImages/blog1image.jpg";
 import blog2image from "./blogImages/blog2image.jpg";
 import blog3image from "./blogImages/blog3image.jpg";
@@ -46,7 +32,7 @@ import blog5image1 from "./blogImages/blog5image1.jpg";
 import headerImage from "./projectImages/header-image.svg";
 import underProduction from "./projectImages/UnderProduction.jpg";
 import kietDiet from "./projectImages/Keto-Dietthumbnail.jpg";
-import interviewImage from "./projectImages/interview-thumbnail.png";
+import interviewImage from "./projectImages/Interview-thumbnail.png";
 import manniet from "./projectImages/Mainnet-thumbnail.jpg";
 import artButton from "./serviceImages/3D-Object=Art.png";
 import businessButton from "./serviceImages/3D-Object=Business.png";
@@ -74,15 +60,15 @@ import brandingMonitor from "./projectImages/Branding-Process-Monitor-Assets.svg
 import brandingDevelop from "./projectImages/Branding-Process-Develop-Brand.svg";
 import brandingLaunch from "./projectImages/Branding-Process-Launch.svg";
 import brandingMarket from "./projectImages/Branding-Process-Market.svg";
-import illustrationBriefing from "./projectImages/illustration-Process-Briefing.png";
+import illustrationBriefing from "./projectImages/Illustration-Process-Briefing.png";
 
-import illustrationBasicTone from "./projectImages/illustration-Process-BasicTone.svg";
-import illustrationCleansketch from "./projectImages/illustration-Process-Cleansketch.svg";
-import illustrationDelivery from "./projectImages/illustration-Process-Delivery.svg";
-import illustrationFinalDetail from "./projectImages/illustration-Process-FinalDetail.svg";
-import illustrationReferencing from "./projectImages/illustration-Process-Referencing.svg";
-import illustrationRoughsketch from "./projectImages/illustration-Process-Roughsketch.svg";
-import illustrationStylelayout from "./projectImages/illustration-Process-Stylelayout.svg";
+import illustrationBasicTone from "./projectImages/Illustration-Process-BasicTone.svg";
+import illustrationCleansketch from "./projectImages/Illustration-Process-Cleansketch.svg";
+import illustrationDelivery from "./projectImages/Illustration-Process-Delivery.svg";
+import illustrationFinalDetail from "./projectImages/Illustration-Process-FinalDetail.svg";
+import illustrationReferencing from "./projectImages/Illustration-Process-Referencing.svg";
+import illustrationRoughsketch from "./projectImages/Illustration-Process-Roughsketch.svg";
+import illustrationStylelayout from "./projectImages/Illustration-Process-Stylelayout.svg";
 import marketingDevelop from "./projectImages/Marketing-Process-Develop-Implement-strategies.svg";
 import marketingMarket from "./projectImages/Marketing-Process-Develop-Marketing.png";
 import marketingMeasure from "./projectImages/Marketing-Process-Develop-MeasureResults.svg";
@@ -105,7 +91,7 @@ import digitalArt from "./serviceImages/Art&Photography-DigitalArt.gif";
 import painting from "./serviceImages/Art&Photography-Painting.gif";
 import photography from "./serviceImages/Art&Photography-Photography.gif";
 import stationeryDesign from "./serviceImages/Branding&Design-Brandcollateral-Stationerydesign.gif";
-import brandStrategy from "./serviceImages/Branding&Design-BrandStrategy.gif";
+import brandStrategy from "./serviceImages/Branding&Design-Brandstrategy.gif";
 import companyProfile from "./serviceImages/Branding&Design-CompanyProfile&Editorialdesign.gif";
 import illustrationGraphics from "./serviceImages/Branding&Design-Environmental&RetailGraphics.gif";
 import infographics from "./serviceImages/Branding&Design-InfographicandIllustrationGraphics.gif";
@@ -174,13 +160,24 @@ import product5 from "./storeImages/product5.svg";
 import storeFreeShipping from "./storeImages/Store-Free-Shipping.gif";
 import storeHighQuality from "./storeImages/Store-High-Quality.gif";
 import storeSupport from "./storeImages/Store-Support.gif";
-import product4Preview1 from "./storeImages/product-preview01.png";
-import product4Preview2 from "./storeImages/product-preview02.png";
-import product4Preview3 from "./storeImages/product-preview03.png";
+import product4Preview1 from "./storeImages/Product-preview01.png";
+import product4Preview2 from "./storeImages/Product-preview02.png";
+import product4Preview3 from "./storeImages/Product-preview03.png";
 
 import storeWorldwideShipping from "./storeImages/Store-Worldwide-Shipping.gif";
 
 export {
+  cookiesimg,
+  errorimg,
+  maskimg,
+  privacyimg,
+  termsimg,
+  borderlineimg,
+  jobheroimg,
+  lemonarrow,
+  purplearrow,
+  sendarrow,
+  whitearrow,
   blog1image,
   blog2image,
   blog3image,
@@ -200,8 +197,6 @@ export {
   blog4image1,
   blog4image2,
   blog4image3,
-};
-export {
   headerImage,
   animation,
   animationBriefing,
@@ -251,8 +246,6 @@ export {
   interviewImage,
   manniet,
   kietDiet,
-};
-export {
   digitalArt,
   painting,
   photography,
@@ -291,9 +284,8 @@ export {
   webButton,
   designButton,
   businessButton,
-};
-export { contactHeaderImage, contactGif };
-export {
+  contactHeaderImage,
+  contactGif,
   AriwaHeader,
   CoinplayHeader,
   TozomeHeader,
@@ -316,9 +308,6 @@ export {
   underProduction1,
   underStrategy,
   underStrategy1,
-};
-
-export {
   slider1,
   slider2,
   slider3,
@@ -396,7 +385,7 @@ import handphone from "./interview/handphone.png";
 import female from "./interview/female.png";
 import male from "./interview/male.png";
 import sixty from "./interview/sixty.png";
-import interviewHeader from "./interview/interviewHeader.png";
+import interviewHeader from "./interview/InterviewHeader.png";
 import productImage1 from "./product/productImage1.png";
 import productImage2 from "./product/productImage2.png";
 import productImage3 from "./product/productImage3.png";
