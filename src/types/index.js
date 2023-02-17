@@ -109,5 +109,7 @@
  * @typedef {{
  *   name: string;
  *   text: string;
+ *   chart: string | _StaticImageData;
+ *   image: string | _StaticImageData;
  * }} Methodology
  */

@@ -10,3 +10,9 @@
     transform: translateY(-100%);
   }
 }
+
+@keyframes line {
+  from {
+    transform: scaleX(0);
+  }
+}

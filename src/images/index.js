@@ -462,8 +462,16 @@ import productPackagingImg from "./landingPageImages/productPackaging.svg";
 
 import unlockYourFutureGif from "./landingPageImages/Unlock-Your-Future.gif";
 
-import ideateImage from "./landingPageImages/Ideate-Left 1.png";
-import project2Img from "./landingPageImages/Project 2 1.png";
+import ResearchChart from "./landingPageImages/ResearchChart.png";
+import ResearchImage from "./landingPageImages/ResearchImage.png";
+import IdeateChart from "./landingPageImages/IdeateChart.png";
+import IdeateImage from "./landingPageImages/IdeateImage.png";
+import DesignChart from "./landingPageImages/DesignChart.png";
+import DesignImage from "./landingPageImages/DesignImage.png";
+import ImplementationChart from "./landingPageImages/ImplementationChart.png";
+import ImplementationImage from "./landingPageImages/ImplementationImage.png";
+import ResultChart from "./landingPageImages/ResearchChart.png";
+import ResultImage from "./landingPageImages/ResearchImage.png";
 
 import motionDesignGif from "./landingPageImages/Motion-Design.gif";
 import businessStrategyGif from "./landingPageImages/business-strategy.gif";
@@ -493,8 +501,16 @@ export {
   art_photgraphyGif,
   adachukThumbnail,
   unlockYourFutureGif,
-  ideateImage,
-  project2Img,
+  ResearchChart,
+  ResearchImage,
+  IdeateChart,
+  IdeateImage,
+  DesignChart,
+  DesignImage,
+  ImplementationChart,
+  ImplementationImage,
+  ResultChart,
+  ResultImage,
 };
 
 import sidebarToggle from "./misc/sidebar-toggle.svg";
