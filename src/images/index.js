@@ -462,6 +462,9 @@ import productPackagingImg from "./landingPageImages/productPackaging.svg";
 
 import unlockYourFutureGif from "./landingPageImages/Unlock-Your-Future.gif";
 
+import ideateImage from "./landingPageImages/Ideate-Left 1.png";
+import project2Img from "./landingPageImages/Project 2 1.png";
+
 import motionDesignGif from "./landingPageImages/Motion-Design.gif";
 import businessStrategyGif from "./landingPageImages/business-strategy.gif";
 import branding_designGif from "./landingPageImages/Branding.gif";
@@ -490,6 +493,8 @@ export {
   art_photgraphyGif,
   adachukThumbnail,
   unlockYourFutureGif,
+  ideateImage,
+  project2Img,
 };
 
 import sidebarToggle from "./misc/sidebar-toggle.svg";

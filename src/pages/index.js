@@ -12,6 +12,7 @@ import {
   ProductCard,
   EventCard,
   JobCard,
+  PurpleSection,
 } from "@/components/homeComponents";
 import {
   brandIdentityImg,
@@ -207,46 +208,7 @@ export default function Home({ jobs }) {
           </div>
         </PageSection>
 
-        {/* Our five... */}
-        <PageSection
-          height="120vh"
-          className="bg-[#4F2E67] max-2xl:max-h-[1350px] max-2xl:py-[50px] max-2xl:h-fit text-[#f6f6f6] grid grid-cols-2 max-[1024px]:[grid:auto/34%_auto] max-[700px]:[grid:auto/0%_auto] place-content-center"
-        >
-          <ul>
-            <li>Research</li>
-            <li>Ideate</li>
-            <li>Design</li>
-          </ul>
-          <div>
-            <h2 className="home-heading text-[34pt] max-[1400px]:text-[32pt] max-[1024px]:text-[26pt] max-[768px]:text-[23pt] mb-[24px]">
-              Our five foundational processes to create your strategic
-              brand&apos;s success
-            </h2>
-            <div className="grid grid-cols-2 gap-[16px] mb-[40px] h-[190px] max-[768px]:h-[100px] max-[1024px]:mb-[20px]">
-              <div className="h-full bg-white"></div>
-              <div className="h-full bg-white"></div>
-            </div>
-            <p className="[line-height:140%] text-[16pt] max-[1400px]:text-[13pt] max-[1024px]:text-[11pt] max-[768px]:text-[10pt] mb-[20px]">
-              Jademediapro&apos;s research phase involves simple steps of
-              gathering information and analysing the findings to get to know
-              your business, industry, competitors, target audience, all of your
-              existing branding and design, marketing data, evaluating the data,
-              and preparing the research report for presentation. It typically
-              consists of extensive desk and field research including interviews
-              where we might ask; &apos;what 3 words would you use to describe
-              your brand/company?&apos;, &apos;why do you choose…&apos;,
-              &apos;what is most important to you&apos;, &apos;how do you
-              rate…&apos;, we listen to you to understand your business problem
-              (or opportunity). These steps may vary depending on the specific
-              outcomes your business is trying to achieve. For example, a
-              product-oriented business may focus on the design of packaging and
-              marketing materials used to communicate the product brand. The
-              process followed at each level is measured - deliberately
-              arranged, is fundamental, appropriately recorded, and
-              methodologically substantial.
-            </p>
-          </div>
-        </PageSection>
+        <PurpleSection />
 
         {/* Put money... */}
         <PageSection
@@ -266,10 +228,10 @@ export default function Home({ jobs }) {
             Exclusive interviews with industry leading professionals.
           </h2>
           <div className="grid [grid:auto/70%_auto] max-[1024px]:[grid:auto/65%_auto] max-[768px]:[grid:auto/56%_auto] max-[700px]:grid-cols-1 gap-[var(--grid-margin)]">
-            <div
+            {/* <div
               style={{ backgroundImage: `url(${adachukThumbnail.src})` }}
               className="relative [background-size:120%] bg-no-repeat bg-center max-[768px]:[background-position-y:0] overflow-hidden [filter:drop-shadow(0px_13px_37px_rgba(187,162,205,0.6))] rounded-[4px] h-full max-[700px]:w-full max-[700px]:aspect-video"
-            ></div>
+            ></div> */}
             <div>
               <h3 className="text-[30pt] max-[1400px]:text-[23pt] max-[1024px]:text-[18pt] max-[768px]:text-[16pt] mb-[24px] max-[1400px]:mb-[17px] max-[700px]:h-[56px] text-[#2F7F77]">
                 60 minutes with Adachukwu of Jademediapro

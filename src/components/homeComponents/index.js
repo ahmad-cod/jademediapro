@@ -9,3 +9,4 @@ export * from "./EditorialLineup";
 export * from "./ProductCard";
 export * from "./EventCard";
 export * from "./JobCard";
+export * from "./PurpleSection";

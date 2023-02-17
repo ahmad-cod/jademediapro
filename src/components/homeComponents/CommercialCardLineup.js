@@ -16,7 +16,7 @@ export const CommercialCardsLineup = () => {
             key={service.id}
             text={service.serviceTitle}
             icon={service.icon}
-            note={service.services[0].serviceContent[0].listContent}
+            note={service.blurb}
           />
         ))}
       </div>
@@ -40,19 +40,23 @@ const Card = ({ text, icon, href, note }) => {
   return (
     <Link
       href={href ?? "/services"}
-      className="bg-[#1A1A1A] text-[#f6f6f6] hover:scale-105 duration-300 relative flex justify-end flex-col h-full p-[24px_22px] aspect-[0.8] rounded-[4px]"
+      className="bg-[#1A1A1A] text-[#f6f6f6] [--note-transform:translateY(100%)] max-[700px]:[--note-transform:none] hover:[--note-transform:none] relative flex justify-end flex-col overflow-hidden h-full p-[24px_22px] aspect-[0.8] rounded-[4px]"
     >
       <Image
         src={icon}
         alt={text}
         className="absolute top-[24px] w-[97px] max-[1024px]:w-[70px]"
       />
-      <span className="relative  text-[19pt] max-[1024px]:text-[14pt]">
-        {text}
-      </span>
-      <p className="clamp clamp-text-6 hidden max-[700px]:[display:-webkit-box] text-[10pt]">
-        {note}
-      </p>
+      <div className="relative [transform:var(--note-transform)] duration-300">
+        <span className="block text-[21pt] [transform:translateY(-50%)] font-bold max-[1024px]:text-[14pt]">
+          {text}
+        </span>
+        <div className="[transform:var(--note-transform)] duration-500">
+          <p className="clamp clamp-text-6 max-[700px]:[display:-webkit-box] max-[700px]:text-[10pt]">
+            {note}
+          </p>
+        </div>
+      </div>
       <div className="relative w-[80px] max-[1024px]:mt-[10px] max-[1024px]:w-[60px] ml-auto ">
         <Image src={topleftarrow} alt="->" style={{ width: "100%" }} />
       </div>

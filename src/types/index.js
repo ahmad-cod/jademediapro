@@ -50,6 +50,7 @@
  * @typedef {{
  * id: string;
  * serviceTitle: string;
+ * blurb: string;
  * categories: string[];
  * icon: string;
  * services: Array<{
@@ -102,4 +103,11 @@
  *    }>;
  *  }>;
  * }} CaseStudy
+ */
+
+/**
+ * @typedef {{
+ *   name: string;
+ *   text: string;
+ * }} Methodology
  */

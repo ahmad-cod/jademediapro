@@ -5,3 +5,4 @@ export * from "./jobData";
 export * from "./serviceData";
 export * from "./eventData";
 export * from "./layoutData";
+export * from "./methodologyData";
