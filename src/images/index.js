@@ -515,10 +515,20 @@ export {
 
 import sidebarToggle from "./misc/sidebar-toggle.svg";
 import cancelIcon from "./misc/cancel.svg";
+import eyeicon from "./misc/eye.svg";
+import shareicon from "./misc/share.svg";
+import hearticon from "./misc/heart-icon.svg";
 
 import playTriangleImg from "./misc/playtriangle.svg";
 
-export { sidebarToggle, cancelIcon, playTriangleImg };
+export {
+  sidebarToggle,
+  cancelIcon,
+  playTriangleImg,
+  eyeicon,
+  hearticon,
+  shareicon,
+};
 
 import explorion from "./misc/explorion.png";
 import _7rio from "./misc/7rio.png";
@@ -526,6 +536,13 @@ import iamholthy from "./misc/iamholthy.png";
 import landhotel from "./misc/landhotel.png";
 import nummix from "./misc/nummix.png";
 import tozome from "./misc/tozome.png";
+import crisprLogo from "./misc/crispr.png";
+import apwenLogo from "./misc/apwen.png";
+import coinplayLogo from "./misc/coinplay.png";
+import rccgLogo from "./misc/rccg.png";
+import developfulLogo from "./misc/developful.png";
+import nobullsLogo from "./misc/nobulls.png";
+import lartedelbereLogo from "./misc/lartedelbere.png";
 
 /**
  * @typedef {{name: string, src: string}} ClientLogo
@@ -555,5 +572,33 @@ export const clientLogos = [
   {
     name: "Landhotel",
     src: landhotel,
+  },
+  {
+    name: "Crsipr",
+    src: crisprLogo,
+  },
+  {
+    name: "APWEN",
+    src: apwenLogo,
+  },
+  {
+    name: "Coinplay",
+    src: coinplayLogo,
+  },
+  {
+    name: "RCCG",
+    src: rccgLogo,
+  },
+  {
+    name: "Developful",
+    src: developfulLogo,
+  },
+  {
+    name: "No Bull Sh*t",
+    src: nobullsLogo,
+  },
+  {
+    name: "L'Arte del Bere",
+    src: lartedelbereLogo,
   },
 ];

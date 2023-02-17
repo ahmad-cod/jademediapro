@@ -40,7 +40,7 @@ const Card = ({ text, icon, href, note }) => {
   return (
     <Link
       href={href ?? "/services"}
-      className="bg-[#1A1A1A] text-[#f6f6f6] [--note-transform:translateY(100%)] max-[700px]:[--note-transform:none] hover:[--note-transform:none] relative flex justify-end flex-col overflow-hidden h-full p-[24px_22px] aspect-[0.8] rounded-[4px]"
+      className="bg-[#1A1A1A] text-[#f6f6f6] [--note-transform:translateY(100%)] max-[700px]:[--note-transform:none] hover:[--note-transform:none] min-[701px]:hover:[--text-color:#65CABF] relative flex justify-end flex-col overflow-hidden h-full p-[24px_22px] aspect-[0.8] rounded-[4px]"
     >
       <Image
         src={icon}
@@ -48,7 +48,7 @@ const Card = ({ text, icon, href, note }) => {
         className="absolute top-[24px] w-[97px] max-[1024px]:w-[70px]"
       />
       <div className="relative [transform:var(--note-transform)] duration-300">
-        <span className="block text-[21pt] [transform:translateY(-50%)] font-bold max-[1024px]:text-[14pt]">
+        <span className="block [color:var(--text-color)] duration-300 text-[21pt] [transform:translateY(-50%)] font-bold max-[1024px]:text-[14pt]">
           {text}
         </span>
         <div className="[transform:var(--note-transform)] duration-500">
