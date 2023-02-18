@@ -19,6 +19,9 @@ import {
   blog4image3,
 } from "../../images";
 
+/**
+ * @type {Blog[]}
+ */
 export const blogData = [
   {
     id: 1,
