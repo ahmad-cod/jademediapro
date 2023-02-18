@@ -15,9 +15,12 @@ export const PageSection = ({ style, children, className, height }) => {
   return (
     <section
       style={style}
-      className={`h-screen ${
-        height ? `h-[${height}]` : ""
-      } px-[var(--side-padding)] min-h-max relative ${className}`}
+      className={
+        "h-screen " +
+        (height ? `h-[${height}]` : "") +
+        " px-[var(--side-padding)] min-h-max relative " +
+        className
+      }
     >
       {children}
     </section>
