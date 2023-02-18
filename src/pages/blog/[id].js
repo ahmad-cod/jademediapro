@@ -9,7 +9,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import styles from "../../styles/Blog.module.css";
 import { Tooltip, TooltipWrapper } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
-import { MainWrapper } from "@/components/layout";
+import { MainWrapper } from "@/components/Layout";
 
 /**
  *

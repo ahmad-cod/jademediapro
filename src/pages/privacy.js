@@ -2,7 +2,7 @@ import react from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { privacyimg } from "../images";
-import { MainWrapper } from "@/components/layout";
+import { MainWrapper } from "@/components/Layout";
 
 export default function Privacy() {
   return (

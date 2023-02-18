@@ -5,7 +5,7 @@ import { productData } from "../data/products/productData";
 import { productImage1 } from "../images";
 import Pagination from "../components/Pagination";
 import usePagination from "../hooks/usePagination";
-import { MainWrapper } from "@/components/layout";
+import { MainWrapper } from "@/components/Layout";
 
 const SaveItems = () => {
   const [currentData, currentPage, setCurrentPage, dataPerPage, data] =

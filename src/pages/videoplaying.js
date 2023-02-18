@@ -1,4 +1,4 @@
-import { MainWrapper } from "@/components/layout";
+import { MainWrapper } from "@/components/Layout";
 import React from "react";
 import { InterviewData } from "../components";
 import { interviewData } from "../data/interview-data/interviewData";

@@ -4,7 +4,7 @@ import { caseStudyData } from "../../../data/projectData/caseStudyData";
 import style from "../../../styles/Services.module.css";
 import styles from "../../../styles/Casestudy.module.css";
 import Image from "next/image";
-import { MainWrapper } from "@/components/layout";
+import { MainWrapper } from "@/components/Layout";
 
 /**
  *

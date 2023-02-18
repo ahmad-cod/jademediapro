@@ -2,7 +2,7 @@ import React from "react";
 import { disclaimerfolder } from "../images";
 import Image from "next/image";
 import styles from "../styles/disclaimer.module.css";
-import { MainWrapper } from "@/components/layout";
+import { MainWrapper } from "@/components/Layout";
 
 const disclaimer = () => {
   return (

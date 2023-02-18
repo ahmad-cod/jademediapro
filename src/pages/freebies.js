@@ -7,7 +7,7 @@ import { ImageWithHeader } from "../components";
 import FreebiesCard from "../components/FreebiesCard";
 import { freebiesData } from "../data/freebies-card/freebies-data";
 import styles from "../styles/freebies.module.css";
-import { MainWrapper } from "@/components/layout";
+import { MainWrapper } from "@/components/Layout";
 
 const Freebies = () => {
   const [currentData, currentPage, setCurrentPage, dataPerPage, data, setData] =
