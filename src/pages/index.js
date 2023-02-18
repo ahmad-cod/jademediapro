@@ -225,7 +225,7 @@ export default function Home({ jobs }) {
         </PageSection>
 
         {/* Interview */}
-        <PageSection className="bg-white flex max-2xl:max-h-[950px] max-[1440px]:h-fit mb-[40px] max-[1280px]:pt-[65px] max-[1024px]:pt-[45px] flex-col items-center justify-center max-[1280px]:justify-start">
+        <PageSection className="bg-white flex max-[1440px]:h-fit mb-[40px] h-fit max-[1280px]:pt-[65px] max-[1024px]:pt-[45px] flex-col items-center justify-center max-[1280px]:justify-start">
           <h2 className="mb-[56px] max-[1400px]:mb-[35px] home-heading">
             Exclusive interviews with industry leading professionals.
           </h2>
@@ -272,7 +272,7 @@ export default function Home({ jobs }) {
         </PageSection>
 
         {/* Blogs */}
-        <PageSection className="bg-white h-max max-2xl:max-h-[1000px] max-[700px]:max-h-max max-[1280px]:pt-[65px] max-[1280px]:h-fit flex flex-col justify-center max-[1280px]:justify-start">
+        <PageSection className="editorial-section-home min-h-[80vh] bg-white h-max max-[700px]:max-h-max max-[1280px]:pt-[65px] max-[1280px]:h-fit flex flex-col justify-center max-[1280px]:justify-start">
           <h2 className="mb-[56px] max-[1024px]:mb-[35px] home-heading">
             Discover popular and profitable <u>editorials.</u>
           </h2>
@@ -280,8 +280,8 @@ export default function Home({ jobs }) {
         </PageSection>
 
         {/* Products */}
-        <PageSection className="bg-white max-2xl:max-h-[1000px] max-[700px]:max-h-max max-[1280px]:h-fit max-[1380px]:pb-[65px] max-[1024px]:pt-[90px] max-[700px]:pt-0 flex flex-col justify-center max-[1280px]:justify-start">
-          <div className="flex justify-between items-center w-full max-[700px]:flex-col max-[700px]:justify-start max-[700px]:gap-[30px]">
+        <PageSection className="bg-white max-[700px]:max-h-max max-[1280px]:h-fit max-[1380px]:pb-[65px] max-[1024px]:pt-[90px] max-[700px]:pt-0 flex flex-col justify-center max-[1280px]:justify-start">
+          <div className="flex justify-between items-center w-full max-[1280px]:min-h-[500px] max-[700px]:flex-col max-[700px]:justify-start max-[700px]:gap-[30px]">
             {productData.slice(0, 4).map((product, index) => (
               <ProductCard key={index} {...product} />
             ))}

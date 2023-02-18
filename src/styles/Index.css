@@ -80,3 +80,9 @@
     font-size: 50pt;
   }
 }
+
+@media (max-height: 900px) {
+  .editorial-section-home {
+    min-height: 100vh;
+  }
+}

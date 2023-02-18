@@ -7,7 +7,7 @@ import Image from "next/image";
  */
 export const ProductCard = (props) => {
   return (
-    <div className="bg-[#F6F6F6] relative rounded-[4px] cursor-pointer overflow-hidden w-[20vw] max-[700px]:w-full aspect-[0.6] hover:[--hover-opacity:1] [--hover-opacity:0] max-[700px]:aspect-auto max-[1280px]:h-fit max-[1280px]:aspect-auto">
+    <div className="bg-[#F6F6F6] relative rounded-[4px] cursor-pointer w-[20vw] max-[700px]:w-full aspect-[0.6] hover:[--hover-opacity:1] [--hover-opacity:0] max-[700px]:aspect-auto max-[1280px]:h-[500px] max-[1280px]:aspect-auto">
       <div className="absolute max-[700px]:relative w-full h-full">
         <div
           style={{ backgroundImage: `url(${props.productImage.src})` }}
