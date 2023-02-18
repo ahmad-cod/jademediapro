@@ -591,3 +591,109 @@ export const clientLogos = [
     src: lartedelbereLogo,
   },
 ];
+
+import aboutHeaderImg from "./aboutImages/aboutHeaderImage.svg";
+import aboutFlexImage from "./aboutImages/aboutFlexImage.svg";
+import aboutBuild from "./aboutImages/About-Build Quality Rel.gif";
+import aboutExpand from "./aboutImages/About-Expand Your Reach.gif";
+import aboutGoals from "./aboutImages/About-Set Goals _ Track.gif";
+
+export { aboutHeaderImg, aboutFlexImage, aboutBuild, aboutExpand, aboutGoals };
+
+import john from "./aboutImages/John Ademiluyi.jpg";
+import musabi from "./aboutImages/Mubashir Asiyanbi.jpg";
+import laurel from "./aboutImages/laurel.svg";
+import chigo from "./aboutImages/Chigozirim Amadi.png";
+import ayinde from "./aboutImages/Ayinde Aminat.png";
+import oluwatobi from "./aboutImages/oluwatobi.svg";
+import martina from "./aboutImages/Martina.png";
+import niraj from "./aboutImages/Niraj.png";
+import olatundun from "./aboutImages/Olatundun.png";
+import simeon from "./aboutImages/Simeon.png";
+import ryter from "./aboutImages/Michael.png";
+import unity from "./aboutImages/unity-69.svg";
+import wix from "./aboutImages/wix-com-website-logo-1.svg";
+import wordpress from "./aboutImages/wordpress-blue.svg";
+import word from "./aboutImages/word-1.svg";
+import react from "./aboutImages/react-2.svg";
+import python from "./aboutImages/python-5.svg";
+import microsoft from "./aboutImages/microsoft-office-powerpoint-2018-present--1.svg";
+import mailchimp from "./aboutImages/mailchimp-freddie-icon-wink.svg";
+import microsoftProject from "./aboutImages/microsoft-project-2019-present-.svg";
+import javascript from "./aboutImages/javascript-1.svg";
+import java from "./aboutImages/java.svg";
+import hubspot from "./aboutImages/hubspot-1.svg";
+import googleWeb from "./aboutImages/google-web-designer.svg";
+import googleMarket from "./aboutImages/google-marketing-platform.svg";
+import hootsuite from "./aboutImages/hootsuite.svg";
+import googleAdwords from "./aboutImages/google-adwords-1.svg";
+import googleAnalytics from "./aboutImages/google-analytics-3.svg";
+import googleDevelopers from "./aboutImages/google-developers.svg";
+import figma from "./aboutImages/figma-1.svg";
+import excel from "./aboutImages/excel-4.svg";
+import css from "./aboutImages/css-3.svg";
+import coreldraw from "./aboutImages/coreldraw-gs2019-2.svg";
+import cinema from "./aboutImages/cinema-4d.svg";
+import blender from "./aboutImages/blender-2.svg";
+import angular from "./aboutImages/angular-icon-1.svg";
+import adobeXd from "./aboutImages/adobe-xd-2.svg";
+import adobeCreative from "./aboutImages/adobe-creative-cloud-cc.svg";
+import adobeIllustrator from "./aboutImages/adobe-Illustrator-logo.svg";
+import adobeInDesign from "./aboutImages/adobe-indesign.svg";
+import adobeLightroom from "./aboutImages/adobe-lightroom.svg";
+import adobeMedia from "./aboutImages/adobe-media-encoder.svg";
+import adobePremier from "./aboutImages/adobe-premiere-pro-logo.svg";
+import adobePhotoshop from "./aboutImages/adobe-photoshop-2.svg";
+import adobeAudition from "./aboutImages/ADOBE-AUDITION.svg";
+import adobeAcrobat from "./aboutImages/adobe-acrobat-reader-logo.svg";
+import adobeAfter from "./aboutImages/adobe-after-effects-logo.svg";
+
+export {
+  john,
+  musabi,
+  laurel,
+  chigo,
+  ayinde,
+  oluwatobi,
+  martina,
+  niraj,
+  olatundun,
+  simeon,
+  ryter,
+  unity,
+  wix,
+  wordpress,
+  word,
+  react,
+  python,
+  microsoft,
+  mailchimp,
+  microsoftProject,
+  javascript,
+  java,
+  hubspot,
+  googleWeb,
+  googleMarket,
+  hootsuite,
+  googleAdwords,
+  googleAnalytics,
+  googleDevelopers,
+  figma,
+  excel,
+  css,
+  coreldraw,
+  cinema,
+  blender,
+  angular,
+  adobeXd,
+  adobeCreative,
+  adobeIllustrator,
+  adobeInDesign,
+  adobeLightroom,
+  adobeMedia,
+  adobePremier,
+  adobePhotoshop,
+  adobeAudition,
+  adobeAcrobat,
+  adobeAfter,
+};

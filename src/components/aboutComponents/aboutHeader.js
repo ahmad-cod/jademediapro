@@ -1,5 +1,5 @@
 import styles from "../../styles/Project.module.css";
-import { aboutHeaderImage } from "../../images";
+import { aboutHeaderImg } from "@/images";
 import Image from "next/image";
 const AboutHeader = () => {
   return (
@@ -18,7 +18,7 @@ const AboutHeader = () => {
           </div>
         </div>
         <div className={styles.header_image}>
-          <Image src={aboutHeaderImage} alt="" />
+          <Image src={aboutHeaderImg} alt="" />
         </div>
       </div>
     </header>

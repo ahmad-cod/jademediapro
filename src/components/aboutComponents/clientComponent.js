@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { aboutFlexImage } from "../../images";
+import { aboutFlexImage } from "@/images";
 import styles from "../../styles/About.module.css";
 
 const Identity = () => {
@@ -41,9 +41,10 @@ const Identity = () => {
           </div>
         </div>
       </div>
-      <div className={styles.flexImage}>
-        <Image src={aboutFlexImage} alt="" />
-      </div>
+      <div
+        className="w-full h-[382px] bg-cover bg-center"
+        style={{ backgroundImage: `url('${aboutFlexImage.src}')` }}
+      ></div>
     </>
   );
 };
