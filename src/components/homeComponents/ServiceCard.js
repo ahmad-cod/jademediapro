@@ -96,6 +96,7 @@ export const ServiceCard = (props) => {
         <Image
           src={props.mainImage}
           alt={props.title}
+          className="rounded-[4px]"
           style={{
             width: props.vertical ? "100%" : "auto",
             height: props.horizontal ? "100%" : "auto",

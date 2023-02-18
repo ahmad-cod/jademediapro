@@ -1,8 +1,7 @@
-import { useRouter } from "next/router";
-import Work from "../../../components/servicesComponent/work";
-import { caseStudyData } from "../../../data/projectData/caseStudyData";
-import style from "../../../styles/Services.module.css";
-import styles from "../../../styles/Casestudy.module.css";
+import Work from "@/components/servicesComponent/work";
+import { caseStudyData } from "@/data/projectData/caseStudyData";
+import style from "@/styles/Services.module.css";
+import styles from "@/styles/Casestudy.module.css";
 import Image from "next/image";
 import { MainWrapper } from "@/components/Layout";
 
@@ -23,27 +22,42 @@ export async function getServerSideProps(context) {
 }
 
 /**
- *
- * @param {{caseStudy: CaseStudy}} param0
- * @returns
+ * @typedef PageProps
+ * @property {CaseStudy} caseStudy
+ */
+
+/**
+ * @type {React.FC<PageProps>}
  */
 const CaseStudyPage = ({ caseStudy }) => {
   return (
     <MainWrapper
       headerType={1}
       paint-header-on-scroll
-      backgroundColor="#242526"
+      backgroundColor={
+        caseStudy.color instanceof Array ? caseStudy.color[0] : caseStudy.color
+      }
+      color={caseStudy.color instanceof Array ? caseStudy.color[1] : undefined}
+      title={caseStudy.title + " Case Study - Jade Media Pro"}
     >
       <header>
-        <div className={styles.header_image}>
-          <Image alt="" src={cases.header} />
-        </div>
+        <div
+          className={styles.header_image}
+          style={{
+            backgroundImage: `url('${caseStudy.header.src}')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            height: "800px",
+            maxHeight: "100vh",
+          }}
+        ></div>
       </header>
       <div className={styles.case_study_container}>
         <div className={styles.case_study_title_container}>
           <div></div>
           <div className={styles.case_study_title}>
-            <h1>{cases.title}</h1>
+            <h1>{caseStudy.title}</h1>
             <p>Case Study</p>
           </div>
         </div>
@@ -63,7 +77,7 @@ const CaseStudyPage = ({ caseStudy }) => {
               </div>
             </div>
             <div className={styles.case_study_content}>
-              {cases.contents?.map((first) => (
+              {caseStudy.contents?.map((first) => (
                 <>
                   {first.firstSection?.map((first) => (
                     <>

@@ -94,7 +94,7 @@
  * @typedef {{
  *  id: string;
  *  title: string;
- *  color: string;
+ *  color: string | [string, string];
  *  header: string | _StaticImageData;
  *  contents: Array<{
  *    [keyof: string]: Array<{
