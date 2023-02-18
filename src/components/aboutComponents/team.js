@@ -33,7 +33,7 @@ const Team = () => {
               We are a team.<br></br> We love what <br></br> we do. Simple.
             </h2>
           </div>
-          <div className={styles.team_body}>
+          <div className={`${styles.team_body} ${styles.subteam}`}>
             {team.slice(4).map((member) => (
               <div className={styles.team_member} key={member.id}>
                 <div className={styles.team_member_image}>

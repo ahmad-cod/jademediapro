@@ -602,10 +602,10 @@ export { aboutHeaderImg, aboutFlexImage, aboutBuild, aboutExpand, aboutGoals };
 
 import john from "./aboutImages/John Ademiluyi.jpg";
 import musabi from "./aboutImages/Mubashir Asiyanbi.jpg";
-import laurel from "./aboutImages/laurel.svg";
+
 import chigo from "./aboutImages/Chigozirim Amadi.png";
 import ayinde from "./aboutImages/Ayinde Aminat.png";
-import oluwatobi from "./aboutImages/oluwatobi.svg";
+import oluwatobi from "./aboutImages/Oluwatobi Fabusuyi.jpg";
 import martina from "./aboutImages/Martina.png";
 import niraj from "./aboutImages/Niraj.png";
 import olatundun from "./aboutImages/Olatundun.png";
@@ -653,7 +653,6 @@ import careerDevelopement from "./aboutImages/About-CareerDevelopment-image.jpeg
 export {
   john,
   musabi,
-  laurel,
   chigo,
   ayinde,
   oluwatobi,
