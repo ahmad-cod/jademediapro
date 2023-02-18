@@ -6,7 +6,7 @@ import { mostViewedData } from "../data/most-viewed/mostViewedData";
 import styles from "../styles/most_viewed.module.css";
 import usePagination from "../hooks/usePagination";
 import Pagination from "../components/Pagination";
-import { MainWrapper } from "@/components/layout";
+import { MainWrapper } from "@/components/Layout";
 
 const MostViewed = () => {
   const [currentData, currentPage, setCurrentPage, dataPerPage, data] =

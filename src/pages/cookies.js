@@ -1,8 +1,6 @@
-import react from "react";
-import Link from "next/link";
 import Image from "next/image";
 import { cookiesimg } from "../images";
-import { MainWrapper } from "@/components/layout";
+import { MainWrapper } from "@/components/Layout";
 
 export default function Cookies() {
   return (

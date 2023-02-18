@@ -3,7 +3,7 @@ import Image from "next/image";
 import { storefront } from "../images";
 import { productData } from "../data/products/productData";
 import { ProductCard } from "../components";
-import { MainWrapper } from "@/components/layout";
+import { MainWrapper } from "@/components/Layout";
 
 const shoppingCart = () => {
   return (

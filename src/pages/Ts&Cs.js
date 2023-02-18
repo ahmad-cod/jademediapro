@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { termsimg } from "../images";
-import { MainWrapper } from "@/components/layout";
+import { MainWrapper } from "@/components/Layout";
 
 export default function Terms() {
   return (

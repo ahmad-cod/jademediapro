@@ -1,4 +1,4 @@
-import { MainWrapper } from "@/components/layout";
+import { MainWrapper } from "@/components/Layout";
 import AboutHeader from "../../components/aboutComponents/aboutHeader";
 import Career from "../../components/aboutComponents/career";
 import Identity from "../../components/aboutComponents/clientComponent";
