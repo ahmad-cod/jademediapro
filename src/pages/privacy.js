@@ -2,10 +2,11 @@ import react from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { privacyimg } from "../images";
+import { MainWrapper } from "@/components/layout";
 
 export default function Privacy() {
   return (
-    <div>
+    <MainWrapper backgroundColor="#1A1A1A" headerType={1}>
       <div className=" bg-[#1A1A1A] px-[20px] pb-[29px] pt-[30px] md:pt-12 md:pr-[104px] md:pb-[70px] md:pl-[104px] mb-32 ">
         <div className="flex flex-col md:flex-row md:items-center text-5xl md:text-8xl font-bold md:font-semibold                text-white gap-8 md:gap-[500px]">
           <h1>
@@ -1300,6 +1301,6 @@ export default function Privacy() {
           </a>
         </p>
       </div>
-    </div>
+    </MainWrapper>
   );
 }

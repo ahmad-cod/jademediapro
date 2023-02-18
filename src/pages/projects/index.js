@@ -7,7 +7,7 @@ import Training from "../../components/projectComponents/training";
 import { processData } from "../../data/projectData";
 import ServicesComponent from "../../components/Services";
 import styles from "../../styles/Project.module.css";
-import { MainWrapper } from "../../components/Layout";
+import { MainWrapper } from "@/components/Layout";
 
 const Projects = () => {
   return (

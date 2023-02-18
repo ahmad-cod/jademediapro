@@ -1,11 +1,10 @@
-import react from "react";
-import Link from "next/link";
 import Image from "next/image";
 import { termsimg } from "../images";
+import { MainWrapper } from "@/components/layout";
 
 export default function Terms() {
   return (
-    <div>
+    <MainWrapper headerType={1}>
       <div className=" bg-[#1A1A1A] px-[20px] py-[31px] md:pt-12 md:pr-[104px] md:pb-[70px] md:pl-[104px] mb-32 ">
         <div className="flex flex-col md:flex-row md:items-center text-5xl md:text-8xl font-bold md:font-semibold text-white gap-8 md:gap-[234px]">
           <h1>
@@ -1135,6 +1134,6 @@ export default function Terms() {
           </a>
         </p>
       </div>
-    </div>
+    </MainWrapper>
   );
 }

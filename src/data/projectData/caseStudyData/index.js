@@ -24,7 +24,7 @@ import {
 } from "../../../images";
 
 /**
- * @type {import("@/types").CaseStudy[]}
+ * @type {CaseStudy[]}
  */
 export const caseStudyData = [
   {

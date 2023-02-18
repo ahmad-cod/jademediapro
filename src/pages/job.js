@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { jobData, categoryjobs } from "../data/jobData";
 import CategoryFilter from "../components/CategoryFilter";
 import JobCard from "../components/jobComponents/jobCard";
@@ -6,14 +5,8 @@ import Image from "next/image";
 import usePagination from "../hooks/usePagination";
 import Pagination from "../components/Pagination";
 import JobFilters from "../components/jobComponents/jobFilters";
-import {
-  borderlineimg,
-  jobheroimg,
-  lemonarrow,
-  sendarrow,
-  whitearrow,
-} from "../images";
-import { MainWrapper } from "../components/Layout";
+import { jobheroimg, lemonarrow, sendarrow } from "../images";
+import { MainWrapper } from "@/components/Layout";
 
 export default function Terms() {
   const [currentData, currentPage, setCurrentPage, dataPerPage, data, setData] =
