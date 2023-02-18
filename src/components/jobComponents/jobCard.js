@@ -11,7 +11,7 @@ function JobCard(props) {
         </h2>
       </div>
       <div className="flex gap-4 md:gap-10 lg:gap-28 hover:translate-x-2 hover:duration-0 hover:transition hover:lg:duration-700">
-        <Image src={borderlineimg} />
+        <Image src={borderlineimg} alt="-------" />
         <div className="flex gap-1 md:gap-48 lg:gap-52 items-center font-normal text-[13px] lg:text-[15px]">
           <div>
             <p>{props.location}</p>

@@ -639,7 +639,7 @@ import angular from "./aboutImages/angular-icon-1.svg";
 import adobeXd from "./aboutImages/adobe-xd-2.svg";
 import adobeCreative from "./aboutImages/adobe-creative-cloud-cc.svg";
 import adobeIllustrator from "./aboutImages/adobe-Illustrator-logo.svg";
-import adobeInDesign from "./aboutImages/adobe-indesign.svg";
+import adobeIndesign from "./aboutImages/adobe-indesign.svg";
 import adobeLightroom from "./aboutImages/adobe-lightroom.svg";
 import adobeMedia from "./aboutImages/adobe-media-encoder.svg";
 import adobePremier from "./aboutImages/adobe-premiere-pro-logo.svg";
@@ -647,6 +647,8 @@ import adobePhotoshop from "./aboutImages/adobe-photoshop-2.svg";
 import adobeAudition from "./aboutImages/ADOBE-AUDITION.svg";
 import adobeAcrobat from "./aboutImages/adobe-acrobat-reader-logo.svg";
 import adobeAfter from "./aboutImages/adobe-after-effects-logo.svg";
+
+import careerDevelopement from "./aboutImages/About-CareerDevelopment-image.jpeg";
 
 export {
   john,
@@ -688,7 +690,7 @@ export {
   adobeXd,
   adobeCreative,
   adobeIllustrator,
-  adobeInDesign,
+  adobeIndesign,
   adobeLightroom,
   adobeMedia,
   adobePremier,
@@ -696,4 +698,5 @@ export {
   adobeAudition,
   adobeAcrobat,
   adobeAfter,
+  careerDevelopement,
 };

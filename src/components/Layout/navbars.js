@@ -3,12 +3,12 @@ import Link from "next/link";
 import { cancelIcon, sidebarToggle } from "@/images";
 import { mainHeaderLinks } from "@/data";
 import Image from "next/image";
-import { Sidebar } from "../Sidebar";
-import { JadeLogo2 } from "../logos/JadeLogo2";
-import { MoonIcon } from "../logos/MoonIcon";
+import { Sidebar } from "./Sidebar";
+import { JadeLogo2 } from "./logos/JadeLogo2";
+import { MoonIcon } from "./logos/MoonIcon";
 
 /**
- * @typedef MainHeaderProps
+ * @typedef DefaultNavbarProps
  * @property {BackgroundColor} backgroundColor
  * @property {Color} color
  * @property {boolean=} paintOnScroll Whether or not the navbar should fill color when the first banner is scrolled past.
@@ -16,9 +16,9 @@ import { MoonIcon } from "../logos/MoonIcon";
 
 /**
  * Main header for the entire site.
- * @type {React.FC<MainHeaderProps>}
+ * @type {React.FC<DefaultNavbarProps>}
  */
-export const DefaultHeader = ({ backgroundColor, paintOnScroll, color }) => {
+export const DefaultNavbar = ({ backgroundColor, paintOnScroll, color }) => {
   if (!color) color = "white";
   const [headerIsFilled, setHeaderIsFilled] = useState(false);
   const [sidebarIsOpen, setSidebarIsOpen] = useState(false);

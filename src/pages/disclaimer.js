@@ -25,14 +25,14 @@ const disclaimer = () => {
         <h3>Website disclaimer</h3>
         <p>
           The information provided by Jademediapro Tech Agency LTD (
-          <b>"we," "us", or "our" </b>) on{" "}
+          <b>&quot;we&quot;, &quot;us&quot;, or &quot;our&quot; </b>) on{" "}
           <a>
             {" "}
             https://
             <br />
             www.jademediapro.com
           </a>{" "}
-          (the "Site") is for general informational purposes only. All
+          (the &quot;Site&quot;) is for general informational purposes only. All
           information on the Site is
           <br />
           provided in good faith, however we make no representation or warranty
@@ -53,11 +53,11 @@ const disclaimer = () => {
 
         <h3>External links disclaimer</h3>
         <p>
-          The information provided by Jademediapro Tech Agency LTD ("we," "us",
-          or "our") on https://
+          The information provided by Jademediapro Tech Agency LTD
+          (&quot;we,&quot; &quot;us&quot;, or &quot;our&quot;) on https://
           <br />
-          www.jademediapro.com (the "Site") is for general informational
-          purposes only. All information on the Site is
+          www.jademediapro.com (the &quot;Site&quot;) is for general
+          informational purposes only. All information on the Site is
           <br />
           provided in good faith, however we make no representation or warranty
           of any kind, express or implied,
@@ -77,11 +77,11 @@ const disclaimer = () => {
 
         <h3>Testimonials disclaimer</h3>
         <p>
-          The information provided by Jademediapro Tech Agency LTD ("we," "us",
-          or "our") on https://
+          The information provided by Jademediapro Tech Agency LTD
+          (&quot;we,&quot; &quot;us&quot;, or &quot;our&quot;) on https://
           <br />
-          www.jademediapro.com (the "Site") is for general informational
-          purposes only. All information on the Site is
+          www.jademediapro.com (the &quot;Site&quot;) is for general
+          informational purposes only. All information on the Site is
           <br />
           provided in good faith, however we make no representation or warranty
           of any kind, express or implied,
@@ -101,7 +101,7 @@ const disclaimer = () => {
 
         <p>
           This disclaimer was created using{" "}
-          <a href="#">Termly's Disclaimer Generator.</a>
+          <a href="#">Termly&apos;s Disclaimer Generator.</a>
         </p>
       </div>
     </MainWrapper>
