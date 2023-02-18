@@ -55,7 +55,7 @@ export const DefaultHeader = ({ backgroundColor, paintOnScroll, color }) => {
         className="flex items-center max-[1024px]:text-[11pt] fixed top-0 w-full z-[99] duration-300 justify-between px-[var(--side-padding)] h-[var(--header-height)]"
       >
         <Link href="/" className="flex items-center h-[90%]">
-          <JadeLogo2 color={sidebarIsOpen ? "#303030" : "#f6f6f6"} />
+          <JadeLogo2 color={sidebarIsOpen ? "#303030" : color} />
         </Link>
         <div className="flex items-center justify-center">
           <button

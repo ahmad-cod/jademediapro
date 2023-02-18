@@ -7,6 +7,7 @@ import { ImageWithHeader } from "../components";
 import FreebiesCard from "../components/FreebiesCard";
 import { freebiesData } from "../data/freebies-card/freebies-data";
 import styles from "../styles/freebies.module.css";
+import { MainWrapper } from "@/components/layout";
 
 const Freebies = () => {
   const [currentData, currentPage, setCurrentPage, dataPerPage, data, setData] =
@@ -20,7 +21,7 @@ const Freebies = () => {
     "Tutorials",
   ];
   return (
-    <div>
+    <MainWrapper headerType={1} title="Freebies - Jade Media Pro">
       <ImageWithHeader
         title="Everything you need for growth and development"
         subtitle="Free daily high-quality design resources hand-picked for creatives, designers and developers, ranging from fonts, mockups, graphics, templates & more from amazing artists."
@@ -35,8 +36,8 @@ const Freebies = () => {
         />
 
         <div className={styles.freebies_container}>
-          {currentData.map((data) => (
-            <FreebiesCard format={data.format} title={data.title} />
+          {currentData.map((data, index) => (
+            <FreebiesCard key={index} format={data.format} title={data.title} />
           ))}
         </div>
         <Pagination
@@ -46,7 +47,7 @@ const Freebies = () => {
           setCurrentPage={setCurrentPage}
         />
       </div>
-    </div>
+    </MainWrapper>
   );
 };
 

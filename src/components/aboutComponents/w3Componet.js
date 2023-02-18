@@ -62,7 +62,7 @@ const W3 = () => {
           </div>
           <div className={styles.goal}>
             <div className={styles.gif_goal}>
-              <Image src={aboutExpand} alt="build" width={100} height={100} />
+              <Image src={aboutExpand} alt="expand" width={100} height={100} />
             </div>
             <div className={styles.goal_content}>
               <h3>Build quality relationship</h3>
@@ -75,7 +75,7 @@ const W3 = () => {
           </div>
           <div className={styles.goal}>
             <div className={styles.gif_goal}>
-              <Image src={aboutGoals} alt="build" width={100} height={100} />
+              <Image src={aboutGoals} alt="goals" width={100} height={100} />
             </div>
             <div className={styles.goal_content}>
               <h3>Set Goals and track them</h3>

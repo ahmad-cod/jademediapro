@@ -40,12 +40,15 @@ export const MainWrapper = (props) => {
       ) : (
         <></>
       )}
-      <div
-        style={{ backgroundColor: "white" }}
-        className={
-          props["mobile-pad"] ? "max-[700px]:mt-[var(--header-height)]" : ""
-        }
-      >
+      <div style={{ backgroundColor: "white" }}>
+        {props["mobile-pad"] ? (
+          <div
+            style={{ backgroundColor: props.backgroundColor ?? "white" }}
+            className="max-[700px]:pt-[var(--header-height)]"
+          ></div>
+        ) : (
+          <></>
+        )}
         {props.children}
       </div>
       <Footer />

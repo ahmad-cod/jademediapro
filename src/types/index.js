@@ -113,3 +113,36 @@
  *   image: string | _StaticImageData;
  * }} Methodology
  */
+
+/**
+ * @typedef {{
+ *    id: string;
+ *    category: string;
+ *    title: string;
+ *    description: string;
+ *    date: string;
+ *    thumbnail: string | _StaticImageData;
+ *    contents: BlogContents[]
+ * }} Blog
+ */
+
+/**
+ * @typedef {{
+ *    introduction: string;
+ *    tableOfContent?: Array<{
+ *       tableOfContentNote: string;
+ *       tableOfContentList: string[];
+ *    }>;
+ *    subheading: string[];
+ *    subheadingNote: string[];
+ *    note?: string;
+ *    [keyof: string]: Array<{
+ *       listItem: string[];
+ *       listItemContent: string[]
+ *    }>
+ *    images: (string | _StaticImageData)[];
+ *    conclusion: string;
+ *    conclusionList?: string[];
+ *    finalNote?: string[]
+ * }} BlogContents
+ */

@@ -1,5 +1,5 @@
 import { BsArrowRight } from "react-icons/bs";
-import { MainWrapper } from "../components/Layout";
+import { MainWrapper } from "@/components/Layout";
 import {
   PageSection,
   LogoLineup,

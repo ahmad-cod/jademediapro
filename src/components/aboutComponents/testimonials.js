@@ -36,7 +36,7 @@ const Testimonials = () => {
                   width={300}
                   height={300}
                 />
-                <p>"</p>
+                <p>&quot;</p>
               </div>
             </div>
           ))}
