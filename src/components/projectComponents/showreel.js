@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import { showreelData } from "../../data/projectData";
 import styles from "../../styles/Project.module.css";
@@ -20,6 +19,7 @@ const Showreel = () => {
                 <Image src={show.image} alt=""></Image>
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   href={show.link}
                   className={styles.showreel_info}
                 >

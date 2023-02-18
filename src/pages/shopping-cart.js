@@ -30,7 +30,7 @@ const shoppingCart = () => {
             Top picks for you
           </h2>
           <div className=".shoppingcart-box mt-14 flex gap-4 justify-between flex-wrap">
-            {productData.map(data, (index) => (
+            {productData.map((data, index) => (
               <ProductCard
                 key={index}
                 isNewProduct={data.isNewProduct}

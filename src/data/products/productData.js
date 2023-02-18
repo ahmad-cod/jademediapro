@@ -5,6 +5,9 @@ import {
   productImage4,
 } from "../../images";
 
+/**
+ * @type {Product[]}
+ */
 export const productData = [
   {
     isNewProduct: true,

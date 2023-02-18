@@ -1,4 +1,4 @@
-import { PaperPlane } from "../layout";
+import { PaperPlane } from "../layout/logos/PaperPlane";
 import { HomeButton } from "./HomeButton";
 
 /**

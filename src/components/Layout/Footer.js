@@ -4,9 +4,9 @@ import React, { useCallback, useState } from "react";
 import { BsPlusLg } from "react-icons/bs";
 import { TbMinus } from "react-icons/tb";
 import { footerLinks } from "@/data";
-import { footerplaneicon, footerSocials } from "@/images";
+import { footerSocials } from "@/images";
+import { PaperPlane } from "./logos/PaperPlane";
 import { JadeLogo2 } from "./logos/JadeLogo2";
-import { PaperPlane } from "./logos";
 
 /**
  * Default footer for all pages.

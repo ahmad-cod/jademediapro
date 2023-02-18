@@ -26,7 +26,7 @@ const Career = () => {
             Our training and job/internship programs offer a well-structured
             path to all-around professional development and career advancement.
             We are dedicated to creating and sustaining an environment that
-            fosters creativity which is excellent for young professionals.
+            fosters creativity which is excellent for young professionals.
           </p>
           <p>Great opportunities await you in Jade Media Pro if you are:</p>
           <ul>
@@ -45,9 +45,9 @@ const Career = () => {
             </li>
           </ul>
           <p>
-            We seek these qualities and more in young professionals. We're
-            looking for creative people that share our company's basic values of
-            excellence.
+            We seek these qualities and more in young professionals. We&apos;re
+            looking for creative people that share our company&apos;s basic
+            values of excellence.
           </p>
           <div className={styles.career_button}>
             <button>

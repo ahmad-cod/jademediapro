@@ -125,9 +125,10 @@ export default function Terms() {
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               These Terms of Use constitute a legally binding agreement made
-              between you, whether personally or on behalf of an entity (“you")
-              and Jademediapro Tech Agency LTD ("Company," "we," "us," or
-              "our"). concerning your access to and use of the
+              between you, whether personally or on behalf of an entity
+              (&quot;you&quot;) and Jademediapro Tech Agency LTD
+              (&quot;Company,&quot; &quot;we,&quot; &quot;us,&quot; or
+              &quot;our&quot;). concerning your access to and use of the
               <a href="#" className="text-[#77459B] ml-1">
                 https://www.jademediapro.com
               </a>
@@ -146,14 +147,15 @@ export default function Terms() {
               on the Site from time to time are hereby expressly incorporated
               herein by reference. We reserve the right, in our sole discretion,
               to make changes or modifications to these Terms of Use from time
-              to time. We will alert you about any changes by updating the 'Last
-              updated' date of these Terms of Use, and you waive any right to
-              receive specific notice of each such change. Please ensure that
-              you check the applicable Terms every time you use our Site so that
-              you understand which Terms apply. You will be subject to, and will
-              be deemed to have been made aware of and to have accepted, the
-              changes in any revised Terms of Use by your continued use of the
-              Site after the date such revised Terms of Use are posted.
+              to time. We will alert you about any changes by updating the
+              &apos;Last updated&apos; date of these Terms of Use, and you waive
+              any right to receive specific notice of each such change. Please
+              ensure that you check the applicable Terms every time you use our
+              Site so that you understand which Terms apply. You will be subject
+              to, and will be deemed to have been made aware of and to have
+              accepted, the changes in any revised Terms of Use by your
+              continued use of the Site after the date such revised Terms of Use
+              are posted.
             </p>
             <p className="mb-4">
               The information provided on the Site is not intended for
@@ -192,19 +194,20 @@ export default function Terms() {
               Unless otherwise indicated, the Site is our proprietary property
               and all source code, databases, functionality, software, website
               designs, audio, video, text, photographs, and graphics on the Site
-              (collectively, the “Content") and the trademarks, service marks,
-              and logos contained therein (the "Marks") are owned or controlled
-              by us or licensed to us, and are protected by copyright and
-              trademark laws and various other intellectual property rights and
-              unfair competition laws of the United States, international
-              copyright laws, and international conventions. The Content and the
-              Marks are provided on the Site "AS IS" for your information and
-              personal use only. Except as expressly provided in these Terms of
-              Use, no part of the Site and no Content or Marks may be copied,
-              reproduced, aggregated, republished, uploaded, posted, publicly
-              displayed, encoded, translated, transmitted, distributed, sold,
-              licensed, or otherwise exploited for any commercial purpose
-              whatsoever, without our express prior written permission.
+              (collectively, the &quot;Content&quot;) and the trademarks,
+              service marks, and logos contained therein (the &quot;Marks&quot;)
+              are owned or controlled by us or licensed to us, and are protected
+              by copyright and trademark laws and various other intellectual
+              property rights and unfair competition laws of the United States,
+              international copyright laws, and international conventions. The
+              Content and the Marks are provided on the Site &quot;AS IS&quot;
+              for your information and personal use only. Except as expressly
+              provided in these Terms of Use, no part of the Site and no Content
+              or Marks may be copied, reproduced, aggregated, republished,
+              uploaded, posted, publicly displayed, encoded, translated,
+              transmitted, distributed, sold, licensed, or otherwise exploited
+              for any commercial purpose whatsoever, without our express prior
+              written permission.
             </p>
             <p className="mb-4">
               Provided that you are eligible to use the Site, you are granted a
@@ -310,10 +313,10 @@ export default function Terms() {
                 Upload or transmit (or attempt to upload or to transmit)
                 viruses, Trojan horses, or other material, including excessive
                 use of capital letters and spamming (continuous posting of
-                repetitive text), that interferes with any party's uninterrupted
-                use and enjoyment of the Site or modifies, impairs, disrupts,
-                alters, or interferes with the use, features, functions,
-                operation, or maintenance of the Site.
+                repetitive text), that interferes with any party&apos;s
+                uninterrupted use and enjoyment of the Site or modifies,
+                impairs, disrupts, alters, or interferes with the use, features,
+                functions, operation, or maintenance of the Site.
               </li>
               <li>
                 Engage in any automated use of the system, such as using scripts
@@ -332,9 +335,10 @@ export default function Terms() {
                 Upload or transmit (or attempt to upload or to transmit) any
                 material that acts as a passive or active information collection
                 or transmission mechanism, including without limitation, clear
-                graphics interchange formats ("gits"), 1x1 pixels, web bugs,
-                cookies, or other similar devices (sometimes referred to as
-                "spyware" or "passive collection mechanisms" or "pcms').
+                graphics interchange formats (&quot;gits&quot;), 1x1 pixels, web
+                bugs, cookies, or other similar devices (sometimes referred to
+                as &quot;spyware&quot; or &quot;passive collection
+                mechanisms&quot; or &quot;pcms&quot;).
               </li>
               <li>
                 Interfere with, disrupt, or create an undue burden on the Site
@@ -349,8 +353,8 @@ export default function Terms() {
                 or restrict access to the Site, or any portion of the Site.
               </li>
               <li>
-                Copy or adapt the Site's software, including but not limited to
-                Flash, PHP, HTML, JavaScript, or other code.
+                Copy or adapt the Site&apos;s software, including but not
+                limited to Flash, PHP, HTML, JavaScript, or other code.
               </li>
               <li>
                 Except as permitted by applicable law, decipher, decompile,
@@ -397,11 +401,12 @@ export default function Terms() {
               content and materials to us or on the Site, including but not
               limited to text, writings, video, audio, photographs, graphics,
               comments, suggestions, or personal information or other material
-              (collectively, "Contributions"). Contributions may be viewable by
-              other users of the Site and through third-party websites. As such,
-              any Contributions you transmit may be treated as non-confidential
-              and non-proprietary. When you create or make available any
-              Contributions, you thereby represent and warrant that:
+              (collectively, &quot;Contributions&quot;). Contributions may be
+              viewable by other users of the Site and through third-party
+              websites. As such, any Contributions you transmit may be treated
+              as non-confidential and non-proprietary. When you create or make
+              available any Contributions, you thereby represent and warrant
+              that:
             </p>
 
             <ul className="list-disc ml-6">
@@ -576,16 +581,16 @@ export default function Terms() {
             <p className="mb-4">
               You acknowledge and agree that any questions, comments,
               suggestions, ideas, feedback, or other information regarding the
-              Site ("Submissions") provided by you to us are non-confidential
-              and shall become our sole property. We shall own exclusive rights,
-              including all intellectual property rights, and shall be entitled
-              to the unrestricted use and dissemination of these Submissions for
-              any lawful purpose, commercial or otherwise, without
-              acknowledgment or compensation to you. You hereby waive all moral
-              rights to any such Submissions, and you hereby warrant that any
-              such Submissions are original with you or that you have the right
-              to submit such Submissions. You agree there shall be no recourse
-              against us for any alleged or actual infringement or
+              Site (&quot;Submissions&quot;) provided by you to us are
+              non-confidential and shall become our sole property. We shall own
+              exclusive rights, including all intellectual property rights, and
+              shall be entitled to the unrestricted use and dissemination of
+              these Submissions for any lawful purpose, commercial or otherwise,
+              without acknowledgment or compensation to you. You hereby waive
+              all moral rights to any such Submissions, and you hereby warrant
+              that any such Submissions are original with you or that you have
+              the right to submit such Submissions. You agree there shall be no
+              recourse against us for any alleged or actual infringement or
               misappropriation of any proprietary right in your Submissions.
             </p>
           </div>
@@ -600,38 +605,38 @@ export default function Terms() {
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               The Site may contain (or you may be sent via the Site) links to
-              other websites ("Third-Party Websites") as well as articles,
-              photographs, text, graphics, pictures, designs, music, sound,
-              video, information, applications, software, and other content or
-              items belonging to or originating from third parties ("Third-Party
-              Content). Such Third-Party Websites and Third-Party Content are
-              not investigated, monitored, or checked for accuracy,
-              appropriateness, or completeness by us, and we are not responsible
-              for any Third-Party Websites accessed through the Site or any
-              Third-Party Content posted on, available through, or installed
-              from the Site, including the content, accuracy, offensiveness,
-              opinions, reliability, privacy practices, or other policies of or
-              contained in the Third-Party Websites or the Third-Party Content.
-              Inclusion of, linking to, or permitting the use or installation of
-              any Third-Party Websites or any Third-Party Content does not imply
-              approval or endorsement thereof by us. If you decide to leave the
-              Site and access the Third-Party Websites or to use or install any
-              Third-Party Content, you do so at your own risk, and you should be
-              aware these Terms of Use no longer govern. You should review the
-              applicable terms and policies, including privacy and data
-              gathering practices, of any website to which you navigate from the
-              Site or relating to any applications you use or install from the
-              Site. Any purchases you make through Third-Party Websites will be
-              through other websites and from other companies, and we take no
-              responsibility whatsoever in relation to such purchases which are
-              exclusively between you and the applicable third party. You agree
-              and acknowledge that we do not endorse the products or services
-              offered on Third-Party Websites and you shall hold us harmless
-              from any harm caused by your purchase of such products or
-              services. Additionally, you shall hold us harmless from any losses
-              sustained by you or harm caused to you relating to or resulting in
-              any way from any Third-Party Content or any contact with
-              Third-Party Websites.
+              other websites (&quot;Third-Party Websites&quot;) as well as
+              articles, photographs, text, graphics, pictures, designs, music,
+              sound, video, information, applications, software, and other
+              content or items belonging to or originating from third parties
+              (&quot;Third-Party Content&quot;). Such Third-Party Websites and
+              Third-Party Content are not investigated, monitored, or checked
+              for accuracy, appropriateness, or completeness by us, and we are
+              not responsible for any Third-Party Websites accessed through the
+              Site or any Third-Party Content posted on, available through, or
+              installed from the Site, including the content, accuracy,
+              offensiveness, opinions, reliability, privacy practices, or other
+              policies of or contained in the Third-Party Websites or the
+              Third-Party Content. Inclusion of, linking to, or permitting the
+              use or installation of any Third-Party Websites or any Third-Party
+              Content does not imply approval or endorsement thereof by us. If
+              you decide to leave the Site and access the Third-Party Websites
+              or to use or install any Third-Party Content, you do so at your
+              own risk, and you should be aware these Terms of Use no longer
+              govern. You should review the applicable terms and policies,
+              including privacy and data gathering practices, of any website to
+              which you navigate from the Site or relating to any applications
+              you use or install from the Site. Any purchases you make through
+              Third-Party Websites will be through other websites and from other
+              companies, and we take no responsibility whatsoever in relation to
+              such purchases which are exclusively between you and the
+              applicable third party. You agree and acknowledge that we do not
+              endorse the products or services offered on Third-Party Websites
+              and you shall hold us harmless from any harm caused by your
+              purchase of such products or services. Additionally, you shall
+              hold us harmless from any losses sustained by you or harm caused
+              to you relating to or resulting in any way from any Third-Party
+              Content or any contact with Third-Party Websites.
             </p>
           </div>
         </div>
@@ -724,10 +729,10 @@ export default function Terms() {
               believe that any material available on or through the Site
               infringes upon any copyright you own or control, please
               immediately notify us using the contact information provided below
-              (a "Notification"). A copy of your Notification will be sent to
-              the person who posted or stored the material addressed in the
-              Notification. Please be advised that pursuant to applicable law
-              you may be held liable for damages if you make material
+              (a &quot;Notification&quot;). A copy of your Notification will be
+              sent to the person who posted or stored the material addressed in
+              the Notification. Please be advised that pursuant to applicable
+              law you may be held liable for damages if you make material
               misrepresentations in a Notification. Thus, if you are not sure
               that material located on or linked to by the Site infringes your
               copyright, you should consider first contacting an attorney.
@@ -830,13 +835,13 @@ export default function Terms() {
             <p className="mb-4">
               To expedite resolution and control the cost of any dispute,
               controversy, or claim related to these Terms of Use (each
-              "Dispute" and collectively, the 'Disputes") brought by either you
-              or us (individually, a "Party" and collectively, the "Parties"),
-              the Parties agree to first attempt to negotiate any Dispute
-              (except those Disputes expressly provided below) informally for at
-              least thirty (30) days before initiating arbitration. Such
-              informal negotiations commence upon written notice from one Party
-              to the other Party.
+              &quot;Dispute&quot; and collectively, the &apos;Disputes&apos;)
+              brought by either you or us (individually, a &quot;Party&quot; and
+              collectively, the &quot;Parties&quot;), the Parties agree to first
+              attempt to negotiate any Dispute (except those Disputes expressly
+              provided below) informally for at least thirty (30) days before
+              initiating arbitration. Such informal negotiations commence upon
+              written notice from one Party to the other Party.
             </p>
             <span className="text-[#77459B] text-lg font-medium mb-2">
               Binding Arbitration
@@ -921,9 +926,9 @@ export default function Terms() {
               YOUR USE THEREOF, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
               WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
               AND NON-INFRINGEMENT. WE MAKE NO WARRANTIES OR REPRESENTATIONS
-              ABOUT THE ACCURACY OR COMPLETENESS OF THE SITE'S CONTENT OR THE
-              CONTENT OF ANY WEBSITES LINKED TO THE SITE AND WE WILL ASSUME NO
-              LIABILITY OR RESPONSIBILITY FOR ANY (1) ERRORS, MISTAKES, OR
+              ABOUT THE ACCURACY OR COMPLETENESS OF THE SITE&apos;S CONTENT OR
+              THE CONTENT OF ANY WEBSITES LINKED TO THE SITE AND WE WILL ASSUME
+              NO LIABILITY OR RESPONSIBILITY FOR ANY (1) ERRORS, MISTAKES, OR
               INACCURACIES OF CONTENT AND MATERIALS, (2) PERSONAL INJURY OR
               PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER, RESULTING FROM YOUR
               ACCESS TO AND USE OF THE SITE, (3) ANY UNAUTHORIZED ACCESS TO OR
@@ -986,9 +991,9 @@ export default function Terms() {
               our subsidiaries, affiliates, and all of our respective officers,
               agents, partners, and employees, from and against any loss,
               damage, liability, claim, or demand, including reasonable
-              attorneys' fees and expenses, made by any third party due to or
-              arising out of: (1) your Contributions; (2) use of the Site; (3)
-              breach of these Terms of Use; (4) any breach of your
+              attorneys&apos; fees and expenses, made by any third party due to
+              or arising out of: (1) your Contributions; (2) use of the Site;
+              (3) breach of these Terms of Use; (4) any breach of your
               representations and warranties set forth in these Terms of Use;
               (5) your violation of the rights of a third party, including but
               not limited to intellectual property rights; or (6) any overt
@@ -1128,7 +1133,7 @@ export default function Terms() {
           </div>
         </div>
         <p className="font-small text-[#3A3B40] text-base mb-40">
-          These terms of use were created using Termly's
+          These terms of use were created using Termly&apos;s
           <a href="#" className=" font-bold text-[#77459B] underline ml-1 ">
             Terms and Conditions generator.
           </a>
