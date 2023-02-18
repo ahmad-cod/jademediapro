@@ -48,7 +48,7 @@ const Card = ({ text, icon, href, note }) => {
         className="absolute top-[24px] w-[97px] max-[1024px]:w-[70px]"
       />
       <div className="relative [transform:var(--note-transform)] duration-300">
-        <span className="block [color:var(--text-color)] duration-300 text-[21pt] [transform:translateY(-50%)] font-bold max-[1024px]:text-[14pt]">
+        <span className="block [color:var(--text-color)] duration-300 text-[21pt] [transform:translateY(-2vh)] font-bold max-[1280px]:text-[14pt]">
           {text}
         </span>
         <div className="[transform:var(--note-transform)] duration-500">

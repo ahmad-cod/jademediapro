@@ -40,7 +40,7 @@ export const EditorialLineup = () => {
  */
 const Editorial = (props) => {
   return (
-    <li className="w-[28vw] max-[700px]:w-full max-h-[700px] h-[60vh] max-[1400px]:h-[65vh] max-[912px]:h-[470px] max-[700px]:h-fit max-[700px]:max-h-max duration-300 hover:scale-[1.05] rounded-[4px] overflow-hidden">
+    <li className="w-[28vw] max-[700px]:w-full max-[1440px]:h-[500px] mt-[20px] max-[700px]:h-fit max-[700px]:max-h-max rounded-[4px] overflow-hidden">
       <Link className="w-full h-full" href={`/blog/${props.id}`}>
         <div
           className="h-[50%] max-[768px]:h-[45%] max-[700px]:h-[270px] flex bg-cover bg-center bg-no-repeat flex-col justify-end text-white bg-black"
@@ -59,7 +59,7 @@ const Editorial = (props) => {
           </p>
           <button className="ml-[10%] flex items-center gap-[15px] max-[768px]:text-[10pt] whitespace-nowrap p-[24px] hover:[--shift:50%]">
             Read More
-            <div className="scale-[4] translate-x-[var(--shift)] duration-300">
+            <div className=" translate-x-[var(--shift)] duration-300">
               <BsArrowRight />
             </div>
           </button>

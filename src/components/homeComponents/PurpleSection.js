@@ -40,7 +40,7 @@ export const PurpleSection = () => {
   return (
     <PageSection
       height="120vh"
-      className="bg-[#4F2E67] max-2xl:max-h-[1450px] max-2xl:py-[100px] max-2xl:h-fit text-[#f6f6f6] grid [grid:auto/40%_60%] max-[1024px]:[grid:auto/34%_auto] max-[700px]:[grid:auto/auto] max-[700px]:py-[40px] place-content-center"
+      className="bg-[#4F2E67] max-2xl:max-h-[1450px] max-2xl:py-[100px] max-2xl:h-fit text-[#f6f6f6] grid [grid:auto/40%_60%] max-[1152px]:[grid:auto/43%_auto] max-[700px]:[grid:auto/auto] max-[700px]:py-[40px] place-content-center"
     >
       <h2 className="hidden max-[700px]:block text-[25pt] mb-[40px] font-bold">
         Our five foundational processes to create your strategic brand&apos;s
@@ -65,8 +65,8 @@ export const PurpleSection = () => {
               <span
                 className={`${
                   isopen
-                    ? "text-[45pt] font-bold max-[700px]:text-[30pt]"
-                    : "text-[16pt] max-[700px]:text-[13pt]"
+                    ? "text-[45pt] max-[1152px]:text-[25pt] font-bold max-[700px]:text-[30pt]"
+                    : "text-[16pt] max-[1152px]:text-[14pt] max-[700px]:text-[13pt]"
                 } duration-500`}
               >
                 {methodology.name}

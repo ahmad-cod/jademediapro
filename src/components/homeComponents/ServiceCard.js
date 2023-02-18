@@ -25,7 +25,7 @@ export const ServiceCard = (props) => {
         "bg-white flex [box-shadow:3px_3px_16px_rgba(0,0,0,0.1)] py-[30px] rounded-[4px] " +
         (props.vertical
           ? "max-h-[calc(700px + var(--grid-margin))] max-[912px]:max-h-[calc(500px + var(--grid-margin))]"
-          : "h-[40vh] max-[912px]:h-[250px] max-[700px]:h-[250px]")
+          : "max-h-max max-[912px]:h-[250px] max-[700px]:h-[250px]")
       }
       style={
         props.vertical
@@ -36,7 +36,6 @@ export const ServiceCard = (props) => {
               justifyContent: "center",
             }
           : {
-              maxHeight: "350px",
               minHeight: "max-content",
               justifyContent: "space-between",
               alignItems: "center",
@@ -62,7 +61,7 @@ export const ServiceCard = (props) => {
             <Image
               src={props.linkImage}
               alt={props.title}
-              height={193}
+              className="h-[193px] max-[1280px]:h-[65px]"
               width="auto"
             />
           )}

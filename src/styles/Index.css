@@ -69,3 +69,14 @@
     font-size: 23pt;
   }
 }
+
+@media (min-height: 800px) {
+  .logo-lineup {
+    margin-top: 100px;
+  }
+}
+@media (max-height: 500px) {
+  .home-front-text {
+    font-size: 50pt;
+  }
+}

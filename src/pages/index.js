@@ -61,11 +61,11 @@ export default function Home({ jobs }) {
         {/* Hero Section */}
         <PageSection
           style={{ padding: 0 }}
-          className="text-white max-[912px]:h-[900px] max-[700px]:h-screen max-[700px]:max-h-[830px]"
+          className="text-white max-[1440px]:min-h-[900px] max-[1280px]:min-h-max max-[912px]:h-[900px] max-[700px]:h-screen max-[700px]:max-h-[830px]"
         >
           <TunnelManOverlay />
           <div className="relative min-h-[570px] w-full h-full pt-[5%] flex flex-col justify-center max-[700px]:justify-end">
-            <h1 className="relative font-pop text-[75pt] max-[1400px]:text-[58pt] max-[1152px]:text-[46pt] max-[1024px]:text-[43pt] max-[912px]:text-[46pt] max-[700px]:text-[32pt] py-[16px] max-[1400px]:py-0 w-[50%] max-[820px]:w-[70%] max-[700px]:w-auto max-[700px]:px-[var(--side-padding)] ml-[var(--side-padding)] max-[700px]:ml-0 [font-weight:800] [line-height:120%]">
+            <h1 className="home-front-text relative font-pop text-[75pt] max-[2140px]:text-[60pt] max-[1024px]:text-[43pt] max-[912px]:text-[46pt] max-[700px]:text-[32pt] py-[16px] max-[1400px]:py-0 max-[1440px]:w-[65%] w-[50%] max-[820px]:w-[70%] max-[700px]:w-auto max-[700px]:px-[var(--side-padding)] ml-[var(--side-padding)] max-[700px]:ml-0 [font-weight:800] [line-height:120%]">
               The passion of idea, business and creativity:
             </h1>
             <p className="w-[54%] text-[17pt] max-[1400px]:text-[13.5pt] max-[1024px]:text-[12pt] max-[700px]:hidden max-[1024px]:w-[49%] max-[912px]:w-[60%] [line-height:140%] max-[820px]:mb-[30px] py-[16px] ml-[var(--side-padding)] text-start">
@@ -92,7 +92,7 @@ export default function Home({ jobs }) {
         {/* Services */}
         <PageSection
           style={{ height: "fit-content" }}
-          className="bg-white max-2xl:max-h-[1500px] max-[700px]:max-h-max max-2xl:py-[14vh] py-[20vh] max-[1024px]:py-[10vh] max-[820px]:py-[5vh] grid [grid:auto_auto/auto_auto] max-[820px]:[grid:auto/42%_auto] max-[700px]:[grid:auto/auto] gap-[var(--grid-margin)]"
+          className="bg-white max-[700px]:max-h-max max-2xl:py-[14vh] py-[20vh] max-[1024px]:py-[10vh] max-[820px]:py-[5vh] grid [grid:auto_auto/auto_auto] max-[820px]:[grid:auto/42%_auto] max-[700px]:[grid:auto/auto] gap-[var(--grid-margin)]"
         >
           <ServiceCard
             title="Brand Identity"
@@ -225,7 +225,7 @@ export default function Home({ jobs }) {
         </PageSection>
 
         {/* Interview */}
-        <PageSection className="bg-white flex max-2xl:max-h-[950px] max-[1400px]:h-[160vh] max-[1280px]:h-fit max-[1280px]:pt-[65px] max-[1024px]:pt-[45px] flex-col items-center justify-center max-[1280px]:justify-start">
+        <PageSection className="bg-white flex max-2xl:max-h-[950px] max-[1440px]:h-fit mb-[40px] max-[1280px]:pt-[65px] max-[1024px]:pt-[45px] flex-col items-center justify-center max-[1280px]:justify-start">
           <h2 className="mb-[56px] max-[1400px]:mb-[35px] home-heading">
             Exclusive interviews with industry leading professionals.
           </h2>
@@ -272,7 +272,7 @@ export default function Home({ jobs }) {
         </PageSection>
 
         {/* Blogs */}
-        <PageSection className="bg-white max-2xl:max-h-[1000px] max-[700px]:max-h-max max-[1280px]:pt-[65px] max-[1280px]:h-fit flex flex-col justify-center max-[1280px]:justify-start">
+        <PageSection className="bg-white h-max max-2xl:max-h-[1000px] max-[700px]:max-h-max max-[1280px]:pt-[65px] max-[1280px]:h-fit flex flex-col justify-center max-[1280px]:justify-start">
           <h2 className="mb-[56px] max-[1024px]:mb-[35px] home-heading">
             Discover popular and profitable <u>editorials.</u>
           </h2>
@@ -280,7 +280,7 @@ export default function Home({ jobs }) {
         </PageSection>
 
         {/* Products */}
-        <PageSection className="bg-white max-2xl:max-h-[1000px] max-[700px]:max-h-max max-[1280px]:h-fit max-[1280px]:pb-[65px] max-[1024px]:pt-[90px] max-[700px]:pt-0 flex flex-col justify-center max-[1280px]:justify-start">
+        <PageSection className="bg-white max-2xl:max-h-[1000px] max-[700px]:max-h-max max-[1280px]:h-fit max-[1380px]:pb-[65px] max-[1024px]:pt-[90px] max-[700px]:pt-0 flex flex-col justify-center max-[1280px]:justify-start">
           <div className="flex justify-between items-center w-full max-[700px]:flex-col max-[700px]:justify-start max-[700px]:gap-[30px]">
             {productData.slice(0, 4).map((product, index) => (
               <ProductCard key={index} {...product} />
@@ -302,13 +302,13 @@ export default function Home({ jobs }) {
         {/* Events & Jobs */}
         <PageSection
           style={{ height: "max-content" }}
-          className="bg-white grid grid-cols-2 py-[5vh] max-[700px]:grid-cols-1"
+          className="bg-white grid grid-cols-2 max-h-max py-[5vh] max-[700px]:grid-cols-1"
         >
           <div className="h-full border-r-2 max-[1024px]:border-r-[1px] border-[#454648bc] max-[700px]:border-r-0 flex flex-col pr-[calc(var(--grid-margin)/2)]">
             <h2 className="home-heading h-[200px] max-[1024px]:h-[130px] mb-[40px] max-[700px]:mb-[20px]">
               Don&apos;t miss the next live meeting to experience growth
             </h2>
-            <div className="grid grid-cols-2 gap-[calc(var(--grid-margin)/1.2)] max-[700px]:grid-cols-1 h-[50vh] max-[912px]:h-[300px] max-[700px]:h-fit max-h-[582px] max-[700px]:max-h-max mb-[30px]">
+            <div className="grid grid-cols-2 gap-[calc(var(--grid-margin)/1.2)] max-[700px]:grid-cols-1 h-fit max-[700px]:h-fit max-[700px]:max-h-max mb-[30px]">
               {upcomingEvents.slice(0, 2).map((event, index) => (
                 <EventCard {...event} key={index} />
               ))}
@@ -319,7 +319,7 @@ export default function Home({ jobs }) {
             <h2 className="home-heading h-[200px] max-[1024px]:h-[130px] mb-[40px] max-[700px]:mb-[20px]">
               Find the right job to boost your brilliant career
             </h2>
-            <ul className="grid grid-rows-3 gap-[calc(var(--grid-margin)/3)] h-[50vh] max-[912px]:h-[300px] max-h-[582px] max-[700px]:max-h-max max-[700px]:h-fit mb-[30px]">
+            <ul className="grid grid-rows-3 gap-[calc(var(--grid-margin)/3)] h-fit max-[912px]:h-[300px] max-h-[582px] max-[700px]:max-h-max max-[700px]:h-fit mb-[30px]">
               {jobs.map((job, index) => (
                 <JobCard key={index} {...job} />
               ))}
