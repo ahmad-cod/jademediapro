@@ -1,52 +1,53 @@
 import React from "react";
-import Image from "next/image";
-import { pdf } from "../images";
+import CategoryFilter from "../components/CategoryFilter";
+import Pagination from "../components/Pagination";
+import usePagination from "../hooks/usePagination";
 import { freebiesHeader } from "../images";
-import { CategoryFilter, ImageWithHeader, Pagination } from "../components";
+import { ImageWithHeader } from "../components";
 import FreebiesCard from "../components/FreebiesCard";
 import { freebiesData } from "../data/freebies-card/freebies-data";
-import useWidth from "../hooks/UseWidth";
+import styles from "../styles/freebies.module.css";
+import { MainWrapper } from "@/components/Layout";
 
 const Freebies = () => {
   const [currentData, currentPage, setCurrentPage, dataPerPage, data, setData] =
-    useWidth(freebiesData, 4, 12);
-  const freebieCategories = [
-    "Illustration",
+    usePagination(freebiesData, 4, 12);
+  const freebiesCategories = [
+    "Illustrations",
     "Books",
     "Mockup",
     "Templates",
     "Software",
-    "Tutorial",
+    "Tutorials",
   ];
   return (
-    <>
+    <MainWrapper headerType={1} title="Freebies - Jade Media Pro">
       <ImageWithHeader
         title="Everything you need for growth and development"
         subtitle="Free daily high-quality design resources hand-picked for creatives, designers and developers, ranging from fonts, mockups, graphics, templates & more from amazing artists."
         headerImage={freebiesHeader}
       />
-      <CategoryFilter
-        categories={freebieCategories}
-        setCategory={setData}
-        filterContent={freebiesData}
-      />
 
-      <div className="main-container">
-        <div></div>
+      <div className={styles.main_container}>
+        <CategoryFilter
+          categories={freebiesCategories}
+          filterContent={freebiesData}
+          setCategory={setData}
+        />
 
-        <div className="flex mt-16 justify-between flex-wrap gap-20">
-          {currentData.map((data) => (
-            <FreebiesCard format={data.format} title={data.title} />
+        <div className={styles.freebies_container}>
+          {currentData.map((data, index) => (
+            <FreebiesCard key={index} format={data.format} title={data.title} />
           ))}
         </div>
+        <Pagination
+          cardsPerPage={dataPerPage}
+          totalCards={data.length}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+        />
       </div>
-      <Pagination
-        cardsPerPage={dataPerPage}
-        totalCards={data.length}
-        currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
-      />
-    </>
+    </MainWrapper>
   );
 };
 

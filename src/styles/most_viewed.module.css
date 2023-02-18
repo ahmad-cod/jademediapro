@@ -1,0 +1,67 @@
+.mostviewed_maincontainer{
+    border: 2px solid orange;
+    justify-content: center;
+    width: 100%;
+    display: flex; 
+}
+
+.mostviewed_contentbox{
+    border: 3px dotted pink;
+    width: 85%;
+}
+
+.mostrecent_header{
+    margin: 30px 0px;
+    font-size: 48px;
+    color: #242526;
+    /* border: 1px solid red; */
+}
+
+
+
+.thumbnail_1{
+    filter: brightness(50%);
+    position: relative;
+    border-radius: 5px;
+    
+}
+/* .play_button{
+    position: absolute;
+    
+} */
+
+
+.template02{
+    border: 2px solid blue;
+    width: 536px;
+    height: 314px;
+    display: flex;
+}
+
+.template{
+    border: 2px solid yellow;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    display: flex;
+}
+
+.template03{
+    border: 1px solid red;
+    width: 50%;
+}
+
+@media only screen and (max-width: 1100px) {
+    .template{       
+        display: flex;
+        flex-wrap: wrap;     
+    }
+
+    .template03{
+        border: 1px solid red;
+        width: 100%;
+        margin-top: 32px;
+    }
+    
+
+}

@@ -2,10 +2,11 @@ import react from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { privacyimg } from "../images";
+import { MainWrapper } from "@/components/Layout";
 
 export default function Privacy() {
   return (
-    <div>
+    <MainWrapper backgroundColor="#1A1A1A" headerType={1}>
       <div className=" bg-[#1A1A1A] px-[20px] pb-[29px] pt-[30px] md:pt-12 md:pr-[104px] md:pb-[70px] md:pl-[104px] mb-32 ">
         <div className="flex flex-col md:flex-row md:items-center text-5xl md:text-8xl font-bold md:font-semibold                text-white gap-8 md:gap-[500px]">
           <h1>
@@ -22,13 +23,14 @@ export default function Privacy() {
           <div className="text-base font-normal text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               Thank you for choosing to be part of our community at Jademediapro
-              Tech Agency LTD ("Company," "we," "us," or "our"). We are
-              committed to protecting your personal information and your right
-              to privacy. Please read this Privacy Policy carefully, providing
-              consent to both documents in order to have permission to use our
-              services. If you have any questions or concerns about this privacy
-              notice or our practices with regard to your personal information,
-              please contact us at solutions@jademediapro.com.
+              Tech Agency LTD (&quot;Company,&quot; &quot;we,&quot;
+              &quot;us,&quot; or &quot;our&quot;). We are committed to
+              protecting your personal information and your right to privacy.
+              Please read this Privacy Policy carefully, providing consent to
+              both documents in order to have permission to use our services. If
+              you have any questions or concerns about this privacy notice or
+              our practices with regard to your personal information, please
+              contact us at solutions@jademediapro.com.
             </p>
             <p className="mt-4">
               This privacy notice describes how we might use your information if
@@ -49,12 +51,12 @@ export default function Privacy() {
             <p className="mt-4">In this privacy notice, if we refer to:</p>
             <ul className="list-disc ml-6 mb-4">
               <li>
-                "Website," we are referring to any website of ours that
-                references or links to this policy
+                &quot;Website,&quot; we are referring to any website of ours
+                that references or links to this policy
               </li>
               <li>
-                "Services," we are referring to our website, and other related
-                services, including any sales, marketing, or events.
+                &quot;Services,&quot; we are referring to our website, and other
+                related services, including any sales, marketing, or events.
               </li>
             </ul>
 
@@ -202,10 +204,10 @@ export default function Privacy() {
               existing social media account details, like your Facebook, Twitter
               or other social media account. If you choose to register in this
               way, we will collect the information described in the section
-              called "how do we handle your social logins?" below. All personal
-              information that you provide to us must be true, complete and
-              accurate, and you must notify us of any changes to such personal
-              information.
+              called &quot;how do we handle your social logins?&quot; below. All
+              personal information that you provide to us must be true, complete
+              and accurate, and you must notify us of any changes to such
+              personal information.
             </p>
             <span className="text-[#77459B] text-lg font-medium mb-2">
               Information automatically collected
@@ -246,7 +248,8 @@ export default function Privacy() {
                 associated with your usage, pages and files viewed, searches and
                 other actions you take such as which features you use), device
                 event information (such as system activity, error reports
-                (sometimes called 'crash dumps') and hardware settings).
+                (sometimes called &apos;crash dumps&apos;) and hardware
+                settings).
               </li>
               <li className="mb-4">
                 Device Data. We collect device data such as information about
@@ -259,10 +262,10 @@ export default function Privacy() {
               </li>
               <li>
                 Location Data. We collect location data such as information
-                about your device's location, which can be either precise or
-                imprecise. How much information we collect depends on the type
-                and settings of the device you use to access the Website. For
-                example, we may use GPS and other technologies to collect
+                about your device&apos;s location, which can be either precise
+                or imprecise. How much information we collect depends on the
+                type and settings of the device you use to access the Website.
+                For example, we may use GPS and other technologies to collect
                 geolocation data that tells us your current location (based on
                 your IP address). You can opt out of allowing us to collect this
                 information either by refusing access to the information or by
@@ -295,7 +298,7 @@ export default function Privacy() {
               Facebook or Twitter), we receive personal information about you
               such as your name, email address, and gender. Any personal
               information that we collect from your social media account depends
-              on your social media account's privacy settings.
+              on your social media account&apos;s privacy settings.
             </p>
           </div>
         </div>
@@ -328,8 +331,8 @@ export default function Privacy() {
                 your Google or Facebook account), we use the information you
                 allowed us to collect from those third parties to facilitate
                 account creation and logon process for the performance of the
-                contract. See the section below headed "how do we handle your
-                social logins?" for further information.
+                contract. See the section below headed &quot;how do we handle
+                your social logins?&quot; for further information.
               </li>
               <li>
                 To post testimonials. We post testimonials on our Website that
@@ -350,7 +353,7 @@ export default function Privacy() {
               <li>
                 To enable user-to-user communications. We may use your
                 information in order to enable user-to-user communications with
-                each user's consent.
+                each user&apos;s consent.
               </li>
               <li>
                 To manage user accounts. We may use your information for the
@@ -406,8 +409,8 @@ export default function Privacy() {
                 when expressing an interest in obtaining information about us or
                 our Website, subscribing to marketing or otherwise contacting
                 us, we will collect personal information from you. You can
-                opt-out of our marketing emails at any time (see the "what are
-                your privacy rights?" below).
+                opt-out of our marketing emails at any time (see the &quot;what
+                are your privacy rights?&quot; below).
               </li>
               <li>
                 Deliver targeted advertising to you. We may use your information
@@ -492,10 +495,11 @@ export default function Privacy() {
               <li>
                 Google Maps Platform APIs. We may share your information with
                 certain Google Maps Platform APIs (e.g., Google Maps API, Place
-                API). To find out more about Google’s Privacy Policy, please
-                refer to this link. We obtain and store on your device ('cache')
-                your location. You may revoke your consent anytime by contacting
-                us at the contact details provided at the end of this document.
+                API). To find out more about Google&apos;s Privacy Policy,
+                please refer to this link. We obtain and store on your device
+                (&apos;cache&apos;) your location. You may revoke your consent
+                anytime by contacting us at the contact details provided at the
+                end of this document.
               </li>
               <li>
                 Vendors, Consultants and Other Third-Party Service Providers. We
@@ -563,7 +567,7 @@ export default function Privacy() {
               categories of third parties. If we have processed your data based
               on your consent and you wish to revoke your consent, please
               contact us using the contact details provided in the section below
-              titled "how can you contact us about this notice?".
+              titled &quot;how can you contact us about this notice?&quot;.
             </p>
             <ul className="list-disc ml-6 mb-4">
               <li>Payment Processors</li>
@@ -669,7 +673,7 @@ export default function Privacy() {
               a longer retention period is required or permitted by law (such as
               tax, accounting or other legal requirements). No purpose in this
               notice will require us keeping your personal information for
-              longer than six (6) months past the termination of the user's
+              longer than six (6) months past the termination of the user&apos;s
               account.
             </p>
             <p className="mb-4">
@@ -826,16 +830,16 @@ export default function Privacy() {
           <div className="text-base font-normal text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               Most web browsers and some mobile operating systems and mobile
-              applications include a Do-Not-Track ("DNT") feature or setting you
-              can activate to signal your privacy preference not to have data
-              about your online browsing activities monitored and collected. At
-              this stage no uniform technology standard for recognizing and
-              implementing DNT signals has been finalized. As such, we do not
-              currently respond to DNT browser signals or any other mechanism
-              that automatically communicates your choice not to be tracked
-              online. If a standard for online tracking is adopted that we must
-              follow in the future, we will inform you about that practice in a
-              revised version of this privacy notice.
+              applications include a Do-Not-Track (&quot;DNT&quot;) feature or
+              setting you can activate to signal your privacy preference not to
+              have data about your online browsing activities monitored and
+              collected. At this stage no uniform technology standard for
+              recognizing and implementing DNT signals has been finalized. As
+              such, we do not currently respond to DNT browser signals or any
+              other mechanism that automatically communicates your choice not to
+              be tracked online. If a standard for online tracking is adopted
+              that we must follow in the future, we will inform you about that
+              practice in a revised version of this privacy notice.
             </p>
           </div>
         </div>
@@ -853,16 +857,17 @@ export default function Privacy() {
               information.
             </p>
             <p className="mb-4">
-              California Civil Code Section 1798.83, also known as the "Shine
-              The Light" law, permits our users who are California residents to
-              request and obtain from us, once a year and free of charge,
-              information about categories of personal information (if any) we
-              disclosed to third parties for direct marketing purposes and the
-              names and addresses of all third parties with which we shared
-              personal information in the immediately preceding calendar year.
-              If you are a California resident and would like to make such a
-              request, please submit your request in writing to us using the
-              contact information provided below.
+              California Civil Code Section 1798.83, also known as the
+              &quot;Shine The Light&quot; law, permits our users who are
+              California residents to request and obtain from us, once a year
+              and free of charge, information about categories of personal
+              information (if any) we disclosed to third parties for direct
+              marketing purposes and the names and addresses of all third
+              parties with which we shared personal information in the
+              immediately preceding calendar year. If you are a California
+              resident and would like to make such a request, please submit your
+              request in writing to us using the contact information provided
+              below.
             </p>
             <p className="mb-4">
               If you are under 18 years of age, reside in California, and have a
@@ -880,7 +885,8 @@ export default function Privacy() {
               CCPA Privacy Notice
             </span>
             <p className="mb-4">
-              The California Code of Regulations defines a "resident" as:
+              The California Code of Regulations defines a &quot;resident&quot;
+              as:
             </p>
             <p className="mb-4">
               (1) every individual who is in the State of California for other
@@ -892,11 +898,11 @@ export default function Privacy() {
               transitory purpose
             </p>
             <p className="mb-4">
-              All other individuals are defined as "non-residents."
+              All other individuals are defined as &quot;non-residents.&quot;
             </p>
             <p className="mb-4">
-              If this definition of "resident" applies to you, we must adhere to
-              certain rights and obligations regarding your personal
+              If this definition of &quot;resident&quot; applies to you, we must
+              adhere to certain rights and obligations regarding your personal
               information.
             </p>
             <span className="text-[#77459B] text-lg font-medium mb-2">
@@ -1008,7 +1014,8 @@ export default function Privacy() {
                 <div className="w-[60%]">
                   Inferences drawn from any of the collected personal
                   information listed above to create a profile or summary about,
-                  for example, an individual's preferences and characteristics
+                  for example, an individual&apos;s preferences and
+                  characteristics
                 </div>
                 <div className="w-[15%]">YES</div>
               </div>
@@ -1074,7 +1081,7 @@ export default function Privacy() {
               We may use your personal information for our own business
               purposes, such as for undertaking internal research for
               technological development and demonstration. This is not
-              considered to be "selling" of your personal data.
+              considered to be &quot;selling&quot; of your personal data.
             </p>
             <p className="mt-4">
               Jademediapro Tech Agency LTD has disclosed the following
@@ -1091,13 +1098,14 @@ export default function Privacy() {
               <li>
                 Category K. Inferences drawn from any of the personal
                 information listed above to create a profile or summary about,
-                for example, an individual's preferences and characteristics.
+                for example, an individual&apos;s preferences and
+                characteristics.
               </li>
             </ul>
             <p className="mb-4">
               The categories of third parties to whom we disclosed personal
               information for a business or commercial purpose can be found
-              under "who will your information be shared with?".
+              under &quot;who will your information be shared with?&quot;.
             </p>
             <p className="mb-4">
               Jademediapro Tech Agency LTD has not sold any personal information
@@ -1240,13 +1248,13 @@ export default function Privacy() {
             </p>
             <p className="mb-4 ">
               We may update this privacy notice from time to time. The updated
-              version will be indicated by an updated "Revised" date and the
-              updated version will be effective as soon as it is accessible. If
-              we make material changes to this privacy notice, we may notify you
-              either by prominently posting a notice of such changes or by
-              directly sending you a notification. We encourage you to review
-              this privacy notice frequently to be informed of how we are
-              protecting your information.
+              version will be indicated by an updated &quot;Revised&quot; date
+              and the updated version will be effective as soon as it is
+              accessible. If we make material changes to this privacy notice, we
+              may notify you either by prominently posting a notice of such
+              changes or by directly sending you a notification. We encourage
+              you to review this privacy notice frequently to be informed of how
+              we are protecting your information.
             </p>
           </div>
         </div>
@@ -1294,12 +1302,12 @@ export default function Privacy() {
           </div>
         </div>
         <p className="font-small text-[#3A3B40] text-base mb-40">
-          These Privacy Policy was created using Termly's
+          These Privacy Policy was created using Termly&apos;s
           <a href="#" className=" font-bold text-[#77459B] underline ml-1">
             Privacy Policy Generator.
           </a>
         </p>
       </div>
-    </div>
+    </MainWrapper>
   );
 }

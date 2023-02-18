@@ -56,7 +56,7 @@
   padding: 10px;
   display: flex;
   justify-content: center;
-  margin-bottom: 150px;
+  padding-bottom: 160px;
 }
 .ready_container {
   width: 800px;
@@ -104,11 +104,18 @@
 .services .header {
   background-color: #17403b;
 }
+.about .header {
+  background-color: #f6f6f6;
+  margin-bottom: 124px;
+}
 .header {
   width: 100%;
   min-height: 80vh;
   display: flex;
   align-items: center;
+}
+.about .header .project_header {
+  color: #242526;
 }
 .project_header {
   display: flex;

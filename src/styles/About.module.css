@@ -1,0 +1,568 @@
+.client_container {
+  width: 85%;
+  margin: auto;
+}
+.client_content {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 96px;
+}
+.client_heading h2 {
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 24px;
+}
+.client_intro {
+  flex-basis: 50%;
+}
+.client_intro p {
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 24px;
+}
+.client_mission {
+  flex-basis: 45%;
+}
+.client_mission h3 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+}
+.w3_container {
+  background-color: #17403b;
+  padding: 96px 0;
+  margin-bottom: 124px;
+}
+.w3_content {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+  /* gap: 130px; */
+  color: #fff;
+}
+.what_content {
+  flex-basis: 45%;
+}
+.goals {
+  flex-basis: 45%;
+}
+.goal {
+  display: flex;
+
+  gap: 15px;
+  margin-bottom: 32px;
+}
+.gif_goal {
+  width: 130px;
+}
+.gif_goal img {
+  width: 100%;
+  object-fit: cover;
+}
+.goal_content h3 {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.goal_content p {
+  font-size: 15px;
+}
+.goal_button button {
+  padding: 12px 32px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: 600;
+  margin: 32px 0;
+  border-radius: 4px;
+}
+.goal_button button:hover {
+  background-color: #2f7f77;
+}
+.what_title h2 {
+  font-weight: 600;
+  color: #f6f6f6;
+  line-height: 60px;
+  font-size: 50px;
+  margin-bottom: 24px;
+}
+.what_body h3 {
+  margin: 8px 0;
+  font-weight: 500;
+}
+.what_body p {
+  font-size: 15px;
+}
+.culture_container {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 160px;
+}
+.culture_content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin-top: 32px;
+}
+.culture_item {
+  max-width: 320px;
+  min-height: 244px;
+  border: 1px solid #77459b;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+  padding: 56px 42px;
+  border-radius: 4px;
+  margin-bottom: 32px;
+}
+.item_note p {
+  font-size: 15px;
+  text-align: left;
+}
+.culture_item_heading h3 {
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.line {
+  background-color: #77459b;
+  height: 1px;
+  width: 40px;
+  margin-bottom: 32px;
+}
+.voluntering_container {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 160px;
+}
+.volunteer_statement h2,
+.career_statement h2,
+.testimonal_statement h2 {
+  font-weight: 700;
+  line-height: 60px;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+.career_statement strong {
+  color: #2f7f77;
+}
+.voluntering_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
+  flex-wrap: wrap;
+}
+.volunteer_video {
+  flex-basis: auto;
+}
+.volunteer_video iframe {
+  object-fit: contain;
+}
+.voluntering_content_body {
+  flex-basis: 50%;
+}
+.body_text p {
+  font-size: 15px;
+  margin-bottom: 24px;
+}
+.body_count {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.body_number h3 {
+  font-size: 36px;
+  color: #2f7f77;
+}
+.volunteer_button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.donate button {
+  background-color: #4f2e67;
+  border-radius: 4px;
+  width: 293px;
+  padding: 12px 0;
+  font-weight: 500;
+  color: #f6f6f6;
+  transition: all 250ms ease-in-out;
+}
+.donate button:hover {
+  opacity: 0.9;
+}
+.share button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  border: 1px solid #4f2e67;
+  color: #4f2e67;
+  padding: 12px 0;
+  width: 190px;
+  transition: all 250ms ease-in-out;
+}
+.share button:hover {
+  background-color: #4f2e67;
+  color: #fff;
+}
+.career_container {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 160px;
+}
+.career_contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-wrap: wrap-reverse;
+}
+.career_text {
+  flex-basis: 50%;
+
+  font-size: 15px;
+}
+
+.career_text ul {
+  list-style: inside;
+  margin-bottom: 24px;
+}
+
+.career_text > P:first-child {
+  margin: 24px 0;
+}
+.career_image {
+  flex-basis: 45%;
+  height: 480px;
+}
+.career_image img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.career_button button {
+  display: flex;
+  align-items: center;
+  padding: 12px 32px;
+  gap: 24px;
+  color: #f6f6f6;
+  font-weight: 600;
+  background-color: #4f2e67;
+  border-radius: 4px;
+  margin: 40px 0;
+}
+.testimonials_container {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 160px;
+}
+.testimonial_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.testimonal_statement {
+  flex-basis: 45%;
+}
+.testimonial {
+  flex-basis: 50%;
+}
+.testimonial_body {
+  display: flex;
+}
+.testimonial_text {
+  width: 90%;
+}
+.testimonial_review {
+  padding: 48px 72px;
+  background-color: #235f59;
+}
+.testimonial_review p {
+  overflow-y: scroll;
+  font-size: 15px;
+  color: #f6f6f6;
+  height: 130px;
+}
+.testimonial_review p::-webkit-scrollbar {
+  display: none;
+}
+.testimonal_name {
+  padding: 0 54px 72px;
+}
+.testimonal_name h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.testimonal_name p {
+  font-size: 15px;
+}
+.testimonial_image {
+  /* position: absolute;
+  /* right: 0;
+  top: 0; */
+  width: 250px;
+  height: 250px;
+}
+.testimonial_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.testimonial_image p {
+  font-size: 128px;
+  text-align: center;
+  color: #235f59;
+  font-style: italic;
+}
+.logos_container .client_heading h2 {
+  width: 85% !important;
+  margin: auto !important;
+}
+.logos_container {
+  margin-bottom: 160px;
+}
+.logos {
+  overflow: hidden;
+}
+.first_logos,
+.last_logos {
+  display: flex;
+  justify-content: space-between;
+  gap: 120px;
+  margin: 56px 0;
+}
+.first_logos img,
+.last_logos img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+.last_logos {
+  animation: slider 8s linear infinite;
+  transform: translateX(-0%);
+}
+@keyframes slider {
+  from {
+    transform: translateX(-0%);
+  }
+  to {
+    transform: translateX(-300%);
+  }
+}
+.team_container {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 160px;
+}
+.team_body {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  gap: 16px;
+
+  flex-wrap: wrap;
+}
+.stakeholder {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* gap: 16px; */
+}
+.motto {
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+.motto h2 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  width: 100%;
+}
+.team_member {
+  border: 1px solid #bbbeca;
+  border-radius: 4px;
+  text-align: center;
+}
+.team_member_image {
+  max-width: 260px;
+  max-height: 348px;
+  position: relative;
+  transition: all 250ms ease-in;
+}
+.team_member_image:hover .team_socials {
+  display: flex;
+}
+.team_member_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.team_socials {
+  position: absolute;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  background-color: #1a1a1a75;
+  padding: 24px 0;
+  width: 100%;
+  color: #f6f6f6;
+  font-size: 24px;
+}
+.team_member_body {
+  padding: 24px;
+}
+.team_member_body h3 {
+  font-size: 21px;
+  color: #3a3b40;
+  font-weight: 500;
+}
+.team_member_body p {
+  font-size: 15px;
+  color: #3a3b40;
+}
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+  .team_container,
+  .testimonials_container,
+  .culture_container,
+  .client_container,
+  .career_container,
+  .voluntering_container {
+    width: 95%;
+    margin-bottom: 64px;
+  }
+  .w3_content {
+    width: 95%;
+  }
+
+  .client_intro {
+    flex-basis: 100%;
+    flex-grow: 1;
+  }
+  .client_mission h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 39px;
+  }
+  .client_mission {
+    flex-grow: 1;
+  }
+  .what_content {
+    flex-grow: 1;
+    margin-bottom: 24px;
+  }
+  .goals {
+    flex-grow: 1;
+  }
+  .w3_container {
+    padding: 54px 20px;
+    margin-bottom: 64px;
+  }
+  .what_title h2 {
+    font-size: 34px;
+  }
+  .culture_item {
+    padding: 24px 16px;
+    max-width: 180px;
+  }
+  .volunteer_statement h2,
+  .career_statement h2,
+  .testimonal_statement h2 {
+    font-size: 27px;
+    line-height: 32px;
+  }
+  .team_member {
+    max-width: 185px;
+  }
+  .motto {
+    flex-grow: 1;
+  }
+  .testimonal_statement {
+    flex-basis: 100%;
+  }
+  .testimonial_review {
+    padding: 30px 44px;
+  }
+  .testimonal_name {
+    padding: 0 44px;
+  }
+  .testimonial_image p {
+    font-size: 78px;
+  }
+  .testimonal_name h3 {
+    font-size: 21px;
+  }
+  .testimonial_image {
+    width: 157px;
+    height: 157px;
+  }
+  .first_logos,
+  .last_logos {
+    gap: 45px;
+  }
+  .first_logos img,
+  .last_logos img {
+    width: 25px;
+    height: 25px;
+  }
+  .logos_container .client_heading h2 {
+    width: 95% !important;
+  }
+  .career_text {
+    flex-basis: 100%;
+  }
+  .career_image {
+    flex-basis: 100%;
+  }
+  .volunteer_video iframe {
+    width: clamp(350px, 380px, 800px);
+  }
+  .donate button {
+    padding: 12px 0;
+    width: 193px;
+  }
+  .share button {
+    width: 148px;
+    padding: 12px;
+  }
+  .testimonial_text {
+    width: 90%;
+  }
+  .team_member_body {
+    padding: 12px;
+  }
+  .team_member_body h3 {
+    font-size: 18px;
+  }
+
+  .voluntering_content_body {
+    flex-basis: 100%;
+  }
+  .career_image {
+    height: 234px;
+  }
+  .motto h2 {
+    font-size: 30px;
+    line-height: 39px;
+  }
+  .logos_container {
+    margin-bottom: 64px;
+  }
+  .client_heading h2 {
+    font-size: 23px;
+    line-height: 29px;
+    margin-bottom: 16px;
+  }
+}

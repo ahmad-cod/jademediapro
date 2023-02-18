@@ -1,0 +1,79 @@
+
+
+.header2{
+/*     
+    padding: 0 104px; */
+}
+
+/* li{
+    padding: 24px;
+} */
+
+/* ul{
+    flex-wrap: wrap;
+} */
+
+.icon_1{
+    margin-top: 48px;
+}
+
+.freebies_container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    /* border: 2px solid black  */
+    ;
+}
+
+
+
+.freebies_card{
+    background: #EFEFF2;
+    width: 261px;
+    height: 319.6px;
+    border-radius: 4px;
+    /* padding: 48px; */
+    /* gap: 10px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 38px;
+    /* border: 2px solid grey; */
+    /* align-items: flex-start; */
+}
+
+.freebies_card:hover {
+    transform: scale(1.1);
+    z-index: 20;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+
+.header_image{
+    /* border: 4px solid red; */
+}
+
+.pdf_text{
+    text-align: center;
+    margin-top: 41px;
+}
+
+
+@media only screen and (max-width: 1200px){
+    .freebies-card{
+        width: 370px;
+    }
+    
+}
+
+@media only screen and (max-width: 700px) {
+    /* ul{
+        flex-direction: row;
+    } */
+    .freebies_card{
+        width: 90%;
+    }
+}

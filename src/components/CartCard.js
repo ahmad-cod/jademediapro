@@ -16,9 +16,9 @@ const CartCard = ({cartImage, title, price, subtitle1, subtitle2 }) => {
                 <p className='text-[#3A3B40]'>{subtitle2}</p>
             </div>
         </div>
-        <div className='flex gap-1 flex-col'>
+        <div className='flex gap-7 flex-col'>
             <button className='text-[#DC2626] '>Remove</button>
-            <button className='flex justify-center items-center rounded gap-3 px-5 py-3 text-[#46BFB2]'>Add To Cart<BsArrowBarRight/></button>
+            <button className='flex justify-center items-center rounded gap-3 px-5 py-3 text-[#46BFB2] border-2 border-teal-200'>Add To Cart<BsArrowBarRight/></button>
             <button className='flex justify-center items-center rounded bg-[#4F2E67] gap-3 text-white px-5=t py-3'>Buy Now <BsArrowBarRight/></button>
         </div>
     </div>

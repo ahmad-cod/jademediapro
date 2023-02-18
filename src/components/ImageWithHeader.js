@@ -1,15 +1,21 @@
 import Image from "next/image";
 import React from "react";
+import styles from "../styles/header.module.css";
 
 const ImageWithHeader = ({ title, subtitle, headerImage }) => {
   return (
-    <div className="header2 flex-col lg:flex-row">
-      <div className="max-w-[718px]">
-        <h1 className="text-[35px] text-[#fff]">{title}</h1>
-        <p className="text-[#fff]">{subtitle}</p>
+    <div className={styles.header2}>
+      <div className={styles.header_container}>
+        <h1 className={styles.title_text}>{title}</h1>
+        <p className={styles.sub_headertext}>{subtitle}</p>
       </div>
-      <div className="header__image">
-        <Image src={headerImage} alt="" width="100%" height="100%" />
+      <div className="header_image">
+        <Image
+          className={styles.image_header}
+          src={headerImage}
+          alt=""
+          height={473}
+        />
       </div>
     </div>
   );

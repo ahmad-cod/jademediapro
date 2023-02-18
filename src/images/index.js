@@ -10,20 +10,6 @@ import purplearrow from "./jobsImage/purple-arrow.png";
 import sendarrow from "./jobsImage/send-arrow.png";
 import whitearrow from "./jobsImage/white-arrow.png";
 
-export {
-  cookiesimg,
-  errorimg,
-  maskimg,
-  privacyimg,
-  termsimg,
-  borderlineimg,
-  jobheroimg,
-  lemonarrow,
-  purplearrow,
-  sendarrow,
-  whitearrow,
-};
-
 import blog1image from "./blogImages/blog1image.jpg";
 import blog2image from "./blogImages/blog2image.jpg";
 import blog3image from "./blogImages/blog3image.jpg";
@@ -46,7 +32,7 @@ import blog5image1 from "./blogImages/blog5image1.jpg";
 import headerImage from "./projectImages/header-image.svg";
 import underProduction from "./projectImages/UnderProduction.jpg";
 import kietDiet from "./projectImages/Keto-Dietthumbnail.jpg";
-import interviewImage from "./projectImages/interview-thumbnail.png";
+import interviewImage from "./projectImages/Interview-thumbnail.png";
 import manniet from "./projectImages/Mainnet-thumbnail.jpg";
 import artButton from "./serviceImages/3D-Object=Art.png";
 import businessButton from "./serviceImages/3D-Object=Business.png";
@@ -74,15 +60,15 @@ import brandingMonitor from "./projectImages/Branding-Process-Monitor-Assets.svg
 import brandingDevelop from "./projectImages/Branding-Process-Develop-Brand.svg";
 import brandingLaunch from "./projectImages/Branding-Process-Launch.svg";
 import brandingMarket from "./projectImages/Branding-Process-Market.svg";
-import illustrationBriefing from "./projectImages/illustration-Process-Briefing.png";
+import illustrationBriefing from "./projectImages/Illustration-Process-Briefing.png";
 
-import illustrationBasicTone from "./projectImages/illustration-Process-BasicTone.svg";
-import illustrationCleansketch from "./projectImages/illustration-Process-Cleansketch.svg";
-import illustrationDelivery from "./projectImages/illustration-Process-Delivery.svg";
-import illustrationFinalDetail from "./projectImages/illustration-Process-FinalDetail.svg";
-import illustrationReferencing from "./projectImages/illustration-Process-Referencing.svg";
-import illustrationRoughsketch from "./projectImages/illustration-Process-Roughsketch.svg";
-import illustrationStylelayout from "./projectImages/illustration-Process-Stylelayout.svg";
+import illustrationBasicTone from "./projectImages/Illustration-Process-BasicTone.svg";
+import illustrationCleansketch from "./projectImages/Illustration-Process-Cleansketch.svg";
+import illustrationDelivery from "./projectImages/Illustration-Process-Delivery.svg";
+import illustrationFinalDetail from "./projectImages/Illustration-Process-FinalDetail.svg";
+import illustrationReferencing from "./projectImages/Illustration-Process-Referencing.svg";
+import illustrationRoughsketch from "./projectImages/Illustration-Process-Roughsketch.svg";
+import illustrationStylelayout from "./projectImages/Illustration-Process-Stylelayout.svg";
 import marketingDevelop from "./projectImages/Marketing-Process-Develop-Implement-strategies.svg";
 import marketingMarket from "./projectImages/Marketing-Process-Develop-Marketing.png";
 import marketingMeasure from "./projectImages/Marketing-Process-Develop-MeasureResults.svg";
@@ -105,7 +91,7 @@ import digitalArt from "./serviceImages/Art&Photography-DigitalArt.gif";
 import painting from "./serviceImages/Art&Photography-Painting.gif";
 import photography from "./serviceImages/Art&Photography-Photography.gif";
 import stationeryDesign from "./serviceImages/Branding&Design-Brandcollateral-Stationerydesign.gif";
-import brandStrategy from "./serviceImages/Branding&Design-BrandStrategy.gif";
+import brandStrategy from "./serviceImages/Branding&Design-Brandstrategy.gif";
 import companyProfile from "./serviceImages/Branding&Design-CompanyProfile&Editorialdesign.gif";
 import illustrationGraphics from "./serviceImages/Branding&Design-Environmental&RetailGraphics.gif";
 import infographics from "./serviceImages/Branding&Design-InfographicandIllustrationGraphics.gif";
@@ -174,13 +160,24 @@ import product5 from "./storeImages/product5.svg";
 import storeFreeShipping from "./storeImages/Store-Free-Shipping.gif";
 import storeHighQuality from "./storeImages/Store-High-Quality.gif";
 import storeSupport from "./storeImages/Store-Support.gif";
-import product4Preview1 from "./storeImages/product-preview01.png";
-import product4Preview2 from "./storeImages/product-preview02.png";
-import product4Preview3 from "./storeImages/product-preview03.png";
+import product4Preview1 from "./storeImages/Product-preview01.png";
+import product4Preview2 from "./storeImages/Product-preview02.png";
+import product4Preview3 from "./storeImages/Product-preview03.png";
 
 import storeWorldwideShipping from "./storeImages/Store-Worldwide-Shipping.gif";
 
 export {
+  cookiesimg,
+  errorimg,
+  maskimg,
+  privacyimg,
+  termsimg,
+  borderlineimg,
+  jobheroimg,
+  lemonarrow,
+  purplearrow,
+  sendarrow,
+  whitearrow,
   blog1image,
   blog2image,
   blog3image,
@@ -200,8 +197,6 @@ export {
   blog4image1,
   blog4image2,
   blog4image3,
-};
-export {
   headerImage,
   animation,
   animationBriefing,
@@ -251,8 +246,6 @@ export {
   interviewImage,
   manniet,
   kietDiet,
-};
-export {
   digitalArt,
   painting,
   photography,
@@ -291,9 +284,8 @@ export {
   webButton,
   designButton,
   businessButton,
-};
-export { contactHeaderImage, contactGif };
-export {
+  contactHeaderImage,
+  contactGif,
   AriwaHeader,
   CoinplayHeader,
   TozomeHeader,
@@ -316,9 +308,6 @@ export {
   underProduction1,
   underStrategy,
   underStrategy1,
-};
-
-export {
   slider1,
   slider2,
   slider3,
@@ -336,7 +325,7 @@ export {
   storeSupport,
   storeWorldwideShipping,
 };
-import footerlogo from "./footer/footerlogo.png";
+
 import footerplaneicon from "./footer/footerplaneicon.png";
 import facebookgif from "./footer/footer-icon-facebook.gif";
 import instagramgif from "./footer/footer-icon-instagram.gif";
@@ -348,18 +337,60 @@ import vimeogif from "./footer/footer-icon-vimeo.gif";
 import whatsappgif from "./footer/footer-icon-whatsapp.gif";
 import youtubegif from "./footer/footer-icon-youtube.gif";
 
+/**
+ * @type {FooterSocialLink[]}
+ */
+export const footerSocials = [
+  {
+    name: "Facebook",
+    image: facebookgif,
+  },
+  {
+    name: "Instagram",
+    image: instagramgif,
+  },
+  {
+    name: "LinkedIn",
+    image: linkedingif,
+  },
+  {
+    name: "Pinterest",
+    image: pinterestgif,
+  },
+  {
+    name: "Twitter",
+    image: twittergif,
+  },
+  {
+    name: "vimeogif",
+    image: vimeogif,
+  },
+  {
+    name: "Whatsapp",
+    image: whatsappgif,
+  },
+  {
+    name: "YouTube",
+    image: youtubegif,
+  },
+];
+
 import disclaimerfolder from "./disclaimer/disclaimer-folder.png";
+
 import mostviewedthumbnail1 from "./most-viewed/most-viewed-thumbnail1.png";
 import mostviewedthumbnail2 from "./most-viewed/most-viewed-thumbnail2.png";
 import mostviewedthumbnail3 from "./most-viewed/most-viewed-thumbnail3.png";
+import playbutton from "./most-viewed/playbutton.png";
 import handphone from "./interview/handphone.png";
 import female from "./interview/female.png";
 import male from "./interview/male.png";
 import sixty from "./interview/sixty.png";
+import interviewHeader from "./interview/InterviewHeader.png";
 import productImage1 from "./product/productImage1.png";
 import productImage2 from "./product/productImage2.png";
 import productImage3 from "./product/productImage3.png";
 import productImage4 from "./product/productImage4.png";
+import paint from "./product/paint.png";
 import storefront from "./shopping-cart/storefront.png";
 import pdf from "./freebies/pdf.png";
 import freebiesHeader from "./freebies/freebiesHeader.png";
@@ -368,7 +399,6 @@ import ps from "./freebies/ps.png";
 import docs from "./freebies/docs.png";
 
 export {
-  footerlogo,
   footerplaneicon,
   facebookgif,
   instagramgif,
@@ -396,4 +426,277 @@ export {
   mp4,
   ps,
   docs,
+  playbutton,
+  paint,
+  interviewHeader,
+};
+
+import jadelogo from "./jade-logo.svg";
+import jadelogo2 from "./jade-logo-2.svg";
+import moonsvg from "./misc/moon.svg";
+import topleftarrow from "./misc/topleftarrow.svg";
+
+export { jadelogo, jadelogo2, moonsvg, topleftarrow };
+
+import tunnelLightImg from "./landingPageImages/tunnelLight.png";
+import tunnelLightImgV2 from "./landingPageImages/tunnelLightv2.png";
+import ariwabagsImg from "./landingPageImages/ariwabags.png";
+import brandIdentityImg from "./landingPageImages/brandIdentity.svg";
+import webDevelopmentImg from "./landingPageImages/webdevelopment.svg";
+import laptopMockImg from "./landingPageImages/webdev.png";
+import videoBlondeWoman from "./landingPageImages/videoBlondeWoman.png";
+import videMarketingImg from "./landingPageImages/videoMarketing.svg";
+import productsImg from "./landingPageImages/products.png";
+import productPackagingImg from "./landingPageImages/productPackaging.svg";
+
+import unlockYourFutureGif from "./landingPageImages/Unlock-Your-Future.gif";
+
+import ResearchChart from "./landingPageImages/ResearchChart.png";
+import ResearchImage from "./landingPageImages/ResearchImage.png";
+import IdeateChart from "./landingPageImages/IdeateChart.png";
+import IdeateImage from "./landingPageImages/IdeateImage.png";
+import DesignChart from "./landingPageImages/DesignChart.png";
+import DesignImage from "./landingPageImages/DesignImage.png";
+import ImplementationChart from "./landingPageImages/ImplementationChart.png";
+import ImplementationImage from "./landingPageImages/ImplementationImage.png";
+import ResultChart from "./landingPageImages/ResearchChart.png";
+import ResultImage from "./landingPageImages/ResearchImage.png";
+
+import motionDesignGif from "./landingPageImages/Motion-Design.gif";
+import businessStrategyGif from "./landingPageImages/business-strategy.gif";
+import branding_designGif from "./landingPageImages/Branding.gif";
+import digitalMarketingGif from "./landingPageImages/Digital-marketing.gif";
+import art_photgraphyGif from "./landingPageImages/Art-Photography.gif";
+import web_appProjectGif from "./landingPageImages/Web-App-Project.gif";
+
+import adachukThumbnail from "./landingPageImages/thumbnail.png";
+
+export {
+  tunnelLightImg,
+  tunnelLightImgV2,
+  ariwabagsImg,
+  brandIdentityImg,
+  webDevelopmentImg,
+  laptopMockImg,
+  videMarketingImg as videoMarketingImg,
+  videoBlondeWoman,
+  productsImg,
+  productPackagingImg,
+  motionDesignGif,
+  businessStrategyGif,
+  branding_designGif,
+  digitalMarketingGif,
+  web_appProjectGif,
+  art_photgraphyGif,
+  adachukThumbnail,
+  unlockYourFutureGif,
+  ResearchChart,
+  ResearchImage,
+  IdeateChart,
+  IdeateImage,
+  DesignChart,
+  DesignImage,
+  ImplementationChart,
+  ImplementationImage,
+  ResultChart,
+  ResultImage,
+};
+
+import sidebarToggle from "./misc/sidebar-toggle.svg";
+import cancelIcon from "./misc/cancel.svg";
+import eyeicon from "./misc/eye.svg";
+import shareicon from "./misc/share.svg";
+import hearticon from "./misc/heart-icon.svg";
+
+import playTriangleImg from "./misc/playtriangle.svg";
+
+export {
+  sidebarToggle,
+  cancelIcon,
+  playTriangleImg,
+  eyeicon,
+  hearticon,
+  shareicon,
+};
+
+import explorion from "./misc/explorion.png";
+import _7rio from "./misc/7rio.png";
+import iamholthy from "./misc/iamholthy.png";
+import landhotel from "./misc/landhotel.png";
+import nummix from "./misc/nummix.png";
+import tozome from "./misc/tozome.png";
+import crisprLogo from "./misc/crispr.png";
+import apwenLogo from "./misc/apwen.png";
+import coinplayLogo from "./misc/coinplay.png";
+import rccgLogo from "./misc/rccg.png";
+import developfulLogo from "./misc/developful.png";
+import nobullsLogo from "./misc/nobulls.png";
+import lartedelbereLogo from "./misc/lartedelbere.png";
+
+/**
+ * @typedef {{name: string, src: string}} ClientLogo
+ * @type {ClientLogo[]}
+ */
+export const clientLogos = [
+  {
+    name: "Explorion",
+    src: explorion,
+  },
+  {
+    name: "IamHolthy",
+    src: iamholthy,
+  },
+  {
+    name: "Nummix",
+    src: nummix,
+  },
+  {
+    name: "Tozome",
+    src: tozome,
+  },
+  {
+    name: "7rio",
+    src: _7rio,
+  },
+  {
+    name: "Landhotel",
+    src: landhotel,
+  },
+  {
+    name: "Crsipr",
+    src: crisprLogo,
+  },
+  {
+    name: "APWEN",
+    src: apwenLogo,
+  },
+  {
+    name: "Coinplay",
+    src: coinplayLogo,
+  },
+  {
+    name: "RCCG",
+    src: rccgLogo,
+  },
+  {
+    name: "Developful",
+    src: developfulLogo,
+  },
+  {
+    name: "No Bull Sh*t",
+    src: nobullsLogo,
+  },
+  {
+    name: "L'Arte del Bere",
+    src: lartedelbereLogo,
+  },
+];
+
+import aboutHeaderImg from "./aboutImages/aboutHeaderImage.svg";
+import aboutFlexImage from "./aboutImages/aboutFlexImage.svg";
+import aboutBuild from "./aboutImages/About-Build Quality Rel.gif";
+import aboutExpand from "./aboutImages/About-Expand Your Reach.gif";
+import aboutGoals from "./aboutImages/About-Set Goals _ Track.gif";
+
+export { aboutHeaderImg, aboutFlexImage, aboutBuild, aboutExpand, aboutGoals };
+
+import john from "./aboutImages/John Ademiluyi.jpg";
+import musabi from "./aboutImages/Mubashir Asiyanbi.jpg";
+import laurel from "./aboutImages/laurel.svg";
+import chigo from "./aboutImages/Chigozirim Amadi.png";
+import ayinde from "./aboutImages/Ayinde Aminat.png";
+import oluwatobi from "./aboutImages/oluwatobi.svg";
+import martina from "./aboutImages/Martina.png";
+import niraj from "./aboutImages/Niraj.png";
+import olatundun from "./aboutImages/Olatundun.png";
+import simeon from "./aboutImages/Simeon.png";
+import ryter from "./aboutImages/Michael.png";
+import unity from "./aboutImages/unity-69.svg";
+import wix from "./aboutImages/wix-com-website-logo-1.svg";
+import wordpress from "./aboutImages/wordpress-blue.svg";
+import word from "./aboutImages/word-1.svg";
+import react from "./aboutImages/react-2.svg";
+import python from "./aboutImages/python-5.svg";
+import microsoft from "./aboutImages/microsoft-office-powerpoint-2018-present--1.svg";
+import mailchimp from "./aboutImages/mailchimp-freddie-icon-wink.svg";
+import microsoftProject from "./aboutImages/microsoft-project-2019-present-.svg";
+import javascript from "./aboutImages/javascript-1.svg";
+import java from "./aboutImages/java.svg";
+import hubspot from "./aboutImages/hubspot-1.svg";
+import googleWeb from "./aboutImages/google-web-designer.svg";
+import googleMarket from "./aboutImages/google-marketing-platform.svg";
+import hootsuite from "./aboutImages/hootsuite.svg";
+import googleAdwords from "./aboutImages/google-adwords-1.svg";
+import googleAnalytics from "./aboutImages/google-analytics-3.svg";
+import googleDevelopers from "./aboutImages/google-developers.svg";
+import figma from "./aboutImages/figma-1.svg";
+import excel from "./aboutImages/excel-4.svg";
+import css from "./aboutImages/css-3.svg";
+import coreldraw from "./aboutImages/coreldraw-gs2019-2.svg";
+import cinema from "./aboutImages/cinema-4d.svg";
+import blender from "./aboutImages/blender-2.svg";
+import angular from "./aboutImages/angular-icon-1.svg";
+import adobeXd from "./aboutImages/adobe-xd-2.svg";
+import adobeCreative from "./aboutImages/adobe-creative-cloud-cc.svg";
+import adobeIllustrator from "./aboutImages/adobe-Illustrator-logo.svg";
+import adobeIndesign from "./aboutImages/adobe-indesign.svg";
+import adobeLightroom from "./aboutImages/adobe-lightroom.svg";
+import adobeMedia from "./aboutImages/adobe-media-encoder.svg";
+import adobePremier from "./aboutImages/adobe-premiere-pro-logo.svg";
+import adobePhotoshop from "./aboutImages/adobe-photoshop-2.svg";
+import adobeAudition from "./aboutImages/ADOBE-AUDITION.svg";
+import adobeAcrobat from "./aboutImages/adobe-acrobat-reader-logo.svg";
+import adobeAfter from "./aboutImages/adobe-after-effects-logo.svg";
+
+import careerDevelopement from "./aboutImages/About-CareerDevelopment-image.jpeg";
+
+export {
+  john,
+  musabi,
+  laurel,
+  chigo,
+  ayinde,
+  oluwatobi,
+  martina,
+  niraj,
+  olatundun,
+  simeon,
+  ryter,
+  unity,
+  wix,
+  wordpress,
+  word,
+  react,
+  python,
+  microsoft,
+  mailchimp,
+  microsoftProject,
+  javascript,
+  java,
+  hubspot,
+  googleWeb,
+  googleMarket,
+  hootsuite,
+  googleAdwords,
+  googleAnalytics,
+  googleDevelopers,
+  figma,
+  excel,
+  css,
+  coreldraw,
+  cinema,
+  blender,
+  angular,
+  adobeXd,
+  adobeCreative,
+  adobeIllustrator,
+  adobeIndesign,
+  adobeLightroom,
+  adobeMedia,
+  adobePremier,
+  adobePhotoshop,
+  adobeAudition,
+  adobeAcrobat,
+  adobeAfter,
+  careerDevelopement,
 };

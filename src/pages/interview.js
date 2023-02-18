@@ -1,55 +1,51 @@
-import React from "react";
-import { female, handphone } from "../images";
-import Image from "next/image";
+import { female, handphone, interviewHeader } from "../images";
+
+import Pagination from "../components/Pagination";
 import { ImageWithHeader, InterviewData } from "../components";
 import { interviewData } from "../data/interview-data/interviewData";
-import { Pagination } from "../components";
-import useWidth from "../hooks/useWidth";
+import styles from "../styles/interview.module.css";
+import usePagination from "../hooks/usePagination";
+import { MainWrapper } from "@/components/Layout";
 
 const Interview = () => {
   const [currentData, currentPage, setCurrentPage, dataPerPage, data] =
-    useWidth(interviewData, 4, 9);
+    usePagination(interviewData, 4, 9);
   return (
-    <div>
+    <MainWrapper
+      title="Interview - Jade Media Pro"
+      headerType={1}
+      backgroundColor="#633981"
+      paint-header-on-scroll
+    >
       <ImageWithHeader
         title="Engaging One-on-One discussing with big guns"
-        subtitle="We have awesome chat with industry leading professionals from<br/> 
+        subtitle="We have awesome chat with industry leading professionals from
       various fields discussing exverything about their experience, 
-      business oreintation, and actionable insights  on how to grow"
-        headerImage={handphone}
+      business oreintation, and actionable insights  on how to grow."
+        headerImage={interviewHeader}
       />
-      {/* <div className='header2'>
-            <div>
-                <h1 className='text-[35px] text-[#fff]'></h1>
-                <p className='text-[#fff]'></p>
-            </div>
-            <div className='header__    image'>
 
-            <Image src={} alt="" width="100%" height="100%"/>
-            </div>
-           
-        </div> */}
-
-      <div className="card-section">
-        <div className="min">
-          <h2>60 Minutes</h2>
+      <div className={styles.card_section}>
+        <div className={styles.min}>
+          <h2 className={styles.minutes}>60 Minutes:</h2>
         </div>
-        <div className="interview-section">
-          {currentData.map((data) => (
+        <div className={styles.interview_section}>
+          {currentData.map((data, i) => (
             <InterviewData
               cardImage={data.cardImage}
               cardDescription={data.description}
+              key={i}
             />
           ))}
         </div>
+        <Pagination
+          cardsPerPage={dataPerPage}
+          totalCards={data.length}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+        />
       </div>
-      <Pagination
-        cardsPerPage={dataPerPage}
-        totalCards={data.length}
-        currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
-      />
-    </div>
+    </MainWrapper>
   );
 };
 

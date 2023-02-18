@@ -4,17 +4,24 @@ import { serviceData } from "../../data/serviceData";
 import ServiceHeader from "../../components/servicesComponent/serviceHeader";
 import ReadyToWork from "../../components/ReadyToWork";
 import ServicesComponent from "../../components/Services";
-import Navigation from "../../components/servicesComponent/serviceNavigation";
+// import Navigation from "../../components/servicesComponent/serviceNavigation";
 import Work from "../../components/servicesComponent/work";
 import styles from "../../styles/Project.module.css";
 import style from "../../styles/Services.module.css";
+import { MainWrapper } from "@/components/Layout";
 
 const Services = () => {
   return (
-    <>
+    <MainWrapper
+      headerType={1}
+      backgroundColor="#17403b"
+      title="Services - Jade Media Pro"
+      paint-header-on-scroll
+      mobile-pad
+    >
       <div className={styles.services}>
         <ServiceHeader />
-        <Navigation />
+        {/* <Navigation /> */}
         <div className={styles.service_container}>
           {serviceData?.map((service, i) => (
             <ServicesComponent
@@ -35,7 +42,7 @@ const Services = () => {
           <ReadyToWork />
         </div>
       </div>
-    </>
+    </MainWrapper>
   );
 };
 

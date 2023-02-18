@@ -1,28 +1,14 @@
-import { useState, useEffect } from "react";
 import { sliderImages } from "../../data/storeData";
 import styles from "../../styles/Store.module.css";
 import Image from "next/image";
+import useSlider from "../../hooks/useSlider";
 
 const StoreHeader = () => {
-  const [sliderContent, setSliderContent] = useState(sliderImages);
-  const [sliderCount, setSliderCount] = useState(1);
-
-  const indexOfLastSlide = sliderCount * 1;
-  const indexOfFirstSlide = indexOfLastSlide - 1;
-  const currentSlide = sliderContent.slice(indexOfFirstSlide, indexOfLastSlide);
-
+  const [currentSlide, sliderCount] = useSlider(sliderImages);
   const dots = [];
-  for (let i = 1; i <= sliderContent.length; i++) {
+  for (let i = 1; i <= sliderImages.length; i++) {
     dots.push(i);
   }
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSliderCount((prev) => (prev === sliderContent.length ? 1 : prev + 1));
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [sliderContent.length]);
-
   return (
     <div className={styles.slider_container}>
       {currentSlide.map((slides) => (
@@ -37,7 +23,7 @@ const StoreHeader = () => {
           </p>
         </div>
         <div className={styles.dot_container}>
-          {dots.map((dot) => (
+          {dots?.map((dot) => (
             <div
               key={dot}
               className={`${sliderCount === dot ? styles.dot_active : ""} ${

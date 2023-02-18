@@ -230,7 +230,10 @@
 /* Interview component */
 
 .blog_page .interview_container {
-  margin: 160px 0 !important;
+  margin-top: 160px;
+  margin-bottom: 0;
+  margin-inline: 0 !important;
+  padding-bottom: 160px;
 }
 .interview_cards_container {
   display: flex;
