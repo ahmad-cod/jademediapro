@@ -17,7 +17,7 @@
  * @typedef {import("csstype").Property.BackgroundColor} BackgroundColor
  * @typedef {import("csstype").Property.Color} Color
  * @typedef {import("csstype").Property.Height} Height
- *
+ * @typedef {import("csstype").Property.Width} Width
  */
 
 /**

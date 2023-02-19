@@ -440,13 +440,13 @@ export { jadelogo, jadelogo2, moonsvg, topleftarrow };
 
 import tunnelLightImg from "./landingPageImages/tunnelLight.png";
 import tunnelLightImgV2 from "./landingPageImages/tunnelLightv2.png";
-import brandIdentityImg from "./landingPageImages/brandIdentity.svg";
-import webDevelopmentImg from "./landingPageImages/webdevelopment.svg";
+import brandIdentityImg from "./landingPageImages/Brand identity.gif";
+import webDevelopmentImg from "./landingPageImages/Website development.gif";
 import laptopMockImg from "./landingPageImages/webdev.png";
 import videoBlondeWoman from "./landingPageImages/videoBlondeWoman.png";
-import videMarketingImg from "./landingPageImages/videoMarketing.svg";
+import videMarketingImg from "./landingPageImages/video-marketing.gif";
 import productsImg from "./landingPageImages/products.png";
-import productPackagingImg from "./landingPageImages/productPackaging.svg";
+import productPackagingImg from "./landingPageImages/products-packaging.gif";
 
 import unlockYourFutureGif from "./landingPageImages/Unlock-Your-Future.gif";
 
