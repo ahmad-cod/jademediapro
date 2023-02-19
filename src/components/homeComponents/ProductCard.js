@@ -41,7 +41,7 @@ export const ProductCard = (props) => {
           </div>
         </div>
       </div>
-      <div className="[opacity:var(--hover-opacity)] absolute duration-300 bg-[#00000084] text-[#f6f6f6] h-full w-full flex flex-col items-center justify-center">
+      <div className="[opacity:var(--hover-opacity)] absolute duration-300 bg-[#00000084] text-[#f6f6f6] h-full w-full flex max-[1024px]:hidden flex-col items-center justify-center">
         <button className="bg-[#46BFB2] py-[20px] max-w-[80%] hover:bg-[#37a095] rounded-[4px] gap-[10%] px-[36.5px] flex">
           Preview
           <Image src={eyeicon} alt="view" height={25} />

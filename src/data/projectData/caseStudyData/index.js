@@ -21,7 +21,7 @@ import {
   underProduction1,
   underStrategy,
   underStrategy1,
-} from "../../../images";
+} from "@/images";
 
 /**
  * @type {CaseStudy[]}
@@ -30,7 +30,7 @@ export const caseStudyData = [
   {
     id: "2",
     title: "Ariwa",
-    color: "",
+    color: "#858789",
     header: AriwaHeader,
     contents: [
       {
@@ -97,7 +97,7 @@ export const caseStudyData = [
   {
     id: "1",
     title: "Tozome",
-    color: "",
+    color: "#283f4c",
     header: TozomeHeader,
     contents: [
       {
@@ -164,7 +164,7 @@ export const caseStudyData = [
   {
     id: "3",
     title: "Developful",
-    color: "",
+    color: ["#818085", "#202020"],
     header: developful2,
     contents: [
       {
@@ -231,7 +231,7 @@ export const caseStudyData = [
   {
     id: "4",
     title: "Coinplay",
-    color: "",
+    color: ["#e6dacd", "#242526"],
     header: CoinplayHeader,
     contents: [
       {
