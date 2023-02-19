@@ -16,7 +16,6 @@ import {
 } from "@/components/homeComponents";
 import {
   brandIdentityImg,
-  ariwabagsImg,
   webDevelopmentImg,
   laptopMockImg,
   videoBlondeWoman,
@@ -26,7 +25,7 @@ import {
   adachukThumbnail,
   unlockYourFutureGif,
   playTriangleImg,
-  interview1image,
+  AriwaHeader,
 } from "@/images";
 import { productData } from "@/data/products/productData";
 import { jobData, upcomingEvents } from "@/data";
@@ -97,8 +96,8 @@ export default function Home({ jobs }) {
           <ServiceCard
             title="Brand Identity"
             linkImage={brandIdentityImg}
-            mainImage={ariwabagsImg}
-            caseStudyHref="/projects/casestudy/1"
+            mainImage={AriwaHeader}
+            caseStudyHref="/projects/casestudy/2"
             vertical
           >
             Collection creative ideas designed to portray the right brand image

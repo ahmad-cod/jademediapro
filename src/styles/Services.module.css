@@ -62,7 +62,7 @@
 .work_container {
   width: 85%;
 
-  margin-bottom: 160px;
+  padding-bottom: 160px;
   display: flex;
   flex-direction: column;
 }

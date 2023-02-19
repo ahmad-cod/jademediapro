@@ -22,10 +22,10 @@ export const ServiceCard = (props) => {
   return (
     <div
       className={
-        "bg-white flex [box-shadow:3px_3px_16px_rgba(0,0,0,0.1)] py-[30px] rounded-[4px] " +
+        "bg-white flex [box-shadow:3px_3px_16px_rgba(0,0,0,0.1)] rounded-[4px] " +
         (props.vertical
-          ? "max-h-[calc(700px + var(--grid-margin))] max-[912px]:max-h-[calc(500px + var(--grid-margin))]"
-          : "max-h-max max-[912px]:h-[250px] max-[700px]:h-[250px]")
+          ? "max-h-[calc(700px + var(--grid-margin))] max-[912px]:max-h-[calc(500px + var(--grid-margin))] max-[1280px]:pt-[30px]"
+          : "max-h-max max-[912px]:h-[250px] max-[700px]:h-[250px] py-[30px]")
       }
       style={
         props.vertical
@@ -33,7 +33,6 @@ export const ServiceCard = (props) => {
               minWidth: "30%",
               flexDirection: "column",
               paddingInline: "30px",
-              justifyContent: "center",
             }
           : {
               minHeight: "max-content",
@@ -47,7 +46,12 @@ export const ServiceCard = (props) => {
           props.horizontal ? "w-[50%] max-[820px]:w-[70%] pl-[30px]" : ""
         }
       >
-        <div className="flex items-center pb-[20px] max-[1024px]:pb-[10px] max-[700px]:pb-0">
+        <div
+          className={
+            "flex items-center pb-[20px] max-[1024px]:pb-[10px] max-[700px]:pb-0 " +
+            (props.vertical && "justify-between")
+          }
+        >
           <h3
             className={`[line-height:117%] [font-weight:600] text-[#242526] ${
               props.vertical
@@ -61,8 +65,7 @@ export const ServiceCard = (props) => {
             <Image
               src={props.linkImage}
               alt={props.title}
-              className="h-[193px] max-[1280px]:h-[65px]"
-              width="auto"
+              className="h-[193px] w-auto aspect-auto max-[1280px]:h-[100px]"
             />
           )}
         </div>
@@ -79,8 +82,7 @@ export const ServiceCard = (props) => {
             <Image
               src={props.linkImage}
               alt={props.title}
-              className="h-[120px] max-[1024px]:h-[60px] max-[700px]:h-[120px]"
-              width="auto"
+              className="h-[120px] w-auto aspect-auto max-[1024px]:h-[60px] max-[700px]:h-[120px]"
             />
             <CaseStudyLink href={props.caseStudyHref} />
           </div>
@@ -96,10 +98,10 @@ export const ServiceCard = (props) => {
         <Image
           src={props.mainImage}
           alt={props.title}
-          style={{
-            width: props.vertical ? "100%" : "auto",
-            height: props.horizontal ? "100%" : "auto",
-          }}
+          className={
+            "rounded-[4px] aspect-auto " +
+            (props.vertical ? "w-full h-auto" : "w-auto")
+          }
         />
       </div>
 
