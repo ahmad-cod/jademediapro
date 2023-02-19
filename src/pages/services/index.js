@@ -4,10 +4,11 @@ import { serviceData } from "../../data/serviceData";
 import ServiceHeader from "../../components/servicesComponent/serviceHeader";
 import ReadyToWork from "../../components/ReadyToWork";
 import ServicesComponent from "../../components/Services";
-// import Navigation from "../../components/servicesComponent/serviceNavigation";
+import Navigation from "../../components/servicesComponent/serviceNavigation";
 import Work from "../../components/servicesComponent/work";
 import styles from "../../styles/Project.module.css";
 import style from "../../styles/Services.module.css";
+import { navigationData } from "../../data/serviceData";
 import { MainWrapper } from "@/components/Layout";
 
 const Services = () => {
@@ -21,7 +22,7 @@ const Services = () => {
     >
       <div className={styles.services}>
         <ServiceHeader />
-        {/* <Navigation /> */}
+        <Navigation navigation={navigationData} />
         <div className={styles.service_container}>
           {serviceData?.map((service, i) => (
             <ServicesComponent

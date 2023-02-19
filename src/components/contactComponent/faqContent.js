@@ -10,7 +10,7 @@ const FaqContents = () => {
   const [activeCategory, setActiveCategory] = useState();
   const [activeAnswer, setActiveAnswer] = useState();
   const handleDropdown = (category) => {
-    setDropdown(true);
+    setDropdown((curr) => !curr);
     setActiveCategory(category);
   };
   const handleAnswer = (answer) => {
@@ -38,7 +38,7 @@ const FaqContents = () => {
           </div>
           {
             <div className={styles.faq_content_body}>
-              {activeCategory === faq.category
+              {activeCategory === faq.category && dropdown
                 ? faq.content.map((content, i) => (
                     <div className={styles.faq_content} key={i}>
                       <div className={styles.faq_question}>
@@ -72,7 +72,6 @@ const FaqContents = () => {
                     </div>
                   ))
                 : ""}
-              {}
             </div>
           }
         </div>
