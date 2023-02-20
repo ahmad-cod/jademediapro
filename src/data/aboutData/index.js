@@ -1,7 +1,7 @@
 import {
   john,
   musabi,
-  laurel,
+  tolulope,
   chigo,
   ayinde,
   oluwatobi,
@@ -123,7 +123,7 @@ export const team = [
     id: 6,
     fullname: "Tolulope Aluko",
     role: "Sales Lead",
-    image: chigo,
+    image: tolulope,
   },
 ];
 export const testimonials = [

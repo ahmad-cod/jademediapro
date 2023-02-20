@@ -10,6 +10,7 @@ const Contact = () => {
       headerType={1}
       backgroundColor="#1a1a1a"
       paint-header-on-scroll
+      meta="Send Us A Complaint or Suggestion Message and You'll Get a Prompt Feedback"
     >
       <ContactHeader />
       <div className={styles.contact_container}>

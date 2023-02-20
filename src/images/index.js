@@ -600,6 +600,7 @@ export { aboutHeaderImg, aboutFlexImage, aboutBuild, aboutExpand, aboutGoals };
 
 import john from "./aboutImages/John Ademiluyi.jpg";
 import musabi from "./aboutImages/Mubashir Asiyanbi.jpg";
+import tolulope from "./aboutImages/Tolulope Aluko.png";
 
 import chigo from "./aboutImages/Chigozirim Amadi.png";
 import ayinde from "./aboutImages/Ayinde Aminat.png";
@@ -649,6 +650,7 @@ import adobeAfter from "./aboutImages/adobe-after-effects-logo.svg";
 import careerDevelopement from "./aboutImages/About-CareerDevelopment-image.jpeg";
 
 export {
+  tolulope,
   john,
   musabi,
   chigo,

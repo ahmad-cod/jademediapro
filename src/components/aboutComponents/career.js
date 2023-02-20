@@ -5,7 +5,7 @@ import styles from "../../styles/About.module.css";
 
 const Career = () => {
   return (
-    <div className={styles.career_container}>
+    <div className={styles.career_container} id="career">
       <div className={styles.client_heading}>
         <h2>Career Development</h2>
       </div>

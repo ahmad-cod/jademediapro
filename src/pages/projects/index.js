@@ -16,6 +16,7 @@ const Projects = () => {
       headerType={1}
       backgroundColor="#281734"
       paint-header-on-scroll
+      meta="View Projects we've built for Top Tech and Marketing Companies"
     >
       <div className={styles.projects}>
         <ProjectHeader />
@@ -25,6 +26,7 @@ const Projects = () => {
           {processData.map((data) => (
             <>
               <ServicesComponent
+                id={data.id}
                 data={data.services}
                 filterContent={data.services}
                 categories={data.categories}

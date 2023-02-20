@@ -13,11 +13,13 @@
 }
 .blog_header_section {
   max-width: 85%;
-  min-height: 80vh;
+  min-height: 50vh;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  margin-top: 100px;
 }
 .blog_header_container {
   display: flex;

@@ -9,27 +9,27 @@ export const footerLinks = {
     children: [
       {
         subtitle: "Overview",
-        link: "#",
+        link: "/about",
       },
       {
         subtitle: "Our Team",
-        link: "#",
+        link: "/about/#team",
       },
       {
         subtitle: "Testimonials",
-        link: "#",
+        link: "/about/testimonials",
       },
       {
         subtitle: "Volunteering",
-        link: "#",
+        link: "/about/volunteering",
       },
       {
         subtitle: "Career",
-        link: "#",
+        link: "/about/career",
       },
       {
         subtitle: "Contact Us",
-        link: "#",
+        link: "/contact",
       },
     ],
   },
@@ -54,6 +54,7 @@ export const footerLinks = {
       },
     ],
   },
+
   hub: {
     title: "Hub",
     children: [
@@ -89,19 +90,19 @@ export const footerLinks = {
     children: [
       {
         subtitle: "Case Study",
-        link: "/projects",
+        link: "/projects/#casestudy",
       },
       {
         subtitle: "Process",
-        link: "/process",
+        link: "/projects/#Process",
       },
       {
         subtitle: "Showreel",
-        link: "#",
+        link: "/projects/#showreel",
       },
       {
         subtitle: "Training",
-        link: "#",
+        link: "/projects/#training",
       },
     ],
   },
@@ -110,31 +111,31 @@ export const footerLinks = {
     children: [
       {
         subtitle: "Business",
-        link: "#",
+        link: "/services/#Business",
       },
       {
         subtitle: "Branding",
-        link: "#",
+        link: "/services/#Design",
       },
       {
         subtitle: "Design",
-        link: "#",
+        link: "/services/#Design",
       },
       {
         subtitle: "Marketing",
-        link: "#",
+        link: "/services/#Marketing",
       },
       {
         subtitle: "Motion",
-        link: "#",
+        link: "/services/#Motion",
       },
       {
         subtitle: "Web & App Dev",
-        link: "#",
+        link: "/services/#Web",
       },
       {
         subtitle: "Painting",
-        link: "#",
+        link: "/services/#Art",
       },
     ],
   },
@@ -156,31 +157,31 @@ export const mainHeaderLinks = [
     links: [
       {
         subtitle: "Business Strategy",
-        link: "/services",
+        link: "/services/#Business",
       },
       {
         subtitle: "Branding",
-        link: "/services",
+        link: "/services/#Design",
       },
       {
         subtitle: "Graphic Design",
-        link: "/services",
+        link: "/services/#Design",
       },
       {
         subtitle: "Digital Marketing",
-        link: "/services",
+        link: "/services/#Marketing",
       },
       {
         subtitle: "Motion Design",
-        link: "/services",
+        link: "/services/#Motion",
       },
       {
         subtitle: "Art/Photography",
-        link: "/services",
+        link: "/services/#Art",
       },
       {
         subtitle: "Web and App dev.",
-        link: "/services",
+        link: "/services/#Web",
       },
     ],
   },
@@ -197,8 +198,29 @@ export const mainHeaderLinks = [
     links: footerLinks.resources.children,
   },
   {
+    name: "About",
+    links: [
+      {
+        subtitle: "What we do",
+        link: "/about",
+      },
+      {
+        subtitle: "Testimonials",
+        link: "/about/#testimonials",
+      },
+      {
+        subtitle: "Volunteering",
+        link: "/about/#volunteering",
+      },
+      {
+        subtitle: "Career",
+        link: "/about/#career",
+      },
+    ],
+  },
+  {
     name: "Contact",
-    href: "/contacts",
+    href: "/contact",
     links: undefined,
   },
 ];

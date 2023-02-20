@@ -21,6 +21,7 @@ const About = () => {
       backgroundColor="#f6f6f6"
       color="#242526"
       title="About Us - Jade Media Pro"
+      meta="Get 10X Targeted Website Traffic Using our Guarantee Digital Marketing Strategy that is trusted by over 10 Top Tech Founders."
     >
       <section className={styles.about}>
         <AboutHeader />
