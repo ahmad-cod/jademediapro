@@ -17,15 +17,15 @@ export const footerLinks = {
       },
       {
         subtitle: "Testimonials",
-        link: "/about/testimonials",
+        link: "/about/#testimonials",
       },
       {
         subtitle: "Volunteering",
-        link: "/about/volunteering",
+        link: "/about/#volunteering",
       },
       {
         subtitle: "Career",
-        link: "/about/career",
+        link: "/about/#career",
       },
       {
         subtitle: "Contact Us",
