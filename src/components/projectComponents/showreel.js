@@ -5,7 +5,7 @@ import styles from "../../styles/Project.module.css";
 
 const Showreel = () => {
   return (
-    <div className={styles.showreel_container}>
+    <div className={styles.showreel_container} id="showreel">
       <div className={styles.showreel_heading}>
         <div className={styles.project_heading}>
           <h1>Showreel</h1>

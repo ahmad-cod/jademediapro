@@ -12,6 +12,7 @@
   flex-wrap: wrap;
 
   margin: auto;
+  margin-top: 100px;
 }
 .contact_header_text {
   width: 60%;
@@ -34,6 +35,7 @@
 
 .contact_container {
   width: 85%;
+
   margin: auto;
   min-height: 100vh;
 }
@@ -375,12 +377,12 @@
   }
 }
 
-@media only screen and (min-width: 350px) and (max-width: 800px) {
+@media only screen and (min-width: 320px) and (max-width: 800px) {
   .contact_header_container {
     width: 95%;
   }
   .contact_header_text {
-    width: clamp(350px, 100%, 800px);
+    width: clamp(320px, 100%, 800px);
   }
   .contact_header_text h1 {
     font-size: clamp(28px, 30px, 45px) !important;
@@ -391,7 +393,7 @@
     justify-content: center;
   }
   .contact_header_image {
-    width: clamp(350px, 100%, 800px);
+    width: clamp(320px, 100%, 800px);
   }
   .form_inputs_container {
     justify-content: center;
@@ -401,7 +403,7 @@
   }
   .form_image {
     position: static;
-    width: clamp(350px, 100%, 800px);
+    width: clamp(320px, 100%, 800px);
   }
   .form_image img {
     object-fit: contain;

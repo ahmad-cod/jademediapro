@@ -55,6 +55,7 @@ export default function Home({ jobs }) {
       title="Jade Media Pro"
       backgroundColor="black"
       paint-header-on-scroll
+      meta="At Jademediapro, we deploy sophisticated tools and expertise for creating stunning designs, animation, web/app development, and digital marketing for business growth."
     >
       <main>
         {/* Hero Section */}

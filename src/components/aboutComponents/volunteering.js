@@ -3,7 +3,7 @@ import { FiSend } from "react-icons/fi";
 
 const Volunteering = () => {
   return (
-    <div className={styles.voluntering_container}>
+    <div className={styles.voluntering_container} id="volunteering">
       <div className={styles.client_heading}>
         <h2>Volunteering</h2>
       </div>

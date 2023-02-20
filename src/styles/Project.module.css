@@ -125,6 +125,10 @@
   justify-content: space-between;
   color: #f6f6f6;
   flex-wrap: wrap;
+  margin-top: 100px;
+}
+.projects .project_header {
+  margin: 100px auto !important;
 }
 .project_header .header_text {
   width: 60%;
@@ -311,7 +315,7 @@
   }
 }
 
-@media only screen and (min-width: 350px) and (max-width: 900px) {
+@media only screen and (min-width: 320px) and (max-width: 900px) {
   .project_container,
   .service_container {
     width: 95%;
@@ -321,7 +325,7 @@
     width: 95%;
   }
   .header_text {
-    width: clamp(350px, 100%, 800px) !important;
+    width: clamp(320px, 100%, 800px) !important;
   }
   .header_image {
     width: clamp(100%, 100%, 400px) !important;
@@ -342,11 +346,11 @@
     justify-content: center !important;
   }
   .casestudy_heading {
-    width: clamp(350px, 100%, 800px) !important;
+    width: clamp(320px, 100%, 800px) !important;
   }
 
   .casestudy_cards_container {
-    width: clamp(350px, 100%, 800px) !important;
+    width: clamp(320px, 100%, 800px) !important;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
     height: 660px;
@@ -364,10 +368,10 @@
     margin-bottom: 40px;
   } */
   .casestudy_card {
-    width: clamp(350px, 100%, 800px) !important;
+    width: clamp(320px, 100%, 800px) !important;
   }
   .casestudy_image {
-    width: clamp(350px, 100%, 800px) !important;
+    width: clamp(320px, 100%, 800px) !important;
   }
   .casestudy_category p,
   .casestudy_location p {
@@ -381,10 +385,10 @@
     margin-bottom: 100px;
   }
   .showreel_heading {
-    width: clamp(350px, 100%, 800px) !important;
+    width: clamp(320px, 100%, 800px) !important;
   }
   .showreel_cards_container {
-    width: clamp(350px, 100%, 800px);
+    width: clamp(320px, 100%, 800px);
     height: 196px;
   }
   .showreel_image {
@@ -399,10 +403,10 @@
     margin-bottom: 100px;
   }
   .training_heading {
-    width: clamp(350px, 100%, 800px) !important;
+    width: clamp(320px, 100%, 800px) !important;
   }
   .training_content {
-    width: clamp(350px, 100%, 800px) !important;
+    width: clamp(320px, 100%, 800px) !important;
 
     margin-top: 50px;
   }
@@ -421,7 +425,7 @@
     margin-bottom: 96px;
   }
   .ready_container {
-    width: clamp(350px, 100%, 800px) !important;
+    width: clamp(320px, 100%, 800px) !important;
     padding: 24px 29px;
     min-height: 208px;
     box-shadow: 3px 3px 16px 0px #bba2cd99;

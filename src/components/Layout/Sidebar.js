@@ -52,12 +52,11 @@ export const Sidebar = () => {
                   className="overflow-hidden duration-500"
                 >
                   {link.links.map((sublink, j) => (
-                    <li
-                      className="text-[20pt] text-[#91939F] font-thin"
-                      key={j}
-                    >
-                      {sublink.subtitle}
-                    </li>
+                    <Link href={sublink.link} key={j}>
+                      <li className="text-[20pt] text-[#91939F] font-thin">
+                        {sublink.subtitle}
+                      </li>
+                    </Link>
                   ))}
                 </menu>
               </li>

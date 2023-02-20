@@ -18,6 +18,7 @@ const Blogs = () => {
       backgroundColor="#4f2e67"
       paint-header-on-scroll
       title="Blogs - Jade Media Pro"
+      meta="Stay up to date with relevant tech and career related post such as UI/UX, Product Design, Business Development, and more."
     >
       <BlogHeader />
       <div className={styles.blog_page}>

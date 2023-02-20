@@ -7,7 +7,7 @@ import styles from "../../styles/Project.module.css";
 
 const CaseStudies = () => {
   return (
-    <div className={styles.casestudy_container}>
+    <div className={styles.casestudy_container} id="casestudy">
       <div className={styles.casestudy_heading}>
         <div className={styles.project_heading}>
           <h1>Case Studies</h1>

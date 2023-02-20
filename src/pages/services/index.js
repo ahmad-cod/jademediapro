@@ -19,6 +19,7 @@ const Services = () => {
       title="Services - Jade Media Pro"
       paint-header-on-scroll
       mobile-pad
+      meta="Book a FREE Consultation today, and we will help you make your Business More Profitable"
     >
       <div className={styles.services}>
         <ServiceHeader />

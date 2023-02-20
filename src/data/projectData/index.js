@@ -56,6 +56,7 @@ export const processCategories = [
 ];
 export const processData = [
   {
+    id: "Process",
     serviceTitle: "Process",
     categories: [
       "Animation",

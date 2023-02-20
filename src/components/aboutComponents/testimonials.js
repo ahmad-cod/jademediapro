@@ -6,7 +6,7 @@ import styles from "../../styles/About.module.css";
 const Testimonials = () => {
   const [currentSlide] = useSlider(testimonials);
   return (
-    <div className={styles.testimonials_container}>
+    <div className={styles.testimonials_container} id="testimonials">
       <div className={styles.client_heading}>
         <h2>Testimonials</h2>
       </div>
