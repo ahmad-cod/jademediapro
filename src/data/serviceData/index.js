@@ -53,7 +53,8 @@ export const serviceData = [
   {
     id: "Business",
     serviceTitle: "Business Strategy",
-    blurb: "We analyse change, explore vulnerability, and optimize market strengths to accomplish sustainable and healthy development because starting and running a business1 is not trial and error.",
+    blurb:
+      "We analyse change, explore vulnerability, and optimize market strengths to accomplish sustainable and healthy development because starting and running a business1 is not trial and error.",
     categories: [
       "Business planning",
       "Analysis & Consultation",
@@ -138,7 +139,8 @@ export const serviceData = [
   {
     id: "Design",
     serviceTitle: "Branding & Design",
-    blurb: "We design powerful identities that inspire and stand the test of time through innovative and compelling visuals that resonate with customers and nurture lasting relationships.",
+    blurb:
+      "We design powerful identities that inspire and stand the test of time through innovative and compelling visuals that resonate with customers and nurture lasting relationships.",
     categories: [
       "Brand strategy",
       "Logo & Brand identity",
@@ -253,7 +255,8 @@ export const serviceData = [
   {
     id: "Marketing",
     serviceTitle: "Digital Marketing",
-    blurb: "We help grow your business, stay relevant, and outweigh the competition by creating brand awareness, generating leads, and boosting your sales & revenue.",
+    blurb:
+      "We help grow your business, stay relevant, and outweigh the competition by creating brand awareness, generating leads, and boosting your sales & revenue.",
     categories: [
       "Multicultural content marketing",
       "Social media marketing",
@@ -353,7 +356,8 @@ export const serviceData = [
   {
     id: "Motion",
     serviceTitle: "Motion Design",
-    blurb: "We tell visually engaging stories by creating promotional videos and animation unveiling the grasp of what your brand does, and what it stands for.",
+    blurb:
+      "We tell visually engaging stories by creating promotional videos and animation unveiling the grasp of what your brand does, and what it stands for.",
     categories: [
       "Whiteboard Animation Video",
       "Corporate Promotional Video",
@@ -437,8 +441,9 @@ export const serviceData = [
   },
   {
     id: "Art",
-    serviceTitle: "Art & Photography",
-    blurb: "We break boundaries with our painting, sculpture, drawing, and engraving in a unique and fun way while doing something creative as beautiful work of art.",
+    serviceTitle: "Art & Photo graphy",
+    blurb:
+      "We break boundaries with our painting, sculpture, drawing, and engraving in a unique and fun way while doing something creative as beautiful work of art.",
     categories: ["Painting", "Digital art", "Photography"],
     icon: art_photgraphyGif,
     services: [
@@ -489,7 +494,8 @@ export const serviceData = [
   {
     id: "Web",
     serviceTitle: "Web & App Project",
-    blurb: "We creatively design and develop websites and products that are purpose-built, designed for speed, vastly responsive, and deliver a great experience to your users.",
+    blurb:
+      "We creatively design and develop websites and products that are purpose-built, designed for speed, vastly responsive, and deliver a great experience to your users.",
     categories: [
       "UI/UX design",
       "Website development",
@@ -592,21 +598,21 @@ export const navigationData = [
   },
   {
     id: 4,
-    image: artButton,
-    title: "Art & Portrait",
-    link: "#Art",
-  },
-  {
-    id: 5,
-    image: motionButton,
-    title: "Motion",
-    link: "#Motion",
-  },
-  {
-    id: 6,
     image: webButton,
     title: "Web & App",
     link: "#Web",
+  },
+  {
+    id: 5,
+    image: artButton,
+    title: "Art & Photo",
+    link: "#Art",
+  },
+  {
+    id: 6,
+    image: motionButton,
+    title: "Motion",
+    link: "#Motion",
   },
 ];
 export const workData = [

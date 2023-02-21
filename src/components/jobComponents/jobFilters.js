@@ -4,7 +4,7 @@ import { jobData } from "../../data/jobData";
 
 import { useState } from "react";
 
-function JobFilters({ setData, data }) {
+function JobFilters({ setData }) {
   const [check, setCheck] = useState();
   const filterByLocation = (category) => {
     const result = jobData?.filter((content) => {

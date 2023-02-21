@@ -1,22 +1,23 @@
 import styles from "../../styles/Contact.module.css";
 import { FAQData } from "../../data/contactData";
 import React, { useState } from "react";
-import { RiArrowDropUpLine, RiArrowDropDownLine } from "react-icons/ri";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import { SlArrowUp, SlArrowDown } from "react-icons/sl";
+
 const FaqContents = () => {
   const [dropdown, setDropdown] = useState(false);
   const [answer, setAnswer] = useState();
   const [activeCategory, setActiveCategory] = useState();
   const [activeAnswer, setActiveAnswer] = useState();
   const handleDropdown = (category) => {
-    setDropdown((curr) => !curr);
+    setDropdown((curr) => (!curr ? true : !dropdown));
     setActiveCategory(category);
   };
   const handleAnswer = (answer) => {
     setAnswer(answer);
     setActiveAnswer(true);
   };
+
   return (
     <div className={styles.faq_content_container}>
       {FAQData.map((faq) => (

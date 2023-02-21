@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   background-color: #1a1a1a;
-  min-height: 80vh;
+
   margin-bottom: 124px;
 }
 .contact_header_container {
@@ -12,7 +12,6 @@
   flex-wrap: wrap;
 
   margin: auto;
-  margin-top: 100px;
 }
 .contact_header_text {
   width: 60%;
@@ -37,6 +36,7 @@
   width: 85%;
 
   margin: auto;
+  margin-bottom: 200px;
   min-height: 100vh;
 }
 .contact_heading h2 {
@@ -140,7 +140,7 @@
 }
 
 .form_container {
-  margin-bottom: 160px;
+  margin-bottom: 0px;
 }
 .form_input_container {
   padding: 12px 6px;

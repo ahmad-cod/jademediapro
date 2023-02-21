@@ -38,11 +38,11 @@ export const footerLinks = {
     children: [
       {
         subtitle: "Freebie",
-        link: "#",
+        link: "/freebies",
       },
       {
         subtitle: "Store",
-        link: "#",
+        link: "/store",
       },
       {
         subtitle: "Tool",
@@ -202,7 +202,7 @@ export const mainHeaderLinks = [
     links: [
       {
         subtitle: "What we do",
-        link: "/about",
+        link: "/about/#whatwedo",
       },
       {
         subtitle: "Testimonials",

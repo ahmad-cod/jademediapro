@@ -8,29 +8,37 @@ import Pagination from "../../components/Pagination";
 import styles from "../../styles/Store.module.css";
 import StoreServices from "../../components/storeComponents/storeServices";
 import usePagination from "../../hooks/usePagination";
+import { MainWrapper } from "@/components/Layout";
 const Store = () => {
   const [currentData, currentPage, setCurrentPage, dataPerPage, data, setData] =
     usePagination(products, 4, 12);
   return (
     <>
-      <header>
-        <StoreHeader />
-      </header>
-      <main className={styles.main}>
-        <StoreServices />
-        <CategoryFilter
-          categories={productCategories}
-          setCategory={setData}
-          filterContent={products}
-        />
-        <ProductCard products={currentData} />
-        <Pagination
-          cardsPerPage={dataPerPage}
-          totalCards={data.length}
-          currentPage={currentPage}
-          setCurrentPage={setCurrentPage}
-        />
-      </main>
+      <MainWrapper
+        headerType={2}
+        backgroundColor="transparent"
+        paint-header-on-scroll
+        title="Store - Jade Media Pro"
+      >
+        <header>
+          <StoreHeader />
+        </header>
+        <main className={styles.main}>
+          <StoreServices />
+          <CategoryFilter
+            categories={productCategories}
+            setCategory={setData}
+            filterContent={products}
+          />
+          <ProductCard products={currentData} />
+          <Pagination
+            cardsPerPage={dataPerPage}
+            totalCards={data.length}
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}
+          />
+        </main>
+      </MainWrapper>
     </>
   );
 };

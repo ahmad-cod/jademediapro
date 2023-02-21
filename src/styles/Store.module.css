@@ -84,15 +84,19 @@
 }
 .product {
   position: relative;
-  flex-basis: 278px;
+  width: 20vw;
   transition: all 250ms ease-in;
   cursor: pointer;
   margin-bottom: 85px;
   background-color: #f6f6f6;
   border-radius: 4px;
 }
+.product_image {
+  flex-basis: 20vw;
+}
 .product_image img {
   border-radius: 4px;
+  width: 100%;
 }
 .red_background {
   background-color: #f87171 !important;

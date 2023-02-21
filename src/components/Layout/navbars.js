@@ -20,23 +20,23 @@ import { MoonIcon } from "./logos/MoonIcon";
  */
 export const DefaultNavbar = ({ backgroundColor, paintOnScroll, color }) => {
   if (!color) color = "white";
-  const [headerIsFilled, setHeaderIsFilled] = useState(false);
+  const [headerIsFilled, setHeaderIsFilled] = useState(true);
   const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
-  function switchHeaderColor() {
-    setHeaderIsFilled(scrollY > innerHeight / 1.5);
-  }
+  // function switchHeaderColor() {
+  //   setHeaderIsFilled(scrollY > innerHeight / 1.5);
+  // }
+
+  // useEffect(() => {
+  //   if (paintOnScroll) {
+  //     addEventListener("scroll", switchHeaderColor);
+  //   }
+  //   return () => {
+  //     removeEventListener("scroll", switchHeaderColor);
+  //   };
+  // }, [paintOnScroll]);
   function openSidebar() {
     setSidebarIsOpen(!sidebarIsOpen);
   }
-
-  useEffect(() => {
-    if (paintOnScroll) {
-      addEventListener("scroll", switchHeaderColor);
-    }
-    return () => {
-      removeEventListener("scroll", switchHeaderColor);
-    };
-  }, [paintOnScroll]);
 
   return (
     <>
@@ -52,7 +52,7 @@ export const DefaultNavbar = ({ backgroundColor, paintOnScroll, color }) => {
             : undefined,
           color: sidebarIsOpen ? "#242526" : color,
         }}
-        className="flex items-center max-[1024px]:text-[11pt] fixed top-0 w-full z-[99] duration-300 justify-between px-[var(--side-padding)] h-[var(--header-height)]"
+        className="flex items-center max-[1024px]:text-[11pt] w-full z-[99] duration-300 justify-between px-[var(--side-padding)] h-[var(--header-height)]"
       >
         <Link href="/" className="flex items-center h-[90%]">
           <JadeLogo2 color={sidebarIsOpen ? "#303030" : color} />
@@ -97,7 +97,15 @@ export const DefaultNavbar = ({ backgroundColor, paintOnScroll, color }) => {
 export const HeaderNavItem = ({ name, links, href }) => {
   return links ? (
     <li className="relative list-none [--nav-display-toggle:none] hover:[--nav-display-toggle:block]">
-      <h1 className="relative cursor-pointer hover:opacity-[0.7]">{name}</h1>
+      <Link
+        href={
+          name === "Hub" || name === "Resources"
+            ? "#"
+            : `/${name.toLowerCase()}`
+        }
+      >
+        <h1 className="relative cursor-pointer hover:opacity-[0.7]">{name}</h1>
+      </Link>
       <menu className="absolute animate-[fade-in_300ms] rounded-[4px] bg-[#f6f6f6e6] text-[#262626] [font-weight:500] [display:var(--nav-display-toggle)]">
         {links.map((item, index) => (
           <li
