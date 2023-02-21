@@ -310,9 +310,6 @@
   font-size: 15px;
 }
 .testimonial_image {
-  /* position: absolute;
-  /* right: 0;
-  top: 0; */
   width: 250px;
   height: 250px;
 }
@@ -350,16 +347,28 @@
   height: 60px;
   object-fit: contain;
 }
+.first_logos {
+  animation: slider1 35s linear infinite;
+  transform: translateX(-200%);
+}
 .last_logos {
-  animation: slider 30s linear infinite;
+  animation: slider 35s linear infinite;
   transform: translateX(-0%);
+}
+@keyframes slider1 {
+  from {
+    transform: translateX(-230%);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
 @keyframes slider {
   from {
-    transform: translateX(-0%);
+    transform: translateX(130%);
   }
   to {
-    transform: translateX(-300%);
+    transform: translateX(-230%);
   }
 }
 .team_container {

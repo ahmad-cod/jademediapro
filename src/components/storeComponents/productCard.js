@@ -12,13 +12,13 @@ const ProductCard = ({ products }) => {
             <div className={styles.product_image}>
               <Image src={product.image} alt={product.title} />
 
-              <button
-                className={
-                  product.feature === "-30%" ? styles.red_background : ""
-                }
-              >
-                {product.feature && product.feature}
-              </button>
+              {(product.feature || product.discountAmount) && (
+                <button
+                  className={product.discount ? styles.red_background : ""}
+                >
+                  {product.feature ? "New" : product.discountAmount}
+                </button>
+              )}
             </div>
             <div className={styles.product_text}>
               <h3>{product.title}</h3>

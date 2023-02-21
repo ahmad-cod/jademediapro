@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const W3 = () => {
   return (
-    <div className={styles.w3_container}>
+    <div className={styles.w3_container} id="whatwedo">
       <div className={styles.w3_content}>
         <div className={styles.what_content}>
           <div className={styles.what_title}>

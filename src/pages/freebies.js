@@ -21,7 +21,12 @@ const Freebies = () => {
     "Tutorials",
   ];
   return (
-    <MainWrapper headerType={1} title="Freebies - Jade Media Pro">
+    <MainWrapper
+      headerType={1}
+      title="Freebies - Jade Media Pro"
+      backgroundColor="#633981"
+      meta=""
+    >
       <ImageWithHeader
         title="Everything you need for growth and development"
         subtitle="Free daily high-quality design resources hand-picked for creatives, designers and developers, ranging from fonts, mockups, graphics, templates & more from amazing artists."

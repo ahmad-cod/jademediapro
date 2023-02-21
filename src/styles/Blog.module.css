@@ -13,13 +13,11 @@
 }
 .blog_header_section {
   max-width: 85%;
-  min-height: 50vh;
+
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  margin-top: 100px;
 }
 .blog_header_container {
   display: flex;
@@ -245,7 +243,7 @@
   flex-wrap: wrap;
 }
 .interview_card {
-  width: 350px;
+  width: 25vw;
   min-height: 360px;
   box-shadow: 2px 7px 20px #bba2cd66;
   border-radius: 4px;
@@ -254,6 +252,11 @@
   position: relative;
   transition: all 700ms ease_in_out;
   cursor: pointer;
+  width: 25vw;
+  height: auto;
+}
+.interview_top img {
+  width: 100%;
 }
 
 .interview_top:hover .interview_title {
@@ -521,25 +524,25 @@
   }
 }
 
-@media only screen and (min-width: 350px) and (max-width: 800px) {
+@media only screen and (min-width: 320px) and (max-width: 800px) {
   .blog_page,
   .blog_header_section {
     max-width: 95%;
   }
   .blogCardText {
-    width: clamp(350px, 100%, 800px) !important;
+    width: clamp(320px, 100%, 800px) !important;
   }
   .blogCardImage {
-    width: clamp(350px, 100%, 800px) !important;
+    width: clamp(320px, 100%, 800px) !important;
     margin: 7px 0 !important;
   }
   .blogCardText .blog_desc {
-    width: clamp(350px, 100%, 800px) !important;
+    width: clamp(320px, 100%, 800px) !important;
     text-align: justify !important;
     font-size: 15px;
   }
   .blog_heading {
-    width: clamp(350px, 100%, 800px) !important;
+    width: clamp(320px, 100%, 800px) !important;
   }
   .blog_heading h2 {
     font-size: clamp(20px, 23px, 30px) !important ;
@@ -556,7 +559,7 @@
   }
   .interview_card {
     margin-bottom: 30px !important;
-    width: clamp(350px, 100%, 450px) !important;
+    width: clamp(320px, 100%, 450px) !important;
   }
   .interview_top {
     width: 100% !important;
@@ -597,7 +600,7 @@
   .blog_header_buttons {
     position: static !important;
     margin: 46px auto !important;
-    width: clamp(350px, 100%, 800px) !important;
+    width: clamp(320px, 100%, 800px) !important;
   }
   .blog_header_buttons button {
     padding: 10px 30px !important;
@@ -616,7 +619,7 @@
     margin-bottom: 50px;
   }
   .blogID_container {
-    width: clamp(350px, 90%, 95%);
+    width: clamp(320px, 90%, 95%);
   }
   .blog_detail .blog_title {
     font-size: clamp(30px, 32px, 50px);

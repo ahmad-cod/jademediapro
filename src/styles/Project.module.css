@@ -125,11 +125,8 @@
   justify-content: space-between;
   color: #f6f6f6;
   flex-wrap: wrap;
-  margin-top: 100px;
 }
-.projects .project_header {
-  margin: 100px auto !important;
-}
+
 .project_header .header_text {
   width: 60%;
 }
