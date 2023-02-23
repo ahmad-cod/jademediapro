@@ -53,10 +53,10 @@ export const ServiceCard = (props) => {
           }
         >
           <h3
-            className={`[line-height:117%] [font-weight:600] text-[#242526] ${
+            className={`[line-height:117%] [font-weight:500] text-[#242526] ${
               props.vertical
-                ? "text-[39pt] max-[1400px]:text-[34pt] max-[1024px]:text-[26pt] max-[700px]:text-[20pt] "
-                : "text-[40pt] max-[1400px]:text-[30pt] max-[1024px]:text-[23pt] max-[700px]:text-[19pt]"
+                ? "text-[39pt] max-[1400px]:text-[34pt] max-[1024px]:text-[26pt] max-[700px]:text-[20pt] [font-weight:600]"
+                : "text-[40pt] max-[1400px]:text-[31px] max-[1024px]:text-[21px] max-[700px]:text-[19pt]"
             }`}
           >
             {props.title}

@@ -69,9 +69,11 @@ export default function Home({ jobs }) {
               The passion of idea, business and creativity:
             </h1>
             <p className="w-[54%] text-[17pt] max-[1400px]:text-[13.5pt] max-[1024px]:text-[12pt] max-[700px]:hidden max-[1024px]:w-[49%] max-[912px]:w-[60%] [line-height:140%] max-[820px]:mb-[30px] py-[16px] ml-[var(--side-padding)] text-start">
-              JadeMediaPro is a digital tech agency that focused in strategic solutions for business marketing,
+              JadeMediaPro is a digital tech agency that focused in strategic 
+              solutions for business marketing,
               communication, and brand development. 
-              JadeMediaPro specialises in UI/UX design, advertising, digital media management, video animations,
+              JadeMediaPro specialises in UI/UX design, advertising, digital media management, 
+              video animations,
                 website design, and application development. In this post-pandemic world,
               our service helps brands achieve their goals, make a profit, and increase their impact.
             </p>
