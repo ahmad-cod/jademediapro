@@ -172,8 +172,8 @@ export default function Home({ jobs }) {
           </div>
           <div>
             <h2 className="home-heading text-[34pt] max-[1400px]:text-[32pt] max-[1024px]:text-[26pt] max-[768px]:text-[23pt] mb-[24px]">
-              Unlock your future by taking advantage of <u>Branding</u> &
-              <u>Digital marketing</u>
+              Unlock your future by taking advantage of <span className="hover:underline cursor-pointer">Branding</span> &
+              <span className="hover:underline cursor-pointer">Digital marketing</span>
             </h2>
             <p className="[line-height:140%] text-[16pt] max-[1400px]:text-[13pt] max-[1024px]:text-[11pt] max-[768px]:text-[10pt] mb-[20px]">
               Few businesses live the test of time. Many businesses are
@@ -276,7 +276,7 @@ export default function Home({ jobs }) {
         {/* Blogs */}
         <PageSection className="editorial-section-home min-h-[80vh] bg-white h-max max-[700px]:max-h-max max-[1280px]:pt-[65px] max-[1280px]:h-fit flex flex-col justify-center max-[1280px]:justify-start">
           <h2 className="mb-[56px] max-[1024px]:mb-[35px] home-heading">
-            Discover popular and profitable <u>editorials.</u>
+            Discover popular and profitable <span className="hover:underline cursor-pointer">editorials.</span>
           </h2>
           <EditorialLineup />
         </PageSection>
