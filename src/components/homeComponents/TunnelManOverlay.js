@@ -9,9 +9,9 @@ export const TunnelManOverlay = () => {
   return (
     <div className="absolute flex flex-row-reverse w-full h-full bg-black overflow-hidden">
       <Image
-        src={tunnelLightImg}
+        src={tunnelLightImgV2}
         alt="Man walking out of tunnel"
-        className="w-[1099px] max-[700px]:hidden"
+        className="max-w-full max-[700px]:hidden"
         style={{
           objectFit: "cover",
         }}

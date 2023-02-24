@@ -439,7 +439,7 @@ import topleftarrow from "./misc/topleftarrow.svg";
 export { jadelogo, jadelogo2, moonsvg, topleftarrow };
 
 import tunnelLightImg from "./landingPageImages/tunnelLight.png";
-import tunnelLightImgV2 from "./landingPageImages/tunnelLightv2.png";
+import tunnelLightImgV2 from "./landingPageImages/Home-header-cropped.png";
 import brandIdentityImg from "./landingPageImages/Brand identity.gif";
 import webDevelopmentImg from "./landingPageImages/Website development.gif";
 import laptopMockImg from "./landingPageImages/webdev.png";

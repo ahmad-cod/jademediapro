@@ -15,7 +15,8 @@ export const CommercialCardsLineup = () => {
   const { Cursor, hide: hideCursor, trigger: triggerCursor } = useCursor();
 
   return (
-    <div className="relative overflow-x-scroll scroll-hidden w-full pl-[var(--side-padding)] h-[65vh] min-h-[300px] max-h-[500px] max-[1400px]:h-[60vh] max-[1024px]:h-[350px]">
+    <div className="relative overflow-x-scroll scroll-hidden w-full pl-[var(--side-padding)] 
+      h-[65vh] min-h-[300px] max-h-[500px] max-[1400px]:h-[60vh] max-[1024px]:h-[350px]">
       <Draggable axis="x" bounds>
         <div
           onMouseOver={triggerCursor}
@@ -62,7 +63,9 @@ const Card = ({ text, icon, href, note }) => {
   return (
     <Link
       href={href ?? "/services"}
-      className="bg-[#1A1A1A] text-[#f6f6f6] [--note-transform:translateY(100%)] max-[700px]:[--note-transform:none] hover:[--note-transform:none] min-[701px]:hover:[--text-color:#65CABF] relative flex justify-end flex-col overflow-hidden h-full p-[24px_22px] aspect-[0.8] rounded-[4px]"
+      className="bg-[#1A1A1A] text-[#f6f6f6] [--note-transform:translateY(100%)] 
+      max-[700px]:[--note-transform:none] hover:[--note-transform:none] min-[701px]:hover:[--text-color:#65CABF] 
+      relative flex justify-end flex-col overflow-hidden h-full p-[24px_22px] aspect-[0.8] rounded-[4px]"
     >
       <Image
         src={icon}
