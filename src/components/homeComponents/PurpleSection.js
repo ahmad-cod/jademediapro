@@ -38,12 +38,14 @@ export const PurpleSection = () => {
     }
   }
   return (
-    <PageSection className="bg-[#4F2E67] h-max max-2xl:py-[100px] text-[#f6f6f6] grid [grid:auto/40%_60%] max-[1152px]:[grid:auto/43%_auto] max-[700px]:[grid:auto/auto] py-[40px] place-content-center">
-      <h2 className="hidden max-[700px]:block text-[25pt] mb-[40px] font-bold">
+    <PageSection className="box-border bg-[#4F2E67] h-screen max-[1440px]:pt-[450px] max-2xl:py-[440px] text-[#f6f6f6] grid [grid:auto/40%_60%]
+     max-[1152px]:[grid:auto/43%_auto] max-[700px]:[grid:auto/auto] py-[40px] place-content-center">
+      <h2 className="box-border hidden max-[700px]:block text-[25pt] mb-[40px] font-bold">
         Our five foundational processes to create your strategic brand&apos;s
         success
       </h2>
-      <ul className="flex flex-col max-[700px]:h-[120px] max-[700px]:flex-row max-[700px]:w-full max-[700px]:overflow-x-scroll justify-center max-[700px]:justify-start max-[700px]:gap-[5vw]">
+      <ul className="flex flex-col max-[700px]:h-[100px] max-[700px]:flex-row max-[700px]:w-full 
+        max-[700px]:overflow-x-scroll justify-center max-[700px]:justify-start max-[700px]:gap-[5vw]">
         {methodologyData.map((methodology, index) => {
           const isopen = index === openMethodology;
           return (
@@ -53,7 +55,8 @@ export const PurpleSection = () => {
               key={index}
             >
               <div
-                className={`aspect-square max-[700px]:aspect-auto max-[700px]:animate-[line_500ms] duration-500 border-2 max-[700px]:border-0 border-[#f6f6f6] rounded-[50%] max-[700px]:rounded-[0] flex items-center justify-center ${
+                className={`aspect-square max-[700px]:aspect-auto max-[700px]:animate-[line_500ms] duration-500 
+                border-2 max-[700px]:border-0 border-[#f6f6f6] rounded-[50%] max-[700px]:rounded-[0] flex items-center justify-center ${
                   isopen
                     ? 'h-9 max-[700px]:h-1 max-[700px]:w-full max-[700px]:bg-[#f6f6f6] before:block before:[content:""] before:h-[80%] before:aspect-square before:rounded-[50%] before:bg-[#f6f6f6] max-[700px]:before:hidden'
                     : "h-3 max-[700px]:hidden bg-[#f6f6f6]"
@@ -62,7 +65,7 @@ export const PurpleSection = () => {
               <span
                 className={`${
                   isopen
-                    ? "text-[45pt] max-[1152px]:text-[25pt] font-bold max-[700px]:text-[30pt]"
+                    ? "text-[40pt] max-[1152px]:text-[25pt] font-bold max-[700px]:text-[30pt]"
                     : "text-[16pt] max-[1152px]:text-[14pt] max-[700px]:text-[13pt]"
                 } duration-500`}
               >
@@ -73,7 +76,8 @@ export const PurpleSection = () => {
         })}
       </ul>
       <div className="w-full flex flex-col">
-        <h2 className="home-heading text-[34pt] max-[1400px]:text-[32pt] max-[1024px]:text-[26pt] max-[768px]:text-[23pt] max-[700px]:hidden mb-[24px]">
+        <h2 className="home-heading text-[34pt] max-[1400px]:text-[32pt] max-[1024px]:text-[26pt] 
+          max-[768px]:text-[23pt] max-[700px]:hidden mb-[24px]">
           Our five foundational processes to create your strategic brand&apos;s
           success
         </h2>
