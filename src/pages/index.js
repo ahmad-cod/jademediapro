@@ -175,7 +175,7 @@ export default function Home({ jobs }) {
               Unlock your future by taking advantage of <span className="hover:underline cursor-pointer">Branding</span> &
               <span className="hover:underline cursor-pointer">Digital marketing</span>
             </h2>
-            <p className="[line-height:140%] text-[16pt] max-[1400px]:text-[13pt] max-[1024px]:text-[11pt] max-[768px]:text-[10pt] mb-[20px]">
+            <p className="[line-height:140%] text-[16pt] max-[1400px]:text-[15px] max-[1024px]:text-[11pt] max-[768px]:text-[10pt] mb-[20px]">
               Few businesses live the test of time. Many businesses are
               struggling with different strategies and identifying which one
               truly fits. All sorts of brands - personal, entrepreneurial, or
