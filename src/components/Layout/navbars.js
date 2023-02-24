@@ -106,7 +106,7 @@ export const HeaderNavItem = ({ name, links, href }) => {
       >
         <h1 className="relative cursor-pointer hover:opacity-[0.7]">{name}</h1>
       </Link>
-      <menu className="absolute animate-[fade-in_300ms] rounded-[4px] bg-[#f6f6f6e6] text-[#262626] [font-weight:500] [display:var(--nav-display-toggle)]">
+      <menu className="absolute animate-[fade-in_300ms] z-40 rounded-[4px] bg-[#f6f6f6e6] text-[#262626] [font-weight:500] [display:var(--nav-display-toggle)]">
         {links.map((item, index) => (
           <li
             className="p-[10px_25px] min-w-[180px] max-[1400px]:text-[11.5pt] whitespace-nowrap duration-300 hover:bg-[#4F2E67] hover:text-white"

@@ -32,6 +32,10 @@ import { jobData, upcomingEvents } from "@/data";
 import Link from "next/link";
 import { select } from "@/utils";
 import Image from "next/image";
+import { ImageWithHeader } from "@/components";
+import styles from "../styles/header.module.css";
+
+
 
 /**
  * @type {import("next").GetServerSideProps}
@@ -55,17 +59,23 @@ export default function Home({ jobs }) {
       title="Jade Media Pro"
       backgroundColor="black"
       paint-header-on-scroll
-      meta="At Jademediapro, we deploy sophisticated tools and expertise for creating stunning designs, animation, web/app development, and digital marketing for business growth."
+      meta="At Jademediapro, we deploy sophisticated tools and expertise for creating stunning designs, 
+        animation, web/app development, and digital marketing for business growth."
     >
       <main>
         {/* Hero Section */}
         <PageSection
           style={{ padding: 0 }}
-          className="text-white max-[1440px]:min-h-[900px] max-[1280px]:min-h-max max-[912px]:h-[900px] max-[700px]:h-screen max-[700px]:max-h-[830px]"
+          className="text-white max-[1440px]:min-h-[900px] max-[1280px]:min-h-max 
+            max-[912px]:h-[900px] max-[700px]:h-screen max-[700px]:max-h-[830px]"
         >
           <TunnelManOverlay />
-          <div className="relative min-h-[570px] w-full h-full pt-[5%] flex flex-col justify-center max-[700px]:justify-end">
-            <h1 className="home-front-text relative font-pop text-[75pt] max-[2140px]:text-[60pt] max-[1024px]:text-[43pt] max-[912px]:text-[46pt] max-[700px]:text-[32pt] py-[16px] max-[1400px]:py-0 max-[1440px]:w-[65%] w-[50%] max-[820px]:w-[70%] max-[700px]:w-auto max-[700px]:px-[var(--side-padding)] ml-[var(--side-padding)] max-[700px]:ml-0 [font-weight:800] [line-height:120%]">
+          <div className="relative min-h-[570px] w-full h-full flex flex-col justify-center max-[700px]:justify-end">
+            <h1 className="home-front-text relative font-pop text-[70pt] max-[2140px]:text-[60pt] 
+              max-[1024px]:text-[43pt] max-[912px]:text-[46pt] max-[700px]:text-[32pt] py-[16px] 
+              max-[1400px]:py-0 max-[1440px]:w-[65%] w-[50%] max-[820px]:w-[70%] max-[700px]:w-auto 
+              max-[700px]:px-[var(--side-padding)] ml-[var(--side-padding)] max-[700px]:ml-0 
+              [font-weight:800] [line-height:120%]">
               The passion of idea, business and creativity:
             </h1>
             <p className="w-[54%] text-[17pt] max-[1400px]:text-[13.5pt] max-[1024px]:text-[12pt] max-[700px]:hidden max-[1024px]:w-[49%] max-[912px]:w-[60%] [line-height:140%] max-[820px]:mb-[30px] py-[16px] ml-[var(--side-padding)] text-start">
@@ -348,7 +358,8 @@ const LinkLike = ({ href, children }) => {
   return (
     <Link
       href={href}
-      className="rounded-[4px] hover:bg-[#4F2E67] hover:text-white duration-300 p-[20px_32px] max-[1024px]:p-[13px_26px] font-semibold w-fit block text-[#4F2E67] border-[#4F2E67] border-[1px]"
+      className="rounded-[4px] hover:bg-[#4F2E67] hover:text-white duration-300 p-[20px_32px] 
+        max-[1024px]:p-[13px_26px] font-semibold w-fit block text-[#4F2E67] border-[#4F2E67] border-[1px]"
     >
       {children}
     </Link>
