@@ -451,15 +451,15 @@ import productPackagingImg from "./landingPageImages/products-packaging.gif";
 import unlockYourFutureGif from "./landingPageImages/Unlock-Your-Future.gif";
 
 import ResearchChart from "./landingPageImages/ResearchChart.png";
-import ResearchImage from "./landingPageImages/ResearchImage.png";
+import ResearchImage from "./landingPageImages/Research-right.png";
 import IdeateChart from "./landingPageImages/IdeateChart.png";
-import IdeateImage from "./landingPageImages/IdeateImage.png";
+import IdeateImage from "./landingPageImages/Ideate-right.png";
 import DesignChart from "./landingPageImages/DesignChart.png";
-import DesignImage from "./landingPageImages/DesignImage.png";
+import DesignImage from "./landingPageImages/Design-right.png";
 import ImplementationChart from "./landingPageImages/ImplementationChart.png";
-import ImplementationImage from "./landingPageImages/ImplementationImage.png";
-import ResultChart from "./landingPageImages/ResearchChart.png";
-import ResultImage from "./landingPageImages/ResearchImage.png";
+import ImplementationImage from "./landingPageImages/Implement-right.png";
+import ResultChart from "./landingPageImages/ResultChart.png";
+import ResultImage from "./landingPageImages/Result-right.png";
 
 import motionDesignGif from "./landingPageImages/Motion-Design.gif";
 import businessStrategyGif from "./landingPageImages/business-strategy.gif";
