@@ -182,8 +182,8 @@ export default function Home({ jobs }) {
           </div>
           <div>
             <h2 className="home-heading text-[34pt] max-[1400px]:text-[32pt] max-[1024px]:text-[26pt] max-[768px]:text-[23pt] mb-[24px]">
-              Unlock your future by taking advantage of <span className="cursor-pointer">Branding</span> &
-              <span className="cursor-pointer">Digital marketing</span>
+              Unlock your future by taking advantage of <span className="hover:underline cursor-pointer">Branding</span> &
+              <span className="hover:underline cursor-pointer">Digital marketing</span>
             </h2>
             <p className="[line-height:140%] text-[16pt] max-[1400px]:text-[15px] max-[1024px]:text-[11pt] max-[768px]:text-[10pt] mb-[20px]">
               Few businesses live the test of time. Many businesses are
@@ -259,12 +259,10 @@ export default function Home({ jobs }) {
               </div>
             </div>
             <div>
-              <h3 className="text-[30pt] max-[1400px]:text-[23pt] max-[1024px]:text-[18pt] max-[768px]:text-[16pt] mb-[24px] 
-                max-[1400px]:mb-[17px] max-[700px]:h-fit max-[700px]:mb-2 text-[#2F7F77]">
+              <h3 className="text-[30pt] max-[1400px]:text-[23pt] max-[1024px]:text-[18pt] max-[768px]:text-[16pt] mb-[24px] max-[1400px]:mb-[17px] max-[700px]:h-fit max-[700px]:mb-2 text-[#2F7F77]">
                 60 minutes with Adachukwu of Jademediapro
               </h3>
-              <p className="[line-height:140%] text-[16pt] max-[1400px]:text-[13pt] max-[1024px]:text-[11pt] 
-                max-[768px]:text-[10pt] mb-[46px] max-[1400px]:mb-[30px] max-[1024px]:mb-[15px]">
+              <p className="[line-height:140%] text-[16pt] max-[1400px]:text-[13pt] max-[1024px]:text-[11pt] max-[768px]:text-[10pt] mb-[46px] max-[1400px]:mb-[30px] max-[1024px]:mb-[15px]">
                 We start by defining a clear image of exactly who you serve and
                 precisely how they think. Why? Because you can&apos;t help
                 people unless you know them - their hopes, their fears, their
@@ -288,7 +286,7 @@ export default function Home({ jobs }) {
         {/* Blogs */}
         <PageSection className="editorial-section-home min-h-[80vh] bg-white h-max max-[700px]:max-h-max max-[1280px]:pt-[65px] max-[1280px]:h-fit flex flex-col justify-center max-[1280px]:justify-start">
           <h2 className="mb-[56px] max-[1024px]:mb-[35px] home-heading">
-            Discover popular and profitable <span className="cursor-pointer">editorials.</span>
+            Discover popular and profitable <span className="hover:underline cursor-pointer">editorials.</span>
           </h2>
           <EditorialLineup />
         </PageSection>
