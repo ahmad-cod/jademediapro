@@ -237,11 +237,13 @@ export default function Home({ jobs }) {
         </PageSection>
 
         {/* Interview */}
-        <PageSection className="bg-white flex max-[1440px]:h-fit mb-[40px] h-fit max-[1280px]:pt-[65px] max-[1024px]:pt-[45px] flex-col items-center justify-center max-[1280px]:justify-start">
+        <PageSection 
+          className="bg-white flex max-[1440px]:h-fit mb-[40px] h-fit max-[1280px]:pt-[65px] 
+            max-[1024px]:pt-[45px] flex-col items-center justify-center max-[1280px]:justify-start">
           <h2 className="mb-[56px] max-[1400px]:mb-[35px] home-heading">
             Exclusive interviews with industry leading professionals.
           </h2>
-          <div className="grid [grid:auto/70%_auto] max-[1024px]:[grid:auto/65%_auto] max-[768px]:[grid:auto/56%_auto] max-[700px]:grid-cols-1 gap-[var(--grid-margin)]">
+          <div className="grid [grid:auto/58%_auto] max-[1024px]:[grid:auto/65%_auto] max-[768px]:[grid:auto/56%_auto] max-[700px]:grid-cols-1 gap-[var(--grid-margin)]">
             <div
               style={{
                 backgroundImage: `url('${adachukThumbnail.src}')`,
@@ -259,7 +261,9 @@ export default function Home({ jobs }) {
               </div>
             </div>
             <div>
-              <h3 className="text-[30pt] max-[1400px]:text-[23pt] max-[1024px]:text-[18pt] max-[768px]:text-[16pt] mb-[24px] max-[1400px]:mb-[17px] max-[700px]:h-fit max-[700px]:mb-2 text-[#2F7F77]">
+              <h3 
+                className="text-[30pt] max-[1400px]:text-[23pt] max-[1024px]:text-[18pt] max-[768px]:text-[16pt] 
+                  mb-[24px] max-[1400px]:mb-[17px] max-[700px]:h-fit max-[700px]:mb-2 text-[#2F7F77]">
                 60 minutes with Adachukwu of Jademediapro
               </h3>
               <p className="[line-height:140%] text-[16pt] max-[1400px]:text-[13pt] max-[1024px]:text-[11pt] max-[768px]:text-[10pt] mb-[46px] max-[1400px]:mb-[30px] max-[1024px]:mb-[15px]">
