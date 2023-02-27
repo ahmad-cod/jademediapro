@@ -73,16 +73,3 @@ const Editorial = (props) => {
     </li>
   );
 };
-
-// <div className={styles.interview_card} key={i}>
-//             <div className={styles.interview_top}>
-//               <Image src={interview.thumbnail} alt="" />
-//               <div className={styles.interview_title}>
-//                 <p className={styles.title}>{interview.title}</p>
-//                 <p className={styles.date}>{interview.date}</p>
-//               </div>
-//             </div>
-//             <div className={styles.interview_bottom}>
-//               <p>{interview.desc}</p>
-//             </div>
-//           </div>
