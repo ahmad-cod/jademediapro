@@ -1,6 +1,8 @@
 import { blogData } from "@/data";
 import { BsArrowRight } from "react-icons/bs";
 import Link from "next/link";
+import styles from "../../styles/Blog.module.css";
+
 
 /**
  * Carousel of editorials.
@@ -40,13 +42,15 @@ export const EditorialLineup = () => {
  */
 const Editorial = (props) => {
   return (
-    <li className="w-[28vw] max-[700px]:w-full max-[1440px]:h-[500px] mt-[20px] max-[700px]:h-fit max-[700px]:max-h-max rounded-[4px] overflow-hidden">
+    <li className="w-[28vw] max-[700px]:w-full max-[1440px]:h-[500px] mt-[20px] max-[700px]:h-fit 
+      max-[700px]:max-h-max rounded-[4px] overflow-hidden">
       <Link className="w-full h-full" href={`/blog/${props.id}`}>
         <div
-          className="h-[50%] max-[768px]:h-[45%] max-[700px]:h-[270px] flex bg-cover bg-center bg-no-repeat flex-col justify-end text-white bg-black"
+          className="h-[50%] max-[768px]:h-[45%] max-[700px]:h-[270px] flex bg-cover bg-center 
+            bg-no-repeat flex-col justify-end text-white bg-black"
           style={{ backgroundImage: `url(${props.image.src})` }}
         >
-          <div className="bg-[#0000008f] py-[10px] pl-[16px]">
+          <div className="bg-[#0000008f] py-[10px] pl-[16px] opacity-0 hover:opacity-100">
             <h4 className="w-[60%] max-[1024px]:w-[75%] max-[768px]:w-[90%] font-semibold text-[16pt] max-[1400px]:text-[13.5pt] max-[768px]:text-[12pt] text-[#F6F6F6] [line-height:128%]">
               {props.title}
             </h4>
@@ -68,3 +72,16 @@ const Editorial = (props) => {
     </li>
   );
 };
+
+// <div className={styles.interview_card} key={i}>
+//             <div className={styles.interview_top}>
+//               <Image src={interview.thumbnail} alt="" />
+//               <div className={styles.interview_title}>
+//                 <p className={styles.title}>{interview.title}</p>
+//                 <p className={styles.date}>{interview.date}</p>
+//               </div>
+//             </div>
+//             <div className={styles.interview_bottom}>
+//               <p>{interview.desc}</p>
+//             </div>
+//           </div>
