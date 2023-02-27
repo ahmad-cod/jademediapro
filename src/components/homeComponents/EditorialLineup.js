@@ -1,7 +1,6 @@
 import { blogData } from "@/data";
 import { BsArrowRight } from "react-icons/bs";
 import Link from "next/link";
-import styles from "../../styles/Blog.module.css";
 
 
 /**
