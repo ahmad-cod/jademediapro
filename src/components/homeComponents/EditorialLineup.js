@@ -61,7 +61,8 @@ const Editorial = (props) => {
           <p className="clamp clamp-text-6 max-[700px]:block max-[1400px]:text-[11pt] max-[1024px]:text-[9pt]">
             {props.excerpt}
           </p>
-          <button className="ml-[10%] flex items-center gap-[15px] max-[768px]:text-[10pt] whitespace-nowrap p-[24px] hover:[--shift:50%]">
+          <button className="flex items-center gap-[15px] max-[768px]:text-[10pt] whitespace-nowrap 
+          p-[24px] pl-0 hover:[--shift:50%]">
             Read More
             <div className=" translate-x-[var(--shift)] duration-300">
               <BsArrowRight />
