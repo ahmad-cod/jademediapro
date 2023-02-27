@@ -12,15 +12,6 @@ export const PurpleSection = () => {
   /** @type {string[]} */
   const secondImageResize = ["scale-[0.75]", "translate-y-[-10%]"];
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setOpenMethodology(openMethodology < 4 ? openMethodology + 1 : 0);
-    }, 3000);
-    return () => {
-      clearInterval(interval);
-    };
-  });
-
   function adjustImage() {
     if (innerHeight > 700) {
       secondImageResize.forEach((cl) => {
@@ -38,7 +29,7 @@ export const PurpleSection = () => {
     }
   }
   return (
-    <PageSection className="box-border bg-[#4F2E67] h-screen max-[1440px]:pt-[450px] max-2xl:py-[440px] text-[#f6f6f6] grid [grid:auto/40%_60%]
+    <PageSection className="box-border bg-[#4F2E67] h-screen max-[2440px]:pt-[550px] max-[1440px]:pt-[450px] max-2xl:py-[440px] text-[#f6f6f6] grid [grid:auto/40%_60%]
      max-[1152px]:[grid:auto/43%_auto] max-[700px]:[grid:auto/auto] py-[40px] place-content-center">
       <h2 className="box-border hidden max-[700px]:block text-[25pt] mb-[40px] font-bold">
         Our five foundational processes to create your strategic brand&apos;s
