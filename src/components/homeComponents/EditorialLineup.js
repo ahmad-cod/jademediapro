@@ -1,7 +1,6 @@
 import { blogData } from "@/data";
 import { BsArrowRight } from "react-icons/bs";
 import Link from "next/link";
-import styles from "../../styles/Blog.module.css";
 
 
 /**
@@ -61,7 +60,8 @@ const Editorial = (props) => {
           <p className="clamp clamp-text-6 max-[700px]:block max-[1400px]:text-[11pt] max-[1024px]:text-[9pt]">
             {props.excerpt}
           </p>
-          <button className="ml-[10%] flex items-center gap-[15px] max-[768px]:text-[10pt] whitespace-nowrap p-[24px] hover:[--shift:50%]">
+          <button className="flex items-center gap-[15px] max-[768px]:text-[10pt] whitespace-nowrap 
+          p-[24px] pl-0 hover:[--shift:50%]">
             Read More
             <div className=" translate-x-[var(--shift)] duration-300">
               <BsArrowRight />
@@ -72,16 +72,3 @@ const Editorial = (props) => {
     </li>
   );
 };
-
-// <div className={styles.interview_card} key={i}>
-//             <div className={styles.interview_top}>
-//               <Image src={interview.thumbnail} alt="" />
-//               <div className={styles.interview_title}>
-//                 <p className={styles.title}>{interview.title}</p>
-//                 <p className={styles.date}>{interview.date}</p>
-//               </div>
-//             </div>
-//             <div className={styles.interview_bottom}>
-//               <p>{interview.desc}</p>
-//             </div>
-//           </div>
