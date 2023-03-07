@@ -13,7 +13,7 @@ const Testimonials = () => {
       <div className={styles.testimonial_content}>
         <div className={styles.testimonal_statement}>
           <h2>
-            Many people have already seen how working with Jademediapro has
+            Many people have already seen how working with JadeMediaPro has
             enabled them to rebrand and grow their businesses.
           </h2>
         </div>

@@ -10,7 +10,7 @@ const videoplaying = () => {
         <div className=" max-w-[865px]">
           <video src="" width="100%" />
           <h3 className="font-bold text-2xl md:text-4xl">
-            60 minutes with Adachukwu of Jademediapro
+            60 minutes with Adachukwu of JadeMediaPro
           </h3>
           <p className="text-[15px] text-[#3A3B40] py-4">24 Oct 2021</p>
           <p>

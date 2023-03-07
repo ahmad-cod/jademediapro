@@ -59,7 +59,7 @@ export default function Home({ jobs }) {
       title="Jade Media Pro"
       backgroundColor="black"
       paint-header-on-scroll
-      meta="At Jademediapro, we deploy sophisticated tools and expertise for creating stunning designs, 
+      meta="At JadeMediaPro, we deploy sophisticated tools and expertise for creating stunning designs, 
         animation, web/app development, and digital marketing for business growth."
     >
       <main>
@@ -168,7 +168,7 @@ export default function Home({ jobs }) {
             reference to data-driven attribution models, mobile optimization,
             search engine optimization (SEO), email marketing, social media
             advertising, and conversion rates. With these strategies in mind and
-            the help of Jademediapro, you can expand your business and look
+            the help of JadeMediaPro, you can expand your business and look
             ahead to the success of your business more than it is right now in
             the coming times whether you are starting a new business or you
             already have an existing business.
@@ -264,7 +264,7 @@ export default function Home({ jobs }) {
               <h3 
                 className="text-[30pt] max-[1400px]:text-[23pt] max-[1024px]:text-[18pt] max-[768px]:text-[16pt] 
                   mb-[24px] max-[1400px]:mb-[17px] max-[700px]:h-fit max-[700px]:mb-2 text-[#2F7F77]">
-                60 minutes with Adachukwu of Jademediapro
+                60 minutes with Adachukwu of JadeMediaPro
               </h3>
               <p className="[line-height:140%] text-[16pt] max-[1400px]:text-[13pt] max-[1024px]:text-[11pt] max-[768px]:text-[10pt] mb-[46px] max-[1400px]:mb-[30px] max-[1024px]:mb-[15px]">
                 We start by defining a clear image of exactly who you serve and

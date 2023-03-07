@@ -7,7 +7,7 @@ const FAQ = () => {
     <div className={styles.faq_container}>
       <div className={styles.contact_heading}>
         <h2>FAQ</h2>
-        <p>Frequently asked questions about Jademediapro’s services</p>
+        <p>Frequently asked questions about JadeMediaPro’s services</p>
       </div>
 
       <FaqContents />

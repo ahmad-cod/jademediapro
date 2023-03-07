@@ -245,7 +245,7 @@ export const Footer = () => {
       </div>
       <div className="relative flex justify-between items-center gap-5 flex-wrap text-xs text-tag_p">
         <p>
-          © 2022 Jademediapro Tech Agency - RC:1987561. All rights reserved.{" "}
+          © 2022 JadeMediaPro Tech Agency - RC:1987561. All rights reserved.{" "}
         </p>
 
         <div className="flex gap-3 ">

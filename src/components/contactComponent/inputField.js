@@ -644,7 +644,7 @@ const InputField = () => {
               checked={check === true}
             />
             <p>
-              I agree to the Jademediapros Terms of Service and Privacy Policy.
+              I agree to the JadeMediaPros Terms of Service and Privacy Policy.
             </p>
           </div>
           <div className={styles.form_button}>

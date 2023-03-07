@@ -18,7 +18,7 @@ export const methodologyData = [
   {
     name: "Research",
     text:
-      "Jademediapro's research phase involves simple steps of gathering information and analysing the findings to get to know your business, industry, competitors, target audience, all of your existing branding and design, marketing data, evaluating the data, and preparing the research report for presentation. " +
+      "JadeMediaPro's research phase involves simple steps of gathering information and analysing the findings to get to know your business, industry, competitors, target audience, all of your existing branding and design, marketing data, evaluating the data, and preparing the research report for presentation. " +
       "It typically consists of extensive desk and field research including interviews where we might ask; 'what 3 words would you use to describe your brand/company?', 'why do you choose…', 'what is most important to you', 'how do you rate…', we listen to you to understand your business problem (or opportunity). " +
       "These steps may vary depending on the specific outcomes your business is trying to achieve. " +
       "For example, a product-oriented business may focus on the design of packaging and marketing materials used to communicate the product brand. The process followed at each level is measured - deliberately arranged, is fundamental, appropriately recorded, and methodologically substantial.",

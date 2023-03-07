@@ -22,7 +22,7 @@ export default function Privacy() {
           </div>
           <div className="text-base font-normal text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
-              Thank you for choosing to be part of our community at Jademediapro
+              Thank you for choosing to be part of our community at JadeMediaPro
               Tech Agency LTD (&quot;Company,&quot; &quot;we,&quot;
               &quot;us,&quot; or &quot;our&quot;). We are committed to
               protecting your personal information and your right to privacy.
@@ -1038,7 +1038,7 @@ export default function Privacy() {
             </span>
 
             <p className="mt-4">
-              Jademediapro Tech Agency LTD collects and shares your personal
+              JadeMediaPro Tech Agency LTD collects and shares your personal
               information through:
             </p>
             <ul className="list-disc ml-6 mb-4">
@@ -1084,7 +1084,7 @@ export default function Privacy() {
               considered to be &quot;selling&quot; of your personal data.
             </p>
             <p className="mt-4">
-              Jademediapro Tech Agency LTD has disclosed the following
+              JadeMediaPro Tech Agency LTD has disclosed the following
               categories of personal information to third parties for a business
               or commercial purpose in the preceding twelve (12) months:
             </p>
@@ -1108,9 +1108,9 @@ export default function Privacy() {
               under &quot;who will your information be shared with?&quot;.
             </p>
             <p className="mb-4">
-              Jademediapro Tech Agency LTD has not sold any personal information
+              JadeMediaPro Tech Agency LTD has not sold any personal information
               to third parties for a business or commercial purpose in the
-              preceding twelve (12) months. Jademediapro Tech Agency LTD will
+              preceding twelve (12) months. JadeMediaPro Tech Agency LTD will
               not sell personal information in the future belonging to website
               visitors, users and other consumers.
             </p>
@@ -1275,7 +1275,7 @@ export default function Privacy() {
               or by post to:
             </p>
             <p className="mb-4 font-normal">
-              Jademediapro Tech Agency LTD <br />
+              JadeMediaPro Tech Agency LTD <br />
               16 Agbor street <br />
               Lagos, LA 100261 <br />
               Nigeria

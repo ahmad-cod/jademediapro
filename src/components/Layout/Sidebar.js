@@ -85,7 +85,7 @@ export const Sidebar = () => {
         </div>
 
         <span className="text-[#91939F] block mb-[2vh] text-[10pt]">
-          ©{new Date().getFullYear()} Jademediapro Tech Agency. All rights
+          ©{new Date().getFullYear()} JadeMediaPro Tech Agency. All rights
           reserved
         </span>
 

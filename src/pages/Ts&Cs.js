@@ -126,7 +126,7 @@ export default function Terms() {
             <p className="mb-4">
               These Terms of Use constitute a legally binding agreement made
               between you, whether personally or on behalf of an entity
-              (&quot;you&quot;) and Jademediapro Tech Agency LTD
+              (&quot;you&quot;) and JadeMediaPro Tech Agency LTD
               (&quot;Company,&quot; &quot;we,&quot; &quot;us,&quot; or
               &quot;our&quot;). concerning your access to and use of the
               <a href="#" className="text-[#77459B] ml-1">
@@ -814,7 +814,7 @@ export default function Terms() {
           <div className="text-base font-medium text-[#3A3B40] md:w-[70%]">
             <p className="mb-4">
               These Terms shall be governed by and defined following the laws of
-              Nigeria. Jademediapro Tech Agency LTD and yourself irrevocably
+              Nigeria. JadeMediaPro Tech Agency LTD and yourself irrevocably
               consent that the courts of Nigeria shall have exclusive
               jurisdiction to resolve any dispute which may arise in connection
               with these terms.
@@ -1123,7 +1123,7 @@ export default function Terms() {
               at:
             </p>
             <p className="mb-4 font-medium text-[#77459B]">
-              Jademediapro Tech Agency LTD <br />
+              JadeMediaPro Tech Agency LTD <br />
               16 Agbor street <br />
               Lagos, LA 100261 <br />
               Nigeria <br />

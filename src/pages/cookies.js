@@ -24,7 +24,7 @@ export default function Cookies() {
           <div className="mb-8">
             <div className="text-base font-medium text-[#3A3B40] ">
               <p className="mb-4">
-                This Cookie Policy explains how Jademediapro Tech Agency LTD
+                This Cookie Policy explains how JadeMediaPro Tech Agency LTD
                 (&quot;Company,&quot; &quot;we,&quot; &quot;us,&quot; or
                 &quot;our&quot;) uses cookies and similar technologies to
                 recognize you when you visit our websites at
@@ -53,7 +53,7 @@ export default function Cookies() {
                 by website owners in order to make their websites work, or to
                 work more efficiently, as well as to provide reporting
                 information. Cookies set by the website owner (in this case,
-                Jademediapro Tech Agency LTD) are called &quot;first party
+                JadeMediaPro Tech Agency LTD) are called &quot;first party
                 cookies&quot;. Cookies set by parties other than the website
                 owner are called &quot;third party cookies&quot;. Third party
                 cookies enable third party features or functionality to be
@@ -352,7 +352,7 @@ export default function Cookies() {
                 </a>
               </p>
               <p className="mb-4 font-medium text-[#77459B]">
-                Jademediapro Tech Agency LTD <br />
+                JadeMediaPro Tech Agency LTD <br />
                 16 Agbor street <br />
                 Lagos, LA 100261 <br />
                 Nigeria <br />

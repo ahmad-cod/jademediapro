@@ -24,7 +24,7 @@ const disclaimer = () => {
         <h4>Last Updated November 10, 2021</h4>
         <h3>Website disclaimer</h3>
         <p>
-          The information provided by Jademediapro Tech Agency LTD (
+          The information provided by JadeMediaPro Tech Agency LTD (
           <b>&quot;we&quot;, &quot;us&quot;, or &quot;our&quot; </b>) on{" "}
           <a>
             {" "}
@@ -53,7 +53,7 @@ const disclaimer = () => {
 
         <h3>External links disclaimer</h3>
         <p>
-          The information provided by Jademediapro Tech Agency LTD
+          The information provided by JadeMediaPro Tech Agency LTD
           (&quot;we,&quot; &quot;us&quot;, or &quot;our&quot;) on https://
           <br />
           www.jademediapro.com (the &quot;Site&quot;) is for general
@@ -77,7 +77,7 @@ const disclaimer = () => {
 
         <h3>Testimonials disclaimer</h3>
         <p>
-          The information provided by Jademediapro Tech Agency LTD
+          The information provided by JadeMediaPro Tech Agency LTD
           (&quot;we,&quot; &quot;us&quot;, or &quot;our&quot;) on https://
           <br />
           www.jademediapro.com (the &quot;Site&quot;) is for general
