@@ -340,7 +340,7 @@ export default function Home({ jobs }) {
                 <JobCard key={index} {...job} />
               ))}
             </ul>
-            <LinkLike href="/events">View All Jobs</LinkLike>
+            <LinkLike href="/job">View All Jobs</LinkLike>
           </div>
         </PageSection>
       </main>
