@@ -15,8 +15,9 @@ const Store = () => {
   return (
     <>
       <MainWrapper
-        headerType={2}
+        headerType={1}
         backgroundColor="transparent"
+        color="#242526"
         paint-header-on-scroll
         title="Store - Jade Media Pro"
       >
