@@ -50,18 +50,20 @@ const Editorial = (props) => {
           style={{ backgroundImage: `url(${props.image.src})` }}
         >
           <div className="bg-[#0000008f] py-[10px] pl-[16px] hidden group-hover:block">
-            <h4 className="w-[60%] max-[1024px]:w-[75%] max-[768px]:w-[90%] font-semibold text-[16pt] max-[1400px]:text-[13.5pt] max-[768px]:text-[12pt] text-[#F6F6F6] [line-height:128%]">
+            <h4 className="flex font-semibold text-[16pt] max-[1400px]:text-[13.5pt] 
+              max-[768px]:text-[12pt] text-[#F6F6F6] [line-height:128%] mb-4">
               {props.title}
             </h4>
-            <span className="max-[1024px]:text-[9pt]">{props.date}</span>
+            <span className="text-sm">{props.date}</span>
           </div>
         </div>
-        <div className="p-[16px] [box-shadow:2px_7px_20px_rgba(0,0,0,0.14)] border-x-[1px] border-b-[1px] mb-[8px] max-[768px]:mb-0 max-[700px]:mb-[64px] border-[#D6D8DF]">
+        <div className="p-[16px] [box-shadow:2px_7px_20px_rgba(0,0,0,0.14)] border-x-[1px] border-b-[1px] 
+          mb-[8px] max-[768px]:mb-0 max-[700px]:mb-[64px] border-[#D6D8DF]">
           <p className="clamp clamp-text-6 max-[700px]:block max-[1400px]:text-[11pt] max-[1024px]:text-[9pt]">
             {props.excerpt}
           </p>
-          <button className="flex items-center gap-[15px] max-[768px]:text-[10pt] whitespace-nowrap 
-          p-[24px] pl-0 hover:[--shift:50%]">
+          <button className="flex items-center gap-[10px] text-[#4f2e67] text-sm xl:text-lg
+            p-[22px] pr-0 pl-0 hover:[--shift:25%]">
             Read More
             <div className=" translate-x-[var(--shift)] duration-300">
               <BsArrowRight />
