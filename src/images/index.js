@@ -344,34 +344,42 @@ export const footerSocials = [
   {
     name: "Facebook",
     image: facebookgif,
+    link: 'https://www.facebook.com/jademediapro',
   },
   {
     name: "Instagram",
     image: instagramgif,
+    link: 'https://www.instagram.com/jademediapro/',
   },
   {
     name: "LinkedIn",
     image: linkedingif,
+    link: 'https://www.linkedin.com/company/jademediapro',
   },
   {
     name: "Pinterest",
     image: pinterestgif,
+    link: 'https://www.pinterest.com/jademediapro/',
   },
   {
     name: "Twitter",
     image: twittergif,
+    link: 'https://twitter.com/Jademediapro',
   },
   {
     name: "vimeogif",
     image: vimeogif,
+    link: 'https://vimeo.com/jademediapro',
   },
   {
     name: "Whatsapp",
     image: whatsappgif,
+    link: 'https://chat.whatsapp.com/Io7cSSjtdrb6Qfztj06M00',
   },
   {
     name: "YouTube",
     image: youtubegif,
+    link: 'https://youtube.com/@jademediapro',
   },
 ];
 

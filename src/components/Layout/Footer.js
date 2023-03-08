@@ -232,14 +232,14 @@ export const Footer = () => {
         </div>
         <div className="flex justify-between w-full max-w-[600px]">
           {footerSocials.map((social, i) => (
-            <div key={i} className="w-10 h-10">
+            <Link key={i} className="w-10 h-10" href={social.link}>
               <Image
                 alt={social.name}
                 width="100%"
                 height="100%"
                 src={social.image}
               />
-            </div>
+            </Link>
           ))}
         </div>
       </div>
@@ -249,8 +249,8 @@ export const Footer = () => {
         </p>
 
         <div className="flex gap-3 ">
-          <p>Terms & Conditions</p>
-          <p>Privacy Policy</p>
+          <Link href='/Ts&Cs'>Terms & Conditions</Link>
+          <Link href='/privacy'>Privacy Policy</Link>
         </div>
       </div>
     </footer>
