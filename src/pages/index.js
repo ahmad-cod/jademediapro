@@ -57,7 +57,7 @@ export default function Home({ jobs }) {
     <MainWrapper
       headerType={1}
       title="Jade Media Pro"
-      backgroundColor="black"
+      backgroundColor="#111"
       paint-header-on-scroll
       meta="At JadeMediaPro, we deploy sophisticated tools and expertise for creating stunning designs, 
         animation, web/app development, and digital marketing for business growth."
@@ -304,9 +304,9 @@ export default function Home({ jobs }) {
           </div>
           <h1 className="flex mt-[55px] max-[700px]:block">
             <span className="home-heading mr-[var(--side-padding)] max-[700px]:block max-[700px]:mb-[30px]">
-              Explore our full catalogue
+              Explore our full store
             </span>
-            <HomeButton href="/catalogue">
+            <HomeButton href="/store">
               Visit Store
               <div className="scale-[1.5]">
                 <BsArrowRight />
