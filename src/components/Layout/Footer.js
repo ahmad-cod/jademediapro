@@ -39,7 +39,7 @@ export const Footer = () => {
   const goBackToTop = useCallback(() => scrollTo({ top: 0 }), []);
   return (
     <footer className="relative bg-black px-[var(--side-padding)] font-pop py-16">
-      <button
+      {/* <button
         onClick={goBackToTop}
         title="Back to Top"
         className="absolute duration-300 hover:[box-shadow:0_0_0_8px_#262626] hover:scale-110 text-[#f6f6f6] right-[var(--side-padding)] top-0 translate-y-[-50%] rounded-[50%] h-[80px] max-[1024px]:h-[50px] aspect-square flex items-center justify-center bg-[#46BFB2]"
@@ -59,7 +59,7 @@ export const Footer = () => {
             fill="#F6F6F6"
           />
         </svg>
-      </button>
+      </button> */}
       <div className="relative flex gap-10 md:justify-between flex-col sm:flex-row flex-wrap lg:flex-nowrap flex-1">
         <div className="flex flex-col">
           <div className="mb-5 flex items-center justify-between max-w-[280px]">

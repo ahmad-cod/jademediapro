@@ -1,6 +1,8 @@
 import Head from "next/head";
+import React, { useState, useEffect } from "react";
 import { DefaultNavbar } from "./navbars";
 import { Footer } from "./Footer";
+import ScrollButton from "./ScrollButton";
 
 /**
  * @typedef {{
@@ -19,6 +21,24 @@ import { Footer } from "./Footer";
  * @type {React.FC<MainWrapperProps>}
  */
 export const MainWrapper = (props) => {
+  const [showScrollButton, setShowScrollButton] = useState(false)
+
+  // Function to check scroll position and set accordingly
+  const checkScrollPosition = () => {
+    if(window.pageYOffset > 500) {
+      setShowScrollButton(true)
+    } else {
+      setShowScrollButton(false)
+    }
+  }
+
+  // Run function when window scrolls
+  useEffect(() => {
+    window.addEventListener('scroll', () => checkScrollPosition())
+
+    return window.removeEventListener('scroll', checkScrollPosition)
+  }, [])
+
   return (
     <>
       <Head>
@@ -40,7 +60,7 @@ export const MainWrapper = (props) => {
       ) : (
         <></>
       )}
-      <div style={{ backgroundColor: "white" }}>
+      <div style={{ backgroundColor: "white" }} className='relative'>
         {props["mobile-pad"] ? (
           <div
             style={{ backgroundColor: props.backgroundColor ?? "white" }}
@@ -50,6 +70,7 @@ export const MainWrapper = (props) => {
           <></>
         )}
         {props.children}
+        {showScrollButton && <ScrollButton />}
       </div>
       <Footer />
     </>
