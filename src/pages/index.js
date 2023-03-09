@@ -57,7 +57,7 @@ export default function Home({ jobs }) {
     <MainWrapper
       headerType={1}
       title="Jade Media Pro"
-      backgroundColor="#111"
+      backgroundColor="#1A1A1A"
       paint-header-on-scroll
       meta="At JadeMediaPro, we deploy sophisticated tools and expertise for creating stunning designs, 
         animation, web/app development, and digital marketing for business growth."
