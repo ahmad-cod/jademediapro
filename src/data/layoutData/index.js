@@ -65,11 +65,11 @@ export const footerLinks = {
 
       {
         subtitle: "Collaboration",
-        link: "#",
+        link: "https://discord.gg/PqBfsnkpmU",
       },
       {
         subtitle: "Community",
-        link: "#",
+        link: "https://chat.whatsapp.com/Io7cSSjtdrb6Qfztj06M00",
       },
       {
         subtitle: "Event",

@@ -374,7 +374,7 @@ export const footerSocials = [
   {
     name: "Whatsapp",
     image: whatsappgif,
-    link: 'https://chat.whatsapp.com/Io7cSSjtdrb6Qfztj06M00',
+    link: 'https://api.whatsapp.com/send?phone=2349027710233',
   },
   {
     name: "YouTube",
