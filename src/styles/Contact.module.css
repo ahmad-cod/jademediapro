@@ -35,8 +35,8 @@
 .contact_container {
   width: 85%;
 
-  margin: auto;
-  margin-bottom: 200px;
+  margin-inline: auto;
+  padding-bottom: 200px;
   min-height: 100vh;
 }
 .contact_heading h2 {
