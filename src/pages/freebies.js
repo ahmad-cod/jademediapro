@@ -28,7 +28,7 @@ const Freebies = () => {
       meta=""
     >
       <ImageWithHeader
-        title="Everything you need for growth and development"
+        title={`Everything you need \n for growth and development`}
         subtitle="Free daily high-quality design resources hand-picked for creatives, designers and developers, ranging from fonts, mockups, graphics, templates & more from amazing artists."
         headerImage={freebiesHeader}
       />
