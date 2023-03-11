@@ -1,3 +1,6 @@
+.category_container {
+  margin-inline: 104px;
+}
 .category_buttons {
   display: flex;
   gap: 24px;
