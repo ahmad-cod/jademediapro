@@ -63,7 +63,7 @@ const Card = ({ text, icon, href, note }) => {
   return (
     <Link
       href={href ?? "/services"}
-      className="bg-[#1A1A1A] text-[#f6f6f6] [--note-transform:translateY(100%)] 
+      className="bg-[#1A1A1A] text-[#f6f6f6] [--note-transform:translateY(100%)] max-w-[278px]
       max-[700px]:[--note-transform:none] hover:[--note-transform:none] min-[701px]:hover:[--text-color:#65CABF] 
       relative flex justify-end flex-col overflow-hidden h-full p-[24px_22px] aspect-[0.8] rounded-[4px]"
     >
