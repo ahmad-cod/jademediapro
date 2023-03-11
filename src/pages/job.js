@@ -7,6 +7,8 @@ import Pagination from "../components/Pagination";
 import JobFilters from "../components/jobComponents/jobFilters";
 import { jobheroimg, lemonarrow, sendarrow } from "../images";
 import { MainWrapper } from "@/components/Layout";
+import { ImageWithHeader } from "../components";
+
 
 export default function Terms() {
   const [currentData, currentPage, setCurrentPage, dataPerPage, data, setData] =
@@ -19,21 +21,22 @@ export default function Terms() {
       color="#242526"
       paint-header-on-scroll
     >
+
       <div>
-        <div className=" bg-[#F6F6F6] px-[20px] py-[31px] lg:pt-12 lg:pr-[104px] lg:pb-[132px] lg:pl-[104px] mb-32 ">
-          <div className="flex flex-col md:flex-row lg:flex-row  lg:items-center text-[30px] lg:text-[50px] font-bold text-[#242526] gap-8 lg:gap-[123px] w-full">
-            <h1 className="hidden lg:block lg:w-[60%]">
+        <div className="border-box bg-[#F6F6F6] px-[20px] pt-[31px] lg:pt-2 lg:px-[100px] mb-32 pb-0">
+          <div className="flex flex-col md:flex-row lg:items-center justify-center text-[30px] 
+            lg:text-[50px] font-bold text-[#242526] gap-8 lg:gap-[85px] w-full">
+            <h1 className="hidden lg:block lg:w-[60%] lg:-mt-10 font-bold">
               Discover your next career <br /> move with our efficiently <br />
               managed job searches
             </h1>
-            <h1 className=" block lg:hidden lg:w-[60%]">
-              Discover your next <br />
-              career move with our
-              <br /> efficiently managed <br />
-              job searches
+            <h1 className=" block lg:hidden lg:w-[80%]">
+              Discover your next career <br /> 
+              move with our efficiently
+              <br /> managed job searches
             </h1>
-            <div className="lg:w-[40%]">
-              <Image src={jobheroimg} className="" alt="jobs image" />
+            <div className="lg:w-[30%]">
+              <Image src={jobheroimg} className="w-full" alt="jobs image" />
             </div>
           </div>
         </div>
