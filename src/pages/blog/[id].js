@@ -31,6 +31,16 @@ const Blogdetails = ({ blog }) => {
   const router = useRouter();
   const blogId = router.query.id;
 
+  async function copyLinkToClipboard() {
+    const link = `https://www.jademediapro.com/blog/${blogId}`
+    if('clipboard' in navigator) {
+      return await navigator.clipboard.writeText(link)
+    } else {
+      return document.execCommand('copy', true, link)
+    }
+  }
+  
+
   return (
     <MainWrapper
       color="#242526"
@@ -41,15 +51,18 @@ const Blogdetails = ({ blog }) => {
       mobile-pad
     >
       <div className={styles.social_network}>
-        <Link href={"#"} id="link">
-          <Tooltip
-            anchorId="link"
-            content="Copy Link"
-            className={styles.social_link}
-            place="left"
-            noArrow
-          />
-          <FaRegClone />
+        <Link href={'#'}>
+          <button onClick={copyLinkToClipboard} id="link">
+            <Tooltip
+              anchorId="link"
+              content="Copy Link"
+              className={styles.social_link}
+              place="left"
+              onClick={copyLinkToClipboard}
+              noArrow
+            />
+            <FaRegClone />
+          </button>
         </Link>
 
         <Link href={"#"} data-info="Email" id="email">
