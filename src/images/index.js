@@ -538,6 +538,9 @@ import rccgLogo from "./misc/rccg.png";
 import developfulLogo from "./misc/developful.png";
 import nobullsLogo from "./misc/nobulls.png";
 import lartedelbereLogo from "./misc/lartedelbere.png";
+import redaisLogo from "./misc/red-ais.png";
+import cendmateLogo from "./misc/cendmate.png";
+import angeloveLogo from "./misc/angelove.png";
 
 /**
  * @typedef {{name: string, src: string}} ClientLogo
@@ -595,6 +598,18 @@ export const clientLogos = [
   {
     name: "L'Arte del Bere",
     src: lartedelbereLogo,
+  },
+  {
+    name: "Red Ais",
+    src: redaisLogo,
+  },
+  {
+    name: "Cendmate",
+    src: cendmateLogo,
+  },
+  {
+    name: "Angelove",
+    src: angeloveLogo,
   },
 ];
 
