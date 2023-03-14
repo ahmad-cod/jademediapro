@@ -184,7 +184,7 @@ export default function Home({ jobs }) {
             <h2 className="home-heading text-[40px] lg:text-[50px] mb-[24px]">
               Unlock your future by taking advantage of Branding & Digital marketing
             </h2>
-            <p className="[line-height:140%] text-base max-[1024px]:text-[11pt] max-[768px]:text-[10pt] mb-[20px]">
+            <p className="[line-height:140%] text-base max-[1024px]:text-[11pt] max-[768px]:text-[10pt] pb-[20px]">
               Few businesses live the test of time. Many businesses are
               struggling with different strategies and identifying which one
               truly fits. All sorts of brands - personal, entrepreneurial, or
@@ -202,7 +202,8 @@ export default function Home({ jobs }) {
               personality type. These are known as archetypes in the branding
               field.
             </p>
-            <p className="[line-height:140%] text-[16pt] max-[1400px]:text-[13pt] max-[1024px]:text-[11pt] max-[768px]:text-[10pt] max-[700px]:hidden mb-[20px]">
+            <p className="[line-height:140%] text-[16pt] max-[1400px]:text-[13pt] max-[1024px]:text-[11pt] 
+              max-[768px]:text-[10pt] max-[700px]:hidden pb-[20px]">
               On the other hand, Digital marketing is the practice of creating
               content to attract more customers and build relationships. It is
               more than just advertising; it is an essential component for any
