@@ -8,17 +8,28 @@ import styles from '../../styles/logoLineup.module.css'
  */
 export const LogoLineup = () => {
   return (
-    <div className="logo-lineup overflow-hidden max-[700px]:mt-[50px] ml-[var(--side-padding)]">
-      <div className="flex w-max animate-[logo-scroll_infinite_linear] 
-        [animation-duration:40000ms] gap-[10vw] py-[28px]">
-        {clientLogos.map((logo, index) => (
-          <Image
-            src={logo.src}
-            key={index}
-            alt={logo.name}
-            className="h-[45px] w-auto max-[700px]:h-[30px]"
-          />
-        ))}
+    <div className="container lg:p-20 mt-6 relative overflow-hidden">
+      <div className={`flex absolute left-0 gap-16 ${styles.animate}`}>
+        <div className="flex w-50 items-center gap-16">
+          {clientLogos.map((logo, index) => (
+            <Image
+              src={logo.src}
+              key={index}
+              alt={logo.name}
+              className="h-[45px] w-auto max-[700px]:h-[30px]"
+            />
+          ))}
+        </div>
+        <div className="flex w-50 gap-16 items-center logo">
+          {clientLogos.map((logo, index) => (
+            <Image
+              src={logo.src}
+              key={index}
+              alt={logo.name}
+              className="h-[45px] w-auto max-[700px]:h-[30px]"
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

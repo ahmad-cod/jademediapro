@@ -1,0 +1,17 @@
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -290%;
+  }
+}
+.animate {
+    width: 600%;
+    animation: marquee 29s linear infinite;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.animate:hover {
+  animation-play-state: paused;
+}
