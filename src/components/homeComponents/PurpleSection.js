@@ -35,7 +35,7 @@ export const PurpleSection = () => {
         Our five foundational processes to create your strategic brand&apos;s
         success
       </h2>
-      <ul className="flex flex-col max-[700px]:h-[100px] max-[700px]:flex-row max-[700px]:w-full 
+      <ul className="box-border flex flex-col max-[700px]:h-[100px] max-[700px]:flex-row max-[700px]:w-full 
         max-[700px]:overflow-x-scroll justify-center max-[700px]:justify-start max-[700px]:gap-[5vw]">
         {methodologyData.map((methodology, index) => {
           const isopen = index === openMethodology;
@@ -66,7 +66,7 @@ export const PurpleSection = () => {
           );
         })}
       </ul>
-      <div className="w-full flex flex-col">
+      <div className="box-border w-full flex flex-col">
         <h2 className="home-heading text-[34pt] max-[1400px]:text-[32pt] max-[1024px]:text-[26pt] 
           max-[768px]:text-[23pt] max-[700px]:hidden mb-[24px]">
           Our five foundational processes to create your strategic brand&apos;s
