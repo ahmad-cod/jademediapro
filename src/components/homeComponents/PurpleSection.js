@@ -29,9 +29,10 @@ export const PurpleSection = () => {
     }
   }
   return (
-    <PageSection className="box-border bg-[#4F2E67] h-screen max-[2440px]:pt-[550px] max-[1440px]:pt-[450px] max-2xl:py-[440px] text-[#f6f6f6] grid [grid:auto/40%_60%]
-     max-[1152px]:[grid:auto/43%_auto] max-[700px]:[grid:auto/auto] py-[40px] place-content-center">
-      <h2 className="box-border hidden max-[700px]:block text-[25pt] mb-[40px] font-bold">
+    <PageSection className="box-border bg-[#4F2E67] h-screen max-[2440px]:pt-[550px] max-[1440px]:pt-[450px]
+      max-2xl:py-[440px] text-[#f6f6f6] grid [grid:auto/40%_60%] max-[1152px]:[grid:auto/43%_auto]
+      max-[700px]:[grid:auto/auto] py-[40px] place-content-center">
+      <h2 className="box-border hidden max-[700px]:block text-[25pt] max-[400px]:text-[21pt] mb-[40px] font-bold">
         Our five foundational processes to create your strategic brand&apos;s
         success
       </h2>
@@ -47,7 +48,8 @@ export const PurpleSection = () => {
             >
               <div
                 className={`aspect-square max-[700px]:aspect-auto max-[700px]:animate-[line_500ms] duration-500 
-                border-2 max-[700px]:border-0 border-[#f6f6f6] rounded-[50%] max-[700px]:rounded-[0] flex items-center justify-center ${
+                border-2 max-[700px]:border-0 border-[#f6f6f6] rounded-[50%] max-[700px]:rounded-[0]
+                flex items-center justify-center ${
                   isopen
                     ? 'h-9 max-[700px]:h-1 max-[700px]:w-full max-[700px]:bg-[#f6f6f6] before:block before:[content:""] before:h-[80%] before:aspect-square before:rounded-[50%] before:bg-[#f6f6f6] max-[700px]:before:hidden'
                     : "h-3 max-[700px]:hidden bg-[#f6f6f6]"
@@ -72,7 +74,8 @@ export const PurpleSection = () => {
           Our five foundational processes to create your strategic brand&apos;s
           success
         </h2>
-        <div className="grid [grid:auto/auto_auto] gap-[16px] mb-[40px] h-[250px] max-[768px]:h-[100px] max-[1024px]:mb-[20px] max-[700px]:h-fit max-[700px]:flex max-[700px]:flex-col">
+        <div className="grid [grid:auto/auto_auto] gap-[16px] mb-[40px] h-[250px] max-[768px]:h-[100px]
+          max-[1024px]:mb-[20px] max-[700px]:h-fit max-[700px]:flex max-[700px]:flex-col">
           <div
             style={{
               backgroundImage: `url('${methodologyData[openMethodology].chart.src}')`,
@@ -99,7 +102,7 @@ export const PurpleSection = () => {
           style={{
             backgroundImage: `url('${methodologyData[openMethodology].image.src}')`,
           }}
-          className="hidden max-[700px]:block aspect-[2] w-full bg-cover rounded-[4px] bg-center bg-no-repeat"
+          className="hidden aspect-[2] w-full bg-cover rounded-[4px] bg-center bg-no-repeat"
         ></div>
       </div>
     </PageSection>
