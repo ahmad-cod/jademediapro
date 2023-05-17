@@ -54,7 +54,7 @@ const InputField = () => {
   const [schedule, setSchedule] = useState("");
   const [showService, setShowService] = useState();
   const [showCountry, setShowCountry] = useState();
-
+  const [isLoading, setISLoading] = useState(false);
   const handleCheckChange = () => {
     setCheck((current) => !current);
   };
@@ -238,6 +238,177 @@ const InputField = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setISLoading(true);
+    console.log(
+      check,
+      firstName,
+      lastName,
+      email,
+      tel,
+      message,
+      schedule,
+      selectedService,
+      selectedCountry
+    );
+    if (firstName === "") {
+      setErr({
+        ...err,
+        firstNameError: true,
+      });
+    }
+    if (lastName === "") {
+      setErr({
+        ...err,
+        lastNameError: true,
+      });
+    }
+    if (email === "") {
+      setErr({
+        ...err,
+        emailError: true,
+      });
+    }
+    if (tel === "") {
+      setErr({
+        ...err,
+        telError: true,
+      });
+    }
+    if (message === "") {
+      setErr({
+        ...err,
+        messageError: true,
+      });
+    }
+    if (schedule === "") {
+      setErr({
+        ...err,
+        scheduleError: true,
+      });
+    }
+    if (selectedService === "") {
+      setErr({
+        ...err,
+        serviceError: true,
+      });
+    }
+    if (selectedCountry === "") {
+      setErr({
+        ...err,
+        countryError: true,
+      });
+    }
+    if (check === false) {
+      setErr({
+        ...err,
+        checkError: true,
+      });
+    }
+    if (
+      firstName !== "" &&
+      lastName !== "" &&
+      email !== "" &&
+      tel !== "" &&
+      message !== "" &&
+      schedule !== "" &&
+      selectedService !== "" &&
+      // selectedCountry !== "" &&
+      check !== false
+    ) {
+      setErr({
+        ...err,
+        firstNameError: false,
+        lastNameError: false,
+        emailError: false,
+        telError: false,
+        messageError: false,
+        scheduleError: false,
+        serviceError: false,
+        countryError: false,
+        checkError: false,
+      });
+      let messageData =
+        firstName +
+        " " +
+        lastName +
+        " " +
+        email +
+        " " +
+        tel +
+        " " +
+        message +
+        " " +
+        schedule +
+        " " +
+        selectedService +
+        " " +
+        selectedCountry;
+
+      try {
+        fetch("/api/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: firstName + " " + lastName,
+            email: email,
+            message: messageData,
+          }),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+            setISLoading(false);
+            setFirstName("");
+            setLastName("");
+            setEmail("");
+            setTel("");
+            setMessage("");
+            setSchedule("");
+            setSelectedService("");
+            setSelectedCountry("");
+            setCheck(false);
+            setActive({
+              ...active,
+              firstNameActive: false,
+              lastNameActive: false,
+              emailActive: false,
+              telActive: false,
+              messageActive: false,
+              scheduleActive: false,
+              serviceActive: false,
+              countryActive: false,
+            });
+            setFocus({
+              ...focus,
+              firstNameFocus: false,
+              lastNameFocus: false,
+              emailFocus: false,
+              telFocus: false,
+              messageFocus: false,
+              scheduleFocus: false,
+              serviceFocus: false,
+              countryFocus: false,
+            });
+            setShowService(false);
+            setShowCountry(false);
+            // setSuccess(true);
+          })
+          .catch((err) => {
+            setISLoading(false);
+            console.log(err);
+          });
+      } catch (error) {
+        setISLoading(false);
+        console.log(error);
+      }
+    } else {
+      setISLoading(false);
+
+      console.log("Fields required");
+      return;
+    }
   };
   const selectService = (value) => {
     setSelectedService(serviceRefs.current[value].innerHTML);
@@ -650,7 +821,7 @@ const InputField = () => {
           <div className={styles.form_button}>
             <button type="submit">
               <FiSend />
-              Submit
+              {isLoading ? "Sending..." : "Submit"}
             </button>
           </div>
         </form>
