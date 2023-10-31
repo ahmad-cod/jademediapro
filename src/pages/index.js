@@ -66,13 +66,13 @@ export default function Home({ jobs }) {
         {/* Hero Section */}
         <PageSection
           style={{ padding: 0 }}
-          className="text-white max-[1440px]:min-h-[900px] max-[1280px]:min-h-max 
+          className="text-white max-[1280px]:min-h-max 
             max-[912px]:h-[900px] max-[700px]:h-screen max-[700px]:max-h-[830px]"
         >
           <TunnelManOverlay />
-          <div className="relative min-h-[570px] w-full h-full flex flex-col justify-center max-[700px]:justify-end">
-            <h1 className="home-front-text relative font-pop text-[70pt] max-[2140px]:text-[60pt] 
-              max-[1024px]:text-[43pt] max-[912px]:text-[46pt] max-[700px]:text-[32pt] py-[16px] 
+          <div className="relative min-h-[570px] w-full h-full flex flex-col pt-20 max-[700px]:justify-end">
+            <h1 className="home-front-text relative font-pop max-[2140px]:text-[52pt] 
+              max-[1024px]:text-[43pt] max-[912px]:text-[46pt] max-[700px]:text-[32pt] py-[16px]
               max-[1400px]:py-0 max-[1440px]:w-[65%] w-[50%] max-[820px]:w-[70%] max-[700px]:w-auto 
               max-[700px]:px-[var(--side-padding)] ml-[var(--side-padding)] max-[700px]:ml-0 
               [font-weight:800] [line-height:120%]">
